@@ -1,0 +1,1109 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[sectionbib]{natbib}
+\usepackage[french]{babel}
+\usepackage[titletoc]{appendix}
+\usepackage{chapterbib}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{vmargin}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{setspace}
+%\usepackage{filecontents}
+\usepackage{calc}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\graphicspath{ {images/} }
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{gensymb}
+\usepackage{siunitx}
+\usepackage{textcomp}
+\setcounter{secnumdepth}{3}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\leftmark}
+\rfoot{\thepage}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+    Thèse CIFRE N° 2018/1627
+    
+    Sol Solution
+    
+    Institut Pascal – Axe M3G
+            \vspace*{5cm}
+              %  \vspace*{5cm}
+    
+    {Rapport d'activité}\\[0.3cm]
+    
+     {\textsc{\textbf{Interprétation de l'essai de chargement dynamique en pointe pénétrométrique}}}\\[1.cm]
+     {Caroline F. Oliveira}\\[0.3cm]
+     
+     
+    \end{center}
+        \vspace*{8cm}
+    
+    
+    
+\begin{table} [H]
+\begin{tabular}{ll}
+\centering
+        \element{\textbf{Pierre BREUL}} & \element{Directeur de thèse}\\
+        \element{\textbf{Bastien CHEVALIER}} & \element{Encadrant}\\
+        \element{\textbf{Claude BACCONNET}} & \element{Encadrant}\\
+        \element{\textbf{Miguel Angel BENZ NAVARRETE}} & \element{Responsable en entreprise}\\
+        \element{\textbf{Quoc Anh TRAN}} & \element{Encadrant en entreprise}\\
+\end{tabular}
+\end{table}
+\centering
+\emph{Présentation le 06 avril 2021}\\[0.3cm]
+    
+    \vspace*{\fill}
+  \end{titlepage}
+
+  % Table des matières
+  \tableofcontents
+  \pagebreak
+  
+
+  \thispagestyle{empty}
+  \begin{center}
+  \textbf{RESUME}
+  \end{center}
+La caractérisation de sols est une condition indispensable pour le dimensionnement des fondations en génie civil. A niveau mondial, ces travaux de caractérisation, dont l’objectif est de fournir les paramètres du sol permettant d’adapter l’ouvrage au terrain, sont basés sur la réalisation d’essais in situ. Au-delà des limites techniques, la plupart de ces techniques ne permettent pas d’avoir une caractérisation fine des sols présents en surface à faible coût. Un pénétromètre dynamique léger instrumenté (Panda$3\up{\textregistered}$) a été développé afin de répondre à ces besoins. L’instrumentation et l’exploitation des signaux de force et d’accélération intégrés à cet appareil permettent d’obtenir une courbe de chargement en pointe du sol pour chaque impact. Celle-ci traduit la réponse effort-enfoncement sous chargement dynamique et riche de renseignements quant au comportement en déformation et en cisaillement des sols. Le caractère dynamique et transitoire de l’essais couplé à la précision et grand nombre de mesures obtenues facilite la mise en place de différentes méthodes d’analyse intégrant différentes approches (essais de choc, analyse temporelle, analyse spectrale, fonction des transfert…).
+
+D’une part, lors des premiers instants suivant le choc, cet essai de chargement dynamique en pointe pénétrométrique (DCLT) est assimilable à un essai de choc. L’exploitation l’exploitation des signaux de force et de vitesse entraînée au cours de l'intervalle de temps suivant le choc, permet d'étudier le comportement à faibles déformations et de déterminer une mesure de vitesse d’ondes du sol. 
+
+Par ailleurs, le type de sollicitation, la géométrie et les conditions aux limites de l’essai ressemblent à un essai dynamique de pieu. De manière similaire à un essai de chargement dynamique de pieux, la réponse du sol en pointe peut être exprimée à l’aide d’un modèle d’interaction. Actuellement, le modèle appliqué à cet essai est le modèle masse-ressort-amortisseur. Toutefois, sa simplicité ne permet pas traduire correctement l’essai ni d’accéder à des paramètres d’usage courant en géotechnique (\emph{e.g.} paramètres effort-déformation). Il s’avère nécessaire appliquer un modèle d’interaction plus réaliste, basé sur des paramètres permettant de caractériser le comportement du sol et adapté à cet essai.
+
+Parmi les différents approches existantes, la modélisation numérique est, à l’heure actuelle, la méthode la plus réaliste pour reproduire le battage dans le sol. Elle sera un important outil dans ce travail afin mieux comprendre l’essai. D’une part, on souhaite vérifier si les hypothèses considérées dans la méthode d’obtention de la vitesse d’ondes sont valables et d’une autre part, le modèle numérique aidera à mettre au point le modèle d’interaction sol-pointe adapté. Un des atouts du modèle numérique est le fait permettre de confronter la réponse statique et dynamique sous des conditions identiques et ainsi d’aider à dissocier la réponde dynamique de la réponse statique. Une fois mis au point, le modèle d’interaction permettra de mieux saisir la composante dynamique dans la réponse globale de l’essai. On pourra ainsi estimer la réponse statique et l’exploiter à l’aide des modèles d’interprétation existants afin de remonter aux paramètres effort-déformation du sol.
+
+
+\chapter{Introduction : \emph{rappel}}
+
+La pénétration est utilisée par différentes techniques afin de caractériser le sol en surface. L'essai pénétrométrique statique consiste à pénétrer à une vitesse constante tandis que dans les essais dynamiques, cela se fait par le battage d'une masse. L'essai de pénétration dynamique est la technique \emph{in situ} la plus utilisée au monde. Toutefois, l'analyse des résultats dynamiques demeurent plus complexe que celle des essais statiques \citep{Byun2015}. 
+
+De manière générale, les pénétromètres, statiques ou dynamiques, fournissent une mesure à la rupture. Dans la pratique du dimensionnement géotechnique, celle-ci est appliquée directement ou interprétée afin d'estimer les paramètres de cisaillement (par exemple, l'angle de frottement effectif $\phi'$, pour les sables, la résistance non-drainé $\tau_u$, des argiles) \citep{Robertson1983InterpretationClay, Schnaid2008InTests, Mayne2001Stress-strain-strength-flowHistories}. Toutefois, les pénétromètres, \emph{a priori}, ne permettent pas d'établir la relation effort-déformation au cours des essais.
+
+Dans l’état actuel des connaissances, l’essai de chargement dynamique en pointe pénétrométrique (DCLT, de l’anglais \emph{Dynamic Cone Load Test}) réalisé à l’aide du pénétromètre $Panda 3\up{\textregistered}$\footnote{Désormais noté Panda 3} \citep{Benz-Navarrete2009MESURES2, Escobar2015Mise3} permet de répondre à un grand nombre des besoins (coût, rapidité, haut rendement de mesures). L’instrumentation et l’exploitation des mesures de force et d’accélération au niveau de tête de l’appareil permettent d’estimer les grandeurs cinématiques à l’interface pointe-sol, à savoir : force, vitesse, déplacement.
+
+La réponse globale du sol à l’aide de l’essai DCLT est exprimée sous la forme d’une courbe chargement en fonction de l’enfoncement pour chaque impact (courbe charge enfoncement en pointe $\sigma_p-s_p$). Dans la méthode proposée par \cite{Benz-Navarrete2009MESURES2} et par \cite{Escobar2015Mise3}, l’exploitation de cette courbe s’appuie sur un modèle d’interaction pointe-sol de type Smith, très utilisé dans les essais de chargement dynamique de pieux. 
+
+Il est représenté par une loi élastoplastique parfaite avec une composante visqueuse de type newtonienne basée sur modèle masse-ressort-amortisseur de Smith (1962). Bien qu'intéressant, ce modèle ne permet pas caractériser le sol à l'aide de paramètres rhéologiques couramment appliqués en géotechnique.
+
+L’objectif de ce travail est de mettre au point une méthode d’interprétation de l’essai de chargement dynamique en pointe pénétrométrique (DCLT). Cela afin de remonter aux propriétés intrinsèques du sol caractérisant son comportement (déformation et rupture) sous ce type de sollicitation. On s'intéresse aux paramètres utilisés pour le dimensionnement de ouvrages courants. Pour ce faire, on propose la démarche générale illustrée par le schéma présenté à la fin de ce chapitre (Figure \ref{fig:demarche}). 
+
+
+\section{Objectif}
+
+L’objectif de ce travail est de mettre au point une méthode d’interprétation de l’essai de chargement dynamique en pointe pénétrométrique (DCLT). Cela afin de remonter aux propriétés intrinsèques du sol caractérisant son comportement (déformation et rupture) sous ce type de sollicitation. 
+    \vspace*{0.5cm}
+
+Les objectifs secondaires sont :
+\begin{enumerate}
+    \item déterminer la vitesse d’ondes en appliquant les approches développées dans le cadre des essais de choc \citep{Aussedat1970SollicitationsSols, Omidvar2012Stress-strainRates}. Ceci afin de remonter au module du sol à faibles déformations ;
+    \item mettre au point un modèle d’interaction pointe-sol plus réaliste permettant d’une part de bien dissocier la composante dynamique et statique depuis la courbe de chargement ; et d’autre part permettant de traduire la non linéarité de l’essais lors du chargement et du déchargement ;
+    \item modéliser l’essai DCLT par le biais du code FLAC$^{3D}$ \citep{Itasca2020FLAC3D6.0} permettant de simuler le battage dynamique dans un milieu homogène, purement frottant ;
+    \item mettre au point une méthode d’interprétation permettant de remonter au paramètres mécaniques du sol (effort-déformation).
+\end{enumerate}
+
+\section{Axes de travail}
+
+Afin d’aboutir aux objectifs évoqués, la problématique est étudiée suivant trois approches, complémentaires : analytique, expérimentale et numérique.
+
+\begin{itemize}
+      
+    \item Axe 1 : Approche analytique :
+    
+    Cette approche consiste à analyser un certain nombre de modèles théoriques appliqués dans le contexte de la pénétration. A partir de ces modèles phénoménologiques, d'interaction sol-pointe, et explicatifs, comme celui de l'expansion de cavité, on propose la démarche pour l'exploitation de la courbe DCLT afin de déterminer les paramètres rhéologiques du sol.
+
+    \item Axe 2 : Approche expérimentale :
+    
+    Le développement de tout modèle explicatif ou prédictif nécessite des données issues de l’expérimentation. Cela afin d’évaluer et d’ajuster les prédictions faites par le modèle. Dans ce travail de recherche, la réalisation des essais au laboratoire (en chambre d'étalonnage, triaxiaux) et in situ est envisagée afin de disposer des données expérimentales permettant d’adapter, d’ajuster et d’appliquer les modèles les plus pertinents. 
+    
+    Toutefois, dans le cadre de ce projet de recherche, il ne sera pas possible d’analyser un nombre exhaustif de sols surtout à cause des limitations de temps. On dispose déjà de résultats expérimentaux sur différents sols et des essais complémentaires seront réalisés durant la thèse sur différents sols permettant de calibrer et/ou valider les modèles développés. A la fin et malgré tout, ces modèles nécessiteront toutefois d’être validés \emph{a posteriori} pour une gamme plus large de sols, soit au laboratoire, soit in situ, dans le cadre de futurs travaux.
+
+    \item Axe 3 : Approche numérique :
+    
+    Le développement d’un modèle numérique permettant de simuler l’essai DCLT en chambre de calibration dans un massif de sol homogène frottant est envisagé. L’objectif principal est de disposer d’un modèle permettant d’évaluer l’influence de certains paramètres du sol difficilement mesurables ou maîtrisables expérimentalement. Ce modèle en différences finies développé à l’aide du code FLAC3D, sera calibré grâce aux résultats des essais réalisés en chambre d'étalonnage pour des sables modèles.
+
+\end{itemize}
+
+\section{Structure du rapport}
+
+Le présent rapport qui reprend les principales activités réalisées tout au long de cette deuxième année de thèse, est divisé en trois partie, suivies d’un bilan général.
+
+Dans un premier temps, on a choisi d'aborder les modèles d'interaction sol-pointe pour les pieux et l'interprétation appliquée à l'essai CLT. Ceux-ci serviront pour améliorer la méthode d'interprétation de l'essai DCLT.
+
+Dans la deuxième partie de ce rapport, on présente brièvement les principaux essais réalisés au cours de l'année. 
+
+La troisième partie présente les travaux réalisés autour du modèle numérique.
+
+On conclue avec un bilan et avec les principales activités prévues pour la troisième année. 
+
+
+\begin{sidewaysfigure}[ht]
+    \begin{center}
+    \includegraphics[scale = 1.]{media/ana_demarche2.PNG}
+    \caption{Méthodologie d'interprétation de l'essai DCLT (en bleu les essais réalisés dans le cadre de ce travail}
+      \label{fig:demarche}
+  \end{center}
+\end{sidewaysfigure}  
+\newpage
+
+\chapter{Approche analytique} 
+
+\section{Modèles analytiques de la réaction en pointe pour les pieux}
+
+Différents travaux se sont intéressés à interpréter les essais dynamiques de pieux. Ceux-ci sont moins contraignants et plus économiques que les essais de chargement statique. Initialement, l'interprétation de ces essais était basée sur des relations empiriques appliquant la conservation d'énergie : l'énergie appliquée aux pieux correspondrait au travail réalisé par la résistance au pieu. Ces relations ont été d'ailleurs adoptées par un certain nombre de normes de calcul (e.g. Engineering News Record, la formule des Hollandais). Plus tard, certains chercheurs ont constaté les limitations de ces relations et la nécessité d'intégrer l'analyse de la propagation des ondes au sein du pieux afin de mieux comprendre le phénomène \citep{Gonin1979ReflexionPieux,Loukidis2008AssessmentProcedure}.
+
+De plus en plus, les chercheurs tentent d'interpréter ce problème en prenant en compte les concepts physiques et mécaniques de la pénétration dynamiques et de l'interaction sol-pieux. Ces modèles sont connus comme modèles phénoménologiques. Ceux-ci se basent sur la seconde loi de Newton du mouvement. 
+
+Le modèle proposé par \cite{Smith1960Pile-drivingEquation} constitue une grande avancée à la compréhension du phénomène mais reste très limité. D'autres modèles ont tenté de modéliser le phénomène à l'aide de paramètres caractérisants le sol pénétré \cite{Randolph2003ScienceDesign, Loukidis2008AssessmentProcedure}.
+
+Les travaux dans le domaine évoluent graduellement vers une approche plus réaliste où les modèles sont alimentés par des paramètres du pieu (rayon, profondeur) et du sol ausculté.
+
+Ils existent différents modèles analytiques décrivant la relation contrainte (ou charge) - enfoncement pour les pieux. Ceux-ci sont regroupés en modèles de la réaction latérale et modèles de réaction en pointe. Selon \cite{Loukidis2008AssessmentProcedure}, l'approche continue souvent appliquée aux modèles analytiques latéraux comme celle proposée par Randolph (1995) n'est pas adaptée à la réponse en pointe, la réaction développée en pointe ne peut pas être dissocié des mécanismes du milieu adjacent à la pointe. En plus, la réaction en pointe, au contraire de la réaction latérale, est un problème à 2 dimensions.
+
+La déformation plastique autour de la pointe s'étend sur une zone qui va de 1 et à 2 fois le diamètre un pieu. Le mécanisme plastique est très proche de celui observé pour la capacité portante d'une semelle. Vu que le pieu possède une pointe plate, on observe la formation d'une zone conique rigide immédiatement au-dessous de la pointe. Le sol situé à l'intérieur de cette région reste dans le domaine élastique et peut-être considéré comme étant un prolongement de la géométrie du pieu. Les déformations plastiques sont observées au-delà de cette région conique. Le sol placé au-delà de la zone plastifiée \citep{Loukidis2008AssessmentProcedure}.
+
+Différents modèles analytiques de la réaction en pointe essaient d'exprimer la réponse observée pour les essais de chargement statique de pieux en reliant à contrainte (ou la charge) à l'enfoncement, à savoir : Smith (1960), \cite{Lysmer1965VerticalFooting}, Nguyen et al. (1988), \cite{Holeyman1988ModellingBase}, Deeks and Randolph (1995) et celui proposé plus récemment par \cite{Loukidis2008AssessmentProcedure}.
+
+\subsection{Modèle de Smith}
+
+Le modèle proposé par \cite{Smith1960Pile-drivingEquation} est largement appliqué pour le battage des pieux. Il a été mis au point dans le but de remplacer les formules de battage (basés sur des concepts d’énergie), utilisant le nombre de coups, par une approche numérique plus précise.
+
+Selon \cite{Smith1960Pile-drivingEquation}, la réaction du sol dépend uniquement des déplacements et de la vitesse. La réaction développée est proportionelle au déplacement jusqu'à une limite $R_u$ à laquelle correspond le \emph{quake} Q (ou enfoncement élastique). Le fonçage rapide du sol autour du pieu donne naissance à un amortissement $J_s$ représenté par un coefficient proportionnel à la vitesse de déplacement (v) (Équation \ref{eq:Rd}). La résistance totale $R_t$ est la somme des résistances statique $R_s$ et dynamique $R_d$ (Équation \ref{eq:Rt}).
+
+Ce modèle a été appliqué par \cite{Benz-Navarrete2009MESURES2} et \cite{Escobar2015Mise3} à l’essai DCLT. Il a permis de caractériser le sol par le biais d’un coefficient d’amortissement $J_s$ et de dissocier la réponse statique $R_s$ de la réponse dynamique $R_d$ dans la résistance totale mesurée. La partie statique de la résistance $R_s$ est obtenue en admettant que lorsque la vitesse d’enfoncement $v$(t) est nulle, et donc l’enfoncement en pointe est maximal, la résistance totale est due uniquement à la partie statique. A cet instant donné, $q_d = R_s$ (Middendorp et al. 1992).
+
+\begin{equation} \label{eq:Rt}
+    R_t = R_s + R_d 
+\end{equation}
+
+\begin{equation} \label{eq:Rd}
+    R_d = R_s J_s v 
+\end{equation}
+
+\begin{equation} \label{eq:Rd2}
+    R_d = R_s J_n v^n 
+\end{equation}
+
+Bien que largement appliquée dans le domaine des pieux, la solution de Smith présente des grandes limitations. Certains travaux ont montré que l'amortissement radiatif (en anglais radiation damping) est fonction de la raideur du sol et non de la résistance. En plus, des résultats expérimentaux ont montré que la relation entre l'amortissement visqueux et la résistance statique n'est pas du type linéaire mais exponentielle \citep{Coyle1970EmpiricalClays}. Globalement, les principales limitations identifiées dans ce modèle sont : 
+
+    • la non prise en compte de l’inertie du sol autour de la pointe ; 
+    
+    • les pertes d’énergie dues aux différents types d’amortissement (radiatif, l’hystérésis et à viscosité) qui ne sont pas considérées de manière isolée, mais combiné sur un seul paramètre ($J_s$) ;
+
+    • la caractérisation du sol sur la base des paramètres d’usage peu courant en géotechnique (\emph{quake}, amortissement $J_s$).
+
+Afin de rendre le modèle initialement proposés par \cite{Smith1960Pile-drivingEquation} plus réaliste, d'autres modèle ont été proposé par la suite. Ceux-ci cherchent à mettre au point des modèles alimentés par des paramètres ayant une signification physique et pouvant être déterminés en laboratoire.
+
+\subsection{Modèle basé sur l'analogie de Lysmer}
+
+\cite{Lysmer1965VerticalFooting} ont proposé une solution pour le déplacement d'une semelle circulaire rigide située sur un massif semi-infini élastique parfait, homogène et isotrope soumis à un chargement vertical transitoire (type pulse). Dans cette solution, seuls les efforts normaux sont transmis au niveau de l'interface sol-semelle.
+
+Certains travaux se sont intéressés à la détermination des tassements d'une semelle, mais la solution de Lysmer a la particularité d'être valable pour toutes les fréquences de sollicitation, tandis que les solutions précédentes (Sung, Bycroft, Hsieh) s'appliquent pour de faibles fréquences.
+
+La réaction du sol sur la base de la semelle correspond à la somme de la réaction d'un ressort (fonction du déplacement) et de la réaction d'amortisseur (fonction de la vitesse). La raideur ($K_{Lys}$) de ce ressort est celle de la solution statique (Équation \ref{eq:KLys}).
+
+\begin{equation} \label{eq:KLys}
+    K_{Lys} = \frac{4 G R}{1-\nu} 
+\end{equation}
+
+Soit G le module de cisaillement du sol en Pascal, R le rayon de la semelle en mètres et $\nu$ le coefficient de Poisson. Le coefficient d'amortissement est donné par l'équation \ref{eq:CLys}.
+
+\begin{equation}  \label{eq:CLys}
+    C_{Lys} = \frac{3.4 R^2}{1-\nu} \rho  Vs = \frac{3.4 R^2}{1-\nu} \sqrt{\rho G}  
+\end{equation}
+
+Soit $\rho$ la masse volumique en kg/m$^3$ et $V_s$ la vitesse d'ondes de cisaillement du sol en m/s. L'amortissement dans le modèle de Lysmer représente l'amortissement radiatif, c'est-à-dire dissipation d'énergie associée la propagation d'ondes (de volume et Rayleigh) dans le milieu semi-infini. Dans ce modèle, l'amortissement ne dépend pas de la fréquence. Le modèle basé sur l'analogie de Lysmer est adapté pour un sol élastique parfait soumis à un chargement vertical transitoire (pulse). La conformité de la solution générale et les résultats pour un milieu semi-infini reste suffisante pour les applications aux problèmes d'ingénierie. 
+
+La solution de Lysmer est largement employée dans le calcul de fondations de machine. Ce modèle suppose un comportement élastique parfait et le sol présente un comportement élastique restreint à des déformations très faibles. Par conséquent, le module G adapté pour déterminer la raideur K correspond au module à faibles déformations ($G_{max}$ ou $G_0$). Certains chercheurs suggèrent l'utilisation du module associé à la gamme de déformation du problème traité, mais la détermination la gamme de déformation associée au problème n'est pas simple (e.g. fonction de la distance de la source, du temps,...). Quant au module permettant de déterminer $C_{Lys}$, ceci est strictement le module à faibles déformations ($G_{max}$).
+
+Le modèle de Lysmer a l'atout d'associer le ressort et l'amortissement de Smith à des paramètres courants du sol (paramètres élastiques et masse volumique). Par conséquent, ce modèle réduit l'empirisme du modèle de Smith, par contre il ne tient pas compte des certains aspects importants de la réaction du sol. On peut citer notamment la non-linéarité de la réponse du sol et les effets visqueux dans la résistance. Par conséquent, le modèle surestime la raideur en pointe.
+
+En effet, la solution présentée par Lysmer est valable pour les sollicitations statiques et dynamiques (toutes les fréquences), tant que l'encastrement est nul (D=0) \cite{Loukidis2008AssessmentProcedure}. Pour les applications en profondeur, \cite{Loukidis2008AssessmentProcedure} propose l'intégration d'un facteur afin de tenir compte de l'encastrement. Ce sujet sera abordé plus tard dans ce rapport.
+
+Récemment, \cite{Lee2020InstrumentedCharacterization} a appliqué l'amortissement matériel proposé par \cite{Lysmer1965VerticalFooting} afin de dissocier la partie dynamique de la résistance totale mesurée à l'essai au pénétromètre dynamique. Les auteurs ont montré qu'une fois la partie dynamique soustraite de la résistance totale, la résistance déduite était assez proche de la résistance pseudo-statique $q_c$ (CPT) (avec $q_c = 1,.01 q_d$ et $R^2=0.85$). 
+
+Plus tard, les travaux de Nguyen et al. (1988), de \cite{Holeyman1988ModellingBase} et de \cite{Deeks1995ALoading} ont permis d'améliorer la solution de \cite{Lysmer1965VerticalFooting}. Ils ont notamment avancé en prenant en compte les différents types d'amortissement (de radiation et d'hystérésis) qui étaient traduits par Smith par un seul paramètre ($J_s$). En autre limitation de la solution de \cite{Lysmer1965VerticalFooting} est le fait de ne pas modéliser des milieux hétérogènes ou non-élastiques. \cite{Loukidis2008AssessmentProcedure} a proposé un modèle afin de corriger certaines de ces limitations.
+
+\subsection{Modèle de \cite{Loukidis2008AssessmentProcedure}}
+
+\cite{Loukidis2008AssessmentProcedure} a proposé un modèle d'interaction qui tient compte de la non-linéarité de la réponse en pointe, de l'effet visqueux dans la résistance et qui distingue les différents types d'amortissement (radiatif et d'hystérésis). La réponse totale en pointe R est la somme de la réaction du ressort $R_S$ et de l'amortisseur $R_D$ (Figure \ref{fig:ana_modele}).
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = 1.1]{media/ana_modele.JPG}
+        \caption{Modèle de la réaction en pointe proposé par \cite{Loukidis2008AssessmentProcedure}}
+          \label{fig:ana_modele}
+      \end{center}
+ \end{figure}
+
+\begin{equation}  \label{eq:Rt}
+    R = R_S+R_D = R_S+C \dot w
+\end{equation}
+
+\begin{equation}  \label{eq:Rbs}
+   \dot R_S = \frac{K_{max}}{(1+b_{fb}\frac{\mid R_S+LI R_{S,rev}\mid }{(LI+1) x \mid sgn R_{Sf}-R_S\mid})^2} \dot w
+\end{equation}
+
+La raideur non-linéaire du ressort en pointe est donnée par l'équation hyperbolique représentant la réponse charge-déplacement en pointe. Cette raideur est réduite à partir de la valeur maximale $K_{max}$ associée à un comportement purement élastique. La réaction en pointe tend asymptotiquement vers la résistance en pointe $R_{bf}$. Lorsqu'on observe un chargement de signal du déplacement, la raideur est $K_{max}$. En effet pour phase de décharge, l'allure de courbe est gouvernée par le module initial \citep{Holeyman1988ModellingBase}.
+
+La courbure de l'hyperbole dépend du type de pieux et du sol. On assimile le pénétromètre à un pieu battu. \cite{Loukidis2008AssessmentProcedure} observe que $b_f$ varie entre 1,0 et 2,0 pour les pieux battus. L'effet visqueux dans la résistance sont pris en compte d'après la relation proposé par \cite{Coyle1970EmpiricalClays} (Équation \ref{eq:Coyle}).
+
+\begin{equation}  \label{eq:Coyle}
+    R_{Sf} = Q_{bL} (1 + m v^n) 
+\end{equation}
+
+Avec m et n des coefficients contrôlant l'effet de la vitesse. Le coefficient n présente une variation est assez petite quel que soit le sol, et est souvent pris 0,2. Le coefficient m varie entre 0,34 et 0,56 pour les sables et entre 0,95 et 1,55 pour les argiles.
+
+Lorsque que la vitesse de nulle, $R_{Sf}$ est égale $Q_{bL}$, soit $Q_{bL}$ la résistance limite en pointe. La résistance $Q_{bL}$ est égale au produit résistance unitaire et de la section du pieu. Selon \cite{Salgado2008TheFoundations}, la résistance unitaire en pointe est approximativement la résistance quasi-statique $q_c$ issue de l'essai CPT.
+
+La raideur non-linéaire intègre les pertes d'énergie lié à la plastification (hystérésis du matériau). Le coefficient d'amortissement (C) intègre l'amortissement radiatif et de l'hystérésis du sol plus loin de la pointe réduit graduellement avec l'augmentation lorsque la réaction du ressort s'approche de la résistance en pointe ultime. 
+
+La raideur maximale du ressort ($K_{max}$) et le coefficient de l'amortissement (C) sont basés sur les coefficient de Lysmer ($K_{Lys}$, Équation \ref{eq:KLys} et $C_{Lys}$, Équation \ref{eq:CLys}). Comme évoqué, la solution de Lysmer s'est basée sur une fondation chargée en surface. En réalité, dans le cas d'une fondation à une profondeur D, celle-ci va transmettre la chargement à un sol placé en profondeur et généralement plus rigide. Par conséquent, cet effet entraîne l'augmentation du coefficient $K_{max}$ \citep{Gazetas1985VerticalFoundations}. Il est ainsi important d'intégrer un facteur tenant compte de l'encastrement. \cite{Loukidis2008AssessmentProcedure} a analysé cet effet et a introduit le coefficient d'encastrement $D_f$. L'utilisation de ce coefficient permet d'appliquer la solution de Lysmer aux problèmes en profondeur.
+
+\cite{Loukidis2008AssessmentProcedure} ont fait varié la profondeur d'une semelle au sein d'un matériau parfaitement élastique. Le coefficient $D_f$ est ainsi estimé à partir du rapport entre la profondeur et le diamètre B (Équation \ref{eq:Df}). Ils ont observé également que sous chargement dynamique ce paramètre était élevé à 1,7.
+
+\begin{equation} \label{eq:Df}
+    D_f = (1,27-0,12 \ln \nu) - (0,27-0,12 ln \nu) \exp[{-0,83 (\left\frac{D}{B})\right]^{0,826}} 
+\end{equation}
+
+Pour les rapports D/B> 8 où $D_f$ devient constant,  $D_f$ varie entre 1,36, pour $\nu$=0,5 (argiles saturées), et 1,5, pour $\nu$=0,15 (sables).
+
+Ce modèle a l'avantage d'être alimenté par des paramètres courants caractérisant le sol. Aucun de ces paramètres n'est particulier au problème du battage des pieux. Cela permet donc de réduire le niveau d'empirisme de l'analyse. Les paramètres du modèle sont déterminés à partir des essais en laboratoire ou estimé à partir des données in situ. Pour estimé la réaction en pointe d'un pieu, les paramètres sont : 
+
+1) densité du sol ;
+
+2) module de cisaillement à faibles déformations ($G_{max}$); 
+
+3) coefficient de Poisson ($\nu$);
+
+4) indice de plasticité (IP);
+
+5) rayon du pieu ;
+
+8) résistance unitaire limite en pointe ($q_c$);
+
+9) paramètres visqueux du sol : m et n 
+
+Certain des paramètres (en l'occurrence la densité et l'IP) sont des paramètres classiques aux rapports géotechniques. La résistance statique est déterminée à partir des essais CPT ou estimé à partir de la densité relative et de l'angle de frottement interne.
+
+Le coefficient de Poisson utilisé est celui à faibles déformations. L'obtention de ce paramètre requiert l'utilisation des capteurs de haute précision. \emph{A priori}, ce paramètre n'est pas déterminé. Toutefois, vu que ceci est peu sensible à la densité et au confinement, on peut prendre de valeurs courantes sans avoir de grands impacts sur les résultats. Les valeurs de 0,1 à 0,25 sont courantes pour de sols ayant un degré de saturation $S_r$<70\%, avec des valeurs plus faibles pour les sables. L'intervalle de 0,15 à 0,22 étant une bonne approximation pour les sols sableux ou argileux. Cette valeur augmente considérablement avec le dégrée de saturation supérieur à 70\%. Pour des sols quasiment saturés ($S_r$>95\%) ou saturés, on admet un $\nu$ de 0,5.
+
+Le module à faibles déformations est obtenu en laboratoire par l'essai de colonne résonnante et à partir de capteur piézoélectriques. \emph{In situ}, ceci est déterminé par des essais de cross-hole et down-hole. Ce paramètre est toutefois peu courant dans la plus part des projets géotechniques. C'est pourquoi, ceci est souvent estimé par le biais de corrélations.
+
+
+\section{Modèle appliqué à l'essai CLT}
+
+L'essai CLT a été introduit par \cite{GourvesR.Mirat1977MethodeSols} dans le but de compléter l'essai pénétrométrique classique. L'essai consiste à arrêter l'essai pénétrométrique à différentes profondeurs et à réaliser des chargements à très faible vitesse (de l'ordre de 0,01 mm/s). En mesurant la force et le déplacement lors de ces chargements, il permet d'établir la relation entre les contraintes et déplacements en pointe.
+
+Différents travaux ont montré l'intérêt de la technique à afin de compléter l'essai classique \citep{Faugeras1979LessaiAnalogique, Arbaoui2003MesurePenetrometre, Ali2010CaracterisationProfondes, Reiffsteck2003CaracterisationSitu}. \cite{Zhou1997CaracterisationPanda} et \cite{Arbaoui2003MesurePenetrometre} proposent une méthode d'interprétation de l'essai afin d'étudier la déformabilité et le paramètres de cisaillement du sol. Bien que très intéressante, la technique n'est pas économique : celle-ci exige l'installation d'un système de réaction, le temps de chargement est assez important. 
+
+Dans la méthode d'exploitation proposée par \cite{Zhou1997CaracterisationPanda}, la courbe de chargement CLT est exploitée à partir d'un modèle hyperbolique. Deux paramètres principaux sont déduits : le module pénétrométrique ($E_pn$) et la résistance ultime ($q_{ult,CLT}$). Le module est calculé à partir de la pente initiale et la résistance ultime correspond à interception entre les tangentes initiale et finale. Par la suite, on s'intéresse à la démarche permettant d'obtenir le module $E_{pn}$ à partir de l'essai CLT.
+
+Le module de déformation est globalement défini comme la relation entre la contrainte ($\sigma$) et la déformation ($\varepsilon$). Pour l'essai triaxial, la déformation est obtenue directement à partir de la hauteur initiale de l'échantillon et des déplacements mesurés au cours de l'essai. Dans le cas d'un essai de pénétration, son obtention n'est pas directe étant donné que les déformations sont non-homogènes.
+
+  \begin{equation} \label{eq:1}
+    E =\frac{\sigma}{\varepsilon}
+    \end{equation}
+
+Soit 
+
+  \begin{equation} \label{eq:2}
+    E =\frac{\sigma}{\frac{\Delta h}{h_0}}
+    \end{equation}
+
+De manière analogue à l'essai triaxial, \cite{Faugeras1979LessaiAnalogique} propose l'obtention du module pénétrométrique ($E_{pn}$) exprimé par : 
+
+  \begin{equation} \label{eq:E}
+    E_{pn} =\frac{\sigma}{\frac{\Delta h}{h_{ee}}}
+    \end{equation}
+
+Soit
+
+$\Delta \sigma$ : variation de contrainte
+
+$\Delta h$ : enfoncement associé à cette variation de contrainte
+
+$h_{ee}$ : hauteur élastique équivalente (définie par la suite)
+
+Pour obtenir le module pénétrométrique, \cite{Faugeras1979LessaiAnalogique} introduit la notion de hauteur élastique équivalente ($h_{ee}$) afin de rendre $E_{pn}$ homogène à une contrainte. Cette hauteur correspond à la hauteur équivalente d'un échantillon cylindrique de 10$cm^2$ de section, soumis à la même pression verticale, à une pression latérale égale à la pression des terres au repos à la profondeur de l'essai et qui aurait une déformation de $\Delta$h. Il doit tenir compte de la forme et des dimensions de la plaque (représenté dans ce cas par le cône), de l'encastrement mais aussi du remaniement du sol car, l'essai CLT est en fait un chargement de deuxième cyclique, le premier cyclique ayant été conduit jusqu'à la « rupture » du matériau.
+
+Pour estimer cette hauteur équivalente, on considère que le cône est assimilable à une plaque circulaire de rayon R dans un milieu élastique semi-infini de module E et coefficient de Poisson $\upsilon$. Par conséquent, l'application de la formule classique de Boussinesq permet de relier le tassement h et à la contrainte $\sigma$.
+    
+  \begin{equation}  \label{eq:h}
+    \Delta h =\frac{\pi R}{2} (1-\upsilon^2) \frac{\sigma}{E}
+    \end{equation}
+    
+Soit
+
+  \begin{equation}  \label{eq:E}
+    E =\frac{\pi R}{2} (1-\upsilon^2) \frac{\sigma}{\Delta h}
+    \end{equation}
+
+La relation entre le module et la pente initiale appliquée par \cite{Arbaoui2003MesurePenetrometre} est la même que celle proposée pour la raideur linéaire du ressort dans l'analogie de \cite{Lysmer1965VerticalFooting}. Cela est normal vu que la solution proposée par \cite{Lysmer1965VerticalFooting} est valable pour les sollicitations statiques et dynamiques. En effet lorsqu'on écrit cette relation en fonction de la charge (Q) et du module de cisaillement (G) (Équation \ref{eq:G}), on obtient la raideur linéaire K du ressort du modèle de \cite{Lysmer1965VerticalFooting}.
+
+  \begin{equation}  \label{eq:G}
+    G =\frac{E}{2(1-\nu)} 
+    \end{equation}
+    
+      \begin{equation}  \label{eq:K}
+    \sigma =\frac{Q}{A} = \frac{Q}{\pi R^2} 
+    \end{equation}
+
+Comme \cite{Loukidis2008AssessmentProcedure}, \cite{Arbaoui2003MesurePenetrometre} introduit un facteur d'encastrement (ici nommé $k_M$). Pour des grandes profondeurs (D>>B), la valeur retenue est celle proposée par \cite{Mindlin1936ForceSolid} pour un encastrement infini ($k_M$=2). En égalant les expressions \ref{eq:E} et \ref{eq:h}, on obtient la hauteur $h_{ee}$ (Équation \ref{eq:hee}).
+
+  \begin{equation}  \label{eq:hee}
+    h_{ee} =\frac{\pi R}{2} (1-\upsilon^2) \frac{1}{k_M}
+    \end{equation}
+
+Le module pénétrométrique est exprimé par l'équation \ref{eq:Epn}. Ceci est déterminé à partir de pente initiale de la courbe CLT.
+
+  \begin{equation} \label{eq:Epn}
+    E_{pn} = \frac{\pi R}{2} (1-\upsilon^2) \frac{\Delta \sigma}{\Delta h} \frac{1}{k_M}
+    \end{equation}
+
+
+  \begin{equation} \label{eq:Epn}
+    \varepsilon = \frac{h}{h_{ee}} 
+    \end{equation}
+
+\cite{Faugeras1979LessaiAnalogique} a comparé le module pénétrométrique obtenu dans le sol intact (premier cycle) avec celui issu du deuxième cycle. Dans l'essai CLT, on peut considérer que l'installation de la pointe à la profondeur de l'essai correspond à un premier cycle de chargement sur un terrain vierge. L'essai CLT correspondrait ainsi à un 2ème cycle et aux cycles suivants. Le sol est déjà remanié avant un premier chargement l'essai CLT \citep{Zhou1997CaracterisationPanda}.
+
+\cite{Arbaoui2003MesurePenetrometre} évoque l’utilité de la réalisation des cycles chargement-déchargement-rechargement au lieu d'un simple chargement monotone. On peut évoquer, à l’appui d’un tel essai, l’espoir d’effacer, en partie, les effets du remaniement \citep{Combarieu2001LPressiometre}. 
+
+D’autres essais géotechniques (essai à la plaque, essai déchargement de fondation profonde, essai œdométrique, etc.) comportent dans leur procédure une phase de « déchargement-rechargement » avec exploitation des caractéristiques de déformation mesurées lors de cette boucle. 
+
+Si l’on considère par exemple le cas du pressiomètre, le principe de la réalisation d’essais cycliques avec cet appareil n’est pas une nouveauté. En effet, Ménard et Rousseau (1962) ont introduit cette procédure (au cours de la dilatation de la sonde, un déchargement suivi d’un rechargement est effectué) et en baptisant le module de déformation pressiométrique mesuré sur le cycle (diagramme ($\sigma$, $\varepsilon$) de « module alterné Ea ». On constate que ceci s'approche du vrai module élastique (\emph{i.e.} à faibles déformations) et qu'il serait ainsi plus adapté pour étudier le comportement des sols sous machines vibrantes, par exemple \cite{Arbaoui2003MesurePenetrometre}.
+
+\cite{Zhou1997CaracterisationPanda} et plus tard \cite{Arbaoui2003MesurePenetrometre} ont réalisé une série d'essais CLT en laboratoire. Ils ont constaté que le module tangent de déchargement est sensiblement constant. Le module de chargement est, quant à lui, pratiquement constant à partir du 3$^{ème}$ cycle. Le comportement global enregistré correspond à tout ce que l'on connaît des essais cycliques \cite{Zhou1997CaracterisationPanda}. Sur la Figure \ref{fig:ana_zhou_arbaoui_cycle}, on voit les résultats de \cite{Zhou1997CaracterisationPanda} et de \cite{Arbaoui2003MesurePenetrometre}. 
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = .7]{media/ana_zhou_arbaoui_cycle.JPG}
+        \caption{Résultats des essais CLT réalisés par Zhou (1997) pour le sable d'Allier (a et b) et par Arbaoui (2003) pour le (c) sable de Fontainebleau et pour (d) le sable d'Allier}
+          \label{fig:ana_zhou_arbaoui_cycle}
+      \end{center}
+ \end{figure}
+ 
+
+ \newpage
+ 
+\section{Bilan et proposition pour l'essai DCLT}
+
+On a pu voir l'effort des différents chercheurs afin d'améliorer le modèle de réaction initialement proposé par \cite{Smith1960Pile-drivingEquation}. Différents aspects du phénomène de la pénétration sont intégrés afin de mieux modéliser la résistance en pointe.
+
+%Les modèles développés plus tard montrent que la raideur du ressort (KLys) et le coefficient d'amortissement (CLys) ne sont pas proportionnel à la résistance limite, mais fonction du module de cisaillement du sol, de la densité du sol et rayon du pieu \citep{Lysmer1965VerticalFooting}, Nguyen et al. (1988), de \cite{Holeyman1988ModellingBase}, Deeks et Randolph (1995)). Quasiment tout le modèle mis au point emploie l'analogie de Lysmer. La solution de \cite{Lysmer1965VerticalFooting} considère une semelle en surface d'un espace semi-infini. Comme le rapport entre la profondeur et le diamètre est assez élevé pour les fondations profondes, la raideur doit être corrigée à l'aide d'un coefficient tenant compte de la profondeur.
+
+%L'effet visqueux dans la résistance est fonction de la vitesse de chargement. Cela est traduit soit par une relation linéaire soit par une relation exponentielle. Par conséquent, pour ces différents modèles, au moment où la vitesse en pointe est nulle, les effets visqueux devrait être négligeable.
+
+%Or, \cite{Loukidis2008AssessmentProcedure} intègre le comportement non-linéaire du sol à partir de la dégradation de la raideur $K_{max}$ à partir d'un modèle hyperbolique.
+
+La courbe contrainte-déplacement issue de l'essai DCLT permet d'obtenir la réaction en pointe suite à l'impact. Celle-ci traduit la réponse globale en pointe à la sollicitation dynamique. Par conséquent, elle est qualitativement comparable à une courbe de chargement en pointe jusqu'à la rupture.
+
+Or, le pénétromètre est assimilable à un pieu isolé dont la réaction se doit à la réaction en pointe. Comme évoqué, les méthodes développées dans le domaine de pieux permettent de relier la réaction en pointe aux paramètres rhéologiques (E, $\phi$, c, ...) du sol ausculté.
+
+Dans les différents modèles évoqués, on a vu que la réponse globale correspond à la somme de la réponse statique et dynamique. Par ailleurs, au contraire de ce que \cite{Smith1960Pile-drivingEquation} a proposé, les différents amortissements (amortissement radiatif, hystérésis et effet visqueux dans la résistance) sont expliqués par des mécanismes bien différents. L'amortissement radiatif est modélisé comme un amortisseur avec le coefficient qui est fonction des paramètres élastiques du sol ($G_{max}$, $v_p$) \citep{Lysmer1965VerticalFooting, Loukidis2008AssessmentProcedure}. L'effet visqueux dans la résistance est fonction de la vitesse de chargement. Cela est traduit soit par une relation linéaire \citep{Smith1960Pile-drivingEquation} soit par une relation exponentielle \citep{Coyle1970EmpiricalClays}.
+
+Dans le cas de l'essai DCLT, les vitesses en pointe étant assez importantes, l'augmentation de la résistance attribuée aux effets visqueux sont non-négligeable. Toutefois, dans cet essai, on permet de connaître les grandeurs (force, vitesse, déplacement) en pointe tout au long du chargement, notamment lorsque la vitesse devient nulle. En ce moment précis, \emph{a priori}, la résistance mesurée se doit uniquement à la réaction statique en pointe. Pour les instants qui suivent, les valeurs de vitesse en pointe étant assez faibles, on suppose que la composante dynamique dans la raideur en phase de décharge est négligeable.
+
+%Les différents travaux relient la raideur de courbe charge-déplacement aux paramètres de déformabilité du sol \citep{Lysmer1965VerticalFooting, Randolph2003ScienceDesign, Loukidis2008AssessmentProcedure, Arbaoui2003MesurePenetrometre}.
+
+Selon la solution proposée par Lysmer, cette raideur est fonction de paramètres élastiques du sol. Pour \cite{Loukidis2008AssessmentProcedure}, cette raideur varie à partir de la valeur maximale (domaine supposé élastique) avec l'enfoncement et doit être corriger pour les applications en profondeur. Cette raideur maximale initiale correspondrait à la pente en décharge \citep{Holeyman1988ModellingBase, Loukidis2008AssessmentProcedure}.
+
+Néanmoins, on sait que le sol présente un comportement élastique pour des déformations très petites (en général, $\varepsilon<10^{-4}$, \cite{Burland1989NinthStrains}). C'est pourquoi la plupart des techniques classiques ne permettent pas de remonter aux vrais paramètres élastiques ($G_{max}, E_{max}, v_s, v_p$). \emph{A priori}, l'obtention de ces paramètres requiert des méthodes bien spécifiques permettant d'entraîner des déformations suffisamment petites \citep{Burland1989NinthStrains, Atkinson2000Non-linearDesign}. 
+
+\emph{In situ}, il est spécialement compliqué d'obtenir les paramètres à faibles déformations. Souvent même l'installation de l'équipement ou le procédure avant le chargement entraîne un remaniement non-négligeable empêchant d'accéder à des paramètres associés à de déformation inférieure à 0,01. Étant donné cela, il serait compliqué de remonter aux paramètres élastiques (\emph{i.e.} à petites déformations) à partir d'une courbe de chargement.
+
+En effet, la pente en décharge pourrait permettre d'accéder à un module plus important que le module initial en chargement (notamment pour le premier chargement, \cite{Arbaoui2003MesurePenetrometre}), par conséquent, associé à une gamme de déformation moins importante (effet décrit comme d'effacement du remaniement \citep{Combarieu2001LPressiometre}. Toutefois, difficilement, aux modules à faibles déformations ($G_{max}$ ou $E_{max}$).
+
+Comme évoque par \cite{Loukidis2008AssessmentProcedure}, même si à la rigueur, la solution proposée \cite{Lysmer1965VerticalFooting} suppose un comportement parfaitement élastique, dans la pratique la relation qui a proposé aussi appliquée pour de gamme de déformations plus importantes, notamment pour des problèmes dynamiques. Cette approche est celle appliquée dans le cadre d'autres travaux \citep{Zhou1997CaracterisationPanda, Arbaoui2003MesurePenetrometre, Reiffsteck2009MeasurementsPenetrometer} afin de remonter à un module pénétromètre.
+
+En supposant que pour cette phase, la raideur correspond à la valeur maximale ${K_{max}}$ et que la contribution des composantes visqueuses sont négligeables (la vitesse étant faible pour cette phase de l'essai), on propose d'exploiter la phase en décharge de la courbe DCLT afin de remonter à deux modules. 
+
+Pour ce faire, on applique l'analogie de Lysmer afin de définir deux modules de décharge. Les déformations associées à chacune de ces valeurs de module sont définies à partir la définition du module et la déduction de la hauteur élastique équivalente (Équation \ref{eq:E} et Équation \ref{eq:hee}). Suivant cette démarche, on définie deux modules à partir de deux raideurs déduites de la courbe DCLT. La première raideur correspond à la pente entre le point A (moment où la vitesse est nulle) et le point C (moment où la vitesse est minimale), comme présenté sur la Figure \ref{fig:ana_Eun}. La deuxième raideur correspond à la pente entre le point A et le point B (point moyen, en terme de déplacement, entre A et C).
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = .6]{media/ana_Eun3.png}
+        \caption{Interprétation de la courbe DCLT : détermination des modules $E_{un1}^{DCLT}$, à partir de la pente entre le point A et le point B, et du module $E_{un2}^{DCLT}$ à partir de la pente entre le point A et le point C}
+          \label{fig:ana_Eun}
+      \end{center}
+ \end{figure}
+
+Par la suite, on propose d'évaluer ses modules $E_{un1}^{DCLT}$ et $E_{un2}^{DCLT}$ à partir de résultats triaxiaux. Pour ce faire, on propose de comparer ces deux paramètres à deux valeurs de module issus de l'essai triaxial : $E_{0,1\%}$, $E_{50}$. Cela pour les sables d'Hostun et de Fontainebleau à trois états de densités et trois confinements.
+
+Ces deux valeurs de module permettent d'avoir des mesures à deux niveaux de déformation et ainsi de mieux situer les mesures issues DCLT. On admet que le module à un niveau de déformation de 0,1\% correspond à un module initial triaxial car ceci est le niveau de déformation plus petit associé à l'essai triaxial classique (statique) \citep{Obrzud2018TheGuidebook, Benz2007Small-StrainConsequences, FlavignyE.DesruesJ.Paylayer1990NoteRF}. Le module sécant à 50\% du pic de résistance au cisaillement ($E_{50}$) permet d'avoir une deuxième mesure de référence associé à niveau de déformation plus important. Par ailleurs, ce module connaît de nos jours une utilisation de plus en plus répandue dans la modélisation du comportement des sols par éléments finis \citep{Schanz1999TheVerification, Cami2017ImagerieDeformations}.
+
+Cela permettra de valider la pertinence de cette méthode pour les matériaux testés sur la base d'une méthode classique d'usage courant en géotechnique. 
+
+Par la suite, on propose d'estimer la courbe de dégradation du module à partir de l'essai. Pour ce faire, on applique un modèle hyperbolique simple \citep{Fahey1993AModel} (Équation \ref{eq:Esec}).
+
+\begin{equation} \label{eq:Esec}
+    E = \frac{E_{max}}{1+f (\varepsilon) ^ g} 
+\end{equation}
+
+Le module $E{max}$ est obtenu, de manière similaire aux autres techniques in situ (\emph{e.g.} sDMT\footnote{Dilatomètre sismique}, sCPT\footnote{Sismo-cône}, \emph{cross-hole}) : à partir de la vitesse d'ondes $v_{p}$ et de la masse volumique du milieu $\rho$ (Équation \ref{eq:Emax_}). 
+
+\begin{equation} \label{eq:Emax_}
+    E_{max} = v_p^2 \rho 
+\end{equation}
+
+Souvent, on n'a pas d'information sur la masse volumique \emph{in situ}. Dans la pratique, celle-ci est souvent supposé à 1800 $kg/m^3$ \citep{Burns2007Small-Penetrometer} ou encore estimée à partir les valeurs indicatives selon le type de matériau (sable, limon ou argile) \citep{Plumelle2013TheorieOuvrages}. Pour appliquer cette relation au sCPT, par exemple, ce paramètre est estimé à partir de la résistance de pointe ($q_c$). Ceci car la résistance de pointe est fortement corrélée à la masse volumique \citep{Burns2007Small-Penetrometer, Robertson2010EstimatingCPT}. 
+
+Dans le cas de l'essai pénétrométrique Panda, différents travaux ont étudié la relation entre les paramètre d'état (de densité et hydrique) et résistance dynamique $q_d$ \citep{Zhou1997CaracterisationPanda, Chaigneau2001CARACTERISATIONPENETROMETRE, Morvan2016OptimisationEstimation}. \cite{Chaigneau2001CARACTERISATIONPENETROMETRE} a démontré que pour un sol donné et pour un l’état hydrique connu, il existe une relation biunivoque entre $q_d$ et la densité sèche $\gamma_d$. Cette relation du type logarithmique a été établie en laboratoire différents type de sol.
+
+Le module $E_{max}^{DCLT}$ estimé, ceci sert à alimenter le modèle (Équation \ref{eq:Esec}) comme la valeur limite du module. Ensuite, les modules $E_{un}^{DCLT}$ définis auparavant fournissent des mesures de déformabilité dans la gamme de grandes ou moyennes déformations. La Figure \ref{fig:ana_degradation_pressio}b illustre la démarche proposée.
+
+Canépa et al. (2002) a appliqué une approche similaire au pressio-pénétromètre. Les auteurs ont estimé la dégradation du module de cisaillement en ajustant le modèle hyperbolique (Équation \ref{eq:Esec}) à l'aide des modules différents. Un module est obtenu à partir d'un cycle de faible amplitude et l'autre, nettement plus faible, est issu du pressiomètre. Sauf, que pour appliquer cette démarche, les auteurs devaient connaître $G_{max}$. Ceci est donc obtenue par essais de propagation d’ondes au sCPT \citep{Cami2017ImagerieDeformations}. La Figure \ref{fig:ana_degradation_pressio}b illustre la démarche proposée par l'auteur.
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = .8]{media/ana_degradation_pressio.PNG}
+        \caption{(a) Courbe de dégradation illustrant la méthode proposée et (b) Courbe normalisée obtenue par Canépa et al. (2002) avec le pressio-pénétromètre (coefficient d'ajustement : f=82.5, g=0.69)}
+          \label{fig:ana_degradation_pressio}
+      \end{center}
+ \end{figure}
+
+Il s'avère nécessaire d'évaluer la pertinence de la courbe estimée. Pour ce faire, on propose des confronter les courbes obtenues à partir de cette démarche aux résultats rapportés dans la littérature pour les sables d'Hostun et de Fontainebleau \citep{Duttine2005ComportementAxes}.
+
+%\cite{Reiffsteck2009MeasurementsPenetrometer} a comparé les modules sécants CLT issus de cette démarche à de différents modules obtenus à partir d'autres méthodes. Pour des essais in situ réalisés, \cite{Reiffsteck2009MeasurementsPenetrometer} n'a pas pu accéder à de gammes de déformation inférieure à 1\%.
+
+
+\chapter{Étude expérimentale}
+
+Dans ce chapitre, on s'intéresse à une partie expérimentale réalisé en deuxième année. Les essais réalisés ont différents objectifs. Les essais de laboratoire classiques (physiques et triaxiaux) servent d'une part à alimenter les lois de comportement adoptées dans le modèle numérique et d'une autre part à valider les paramètres rhéologiques déterminés par les essais DCLT.
+
+Dans un deuxième temps, on s'intéresse à la série d'essais dynamiques (DCLT) et statiques (CLT) réalisé en chambre d'étalonnage. Ces essais ont pour objectif d'ajuster le modèle de comportement du modèle numérique. Additionnellement, ils permettent comparer quantitativement les courbes de chargement issues deux techniques.
+
+En laboratoire, les matériaux utilisés sont deux sables de référence : le sable d'Hostun et le sable de Fontainebleau. Ces sables propres siliceux ont déjà fait l’objet de travaux importants tant en France qu’à l’étranger.
+
+\section{Matériaux utilisés}
+
+Dans ce travail, on utilise le sable d'Hostun et de Fontainebleau. Ceux-ci sont des deux sables propres de granulométries proches, la principale différence entre ces matériaux étant l'angularité des grains. On a soumis ces différents sols granulaires à des essais de caractérisation comprenant l'analyse granulométrie, la détermination des indices de vides maximale $e_{max}$ et minimale $e_{min}$ et la détermination de la densité relative des grains ($G_s$).
+
+Le sable d'Hostun (SH ou, en anglais, HS) provient de carrières situées à Hostun (département de la Drôme). Composé environ à 98,8 \% de silice, ce sable fin est de couleur gris-blanc à beige-rosé avec des grains sub-anguleux à anguleux. Le sable d’Hostun est issu de la désagrégation de la roche, il existe sous différentes granulométries. Ce sable est disponible en plusieurs fractions granulométrique (HN38, HN34, HN31, HN0,4/0,8, ...). On utilise la fraction HN31 (autrefois nommée Hostun RF). Celle-ci étant référence en France pour les essais de laboratoire \citep{Lancelot1996ComportementDraines}.
+
+Le sable de Fontainebleau (SF ou, en anglais, FS) est un dépôt naturel issue de la région parisienne. Ce sable à granulométrie fine (<400$\mu$m) est essentiellement composé de silice (97 à 99 \%) ce qui lui confère la couleur blanche caractéristique. On utilise le matériau normalisé NE34. Les grains ont une morphologie arrondie \citep{Aris2012ExperimentalElements}.
+
+La Figure \ref{fig:exp_caracterisques_physiques} présente les propriétés de deux sables. On présente les résultats obtenus dans ce travail et, à titre de comparaison, les valeurs rapportées dans la littérature.
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = 1.]{media/exp_caracterisques_physiques.PNG}
+        \caption{Caractéristiques des sables : valeurs rapportées dans la littérature et valeurs obtenues dans ce travail}
+          \label{fig:exp_caracterisques_physiques}
+      \end{center}
+ \end{figure}
+
+Dans la Figure \ref{fig:exp_caracterisques_physiques}, on constate que les valeurs de $G_s$ varient très peut pour chaque sable. C'est pourquoi, on retient la valeur de 2,65 pour les deux matériaux. On observe des variations entre les paramètres granulométriques rapportées et les résultats obtenus. Globalement, les résultats obtenus suggèrent des sables plus grossiers légèrement que ceux rapportés. La Figure \ref{fig:granulometrie} présente les courbes granulométriques des deux sables.
+
+Quant aux résultats d'indices de vides ($e_{min}$ et $e_{max}$), on constate des variations. Concernant le protocole utilisé pour la détermination des indices des vides, on a suivi la norme française en vigueur (NF P 94-059). La valeur de $e_{min}$ pour le sable de Fontainebleau est légèrement supérieure à la moyenne des valeurs rapportées tandis que $e_{max}$ reste au-dessous. Pour ce sable, la variation entre les résultats et valeurs rapportées reste inférieure à 15\%. Pour le sable d'Hostun, $e_{min}$ est 22\% supérieure à la moyenne des valeurs rapportées tandis que $e_{max}$ varie très peu (-2\%) de la moyenne. 
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale =.8]{media/exp_granulometrie.PNG}
+        \caption{Courbes granulométriques pour le sable d'Hostun et le sable de Fontainebleau}
+          \label{fig:granulometrie}
+      \end{center}
+ \end{figure}
+
+\section{Essais triaxiaux}
+
+Les caractéristiques de rupture d’un sol ainsi que son comportement à grandes déformations peuvent être déduites à partir des essais triaxiaux classiques. On souhaite déterminer des paramètres rhéologiques drainés pour les sables étudiés. Ceux-ci vont permettre (a) d'alimenter les lois de comportement adopté dans les modèles numériques et (b) de valider les paramètres déterminés expérimentalement à partir de l'essai DCLT.
+
+Les facteurs clés influençant le comportement des sables propres sont l'état de contrainte et l'état de densité. Ainsi, les sables étudiés sont testés à différents états de densité et pour différentes pressions de confinement. La Figure \ref{fig:exp_tx_eprouvette} synthétise les essais réalisés à l'appareil triaxial.
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale =1.2]{media/exp_tx_eprouvette.PNG}
+        \caption{Conditions des essais triaxiaux réalisés}
+          \label{fig:exp_tx_eprouvette}
+      \end{center}
+ \end{figure}
+
+\subsection{Conception de l'éprouvette et protocole d'essai}
+
+Les éprouvettes reconstituée ont été préparées par compactage dynamique. Les sables ont été compactés par couche (de 3 à 6 couches) à l'intérieur du moule cylindrique (diamètre de 70 mm et hauteur de 140 mm) de façon à atteindre la densité souhaitée. Différentes densités ont été réalisées allant de état lâche (DR$\approx$20\%) jusqu'à l'état très dense (DR$\approx$90\%). Pour chaque densité, on réalise trois éprouvettes à différentes pressions de confinement. L'essai est réalisé en conformité avec la norme française NF P 94-070 \citep{AFNOR1994NFRevolution}. Le protocole est celui d'un essai consolidé drainé avec mesure de pression interstitielle (CD+u).
+
+La vitesse de chargement est définie à partir de résultats de la phase de consolidation
+afin de garantir la condition drainée pendant toute la phase de cisaillement, à savoir de 0,10 mm/min (ou 0,07 \%/min) pour tous les essais.
+
+\subsection{Résultats}
+
+On présente les courbes issues de la phase de cisaillement : (a) déviateur q en fonction de la déformation axiale $\varepsilon$ et (b) la déformation axiale $\varepsilon$ en fonction de la déformation volumique $\varepsilon_v$.  
+
+   \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = 1.]{media/exp_tx_SH.PNG}
+        \caption{Courbes triaxiales pour le sable d'Hostun : déviateur q en fonction de déformation axiale $\varepsilon$ et variation volumique $\varepsilon_v$ en fonction de déformation axiale $\varepsilon$}
+          \label{fig:exp_tx_SH}
+      \end{center}
+ \end{figure}
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = 1.]{media/exp_tx_SF.PNG}
+        \caption{Courbes triaxiales pour le sable de Fontainebleau : déviateur q en fonction de déformation axiale $\varepsilon$ et variation volumique $\varepsilon_v$ en fonction de déformation axiale $\varepsilon$}
+          \label{fig:exp_tx_SF}
+      \end{center}
+ \end{figure}
+ 
+Les Figures \ref{fig:exp_tx_SF} et \ref{fig:exp_tx_SH} mettent en évidence le changement de comportement des sables avec l'augmentation de la densité des échantillons. Pour les états les plus denses des deux sables, on observe la formation du pic. Les courbes de la déformation volumique en fonction de la déformation axiale renfoncent cette constatation : on observe un comportement contractant pour les éprouvettes lâches et une faible phase de contractance initiale puis une phase de dilatance marquée pour les éprouvettes denses et très denses. Comme attendu, la dilatance est d’autant plus importante que les grains sont initialement serrés. La contractance des éprouvettes lâches augmente avec le confinement.
+
+La Figure \ref{fig:exp_tx_rupture} présente deux échantillons cisaillés de sable de Fontainebleau. On peut constater différents modes de rupture selon l'état de densité. Pour l'éprouvette plus dense (Figure \ref{fig:exp_tx_rupture}b), on observe la formation des bandes de cisaillement tandis que pour l'éprouvette lâche (Figure \ref{fig:exp_tx_rupture}a), on constate une rupture plus plastique avec une déformation en \og tonneau\fg{}.
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = .7]{media/exp_tx_rupture.PNG}
+        \caption{Échantillons du sable de Fontainebleau en fin d’essai : (a) échantillon lâche et (b) échantillon dense}
+          \label{fig:exp_tx_rupture}
+      \end{center}
+ \end{figure}
+
+
+\subsection{Paramètres de déformabilité}
+
+Du fait du comportement non-linéaire des sols, à partir de la courbe contrainte-déformation issue de l'essai triaxial, on peut définir différents modules. On s'intéresse principalement aux modules sécants, c'est-à-dire, les modules calculés sur le rapport contrainte-déformation pour une déformation donnée de la courbe relié à l’origine, 0. Ces modules sont adaptés principalement pour prédire le tassement d’un sol de fondation dû à l’application d’une charge (apportée par une semelle, par exemple) \citep{Briaud2001INTRODUCTIONMODULI}. 
+
+Parmi eux, les modules les plus courants dans les dimensionnements sont le module tangent initial ($E_{ini}$) (théoriquement équivalent à un module sécant pour la déformation nulle) et le module sécant à 50\% de la contrainte de rupture ($E_{50}$).
+
+La détermination du module initial à partir de résultats triaxiaux s'avère parfois compliqué car pour des faibles déformations, on constate des fluctuations importantes pour ce paramètre. Ceci est aussi rapporté par \cite{Lancelot1996ComportementDraines} sur ses résultats triaxiaux pour de sable d'Hostun. Par conséquent, on choisit de retenir le module sécant à déformation axiale 0,1\% comme le module initial \citep{Lancelot1996ComportementDraines,Dano2001ComportementInjectes}. En effet, la résolution de l'essai triaxial classique, en général, ne permet pas de déterminer des modules à de déformations inférieures à $10^{-3}$ \citep{Obrzud2018TheGuidebook}.
+
+
+%_________table synthèse + courbes dégradations triaxial
+
+\subsection{Paramètres de rupture}
+
+Lorsqu'on représente les résultats dans le plan Mohr-Coulomb (la contrainte de cisaillement $\tau$ en fonction de la contrainte normale $\sigma'$). Il est possible de définir, pour chaque état et dans un certain domaine de contraintes, des enveloppes linéaires tangentes aux cercles de Mohr. Ces enveloppes obéissent au modèle de Mohr-Coulomb (Équation \ref{eq:tau}).
+
+\begin{equation} \label{eq:tau}
+    \tau = \sigma' \tan \phi' + c
+\end{equation}
+
+Avec c’ la cohésion, $\phi'$ l’angle de frottement interne. On peut ainsi déterminer les paramètres de rupture. On sait que la cohésion est quasiment nulle dans le cas d’un sable propre. Ces deux matériaux présentent une cohésion apparente respective variant de 0 kPa, pour les confinements les plus faibles, à 11 kPa, pour les confinements plus importants.
+
+Il est courant d'admettre que l'angle de frottement de pic des sols granulaires dépend de la densité et l'état de contrainte \citep{Rouse2018RelationTest,Lancelot1996ComportementDraines}. Toutefois, cette variation étant plus prononcée plus de contraintes faibles (< 50 kPa). Comme les essais triaxiaux présentés ont été réalisés à des pressions de confinement égales ou supérieures à 50 kPa, on suppose que variation de $\phi'$, pour la gamme de confinement analyser, est négligeable. Ainsi, on présente les résultats en fonction de l'indice de vides (e). 
+
+A titre de comparaison, on présente les résultats aux valeurs obtenues à l'appareil travail (CD) dans autres travaux pour ces sables. Pour sable de Fontainebleau \citep{Combarieu1997CapaciteLaboratoire, Dano2001ComportementInjectes, Dupla2007ComportementReference, Arbaoui2003MesurePenetrometre, Latini2016TriaxialReport} et pour le sable d'Hostun \citep{Lancelot1996ComportementDraines, Benahmed2004InitialSand}, Mokrani, 1991).
+
+Or, on constate que nos résultats, comme ceux rapportés, sont plus élevés pour le sable d'Hostun que pour le sable de Fontainebleau. Cela peut être expliqué en partie par l'angularité des grains, le sable d'Hostun présentant des grains anguleux à sub-anguleux, tandis ceux de sable de Fontainebleau sont plutôt arrondis \citep{Aris2012ExperimentalElements, Benahmed2004InitialSand}.
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale=.75]{media/exp_frictionangle3.PNG}
+        \caption{Angle de frottement ($\phi'$) en fonction de l'indice de vides (e) : résultats de la littérature et résultats issus de ce travail} 
+          \label{fig:exp_phi_SH_SF_tx}
+      \end{center}
+ \end{figure}
+ 
+
+\section{Essais DCLT-CLT en chambre d'étalonnage}
+
+Une série d'essais a été réalisé en laboratoire en utilisant les deux sables de référence (SF et SH) à différents états de densité. L'objectif de ces essais était, d'une part d'ajuster le modèle de comportement appliqué dans le modèle numérique et de comparer les courbes de chargement en pointe issues de deux types de sollicitation : statique (CLT) et dynamique (DCLT).
+
+Les matériaux sont préparés dans une chambre d'étalonnage cylindrique de 372 mm de diamètre et 805 mm de hauteur. Avant de déposer les sables à l'intérieur de la chambre, une nappe plastique est collée à ces parois latérales afin de minimiser le frottement latéral. Un système de guidage est fixé à la chambre d'étalonnage afin de garantir la verticalité du pénétromètre et de minimiser le possible flambement des barres au cours du chargement.
+
+Pour chacun de ces sables, deux échantillons ont été préparés par damage humide à différentes densités (voir \ref{fig:exp_eprouvettes}). Ces échantillons ont été préparés en huit couches de sol d'environ 10 cm de façon à garantir l'homogénéité de l'éprouvette. Le compactage dynamique a été réalisé manuellement à l'aide une dame. Des échantillons sont prélevés afin de déterminer la teneur en eau et d'obtenir la densité sèche en place. La Figure \ref{fig:exp_eprouvettes} montre les conditions des éprouvettes testées.
+
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale = .9]{media/exp_eprouvettes2.png}
+    \caption{Caractéristiques des éprouvettes (SF : $e_{min}$=0.54 et $e_{max}$=0.96 ; SH : $e_{min}$=0.62 et $e_{max}$=0.96 ; $G_s$ = 2.65 pour les deux sables)}
+      \label{fig:exp_eprouvettes}
+  \end{center}
+\end{figure}
+
+Dans l'axe de l'éprouvette, on a effectué des chargements dynamiques et statiques. Initialement, on a réalisé l'essai dynamique jusqu'à une profondeur d'environ 30 cm. On installe par la suite le système de chargement statique (deux capteurs LDVT, barre filetée et pièce adaptative associant le pénétromètre au portique de réaction) (voir Figure \ref{exp_DCLT_CLT}). 
+
+On poursuit avec l'essai CLT. La force et le déplacement sont enregistrés directement pendant que la vitesse de chargement est constante à 0,01 mm/s. On réalise de cinq à six cycles chargement-déchargement-rechargement.
+
+Ensuite, on enlève les appareillages de l'essai CLT et on poursuit le chargement DCLT sur environ 10 cm. Cette procédure est répétée de façon à avoir réalisé des essais CLT à trois profondeurs différentes. Une fois le chargement CLT réalisé à la troisième profondeur, on poursuit avec l'essai DCLT jusqu'au fond du moule.
+
+\begin{figure}[ht] 
+\begin{center}
+    \includegraphics[scale =.6]{media/exp_DCLT_CLT.PNG}
+    \caption{Comparaison entre les techniques DCLT et CLT. (a) Schéma de la chambre d'étalonnage présentant les profondeurs de réalisation de chaque essai. Photo présentant les différents éléments de chaque technique (b) DCLT and (c) CLT}
+    \label{exp_DCLT_CLT}
+\end{center}
+\end{figure}
+
+La Figure \ref{fig:exp_penetro} présente les pénétrogrammes des échantillons et les trois profondeurs des chargements CLT.
+
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale = .5]{media/exp_penetro.png}
+    \caption{Pénétrogrammes des échantillons montrant les trois niveaux de réalisation de chargement CLT (\emph{level} 1, 2 e 3)}
+      \label{fig:exp_penetro}
+  \end{center}
+\end{figure}
+
+On présente par la suite l'ensemble des courbes CLT obtenues. Les courbes DCLT présentés sont celles de 5 impacts réalisés immédiatement avant et après les chargements CLT. Les différentes couleurs indiquent les profondeurs (marqué \emph{level} sur la Figure) : bleus, rouges et vertes correspondent respectivement aux profondeurs 1 ($\approx$ 30cm), 2 ($\approx$ 43cm) et 3 ($\approx$ 56cm) de chaque échantillon. 
+
+Dans les Figures \ref{fig:a},\ref{fig:b},\ref{fig:c} et \ref{fig:d}, on constate que les deux techniques sont bien sensibles à la variation de la densité des éprouvettes. On observe que les séries de courbes DCLT sont assez répétables. Pour les courbes CLT, on observe des différences entre le premier chargement et ceux qui suivent. Le premier chargement CLT présentant des contraintes légèrement plus faibles que les autres d'une même série. Cet effet est conforme aux constatation des \cite{Arbaoui2003MesurePenetrometre} et \cite{Zhou1997CaracterisationPanda}. Il peut être attribué en partie à la densification du sol autour de la pointe. Globalement, les courbes DCLT sont comparables au premier chargement CLT. 
+
+En plus, on observe que les courbes CLT vertes des états plus denses présentent une augmentation des contraintes. Cet effet est encore plus expressif pour le sable de Fontainebleau (Figure \ref{fig:d}). On attribue ceci à la proximité du fond de l'éprouvette.
+
+\newpage
+\begin{figure}[H]
+\begin{center}
+    %\includegraphics[scale = .7]{media/exp_DCLT-CLT_Hostun.png}
+    \includegraphics[scale = 1.5]{media/a.png}
+    \caption{Courbes CLT et DCLT pour le sable de Fontainebleau à DR=43\%}
+      \label{fig:a}
+  \end{center}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\begin{center}
+    %\includegraphics[scale = .7]{media/exp_DCLT-CLT_Hostun.png}
+    \includegraphics[scale = 1.5]{media/b.png}
+    \caption{Courbes CLT et DCLT pour le sable de Fontainebleau à DR=58\%}
+      \label{fig:b}
+  \end{center}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\begin{center}
+    %\includegraphics[scale = .7]{media/exp_DCLT-CLT_Fontainebleau.png}
+    \includegraphics[scale = 1.5]{media/c.png}
+    \caption{Courbes CLT et DCLT pour le sable d'Hostun à DR=51\%}
+      \label{fig:c}
+  \end{center}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\begin{center}
+    %\includegraphics[scale = .7]{media/exp_DCLT-CLT_Fontainebleau.png}
+    \includegraphics[scale = 1.5]{media/d.png}
+    \caption{Courbes CLT et DCLT pour le sable d'Hostun à DR=67\%}
+      \label{fig:d}
+  \end{center}
+\end{figure}
+
+
+
+Pour ce cas de figure analysé, les courbes de chargement issues des deux techniques sont qualitativement comparables. Ces résultats permettront de plus tard ajuster la loi de comportement appliquée au modèle numérique.
+
+
+%____________________________________________________________________________________
+%\newpage    
+ %   \vspace*{5cm}
+ %       \begin{center}
+  %          \section*{\textbf{NUMÉRIQUE}}
+  %      \end{center}
+  %  \vspace*{\fill}
+%\newpage
+
+
+%----------------------------------------------------
+  \chapter{Étude numérique}
+  \label{sec:num}
+  
+A l’heure actuelle, les méthodes numériques dites continues (\emph{e.g.} FEM, FDM) constituent l’approche la plus réaliste afin de simuler l’interaction sol-pointe \citep{Loukidis2008AssessmentProcedure, Le2013NumericalApplications}. Celles-ci permettent de reproduire toute la complexité de la pénétration (comportement non-linéaire des sols, prise en compte des différents types d'amortissement, ...). C’est pourquoi, on propose 
+d'appliquer une méthode continue, et plus précisément en différences finies, aux battage dynamique pénétrométrique. On souhaite développer un modèle numérique qualitativement et quantitativement représentatif de l'essai DCLT.
+
+L'objectif de ce modèle est d’étudier l’influence des paramètres rhéologiques du sol ausculté sur le principal résultat de l'essai : la courbe charge-enfoncement dynamique (ou courbe DCLT). Les paramètres rhéologiques étudiés sont les plus courants pour le dimensionnement en géotechnique : en déformation, le module d'élasticité (E) et, en cisaillement, l'angle de frottement interne ($\phi$) et la cohésion (c). En plus, ce modèle numérique permettra d’étudier: 
+
+-	l’influence du type de sollicitation : statique et dynamique ;
+
+-	les déformations entraînées par l’essai dans le sol.
+
+Dans ce chapitre, on rappelle d'abord certains travaux réalisés sur le même sujet et certains aspects numériques importants pour comprendre le logiciel. Par la suite, on présente une partie du travail numérique réalisé au cours de la deuxième année.
+ 
+  \section{État de l'art}
+  \label{sec:etat de l art}
+  
+On présente par la suite l'état de l'art sur la modélisation numérique. Dans notre étude, initialement, on va se focaliser sur les modèles numériques appliquant des méthodes continus à la pénétration dynamique. Additionnellement, on abordera les modèles numériques développés autour des essais DCLT et CLT.
+
+\subsection{Modélisation numérique de la pénétration dynamique}
+\label{subsec: modelisation numerique des essais DCLT et CLT}
+
+La pénétration dynamique reste un des problèmes les plus sophistiqué des applications numériques en géotechnique. Il s’agit d’un problème fortement non-linéaire et qui entraîne des déformations très importantes \citep{Nazem2012DynamicClay}.
+
+De nombreux travaux numériques s’intéressent à simuler la pénétration dans les milieux granulaires. Parmi eux, la méthode discrète reste est la plus courante \citep{Zhang2019StandardChamber, Quezada2012MecanismesVariabilite, Arroyo2011ConeChamberb, J.Butlanska2010VirtualSand, Campos2005NUMERICALSOILS}. Les modèles rapportés qui s’intéressent à simuler la pénétration dynamique à l’aide des méthodes continues (FEM ou FDM) sont moins courants \citep{Pinto2008EvaluationTesting, Nath1990AMETHOD, Aguiar2009NumericalProblem, Fakharian2014ComparisonModelling, Chatterjee2015DynamicCity, Murthy20203D-ContinuumMethod}. Parmi eux, les travaux simulant le battage sont encore plus rares. Généralement, la sollicitation dynamique est simulée en appliquant une force sinusoïdale à la tête du pieux \citep{Fakharian2014ComparisonModelling, Fakharian2015NumericalClay, Masouleh2008VerificationMethod, Pinto2008EvaluationTesting}.
+
+\cite{Masouleh2008VerificationMethod} ont simulé le chargement dynamique d’un pieu à l’aide de FLAC$^{2D}$. Ils ont présenté les résultats numériques des analyses de propagations d’ondes et la réponse dynamique sol-pieux au cours du battage. Les signaux obtenus numériquement ont été assez conformes aux résultats des chargements dynamiques des pieux. La bonne correspondance entre les résultats numériques et expérimentaux montre la faisabilité d’application de l’approche continue pour modéliser des problèmes dynamiques de ce type. Dans leur modèle, \cite{Masouleh2008VerificationMethod} font varier les caractéristiques du sol (paramètres de résistance et de déformation) et de l’interface sol-pieu afin de faire du signal matching (similaire au CAPWAP) d’après les résultats expérimentaux.
+
+\cite{Fakharian2014ComparisonModelling} ont simulé le battage de pieux à partir des deux approches continues (FEM et FDM). Les résultats de force, vitesse et déplacement observés dans le modèle sont conformes aux essais de chargement dynamique réalisés. Le but étant d’introduire l’utilisation des méthodes numériques continues afin de soulever certaines limitations du système masse-ressort-amortisseur (comme celle de \cite{Smith1960Pile-drivingEquation}). A la différence de la méthode masse-ressort-amortisseur, l’approche continue est alimentée par des paramètres mécaniques classiques (\emph{i.e.} E, c, $\phi$, $\nu$). Les paramètres du modèle unidimensionnelle de Smith, comme l’amortissement de Smith (J$_s$) et l’enfoncement élastique (quake) sont d’usage moins courant en géotechnique.
+
+\cite{Pinto2008EvaluationTesting} ont également simulé le battage des pieux par le biais de la méthode FEM. Leur but était précisément de comparer celle-ci à la méthode Smith. Ses résultats ont montré la bonne conformité entre ces deux méthodes ainsi qu’aux résultats expérimentaux. Cette comparaison est pertinente car même si le modèle unidimensionnel de Smith est simple, il est largement accepté comme une bonne représentation du problème du battage.
+
+En ce qui concerne l'application de la modélisation numérique aux essais DCLT et CLT, un nombre de travaux ont été réalisé. On peut citer des travaux appliquant l’approche discrète \citep{Zhou1997CaracterisationPanda, Tran2019NumericalTest, Escobar2015Mise3, Tran2015ModelisationDiscrets, Benz-Navarrete2009MESURES2} ou l’approche continue \citep{Zhou1997CaracterisationPanda, Arbaoui2003MesurePenetrometre}. Les objectifs de ces travaux étaient divers. 
+
+\cite{Zhou1997CaracterisationPanda} et \cite{Arbaoui2003MesurePenetrometre} ont simulé l’essai CLT réalisé avec le pénétromètre Panda. Ils ont utilisé différents codes appliquant des méthodes continues (FLAC$^{2D}$, CESAR). Plus tard, \cite{Ali2010CaracterisationProfondes} simula l'essai CLT, cette fois-ci sur la base du pénétromètre statique CPT. Leur but était, entre autres, de réaliser l’analyse inverse de la courbe de déformabilité de cet essai et ainsi d’estimer des paramètres rhéologiques (E, c et $\phi$) du sol ausculté.
+
+\cite{Zhou1997CaracterisationPanda} a aussi employé la méthode numérique discrète (PFC$^{2D}$) afin de valider le calcul de résistance de pointe Panda à partir de la formule des Hollandais ainsi que les hypothèses (choc élastique entre marteau et piston). L’approche discrète a été employée plus tard par \cite{Benz-Navarrete2009MESURES2} et par \cite{Quezada2012MecanismesVariabilite} afin d’étudier le mécanisme d’enfoncement. Les modèles discrets proposé par \cite{Tran2019NumericalTest} et par \cite{Tran2015ModelisationDiscrets} ont permis, entre autres, de valider la méthode d'obtention de la courbe charge-enfoncement en pointe à partir de l'exploitation des signaux mesurés au niveau de la tête.
+
+Ces travaux ont permis de mettre en évidence la pertinence du couplage numérique- expérimental. Ils ont été important afin de validation de la technique et mieux comprendre l'essai, toutefois aucun parmi eux ne se sont intéressés à la modélisation de l’essai DCLT dans le but d’interpréter la courbe charge-enfoncement.
+
+\section{Mise au point du modèle numérique}
+\label{sec:developpement}
+
+On emploie le logiciel $FLAC^{3D}$\footnote{\samepage Désormais nommé FLAC} (\emph{Fast Lagrangian Analysis of Continua in 3 Dimensions}). Il s’agit d’un logiciel aux différences finies explicite qui permet d’étudier le comportement mécanique d’un milieu continu en trois dimensions. Il applique des principes simples (définition des déformations et loi du mouvement) et des lois constitutives qui décrivent un matériau pour résoudre des équations différentielles à partir d’un schéma de discrétisation temporelle explicite. Les calculs sont réalisés en boucle pour chaque élément dans chaque pas de temps de façon indépendante.
+
+A la différence de la méthode aux éléments finis, la méthode explicite intégrée dans FLAC ne requiert pas la création d’une matrice de rigidité. Par conséquent, ce logiciel peut suivre un chemin de contrainte-déformation non-linéaire sans une augmentation significative du temps de calcul.
+
+La méthode explicite utilisée dans FLAC est associée à une analyse lagrangienne. Les coordonnées des noeuds du maillage dans l’espace correspondent à des particules du milieu dont les positions sont référencées par rapport à la configuration initiale. Ainsi, la fonctionnalité dite « en grandes déformations » permet de modéliser des problèmes à grandes déformations car les coordonnées des noeuds sont mises à jour à chaque pas de temps. Cette méthode s’oppose à la méthode eulérienne où le matériau de déplace et se déforme tandis que le maillage est fixe. Selon \cite{Ghee2011FLAC3DPiles}, un des avantages de la méthode intégrée dans FLAC constitue le qu’il fonctionne en petites ainsi qu’en grandes déformations. Dans la fonctionnalité dite en « grandes déformations », le maillage est mis à jour lors de déformations ou de mouvements. Ce mode est particulièrement intéressant pour traiter les problèmes à grandes déformations comme c’est le cas d’un essai de pénétration.
+
+On décrit par la suite certains aspects de la mise en point du modèle numérique, à savoir : géométrie, conditions aux limites, calibration du battage, modèle de comportement du sol et le choix des paramètres rhéologiques du modèle.
+
+  \subsection{Géométrie et conditions aux limites}
+  \label{subsec:geo}
+On souhaite simuler les essais DCLT et CLT au sein d’une chambre d'étalonnage cylindrique. Le pénétromètre est doté une tige de 14 mm de diamètre et d’une pointe conique débordante (sommet de 90\degree) de section transversale de 4 $cm^2$ (22,5 mm de diamètre). La géométrie de la chambre d'étalonnage ainsi que celle du pénétromètre sont présentées sur la Figure \ref{fig:exp_penetro}. Les conditions aux limites sont celles d’une chambre d'étalonnage type BC3 (déplacements empêchés latéralement et contrainte constante en surface). 
+
+Dans le contexte du battage des pieux et des essais au pénétromètre dynamique, l’onde de contrainte engendrées par le battage se propage autour de la tige/pieu et se dissipe graduellement (dissipation d’énergie causée par la radiation des ondes au sein du matériau). Dans le but de reproduire cela et d’empêcher la possible réflexion des ondes sur les parois, on introduit des parois dites « absorbantes ». 
+
+Celles-ci sont constituées d’amortisseurs dans les deux directions perpendiculaires aux noeuds de éléments de sol placés aux limites (bords latérales) \citep{Lysmer1969FiniteMedia}. Ces amortisseurs apportent des forces normales et transversales ($t_n$ et $t_s$). Ces forces sont fonction des vitesses normales et transversales ($v_n$ et $v_s$), de la masse volumique $\rho$ et des célérités d’ondes ($c_p$ et $c_s$) des éléments placés aux limites. L'application de ces forces aux noeuds placés sur les faces limitant le modèle permet d'empêcher la réflexion des ondes aux bords du modèle. 
+
+\begin{equation} \label{bords_amortis}
+    \begin{aligned}
+        t_s= - \rho  v_s c_s \\
+        t_n= - \rho  v_n c_n \\
+    \end{aligned}
+\end{equation}
+
+La qualité du maillage est essentielle pour la précision et fiabilité des résultats. Un grand défi pour la modélisation continue de la pénétration est le fait d’entraîner de grandes déformations dans le sol. Les limitations quant aux déformations du maillage varient selon la méthode intégrée dans le code. En général, le code associant la méthode Lagrangienne et la méthode Eulérienne permettent de mieux gérer les déformations (\emph{e.g.} code Abaqus). La méthode Lagrangienne intégrée par le code FLAC permet de mettre à jour les coordonnées des noeuds au cours du calcul. Cette méthode n’est pourtant pas adaptée lorsque les déformations deviennent trop importantes \citep{Moug2019AxisymmetricClay, Nagula2018EffectivenessModel}.
+
+C’est pourquoi la pénétration entraînée et le maillage adopté doivent être correctement choisis afin de limiter les distorsions et ainsi assurer la fiabilité des résultats. Lorsqu’on analyse les modèles utilisant le code FLAC pour la pénétration, on peut avoir une idée des ordres de grandeurs des pénétrations et des éléments du maillage.
+
+La plupart des modèles emploient un maillage composé par des éléments homogènes. Les enfoncements correspondent de 10 à 55\% de la taille des éléments du maillage. Quant au rapport entre le diamètre du pieu et la taille d’éléments du maillage, ceci varie de 5\% à 80\%.
+
+Différentes tailles d’élément de maillage ont été testées afin d’analyser la sensibilité des résultats. Le but étant de trouver un maillage suffisamment fin afin de converger vers une solution unique sans toutefois trop augmenter le temps de calcul. Le modèle est composé par 3048 éléments et 4664 noeuds.
+
+
+
+\subsection{Sollicitation}
+\label{subsec:sollicitation}
+  
+On a simulé le chargement pointe pénétrométrique statique et dynamique. Le chargement statique a été simulé en appliquant une vitesse constante (0,01 m/s) à la face supérieure de l'extrémité de la tige. 
+
+Comme évoqué, la plupart des travaux numériques rapportés dans la littérature simulent le chargement dynamique en appliquant une contrainte sinusoïdale à l’extrémité supérieure des pieux \citep{Fakharian2014ComparisonModelling, Masouleh2008VerificationMethod,Pinto2008EvaluationTesting}. Dans le cas de ce travail, ainsi que les travaux précédents \citep{Benz-Navarrete2009MESURES2, Escobar2015Mise3, Tran2019NumericalTest}, on a choisi de simuler le battage.
+
+Pour ce faire, il s'avère nécessaire d'ajuster la sollicitation pour que celle-ci soit représentative de l'onde de choc observée expérimentalement. L'onde de compression générée suite à l'impact est triangulaire avec une légère asymétrie, celle-ci peut être caractérisée par la durée du choc ($\Delta t$) et une contrainte maximale ($\sigma_{max}$). On décrit par la suite la calibration du battage. Dans un premier, on vérifie la capacité de simuler la propagation d'une onde de compression.
+
+\subsubsection{Calibration du battage}
+
+Lorsque le marteau heurte la tête de battage, il se crée une onde de compression dont les caractéristiques - durée, amplitude et forme - dépendent essentiellement des caractéristiques géométriques et mécaniques des différents éléments : marteau, tête de battage, train de tige.
+
+Pour que la sollicitation dynamique simulée dans le modèle numérique soit véritablement représentative de celle observée expérimentalement, il s'avère nécessaire de d'assurer que l'onde d'impact soit comparable à l'onde expérimentale. On s'intéresse par la suite à la caractérisation de l'onde mesurée expérimentalement et à l'ajustement de l'onde de compression numérique. Pour ce faire, une série d’essais ont été réalisée à l’aide d’un pendule en laboratoire. Le but est de caractériser l’onde engendrée par l'impact du marteau sous des conditions bien définies.
+
+L'essai consiste à disposer le pénétromètre Panda 3 horizontalement reposé sur des roulements à billes et à effectuer le battage à l'aide d'un pendule de choc. Cela afin de maintenir son horizontalité au cours du battage et de s’affranchir des efforts de frottement le long des tiges. La disposition horizontale du système n’a aucune influence sur la propagation de l’onde car les forces gravitationnelles ne modifient pas la propagation de l’onde \citep{Fairhurst1959EnergyDrilling}.
+
+L'utilisation du pendule à choc permet de maîtriser l’énergie de battage et, par conséquent, la vitesse de l'impact. Cet appareillage permet facilement de faire varier l’énergie de battage ainsi que la longueur du train de tiges. On emploie un train de tige assez long (à savoir de 7 m) afin d'empêcher la superposition des ondes incidentes et réfléchies en sein du train de tiges. Comme conditions aux limites, la pointe à l'extrémité du train de tige est fixée horizontalement. Le marteau est lâché en condition de pendule et heurte la tête du pénétromètre (voir Figure \ref{fig:num_exp}).
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = .9]{media/num_exp.png}
+        \caption{Influence de la raideur de l'interface tête-marteau}
+          \label{fig:num_exp}
+      \end{center}
+ \end{figure}
+
+
+L'énergie de battage ($E_b$) et la vitesse d'impact ($v_m$) du marteau sont exprimées respectivement par les équations \ref{eq:Eb} et \ref{eq:vm}.
+
+\begin{equation} \label{eq:Eb}
+    E_b = m g L (1-\cos{\theta})
+\end{equation}
+
+Où m est la masse du marteau, g est l’accélération de la pesanteur, L est la longueur du pendule et $\theta$ est l’angle de chute.
+
+\begin{equation} \label{eq:vm}
+    v_m = \sqrt{2 g L(1-\cos{\theta})}
+\end{equation}
+
+Une série d'impacts a été réalisé en faisant varier l'angle de chute $\theta$ (20$\degree$, 35$\degree$, 70$\degree$, ...). Pour chaque valeur de $\theta$, on a réalisé une série d'impact afin de vérifier la répétabilité du signal et de définir la durée de l'onde et la force maximale moyenne. Pour chaque valeur de $\theta$, on connaît l'énergie de battage (Équation \ref{eq:Eb}) et la vitesse de l'impact (Équation \ref{eq:vm}). L'énergie transmise est calculée directement à partir du signal de force et des caractéristiques de la tige (section $A_t$, module $E_t$ et célérité d'ondes $c_t$).
+
+\begin{equation} \label{eq:EF2}
+    EF2 (x,t) = \frac{c_t}{A_t E_t} \int [F(x,t)]^2 \,dx 
+\end{equation}
+
+On a simulé cet essai à l'aide d'un modèle numérique afin d'ajuster l'impact aux résultats expérimentaux. Dans le modèle, les éléments composant le pénétromètre sont modélisés par des formes cylindriques, à l'exception de la pointe conique. Étant donné la géométrie doublement axisymétrique du problème, on a fait le choix de modéliser unique un quart de celui-ci. Les dimensions adoptées sont celles présentées dans la Figure \ref{fig:num_imp}. Les différents éléments sont modélisés comme des matériaux élasto-plastiques parfaits. Les caractéristiques des éléments composant le pénétromètre (pointe, train de tige et tête) sont celles de l'acier (E = 206 GPa et $\rho$ = 7850 $kg/m^3$). 
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = 1.]{media/num_imp2.PNG}
+        \caption{(a) Schéma présentant des différents éléments composant le pénétromètre : (1) marteau, (2) tête de battage, (3) train de tige et (4) pointe conique débordante}
+          \label{fig:num_imp}
+      \end{center}
+ \end{figure}
+
+Le marteau est composé de deux embouts en polystyrène à haut impact (HIPS) et d'une cavité cylindrique de parois de 2 mm en acier. Celle-ci est remplie de limaille de fer. Afin de simplifier l'analyse, dans le modèle, le marteau est modélisé comme un cylindre homogène de 6 cm de diamètre et 13,6 cm de hauteur. Celui-ci est considéré comme étant composé par un seul matériau, parfaitement élastique. Le module d'Young équivalent attribué au marteau $(E_m)$ est déduit à partir de sa géométrie et des modules de l'acier et du HIPS. On a adopté des valeurs de module pour la HIPS de 0,5 GPa, selon les informations du fabricant (Tableau \ref{tab:marteau}).
+
+\begin{table} [H]
+\caption{Définition du module d'Young équivalent du marteau ($E_m$)}
+\label{tab:marteau}
+\centering
+\begin{tabular}{cccc}
+\hline
+\tabhead{Élément} & \tabhead{Épaisseur} & \tabhead{Diamètre} & \tabhead{Module d'Young}\\
+            -     & (mm)                & (mm)               & (Pa) \\
+\hline
+Embout (x2)     & 25    & 60   & 5,0 $10^{8}$ \\
+Cavité centrale & 86    &D$_{ext}$: 60 / D$_{int}$: 56,4 & 2,06 $10^{11}$ \\
+\hline
+Marteau         & 136   & 0.75  & 2,5 $10^{10}$ \\
+\hline\\
+\end{tabular}
+\end{table}
+
+Pour simuler l'impact entre deux objets dans FLAC, on doit créer une interface. L'interface est accolée à une (ou les deux) faces qui interagissent. Son comportement est caractérisé par des paramètres de rupture ($\phi$ et c) et de déformation (raideur normale $k_n$ et tangentielle $k_s$). 
+
+Une fois le module du marteau défini, on s'intéresse à ajuster la raideur normale de l'interface afin d'avoir la durée de choc observée expérimentalement ($\approx$ 1,5 ms). La Figure \ref{fig:num_raideur} présente les signaux de force mesurée dans tige pour les différentes valeurs de raideur $k_n$ testées. On présente ainsi le signal expérimental moyen pour la même vitesse d'impact (6,25 m/s). On constate une raideur de $2,0 . 10^{10}$ Pa/N permet d'engendrer une onde représentative de celle obtenue expérimentale en terme de durée de choc ($\approx$ 1,25 ms) et contrainte maximale $\sigma_{max}$ (Figure \ref{fig:num_raideur}). 
+
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = .5]{media/num_radieur.png}
+        \caption{Influence de la raideur de l'interface tête-marteau}
+          \label{fig:num_raideur}
+      \end{center}
+ \end{figure}
+
+De manière similaire à la démarche expérimentale, on a simulé une série d'impact en faisant varier la vitesse d'impact : 1,0 m/s, 3,0 m/s et 5,0 m/s. Pour chacun de ces impacts, on enregistre le signal de force, conformément à l'essai Panda 3, sur la tige à 10 cm à partir de la face supérieure de la tête (voir Figure \ref{fig:num_vitesse}).
+
+Les résultats expérimentaux ainsi que numériques montrent que l’accroissement de la vitesse d’impact $v_m$ entraîne une augmentation de la valeur $\sigma_{max}$. Une relation linéaire est observée entre la vitesse d’impact du marteau $v_m$ et la contrainte au pic $\sigma_{max}$ de l’onde de compression mesurée sur la tige. Toutefois, la pente observée expérimentalement est nettement plus faible que celle issue des simulations numériques.
+
+   \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = .5]{media/num_vitesse.png}
+        \caption{Relation entre la contrainte maximale ($\sigma_{max}$) et la vitesse d'impact ($v_m$) : comparaison entre les résultats numériques et expérimentaux}
+          \label{fig:num_vitesse}
+      \end{center}
+ \end{figure}
+ 
+En effet, les différents sources de pertes énergétiques présentes dans l'essai ne sont par intégrées dans le modèle numérique celui-ci étant non-amorti. Afin de corriger cela, on introduit un coefficient correcteur  «\emph{a}» qui sera appliqué à la vitesse d'impact expérimentale afin de déduire la vitesse devant être utilisée dans le modèle numérique.
+
+
+%On sait que l'onde de compression dépend de la géométrie et des caractéristiques mécaniques du marteau et de la tête. On fixe la géométrie et les caractéristiques mécaniques de la tête et on fait varier la géométrie et les caractéristiques mécaniques du marteau afin d'obtenir un signal de force représentative.
+
+%Pour calibrer l'impact, on suit une démarche similaire à celle utilisé les travaux numérique précédents \cite{Benz-Navarrete2009MESURES2,Escobar2015Mise3,Tran2019NumericalTest}. On teste différentes valeurs de raideur de contact tête-marteau capable d'assurer un signal de force dont la durée est celle du signal expérimentale et la relation entre l'amplitude et la vitesse de frappe sont respectées. Les résultats expérimentaux sur lesquels on va se baser sont ceux obtenus par \cite{Benz-Navarrete2009MESURES2}.
+
+%De manière similaire à la démarche expérimentale suivie par \cite{Benz-Navarrete2009MESURES2}. La géométrie du pénétromètre est celle du Panda 3. On utilise une tige assez longe (de 8 mètres) afin d'empêcher la superposition des ondes au sein de la tige. On enregistre les forces à la proximité de la tête suite à une série d'impact à différentes vitesses de frappe.
+
+%\include{rapports/calibration_battage}
+
+%Pour ce faire, on crée un impactant cylindrique de section identique à la tige (diamètre de 14 mm) et de hauteur 14 mm. La masse de l'impactant est de 422.5 g (soit un quart de celle du marteau réel, étant donné la géométrie axisymétrique adoptée).
+
+%L'interaction entre l'extrémité de la tige et l'impactant est traduite par l'interface collée à la face inférieure est ceci. La raideur linéaire adoptée pour cette interface a été calibré à partir des données expérimentales. Pour cela, on procède de manière similaire à l'approche suivie par \citep{Tran2019NumericalTest}. On réalise une série d'impacts à différentes vitesses de frappe (1 kN, 2 kN, 5 kN) en testant différentes raideurs jusqu'à que la relation entre la force maximale et la vitesse de frappe soit cela observée expérimentalement.
+
+
+\subsection{Modélisation de l'interface sol-pointe}
+\label{sec:interface}
+
+Afin de simuler l’interaction entre le pénétromètre et le sol, il s’avère nécessaire introduire une interface entre les deux matériaux. Celle-ci permettra de reproduire correctement le choc au niveau de la pointe et le glissement entre les parois de la pointe et le sol. Dans FLAC, l’interface est modélisée par un maillage de triangles définis par trois noeuds placés sur la surface de l’objet. Celle-ci est caractérisée par des paramètres de raideur et de rupture (critère de rupture Mohr-Coulomb). Ces paramètres doivent être choisis afin de minimiser son effet dans le modèle.
+
+On a créé deux interfaces au niveau de la pointe : une latérale et une au sommet (Figure \ref{fig:num_interface2}). Le comportement de l’interface est caractérisée par (a) les paramètres de raideur : normale k\textsubscript{n} et tangentielle k\textsubscript{s} données en contrainte par mètre (Pa/m), et (b) de rupture suivant le critère Mohr-Coulomb, avec la cohésion (en Pa) et les angles de frottement et de dilatance (en dégrée). 
+
+Les raideurs apparentes de l’interface d’une zone perpendiculaire sont souvent estimées à partir de la taille de l’élément le plus petit dans la direction normale $\Delta Z_{min}$ et le module (E) du milieu adjacent \citep{Itasca2020FLAC3D6.0}. \emph{A priori}, les raideurs de l’interface sont estimées à partir du module d'élasticité du matériau le plus raide, à l’exception des problèmes où les modules des deux matériaux sont trop différents. Dans ce cas spécifique, on estime les raideurs de l’interface à partir du module du matériau le moins raide (ici, le sol) (Équation \ref{eq:ks}).
+
+\begin{minipage}{0.45\textwidth}
+   \begin{figure}[H]
+    \includegraphics[scale =.4]{media/num_interface_kn.PNG}
+    \label{fig:num_interface_kn}
+    \caption{Définition de $\Delta Z_{min}$}
+    \end{figure}
+\end{minipage}%
+%\hfill
+\begin{minipage}{0.45\textwidth}
+    \begin{equation} \label{eq:ks}
+    k_{n} = k_{s} \geq 10 \frac{K+\frac{4}{3} G}{\Delta Z_{min}}
+    \end{equation}
+\end{minipage}
+
+\vspace{1.5}
+\newline
+\\[2 cm]
+La définition des paramètres de l’interface constitue une tâche importante car ceux-ci influencent la réponse globale et interviennent comme « nouveau matériau ». Afin de vérifier si la relation proposée par le logiciel (Équation \ref{eq:ks}) permet d'empêcher cela, on a réalisé une étude paramétrique.
+
+Cinq valeurs de raideurs ont été testées en fixant toutes les autres variables. La raideur minimale été calculée à partir de l'équation \ref{eq:ks} pour un massif de caractéristiques connues (à savoir : E = 80 MPa, $\rho_d$ = 1700 kg/m$^3$, c = 0 kPa, $\phi$= 38\textdegree{} et $\psi$= 8\textdegree{}). Pour ce massif, la raideur minimale ($k_{min}$) devrait être de 5,3x$10^{9}$ Pa/m (\citep{Itasca2020FLAC3D6.0}, Équation \ref{eq:ks}). Afin de vérifier si cette valeur permet de s'affranchir de l'effet de l'interface, on a testé autres cinq valeurs de raideur.  
+
+   \begin{figure}[H]
+        \begin{center}
+            \includegraphics[scale = .7]{media/num_interface2.PNG}
+            \caption{(a) Détail au niveau de la pointe montrant la localisation de l'interface (en jaune), (b) Courbes DCLT pour les différentes valeurs de raideurs testées}
+            \label{fig:num_interface2}
+      \end{center}
+    \end{figure}
+ 
+De la Figure \ref{fig:num_interface2}b, on constate que pour les raideurs inférieures à $k_{min}$ (ici 5,3 x 10$^9$ Pa/m), l'allure de la courbe présente un changement non-négligeable, présentant des contraintes plus petites et des enfoncements plus importants. Pour les valeurs supérieures à $k_{min}$, les courbes sont quantitativement similaires, on observe uniquement l'augmentation de bruits (courbes rose, jaune et rouge).
+
+On conclut que l'équation \ref{eq:ks} permet d'estimer à partir des paramètres de déformabilité du sol, les raideurs d'interface minimales afin de garantir que celles-ci n'interviennent pas significativement dans les résultats.
+
+
+  \subsection{Modèle de comportement du sol}
+  \label{subsec:comportement}
+  
+Divers travaux numériques s’intéressent à étudier et à modéliser le comportement des sols lors de la pénétration. A l'heure actuelle, la plupart de modèles numériques appliquent des critères de rupture simple : Mohr-Coulomb (MC), Tresca, von Mises et Cam-clay pour les argiles non-drainées et MC et Drucker-Prager pour les sables drainés.
+
+Le critère de Mohr-Coulomb est utilisé afin de modéliser le comportement des sols pulvérulents (sables), des sols cohérents à long terme (argiles et limons) et de certaines roches. Les paramètres de rupture alimentant ce critère sont : la cohésion c, l’angle de frottement $\phi$ et la dilatance $\psi$. 
+
+En mécanique des sols, la cohésion et l’angle de frottement sont traditionnellement calculés dans le plan de Mohr ($\sigma$’, t) à partir des états de contraintes à la rupture, estimés pour chaque essai triaxial. La loi de Tresca, qui est un cas particulier de la loi de Mohr-Coulomb, est utilisée pour l’étude des argiles et des limons à court terme ($\phi$=0\degree et $\psi$=0\degree) \citep{MestatJean-PierrreMagnan1991LoisImpacts}.
+
+Selon \cite{Ahmadi2005Thin-layerMeasurement}, ce critère de rupture simple est capable de traduire correctement le comportement des sables. Les auteurs l’appliquent afin de modéliser le comportement d’un sable purement frottant (comme le sable de Ticino). L’angle de frottement est obtenu à partir d’une série d’essais triaxiaux tandis que l’angle de dilatance est estimé à partir de l’angle de frottement effectif $\phi$’ et l’angle de frottement à l’état critique $\phi_{cv}$.
+
+\begin{equation} \label{eq:dilatance}
+    sin \psi' = sin \phi'- sin \phi_{cv}
+\end{equation}
+
+On souhaite modéliser le comportement d’un sable propre : le sable de Fontainebleau. On a vu que le critère de rupture Mohr-Coulomb est adapté à ce type de matériau et pour les modèles numériques rapportés. C’est pourquoi on choisit de l’appliquer dans le cadre de travail. On s'appuie sur les résultats d'une série d'essais triaxiaux.
+
+On souhaite ajuster le modèle rhéologique adopté dans le modèle numérique aux résultats expérimentaux. Pour ce faire, on va se baser plus précisément sur les courbes CLT obtenues à 30 cm de profondeur pour le sable de Fontainebleau moyennement dense ($\rho_d=1575 kg/m^3$, soit DR = 58\%) et lâche ($\rho_d=1490 kg/m^3$, soit DR = 43\%) en chambre d'étalonnage (Figure \ref{fig:exp_eprouvettes}).
+
+ % \begin{figure}[H]
+ %  \begin{center}
+ %       \includegraphics[scale = .45]{media/exp_ajustement_modele.png}
+  %      \caption{Courbes CLT expérimentales : sable de Fontainebleau moyennement dense (profondeur = 30 cm)}
+  %        \label{fig:exp_ajustement_modele}
+  %    \end{center}
+ %\end{figure}
+
+On adopte initialement un modèle rhéologique simple : élastoplastique parfait avec critère Mohr-Coulomb. On aborde par la suite le choix des paramètres nécessaires pour alimenter ce modèle rhéologique, à savoir : module d'Young ($E_{Young}$), coefficient de Poisson $\nu$, angle de frottement $\phi$, angle de dilatance $\psi$ et la cohésion c.
+
+\subsubsection{Paramètres rhéologiques alimentant le modèle}
+\label{subsubsec:fontainebleau}
+
+L’angle de frottement $\phi$ est couramment compris entre 15\textdegree{} et 45\textdegree{}. Les valeurs inférieures ou autour de 30\textdegree{} sont typiques des argiles, tandis que des valeurs supérieures, entre 25\textdegree{} et 45\textdegree{}, caractérisent les sables. A compacité donnée, l’angle de frottement est pratiquement indépendant de la teneur en eau du sol.
+
+En supposant la variation de $\phi'$ avec le confinement est négligeable, on a tracé l'évolution de $\phi$ en fonction de l'état de densité de trois éprouvettes testées à l'appareil triaxial. Le but étant d'estimer l'angle de frottement correspondant à l'état de densité des éprouvettes réalisées (e = 0,68 et e = 0,78, voir Figure \ref{fig:exp_eprouvettes}). La relation entre l'indices de vides et l'angle de frottement est présentée dans la Figure \ref{fig:exp_phi_SH_SF_tx}. Les valeurs de $\phi'$ obtenues sont : 30,8\textdegree{} et 35,9\textdegree{} pour les éprouvettes lâches et moyennement dense, respectivement.
+
+L’angle de dilatance $\psi$ est quant à lui généralement compris entre 0\degree et 15\degree. Les sables lâches et les argiles ont des valeurs de dilatance très faibles, quelques degrés à peine voire zéro. Il est souvent déterminé en laboratoire à partir de résultats de l'essai triaxial. Il existe également des relations empiriques simples reliant l’angle de dilatance et l’angle de frottement interne \citep{Levasseur2007AnalyseGenetiques}. De manière similaire à \cite{Ahmadi2005Thin-layerMeasurement}, on estime l'angle de dilatance à partir de l'angle de frottement en rupture et l'angle de frottement critique (Équation \ref{eq:dilatance}). Comme évoqué, les valeurs rapportées dans la littérature pour le $\phi_{cr}$ varient peu. Celles-ci sont comprises entre 29,3\textdegree{} et 31,0\textdegree{} \citep{Dano2001ComportementInjectes, Dupla2007ComportementReference, Vernay2017EtudeLiquefaction, Andria-Ntoanina2011CaracterisationCentrifugeuse}.
+
+%Les sols pulvérulents n’ont pratiquement pas de cohésion, 0 < c < quelques kiloPascals. Pour ce type de matériau, on parle de cohésion capillaire ou de cimentation en place.
+
+%Les valeurs de cohésion obtenues à l'appareil triaxial restent inférieures à 15 kPa. 
+%Ainsi, dans le modèle, on considère la cohésion nulle.  
+
+%Les valeurs habituellement retenues pour le coefficient de Poisson sont  $\nu$=$\nu_u$ = 0,5 si les sols sont saturés (déformation à volume constant). Dans la pratique la valeur de 0,5 n’étant pas acceptable en élasticité, on utilise l’expédient consistant à considérer $\nu_u$ = 0,49, $\nu_u$ = $\nu_u$ = 0,33 dans les autres cas (sols secs ou sols drainés).
+
+Le module d'élasticité alimentant la loi de comportement est déduit à partir des résultats triaxiaux. Dans un premier temps, la valeur du module d'Young de chaque éprouvette est déterminée à partir d'un calage élasto-plastique parfait des courbes contrainte-déformation issues des essais triaxiaux (Figure \ref{fig:exp_tx_Eyoung2}a). Par la suite, afin d'intégrer l'effet de l'évolution du module avec le confinement, on applique la relation proposée par Janbu (1963) (Équation \ref{eq:EJanbu}) pour estimer les modules d'Young des éprouvettes. A partir des modules obtenus par le calage, on a tracé l'évolution du module en fonction des confinements pour les différentes densités testées (Figure \ref{fig:exp_tx_Eyoung2}b).
+
+\begin{equation} \label{eq:EJanbu}
+    E = E_{ref} \frac{\sigma_3}{P_{ref}}^n
+\end{equation}
+    
+Soit
+
+$P_{ref}$ : pression atmosphérique (souvent prise égal à 100 kPa)
+
+n : coefficient compris entre 0,33 et 1 (souvent pris égal à 0,5)
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale = .7]{media/num_tx_SF.PNG}
+        \caption{(a) Exemple du calage élasto-plastique parfaite appliqué courbes contrainte-déformation : éprouvettes de SF à 1496 kg/$m^3$, (b) Évolution du modules d'Young du modèle en fonction du confinement}
+        \label{fig:exp_tx_Eyoung2}
+  \end{center}
+\end{figure}
+
+
+%$E_{ref}$ = module de référence 
+
+%$\sigma_3$ = la pression de confinement 
+
+%$P_{ref}$ = pression de référence (atmosphérique, 100 kPa)
+
+%n = coefficient compris entre 0,33 et 1,0
+
+%La pression de référence $P_{ref}$ est souvent prise égale à la pression atmosphérique ($P_{ref}$=100 kPa). L'exposant n est un coefficient compris entre 0,33 et 1. 
+
+
+
+
+
+
+%Le modèle élasto-plastique parfait avec critère de Mohr-Coulomb utilisé est un modèle de comportement simple et robuste. Il peut être considéré comme une approximation au premier ordre du comportement réel d’un sol. Ce modèle constitue une approche acceptable pour analyser la rupture des sols dans les problèmes de fondation, stabilité de pentes, de tunnel et de soutènement. Cependant, il suppose une rigidité constante pendant la phase de chargement alors qu’en réalité cette rigidité n'est pas constante. Elle dépend à la fois du niveau de contrainte et du niveau de déformation du sol. De plus, expérimentalement il est possible d’observer des déformations irréversibles même pour des chemins de contraintes qui n’atteignent jamais la rupture \citep{Levasseur2007AnalyseGenetiques}.
+
+%Ce travail a pour but d'étudier la déformabilité des sols de manière plus réaliste, en tenant compte de la niveau de déformation associé aux valeurs de modules. L'application d'un modèle de comportement élasto-plastique parfait est donc insuffisant. C'est pourquoi, il choisit d’adopter un modèle élastoplastique plus complexe qui tienne compte de l’irréversibilité du comportement des sols. Un modèle assez répandu permettant d'intégrer cela est le HSM (\emph{Hardening Soil Model} ou, en français, modèle élastoplastique avec écrouissage).
+
+%La loi de comportement HSM implémentée dans FLAC est celle présenté par \cite{Schanz1999TheVerification}. Celle s'est basée sur le comportement hyperbolique initialement proposé par Duncan et Chang (1970). La surface de rupture déviatoire est donnée par le modèle de Mohr-Coulomb.
+
+\section{Bilan}
+
+On a présenté une partie des travaux réalisées autour du modèle numérique. Un certain nombre d'améliorations ont été mis en place au cours de cette année afin d'avoir un modèle plus représentatif de l'essai DCLT :
+
+- Géométrie: celle-ci respecte maintenant la forme et les dimensions du pénétromètre.
+
+- Sollicitation: a la place d'un signal de force en tête, le battage a été simulé après calibration pour obtenir la bonne vitesse d'impact.
+
+On s'est intéressé par la suite à la loi de comportement et au choix des paramètres rhéologiques. On a proposé d'alimenter le modèle de comportement à l'aide des résultats triaxiaux tout en tenant compte des principaux facteurs influençant ces paramètres : l'état de densité et la pression de confinement. 
+
+Les améliorations réalisées visent à atteindre un des objectifs de ce travail de thèse : mettre au point un modèle numérique véritablement représentatif de l'essai DCLT.
+
+
+
+\chapter{Conclusion et perspectives}
+
+Dans ce rapport, après un rappel du contexte et des objectifs, on a présenté une partie du travail réalisé au cours de la deuxième année de la thèse.
+
+En laboratoire, deux sables de référence ont été testés. Une série d'essais triaxiaux a été réalisé à différentes densités et à différentes pressions de confinement. Ces essais vont permettre d'une part d'alimenter la loi de comportement du modèle numérique et aussi de valider les paramètres obtenus à partir de l'exploitation de l'essai DCLT.
+
+Par ailleurs, une série d'essais en chambre d'étalonnage ont été effectué avec ces sables. Ces essais de chargement en pointe permettront d'ajuster la loi de comportement appliquée dans le modèle numérique. Additionnellement, ces essais de chargement en pointe permettent de comparer les deux types de sollicitation : dynamique et statique sous conditions semblables. On a pu constater que, pour le cas de figure analysé, les courbes DCLT sont qualitativement comparables aux courbes CLT. Une analyse qualitative des résultats permet également de confirmer la sensibilité et la répétabilité de la cette technique.
+
+Du côte numérique, on a apporté un certain nombre d'améliorations au modèle. La géométrie actuelle est plus réaliste vis-à-vis de la forme et dimensions du pénétromètre (sections circulaires, dimensions conformes à celles du pénétromètre e et de la chambre d'étalonnage). Par rapport à sollicitation dynamique, au lieu d'appliquer un signal de force sinusoïdale, comme réalisé dans la plus part de travaux rapportés, on a choisi de simuler l'impact. Cela permet d'être plus réaliste par rapport à la technique et de mieux se caler par rapport aux résultats expérimentaux.
+
+L'étude bibliographique réalisée à propos des modèles d'interaction a permis de souligner leur points convergeants et leurs limitations. A l'issue de cette étude, on envisage d'appliquer un modèle d'interaction sol-pointe plus réaliste (comme à celui de \cite{Loukidis2008AssessmentProcedure}) afin de dissocier la composante dynamique et de pouvoir appliquer des modèles d'interprétation comme l'expansion de cavité à cette technique. 
+
+En tenant compte des aspects abordés dans ce rapport, les principales activités prévues pour la troisième année sont : 
+\begin{itemize}
+    \item valider le modèle numérique sur la base des résultats expérimentaux obtenus en chambre d'étalonnage pour des sables propres de référence ;
+     
+    \item définir la méthode de détermination des paramètres alimentant le modèle d'interaction sol-pointe (résistance ultime $Q_{bL}$, raideur maxille, $K_{max}$, coefficient visqueux m et n, ...) ;
+    
+    \item à partir des courbes statiques estimées, appliquer la méthode d'expansion de cavité et évaluer les valeurs de $\phi$' obtenues sur la base de résultats triaxiaux ;
+    
+    \item évaluer les modules issues de l'essai DCLT sur la base des modules issus des résultats triaxiaux.\\[1.cm]
+\end{itemize}
+
+
+
+
+
+%\newpage
+%\thispagestyle{empty}
+
+\begin{center}
+\textbf{VALORISATION DES TRAVAUX}
+\end{center}
+
+\begin{itemize}
+    \item \underline{Conférences nationales} :\\[0.005cm]
+    
+\emph{Oliveira, C. F. ; Breul, P. ; Chevalier, B. ; Benz-Navarrete, M. A. ; Tran, Q. A. ; Bacconnet, C. Modélisation du battage dynamique d'un pénétromètre en différences finies. Journées Nationales de Géotechnique et de Géologie de l’Ingénieur (JNGG), Lyon, novembre 2020.}\\[0.025cm]
+    
+\item \underline{Conférences internationales} :\\[0.005cm]
+
+\emph{Oliveira, C. F. ; Lopez, S. R. ; Tran, Q. A. ; Breul, P. ; Canou, J. ; Reiffsteck, P. ; Dupla, J. C. ; Jacquard, C. ; Teyssier, A. ; Benz-Navarrete, M. A. Soil modulus assessment by means of cone dynamic loading test. 20th International Conference on Soil Mechanics and Geotechnical Engineering (ICSMGE), Sydney, May 2022. (Présentation orale - Résumé accepté)}\\[0.01cm]
+
+\emph{Oliveira, C. F. ; Benz-Navarrete, M. A. ; Breul, P. ; Tran, Q. A. ; Chevalier, B. ; Bacconnet, C. Assessment of small-strain modulus through wave velocity measurement with dynamic penetrometer Panda 3®. 6th International Conference on Geotechnical and Geophysical Site Characterization, Budapest, Septembre 2021. (Présentation orale)}
+ 
+\end{itemize}
+
+%%%________BIBLIO__________
+\newpage
+\lhead{Bibliographie}
+\nocite{}
+\bibliographystyle{apalike}
+\bibliography{references}
+
+  
+ \end{document}
+
+

@@ -1,0 +1,168 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[sectionbib]{natbib}
+\usepackage[french]{babel}
+\usepackage[titletoc]{appendix}
+\usepackage{chapterbib}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{vmargin}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{setspace}
+%\usepackage{filecontents}
+\usepackage{calc}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\graphicspath{ {images/} }
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{gensymb}
+\usepackage{siunitx}
+\usepackage{textcomp}
+\setcounter{secnumdepth}{3}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\leftmark}
+\rfoot{\thepage}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+    Thèse CIFRE N° 2018/1627
+    
+    Sol Solution
+    
+    Institut Pascal – Axe M3G
+            \vspace*{5cm}
+              %  \vspace*{5cm}
+    
+    {Rapport d'activité}\\[0.3cm]
+    
+     {\textsc{\textbf{Interprétation de l'essai de chargement dynamique en pointe pénétrométrique}}}\\[1.cm]
+     {Caroline F. Oliveira}\\[0.3cm]
+     
+     
+    \end{center}
+        \vspace*{8cm}
+    
+    
+    
+\begin{table} [H]
+\begin{tabular}{ll}
+\centering
+        \element{\textbf{Pierre BREUL}} & \element{Directeur de thèse}\\
+        \element{\textbf{Bastien CHEVALIER}} & \element{Encadrant}\\
+        \element{\textbf{Claude BACCONNET}} & \element{Encadrant}\\
+        \element{\textbf{Miguel Angel BENZ NAVARRETE}} & \element{Responsable en entreprise}\\
+        \element{\textbf{Quoc Anh TRAN}} & \element{Encadrant en entreprise}\\
+\end{tabular}
+\end{table}
+\centering
+\emph{Présentation le 06 avril 2021}\\[0.3cm]
+    
+    \vspace*{\fill}
+  \end{titlepage}
+
+  % Table des matières
+  \tableofcontents
+  \pagebreak
+  
+  
+  
+ \chapter {Simulation du battage en différences finies}
+ 
+ \section {Cas du SPT}
+ 
+On souhaite simuler l'essai DCLT. Dans cet essai, le pénétromètre est enfoncé par battage. Afin d'être réaliste vis-à-vis de la technique, on choisit de simuler le battage. 
+
+Dans un premier temps, on simule un essai similaire, mais plus simple : le SPT. En effet, le battage SPT étant plus simple (en terme de géométrie et de matériaux), ceci a été modélisé analytiquement par différents chercheurs \citep{Schmertmann1979EnergySPT, Gonin1979ReflexionPieux, Fairhurst1959EnergyDrilling}.
+
+Ces travaux ont constaté des bonnes correspondances entre les prédictions analytiques à des résultats expérimentaux. Par la suite, en appliquant la même démarche, on souhaite vérifier si on est capable de simuler le battage SPT en différences finies à l'aide de FLAC.
+
+\section{Théorie}
+
+L'onde de compression u(x,t) crée par l'impact du marteau se déplace le long des tiges. La déformation entraînée par le passage de cette onde $\varepsilon$ peut être exprimée par l'équation \ref{eq:def}.
+
+\begin{equation} \label{eq:def}
+    \varepsilon = \frac{\partial u}{\partial x}
+\end{equation}
+
+En appliquant la relation deuxième loi de Newton (∑F=ma), avec la masse m comme m=At ρt dx et l'accélération $a=\partial^2/\partial t^2$ pour une portion de la tige, on obtient à l'équation \ref{eq:stress}.
+
+\begin{equation} \label{eq:stress}
+    \frac{ \partial \sigma}{\partial^2}= \rho_t^2 \frac{\partial u}{\partial x}
+\end{equation}
+
+Par ailleurs, en supposant la tige élastique,  $\sigma=E_t \varepsilon$, avec $\varepsilon$ donné par l'équation \ref{eq:def}, on obtient l'équation différentielle qui gouverne la propagation de l'onde u(x,t), connue simplement équation de l'onde. 
+
+\begin{equation} \label{eq:onde}
+    \frac{ \partial \sigma}{\partial t^2}= c_t^2 \frac{\partial u}{\partial x}
+\end{equation}
+
+Il est possible l'équation de l'onde analytiquement par différentes méthodes (transformée de Laplace, séparation des variables, méthode des caractéristiques) ou numériquement. Chacun de ces méthodes est discuté par \cite{Verruijt1994SoilDynamics}. Dans le cadre de ce travail, on retient la solution obtenue par la méthode des caractéristiques, proposé initialement par \cite{Saint-Venant1898MemoireSys}. Selon celle-ci, l'équation \ref{eq:onde} correspond à la superposition deux ondes $u_{f}(t-x/c_t)$ (descendante) et $u_{g}(t-x/c_t)$ (remontante) se propageant le long des tiges de manière continue à une vitesse d'ondes ($c_t$).
+
+Le passage de l'onde u(x,t) à un instant t engendrera une vitesse particulaire v(x,t) à un point donnée de la tige, obtenue par la dérivation de l'équation \ref{eq:onde} en fonction du temps.
+
+\begin{equation} \label{eq:vitesse}
+v(x,t) = v_f(t-x/c_t)-v_g(t+x/c_t)
+\end{equation}
+
+La déformation entraînée par le passage de l'onde u(x,t), celle-ci obtenue à partir de la dérivation de l'équation \ref{eq:def} en fonction de x. Cette déformation $\varepsilon$ peut être exprimée en terme de la vitesse particulaire des ondes, incidente et remontante, afin d'obtenir l'équation \ref{eq:def2}.
+
+\begin{equation} \label{eq:def2}
+    \varepsilon(x,t)=-\frac{1}{c_t}[v_f(t-x/c_t]-v_f(t+x/c_t)]
+\end{equation}
+
+En tenant compte de l'élasticité des tiges, c'est-à-dire de $F=\varepsilon A_t E_t$, on obtient l'équation \ref{eq:F=Zv}
+
+\begin{equation} \label{eq:FZv}
+    F(x,t)=-\frac{A_t E_t}{c_t}[v_f(t-x/c)-v_g(t-x/c)]
+\end{equation}
+
+Comme constaté sur l'équation \ref{eq:FzV}, dans le problème de la propagation longitudinale d'une onde mécanique dans un milieu élastique, la force F(x,t) et la vitesse particulaire v(t,x) sont proportionnels. Le rapport de proportionnalité entre ceux deux grandeurs étant ${A_t E_t}/{c_t}$, c'est-à-dire, l'impédance mécanique de la tige $Z_t$.
+
+\section{Énergie transportée par l'onde}
+
+La propagation d’une onde mécanique dans un milieu élastique, tel qu’une tige, est caractérisée par le transport d’énergie. Selon \cite{Fairhurst1959EnergyDrilling}, pour un pulse dont toutes les composantes se propagent dans une même direction, l'énergie totale transmise ($E_t$) est divisé également en deux parties : l'énergie potentielle (ou énergie de déformation) $(E_U)$ et l'énergie cinétique $(E_K)$.
+
+\begin{equation} \label{EK}
+    E_K=\frac{1}{2} \frac{A_t E_t}{c_t} \int v(x,t)^2 dt
+\end{equation}
+
+
+\begin{equation} \label{EU}
+    E_U=\frac{1}{2} \frac{c_t}{A_t E_t} \int F(x,t)^2 dt
+\end{equation}
+
+L'énergie totale transmise étant le double de $E_U$, celle-ci peut être obtenue en intégrant la force mesurée expérimentalement à l'aide des jauges de déformation (équation \cite{eq:EF2}). Cette méthode a été appliqué à l'essai SPT afin de connaître la vrai énergie transmise par l'impact du marteau. Plus tard, en appliquant la proportionnalité entre la force et la vitesse particulaire (Équation \ref{eq:FZv}), \cite{Sy1991InternationalDynamics} proposent le calcul de l'énergie transmise à partir de la force (à l'aide des jauges de déformation) et la vitesse particulaire (à l'aide d'accéléromètre) (\cite{eq:EFV}). Cette méthode est connue comme EFV, tandis que l'obtention de l'énergie uniquement à partir de la force est connue comme méthode EF2.
+
+\begin{equation} \label{eq:EF2}
+    E_t^{EF2}= \frac{c_t}{A_t E_t} \int F(x,t)^2 dt      
+\end{equation}
+
+\begin{equation} \label{EU}
+    E_t^{EFV}= \int F(x,t) v(t,x) dt
+\end{equation}
+
+
+%%%________BIBLIO__________
+\newpage
+\lhead{Bibliographie}
+\nocite{}
+\bibliographystyle{apalike}
+\bibliography{references}
+
+  
+  
+
+  
+\end{document}
