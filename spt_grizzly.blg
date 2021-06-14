@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: spt_grizzly.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apalike.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: references.bib
+Warning--I didn't find a database entry for "Verruijt1994SoilDynamics"
+Warning--I didn't find a database entry for "Saint-Venant1898MemoireSys"
+Warning--I didn't find a database entry for "Fairhurst1959EnergyDrilling"
+Warning--I didn't find a database entry for "eq:EF2"
+Warning--I didn't find a database entry for "eq:EFV"
+Warning--empty institution in Sy1991InternationalDynamics
+You've used 2 entries,
+            1935 wiz_defined-function locations,
+            495 strings with 4253 characters,
+and the built_in function-call counts, 787 in all, are:
+= -- 75
+> -- 36
+< -- 2
++ -- 12
+- -- 12
+* -- 71
+:= -- 145
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 16
+chr.to.int$ -- 2
+cite$ -- 3
+duplicate$ -- 26
+empty$ -- 49
+format.name$ -- 16
+if$ -- 145
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1
+newline$ -- 13
+num.names$ -- 6
+pop$ -- 13
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 49
+swap$ -- 2
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 1
+while$ -- 6
+width$ -- 0
+write$ -- 27
+(There were 6 warnings)
