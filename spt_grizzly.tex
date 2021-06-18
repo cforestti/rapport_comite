@@ -56,18 +56,7 @@
     
     
     
-\begin{table} [H]
-\begin{tabular}{ll}
-\centering
-        \element{\textbf{Pierre BREUL}} & \element{Directeur de thèse}\\
-        \element{\textbf{Bastien CHEVALIER}} & \element{Encadrant}\\
-        \element{\textbf{Miguel Angel BENZ NAVARRETE}} & \element{Responsable en entreprise}\\
-        \element{\textbf{Quoc Anh TRAN}} & \element{Encadrant en entreprise}\\
-\end{tabular}
-\end{table}
-\centering
-\emph{Présentation le 06 avril 2021}\\[0.3cm]
-    
+
     \vspace*{\fill}
   \end{titlepage}
 
@@ -83,7 +72,7 @@
  
 On souhaite simuler l'essai DCLT. Dans cet essai, le pénétromètre est enfoncé par battage. Afin d'être réaliste vis-à-vis de la technique, on choisit de simuler le battage. 
 
-Dans un premier temps, on simule un essai similaire, mais plus simple : le SPT. En effet, le battage SPT étant plus simple (en terme de géométrie et de matériaux), ceci a été modélisé analytiquement par différents chercheurs \citep{Schmertmann1979} Gonin1979ReflexionPieux, Fairhurst1959EnergyDrilling}.
+Dans un premier temps, on simule un essai similaire, mais plus simple : le SPT. En effet, le battage SPT étant plus simple (en terme de géométrie et de matériaux), ceci a été modélisé analytiquement par différents chercheurs \citep{Schmertmann1979, Gonin1979ReflexionPieux, Fairhurst1959EnergyDrilling}.
 
 Ces travaux ont constaté des bonnes correspondances entre les prédictions analytiques à des résultats expérimentaux. Par la suite, en appliquant la même démarche, on souhaite vérifier si on est capable de simuler le battage SPT en différences finies à l'aide de FLAC.
 
@@ -95,7 +84,7 @@ L'onde de compression u(x,t) crée par l'impact du marteau se déplace le long d
     \varepsilon = \frac{\partial u}{\partial x}
 \end{equation}
 
-En appliquant la relation deuxième loi de Newton (∑F=ma), avec la masse m comme m=At ρt dx et l'accélération $a=\partial^2/\partial t^2$ pour une portion de la tige, on obtient à l'équation \ref{eq:stress}.
+%En appliquant la relation deuxième loi de Newton (F=ma), avec la masse m comme m=Atrhoρt dx et l'accélération $a=\partial^2/\partial t^2$ pour une portion %de la tige, on obtient à l'équation \ref{eq:stress}.
 
 \begin{equation} \label{eq:stress}
     \frac{ \partial \sigma}{\partial^2}= \rho_t^2 \frac{\partial u}{\partial x}

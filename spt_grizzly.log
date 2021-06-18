@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  14 JUN 2021 22:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  18 JUN 2021 09:04
 entering extended mode
 **./spt_grizzly.tex
 (spt_grizzly.tex
@@ -737,84 +737,6 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
 (Font)              using `T1/lmr/bx/n' instead on input line 50.
 
-! Undefined control sequence.
-l.62         \element
-                     {\textbf{Pierre BREUL}} & \element{Directeur de thèse}\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.62 ...\element{\textbf{Pierre BREUL}} & \element
-                                                  {Directeur de thèse}\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \element 
-                         
-l.63         \element
-                     {\textbf{Bastien CHEVALIER}} & \element{Encadrant}\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.63 ...ent{\textbf{Bastien CHEVALIER}} & \element
-                                                  {Encadrant}\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \element 
-                         
-l.64         \element
-                     {\textbf{Miguel Angel BENZ NAVARRETE}} & \element{Respo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.64 ...f{Miguel Angel BENZ NAVARRETE}} & \element
-                                                  {Responsable en entreprise}\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \element 
-                         
-l.65         \element
-                     {\textbf{Quoc Anh TRAN}} & \element{Encadrant en entrep...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.65 ...element{\textbf{Quoc Anh TRAN}} & \element
-                                                  {Encadrant en entreprise}\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [1
 
 {C:/Users/Caforestti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
@@ -826,76 +748,46 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 
+l.66 
       [1
 
 ]
 Chapitre 1.
 
-Package natbib Warning: Citation `Schmertmann1979' on page 2 undefined on input
- line 86.
-
-! Too many }'s.
-l.86 ...flexionPieux, Fairhurst1959EnergyDrilling}
-                                                  .
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
+Package natbib Warning: Citation `Gonin1979ReflexionPieux' on page 2 undefined 
+on input line 75.
 
 
-! Package inputenc Error: Unicode character ∑ (U+2211)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 ...t la relation deuxième loi de Newton (∑
-                                                  F=ma), avec la masse m com...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
+Package natbib Warning: Citation `Fairhurst1959EnergyDrilling' on page 2 undefi
+ned on input line 75.
 
 
-! Package inputenc Error: Unicode character ρ (U+03C1)
-(inputenc)                not set up for use with LaTeX.
+Package natbib Warning: Citation `Verruijt1994SoilDynamics' on page 2 undefined
+ on input line 99.
 
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 ...n (∑F=ma), avec la masse m comme m=At ρ
-                                                  t dx et l'accélération $...
 
-You may provide a definition with
-\DeclareUnicodeCharacter 
+Package natbib Warning: Citation `Saint-Venant1898MemoireSys' on page 2 undefin
+ed on input line 99.
 
 [2
 
 ]
 
-Package natbib Warning: Citation `Verruijt1994SoilDynamics' on page 3 undefined
- on input line 110.
+LaTeX Warning: Reference `eq:F=Zv' on page 3 undefined on input line 113.
 
 
-Package natbib Warning: Citation `Saint-Venant1898MemoireSys' on page 3 undefin
-ed on input line 110.
-
-
-LaTeX Warning: Reference `eq:F=Zv' on page 3 undefined on input line 124.
-
-
-LaTeX Warning: Reference `eq:FzV' on page 3 undefined on input line 130.
+LaTeX Warning: Reference `eq:FzV' on page 3 undefined on input line 119.
 
 
 Package natbib Warning: Citation `Fairhurst1959EnergyDrilling' on page 3 undefi
-ned on input line 134.
+ned on input line 123.
 
 
-Package natbib Warning: Citation `eq:EF2' on page 3 undefined on input line 145
+Package natbib Warning: Citation `eq:EF2' on page 3 undefined on input line 134
 .
 
 
-Package natbib Warning: Citation `eq:EFV' on page 3 undefined on input line 145
+Package natbib Warning: Citation `eq:EFV' on page 3 undefined on input line 134
 .
 
 
@@ -927,12 +819,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5] (spt_grizzly.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+[5] (spt_grizzly.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -946,19 +833,19 @@ Package rerunfilecheck Info: File `spt_grizzly.out' has not changed.
 (rerunfilecheck)             Checksum: 1192B278CC5C2A0AB9E54D19F583DC45;275.
  ) 
 Here is how much of TeX's memory you used:
- 13373 strings out of 479618
- 243598 string characters out of 2862651
+ 13365 strings out of 479618
+ 243503 string characters out of 2862651
  660384 words of memory out of 3000000
- 30267 multiletter control sequences out of 15000+200000
+ 30260 multiletter control sequences out of 15000+200000
  450057 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,11n,75p,833b,787s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-math
-ex.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm
--mathsy.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
-lm/lm-mathit.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/d
-vips/lm/lm-rm.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/
-dvips/lm/lm-ec.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc
+ 71i,11n,75p,833b,765s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.e
+nc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
+hex.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
+m-mathsy.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
+/lm/lm-mathit.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/
+dvips/lm/lm-rm.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc
 /dvips/lm/lm-ts1.enc}<C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/lm/lmex10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKT
@@ -968,9 +855,9 @@ rams/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Caforestti/AppData/Local/
 Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Caforestti/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Caforestti/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on spt_grizzly.pdf (6 pages, 141028 bytes).
+Output written on spt_grizzly.pdf (6 pages, 136599 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
+ 24 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

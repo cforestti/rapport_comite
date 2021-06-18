@@ -56,18 +56,18 @@
     
     
     
-\begin{table} [H]
-\begin{tabular}{ll}
-\centering
-        \element{\textbf{Pierre BREUL}} & \element{Directeur de thèse}\\
-        \element{\textbf{Bastien CHEVALIER}} & \element{Encadrant}\\
-        \element{\textbf{Claude BACCONNET}} & \element{Encadrant}\\
-        \element{\textbf{Miguel Angel BENZ NAVARRETE}} & \element{Responsable en entreprise}\\
-        \element{\textbf{Quoc Anh TRAN}} & \element{Encadrant en entreprise}\\
-\end{tabular}
-\end{table}
-\centering
-\emph{Présentation le 06 avril 2021}\\[0.3cm]
+%\begin{table} [H]
+%\begin{tabular}{ll}
+%\centering
+%        \element{\textbf{Pierre BREUL}} & \element{Directeur de thèse}\\
+%        \element{\textbf{Bastien CHEVALIER}} & \element{Encadrant}\\
+%        \element{\textbf{Claude BACCONNET}} & \element{Encadrant}\\
+%        \element{\textbf{Miguel Angel BENZ NAVARRETE}} & \element{Responsable en entreprise}\\
+%        \element{\textbf{Quoc Anh TRAN}} & \element{Encadrant en entreprise}\\
+%\end{tabular}
+%\end{table}
+%\centering
+%\emph{Présentation le 06 avril 2021}\\[0.3cm]
     
     \vspace*{\fill}
   \end{titlepage}
@@ -278,9 +278,9 @@ La raideur maximale du ressort ($K_{max}$) et le coefficient de l'amortissement 
 
 \cite{Loukidis2008AssessmentProcedure} ont fait varié la profondeur d'une semelle au sein d'un matériau parfaitement élastique. Le coefficient $D_f$ est ainsi estimé à partir du rapport entre la profondeur et le diamètre B (Équation \ref{eq:Df}). Ils ont observé également que sous chargement dynamique ce paramètre était élevé à 1,7.
 
-\begin{equation} \label{eq:Df}
-    D_f = (1,27-0,12 \ln \nu) - (0,27-0,12 ln \nu) \exp[{-0,83 (\left\frac{D}{B})\right]^{0,826}} 
-\end{equation}
+%\begin{equation} \label{eq:Df}
+%    D_f = (1,27-0,12 \ln \nu) - (0,27-0,12 ln \nu) \exp[{-0,83 (\left\frac{D}{B})\right]^{0,826}} 
+%\end{equation}
 
 Pour les rapports D/B> 8 où $D_f$ devient constant,  $D_f$ varie entre 1,36, pour $\nu$=0,5 (argiles saturées), et 1,5, pour $\nu$=0,15 (sables).
 
@@ -780,13 +780,13 @@ Celles-ci sont constituées d’amortisseurs dans les deux directions perpendicu
     \end{aligned}
 \end{equation}
 
-La qualité du maillage est essentielle pour la précision et fiabilité des résultats. Un grand défi pour la modélisation continue de la pénétration est le fait d’entraîner de grandes déformations dans le sol. Les limitations quant aux déformations du maillage varient selon la méthode intégrée dans le code. En général, le code associant la méthode Lagrangienne et la méthode Eulérienne permettent de mieux gérer les déformations (\emph{e.g.} code Abaqus). La méthode Lagrangienne intégrée par le code FLAC permet de mettre à jour les coordonnées des noeuds au cours du calcul. Cette méthode n’est pourtant pas adaptée lorsque les déformations deviennent trop importantes \citep{Moug2019AxisymmetricClay, Nagula2018EffectivenessModel}.
+La qualité du maillage est essentielle pour la précision et fiabilité des résultats. Un grand défi pour la modélisation continue de la pénétration est le fait d'entraîner de grandes déformations dans le sol. Les limitations quant aux déformations du maillage varient selon la méthode intégrée dans le code. En général, le code associant la méthode Lagrangienne et la méthode Eulérienne permettent de mieux gérer les déformations (\emph{e.g.} code Abaqus). La méthode Lagrangienne intégrée par le code FLAC permet de mettre à jour les coordonnées des noeuds au cours du calcul. Cette méthode n’est pourtant pas adaptée lorsque les déformations deviennent trop importantes \citep{Moug2019AxisymmetricClay, Nagula2018EffectivenessModel}.
 
 C’est pourquoi la pénétration entraînée et le maillage adopté doivent être correctement choisis afin de limiter les distorsions et ainsi assurer la fiabilité des résultats. Lorsqu’on analyse les modèles utilisant le code FLAC pour la pénétration, on peut avoir une idée des ordres de grandeurs des pénétrations et des éléments du maillage.
 
 La plupart des modèles emploient un maillage composé par des éléments homogènes. Les enfoncements correspondent de 10 à 55\% de la taille des éléments du maillage. Quant au rapport entre le diamètre du pieu et la taille d’éléments du maillage, ceci varie de 5\% à 80\%.
 
-Différentes tailles d’élément de maillage ont été testées afin d’analyser la sensibilité des résultats. Le but étant de trouver un maillage suffisamment fin afin de converger vers une solution unique sans toutefois trop augmenter le temps de calcul. Le modèle est composé par 3048 éléments et 4664 noeuds.
+Différentes tailles d’élément de maillage ont été testées afin d’analyser la sensibilité des résultats. Le but étant de trouver un maillage suffisamment fin afin de converger vers une solution unique sans toutefois trop augmenter le temps de calcul. Le modèle est composé par 3048 éléments et 4664 nœuds.
 
 
 
@@ -798,6 +798,84 @@ On a simulé le chargement pointe pénétrométrique statique et dynamique. Le c
 Comme évoqué, la plupart des travaux numériques rapportés dans la littérature simulent le chargement dynamique en appliquant une contrainte sinusoïdale à l’extrémité supérieure des pieux \citep{Fakharian2014ComparisonModelling, Masouleh2008VerificationMethod,Pinto2008EvaluationTesting}. Dans le cas de ce travail, ainsi que les travaux précédents \citep{Benz-Navarrete2009MESURES2, Escobar2015Mise3, Tran2019NumericalTest}, on a choisi de simuler le battage.
 
 Pour ce faire, il s'avère nécessaire d'ajuster la sollicitation pour que celle-ci soit représentative de l'onde de choc observée expérimentalement. L'onde de compression générée suite à l'impact est triangulaire avec une légère asymétrie, celle-ci peut être caractérisée par la durée du choc ($\Delta t$) et une contrainte maximale ($\sigma_{max}$). On décrit par la suite la calibration du battage. Dans un premier, on vérifie la capacité de simuler la propagation d'une onde de compression.
+
+
+
+\section {Cas du SPT}
+ 
+On souhaite simuler l'essai DCLT. Dans cet essai, le pénétromètre est enfoncé par battage. Afin d'être réaliste vis-à-vis de la technique, on choisit de simuler le battage. 
+
+Dans un premier temps, on simule un essai similaire, mais plus simple : le SPT. En effet, le battage SPT étant plus simple (en terme de géométrie et de matériaux), ceci a été modélisé analytiquement par différents chercheurs \citep{Schmertmann1979, Gonin1979ReflexionPieux, Fairhurst1959EnergyDrilling}.
+
+Ces travaux ont constaté des bonnes correspondances entre les prédictions analytiques à des résultats expérimentaux. Par la suite, en appliquant la même démarche, on souhaite vérifier si on est capable de simuler le battage SPT en différences finies à l'aide de FLAC.
+
+\section{Théorie}
+
+L'onde de compression u(x,t) crée par l'impact du marteau se déplace le long des tiges. La déformation entraînée par le passage de cette onde $\varepsilon$ peut être exprimée par l'équation \ref{eq:def}.
+
+\begin{equation} \label{eq:def}
+    \varepsilon = \frac{\partial u}{\partial x}
+\end{equation}
+
+%En appliquant la relation deuxième loi de Newton (F=ma), avec la masse m comme m=Atrhoρt dx et l'accélération $a=\partial^2/\partial t^2$ pour une portion %de la tige, on obtient à l'équation \ref{eq:stress}.
+
+\begin{equation} \label{eq:stress}
+    \frac{ \partial \sigma}{\partial^2}= \rho_t^2 \frac{\partial u}{\partial x}
+\end{equation}
+
+Par ailleurs, en supposant la tige élastique,  $\sigma=E_t \varepsilon$, avec $\varepsilon$ donné par l'équation \ref{eq:def}, on obtient l'équation différentielle qui gouverne la propagation de l'onde u(x,t), connue simplement équation de l'onde. 
+
+\begin{equation} \label{eq:onde}
+    \frac{ \partial \sigma}{\partial t^2}= c_t^2 \frac{\partial u}{\partial x}
+\end{equation}
+
+Il est possible l'équation de l'onde analytiquement par différentes méthodes (transformée de Laplace, séparation des variables, méthode des caractéristiques) ou numériquement. Chacun de ces méthodes est discuté par \cite{Verruijt1994SoilDynamics}. Dans le cadre de ce travail, on retient la solution obtenue par la méthode des caractéristiques, proposé initialement par \cite{Saint-Venant1898MemoireSys}. Selon celle-ci, l'équation \ref{eq:onde} correspond à la superposition deux ondes $u_{f}(t-x/c_t)$ (descendante) et $u_{g}(t-x/c_t)$ (remontante) se propageant le long des tiges de manière continue à une vitesse d'ondes ($c_t$).
+
+Le passage de l'onde u(x,t) à un instant t engendrera une vitesse particulaire v(x,t) à un point donnée de la tige, obtenue par la dérivation de l'équation \ref{eq:onde} en fonction du temps.
+
+\begin{equation} \label{eq:vitesse}
+v(x,t) = v_f(t-x/c_t)-v_g(t+x/c_t)
+\end{equation}
+
+La déformation entraînée par le passage de l'onde u(x,t), celle-ci obtenue à partir de la dérivation de l'équation \ref{eq:def} en fonction de x. Cette déformation $\varepsilon$ peut être exprimée en terme de la vitesse particulaire des ondes, incidente et remontante, afin d'obtenir l'équation \ref{eq:def2}.
+
+\begin{equation} \label{eq:def2}
+    \varepsilon(x,t)=-\frac{1}{c_t}[v_f(t-x/c_t]-v_f(t+x/c_t)]
+\end{equation}
+
+En tenant compte de l'élasticité des tiges, c'est-à-dire de $F=\varepsilon A_t E_t$, on obtient l'équation \ref{eq:F=Zv}
+
+\begin{equation} \label{eq:FZv}
+    F(x,t)=-\frac{A_t E_t}{c_t}[v_f(t-x/c)-v_g(t-x/c)]
+\end{equation}
+
+Comme constaté sur l'équation \ref{eq:FzV}, dans le problème de la propagation longitudinale d'une onde mécanique dans un milieu élastique, la force F(x,t) et la vitesse particulaire v(t,x) sont proportionnels. Le rapport de proportionnalité entre ceux deux grandeurs étant ${A_t E_t}/{c_t}$, c'est-à-dire, l'impédance mécanique de la tige $Z_t$.
+
+\section{Énergie transportée par l'onde}
+
+La propagation d’une onde mécanique dans un milieu élastique, tel qu’une tige, est caractérisée par le transport d’énergie. Selon \cite{Fairhurst1959EnergyDrilling}, pour un pulse dont toutes les composantes se propagent dans une même direction, l'énergie totale transmise ($E_t$) est divisé également en deux parties : l'énergie potentielle (ou énergie de déformation) $(E_U)$ et l'énergie cinétique $(E_K)$.
+
+\begin{equation} \label{EK}
+    E_K=\frac{1}{2} \frac{A_t E_t}{c_t} \int v(x,t)^2 dt
+\end{equation}
+
+
+\begin{equation} \label{EU}
+    E_U=\frac{1}{2} \frac{c_t}{A_t E_t} \int F(x,t)^2 dt
+\end{equation}
+
+L'énergie totale transmise étant le double de $E_U$, celle-ci peut être obtenue en intégrant la force mesurée expérimentalement à l'aide des jauges de déformation (équation \cite{eq:EF2}). Cette méthode a été appliqué à l'essai SPT afin de connaître la vrai énergie transmise par l'impact du marteau. Plus tard, en appliquant la proportionnalité entre la force et la vitesse particulaire (Équation \ref{eq:FZv}), \cite{Sy1991InternationalDynamics} proposent le calcul de l'énergie transmise à partir de la force (à l'aide des jauges de déformation) et la vitesse particulaire (à l'aide d'accéléromètre) (\cite{eq:EFV}). Cette méthode est connue comme EFV, tandis que l'obtention de l'énergie uniquement à partir de la force est connue comme méthode EF2.
+
+\begin{equation} \label{eq:EF2}
+    E_t^{EF2}= \frac{c_t}{A_t E_t} \int F(x,t)^2 dt      
+\end{equation}
+
+\begin{equation} \label{EU}
+    E_t^{EFV}= \int F(x,t) v(t,x) dt
+\end{equation}
+
+
+
 
 \subsubsection{Calibration du battage}
 
@@ -848,22 +926,22 @@ On a simulé cet essai à l'aide d'un modèle numérique afin d'ajuster l'impact
 
 Le marteau est composé de deux embouts en polystyrène à haut impact (HIPS) et d'une cavité cylindrique de parois de 2 mm en acier. Celle-ci est remplie de limaille de fer. Afin de simplifier l'analyse, dans le modèle, le marteau est modélisé comme un cylindre homogène de 6 cm de diamètre et 13,6 cm de hauteur. Celui-ci est considéré comme étant composé par un seul matériau, parfaitement élastique. Le module d'Young équivalent attribué au marteau $(E_m)$ est déduit à partir de sa géométrie et des modules de l'acier et du HIPS. On a adopté des valeurs de module pour la HIPS de 0,5 GPa, selon les informations du fabricant (Tableau \ref{tab:marteau}).
 
-\begin{table} [H]
-\caption{Définition du module d'Young équivalent du marteau ($E_m$)}
-\label{tab:marteau}
-\centering
-\begin{tabular}{cccc}
-\hline
-\tabhead{Élément} & \tabhead{Épaisseur} & \tabhead{Diamètre} & \tabhead{Module d'Young}\\
-            -     & (mm)                & (mm)               & (Pa) \\
-\hline
-Embout (x2)     & 25    & 60   & 5,0 $10^{8}$ \\
-Cavité centrale & 86    &D$_{ext}$: 60 / D$_{int}$: 56,4 & 2,06 $10^{11}$ \\
-\hline
-Marteau         & 136   & 0.75  & 2,5 $10^{10}$ \\
-\hline\\
-\end{tabular}
-\end{table}
+%\begin{table} [H]
+%\caption{Définition du module d'Young équivalent du marteau ($E_m$)}
+%\label{tab:marteau}
+%\centering
+%\begin{tabular}{cccc}
+%\hline
+%\tabhead{Élément} & \tabhead{Épaisseur} & \tabhead{Diamètre} & \tabhead{Module d'Young}\\
+%            -     & (mm)                & (mm)               & (Pa) \\
+%\hline
+%Embout (x2)     & 25    & 60   & 5,0 $10^{8}$ \\
+%Cavité centrale & 86    &D$_{ext}$: 60 / D$_{int}$: 56,4 & 2,06 $10^{11}$ \\
+%\hline
+%Marteau         & 136   & 0.75  & 2,5 $10^{10}$ \\
+%\hline\\
+%\end{tabular}
+%\end{table}
 
 Pour simuler l'impact entre deux objets dans FLAC, on doit créer une interface. L'interface est accolée à une (ou les deux) faces qui interagissent. Son comportement est caractérisé par des paramètres de rupture ($\phi$ et c) et de déformation (raideur normale $k_n$ et tangentielle $k_s$). 
 
@@ -905,7 +983,7 @@ En effet, les différents sources de pertes énergétiques présentes dans l'ess
 %L'interaction entre l'extrémité de la tige et l'impactant est traduite par l'interface collée à la face inférieure est ceci. La raideur linéaire adoptée pour cette interface a été calibré à partir des données expérimentales. Pour cela, on procède de manière similaire à l'approche suivie par \citep{Tran2019NumericalTest}. On réalise une série d'impacts à différentes vitesses de frappe (1 kN, 2 kN, 5 kN) en testant différentes raideurs jusqu'à que la relation entre la force maximale et la vitesse de frappe soit cela observée expérimentalement.
 
 
-\subsection{Modélisation de l'interface sol-pointe}
+\subsection{Modélisation de l'interface}
 \label{sec:interface}
 
 Afin de simuler l’interaction entre le pénétromètre et le sol, il s’avère nécessaire introduire une interface entre les deux matériaux. Celle-ci permettra de reproduire correctement le choc au niveau de la pointe et le glissement entre les parois de la pointe et le sol. Dans FLAC, l’interface est modélisée par un maillage de triangles définis par trois noeuds placés sur la surface de l’objet. Celle-ci est caractérisée par des paramètres de raideur et de rupture (critère de rupture Mohr-Coulomb). Ces paramètres doivent être choisis afin de minimiser son effet dans le modèle.
@@ -928,9 +1006,9 @@ Les raideurs apparentes de l’interface d’une zone perpendiculaire sont souve
     \end{equation}
 \end{minipage}
 
-\vspace{1.5}
-\newline
-\\[2 cm]
+%\vspace{1.5}
+%\newline
+%\\[2 cm]
 La définition des paramètres de l’interface constitue une tâche importante car ceux-ci influencent la réponse globale et interviennent comme « nouveau matériau ». Afin de vérifier si la relation proposée par le logiciel (Équation \ref{eq:ks}) permet d'empêcher cela, on a réalisé une étude paramétrique.
 
 Cinq valeurs de raideurs ont été testées en fixant toutes les autres variables. La raideur minimale été calculée à partir de l'équation \ref{eq:ks} pour un massif de caractéristiques connues (à savoir : E = 80 MPa, $\rho_d$ = 1700 kg/m$^3$, c = 0 kPa, $\phi$= 38\textdegree{} et $\psi$= 8\textdegree{}). Pour ce massif, la raideur minimale ($k_{min}$) devrait être de 5,3x$10^{9}$ Pa/m (\citep{Itasca2020FLAC3D6.0}, Équation \ref{eq:ks}). Afin de vérifier si cette valeur permet de s'affranchir de l'effet de l'interface, on a testé autres cinq valeurs de raideur.  
@@ -1092,8 +1170,6 @@ En tenant compte des aspects abordés dans ce rapport, les principales activité
 
 \emph{Oliveira, C. F. ; Lopez, S. R. ; Tran, Q. A. ; Breul, P. ; Canou, J. ; Reiffsteck, P. ; Dupla, J. C. ; Jacquard, C. ; Teyssier, A. ; Benz-Navarrete, M. A. Soil modulus assessment by means of cone dynamic loading test. 20th International Conference on Soil Mechanics and Geotechnical Engineering (ICSMGE), Sydney, May 2022. (Présentation orale - Résumé accepté)}\\[0.01cm]
 
-\emph{Oliveira, C. F. ; Benz-Navarrete, M. A. ; Breul, P. ; Tran, Q. A. ; Chevalier, B. ; Bacconnet, C. Assessment of small-strain modulus through wave velocity measurement with dynamic penetrometer Panda 3®. 6th International Conference on Geotechnical and Geophysical Site Characterization, Budapest, Septembre 2021. (Présentation orale)}
- 
 \end{itemize}
 
 %%%________BIBLIO__________
