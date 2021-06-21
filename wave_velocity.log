@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  21 JUN 2021 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  21 JUN 2021 15:10
 entering extended mode
 **./wave_velocity.tex
 (wave_velocity.tex
@@ -734,89 +734,69 @@ LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
 
 [1
 
-{C:/Users/Caforestti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-
-Package natbib Warning: Citation `Emerson2005' on page 1 undefined on input lin
-e 80.
-
-
-Package natbib Warning: Citation `Omidvar2012' on page 1 undefined on input lin
-e 98.
-
-
-Package natbib Warning: Citation `Benz-Navarrete2009' on page 1 undefined on in
-put line 100.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+{C:/Users/Caforestti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]pdfTeX warn
+ing (ext4): destination with the same identifier (name{page.1}) has been alread
+y used, duplicate ignored
 <to be read again> 
                    \relax 
-l.102 L
-       a vitesse d’ondes ($c_p^{DCLT}$) est déduite à partir de la vites...
-[1]
-
-Package natbib Warning: Citation `Benz-Navarrete2009' on page 2 undefined on in
-put line 108.
-
-
-Package natbib Warning: Citation `Aussedat1970' on page 2 undefined on input li
-ne 108.
-
-<media/polaire.PNG, id=31, 283.0575pt x 255.95625pt>
+l.101 
+       [1]
+<media/polaire.PNG, id=67, 283.0575pt x 255.95625pt>
 File: media/polaire.PNG Graphic file (type png)
 <use media/polaire.PNG>
 Package pdftex.def Info: media/polaire.PNG  used on input line 112.
 (pdftex.def)             Requested size: 198.13889pt x 179.16814pt.
-
-Package natbib Warning: Citation `Benz-Navarrete2009' on page 2 undefined on in
-put line 113.
-
-
-Package natbib Warning: Citation `Benz-Navarrete2009' on page 2 undefined on in
-put line 113.
-
-
-Package natbib Warning: Citation `Escobar2015' on page 2 undefined on input lin
-e 118.
-
-
-Package natbib Warning: Citation `LeKouby2008' on page 2 undefined on input lin
-e 129.
-
-
-Package natbib Warning: Citation `Muhammed2016' on page 2 undefined on input li
-ne 129.
-
-<media/comparatifs_.PNG, id=33, 636.3775pt x 192.72pt>
+<media/comparatifs_.PNG, id=80, 636.3775pt x 192.72pt>
 File: media/comparatifs_.PNG Graphic file (type png)
 <use media/comparatifs_.PNG>
 Package pdftex.def Info: media/comparatifs_.PNG  used on input line 137.
 (pdftex.def)             Requested size: 445.46121pt x 134.90306pt.
-)
-Runaway argument?
-{(a)Comparatifs entre $c_p$ et $c_p^{DCLT}$ pour le SF et SH \label {\ETC.
-! File ended while scanning use of \caption@xdblarg.
-<inserted text> 
-                \par 
-<*> ./wave_velocity.tex
-                       
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
 
-! Emergency stop.
-<*> ./wave_velocity.tex
-                       
-*** (job aborted, no legal \end found)
+Overfull \hbox (18.02968pt too wide) in paragraph at lines 137--138
+ [] 
+ []
 
- 
+[2 <./media/polaire.PNG>]
+File: media/comparatifs_.PNG Graphic file (type png)
+<use media/comparatifs_.PNG>
+Package pdftex.def Info: media/comparatifs_.PNG  used on input line 147.
+(pdftex.def)             Requested size: 445.46121pt x 134.90306pt.
+
+Overfull \hbox (18.02968pt too wide) in paragraph at lines 147--148
+ [] 
+ []
+
+[3 <./media/comparatifs_.PNG>] (wave_velocity.bbl) [4] (wave_velocity.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `wave_velocity.out' has not changed.
+(rerunfilecheck)             Checksum: FD915D7D004B0222EFDD19AAF54B7342;631.
+ ) 
 Here is how much of TeX's memory you used:
- 13317 strings out of 479618
- 242786 string characters out of 2862651
+ 13385 strings out of 479618
+ 244006 string characters out of 2862651
  658744 words of memory out of 3000000
- 30238 multiletter control sequences out of 15000+200000
- 445412 words of font info for 53 fonts, out of 3000000 for 9000
+ 30279 multiletter control sequences out of 15000+200000
+ 449675 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,12n,75p,707b,786s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 71i,11n,75p,707b,786s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.e
+nc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.
+enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ma
+thit.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/
+lm-ts1.enc}<C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/lm/lmbx10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmbx12.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/lm/lmcsc10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmmi10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Caforestti/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Caforestti/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Caforestti/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
+Output written on wave_velocity.pdf (5 pages, 285735 bytes).
+PDF statistics:
+ 146 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+
