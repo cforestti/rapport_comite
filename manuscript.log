@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  21 JUN 2021 10:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  21 JUN 2021 14:52
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -1991,6 +1991,10 @@ Package natbib Warning: Citation `eq:EF2' on page 40 undefined on input line 86
 7.
 
 
+Package natbib Warning: Citation `Sy1991InternationalDynamics' on page 40 undef
+ined on input line 867.
+
+
 Package natbib Warning: Citation `eq:EFV' on page 40 undefined on input line 86
 7.
 
@@ -2007,7 +2011,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Package natbib Warning: Citation `Fairhurst1959EnergyDrilling' on page 41 undef
 ined on input line 886.
 
-<media/num_exp.png, id=512, 470.25688pt x 209.78375pt>
+<media/num_exp.png, id=509, 470.25688pt x 209.78375pt>
 File: media/num_exp.png Graphic file (type png)
 <use media/num_exp.png>
 Package pdftex.def Info: media/num_exp.png  used on input line 892.
@@ -2021,7 +2025,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [41 <./media/num_exp.png>]
-<media/num_imp2.PNG, id=526, 388.95313pt x 378.91562pt>
+<media/num_imp2.PNG, id=523, 388.95313pt x 378.91562pt>
 File: media/num_imp2.PNG Graphic file (type png)
 <use media/num_imp2.PNG>
 Package pdftex.def Info: media/num_imp2.PNG  used on input line 921.
@@ -2048,7 +2052,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [43 <./media/num_imp2.PNG>]
-<media/num_radieur.png, id=543, 925.056pt x 445.9059pt>
+<media/num_radieur.png, id=540, 925.056pt x 445.9059pt>
 File: media/num_radieur.png Graphic file (type png)
 <use media/num_radieur.png>
 Package pdftex.def Info: media/num_radieur.png  used on input line 952.
@@ -2058,7 +2062,7 @@ Overfull \hbox (35.09534pt too wide) in paragraph at lines 952--953
  [] 
  []
 
-<media/num_vitesse.png, id=545, 581.7735pt x 549.252pt>
+<media/num_vitesse.png, id=542, 581.7735pt x 549.252pt>
 File: media/num_vitesse.png Graphic file (type png)
 <use media/num_vitesse.png>
 Package pdftex.def Info: media/num_vitesse.png  used on input line 964.
@@ -2085,7 +2089,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [45 <./media/num_vitesse.png>]
-<media/num_interface_kn.PNG, id=561, 334.24875pt x 252.44313pt>
+<media/num_interface_kn.PNG, id=558, 334.24875pt x 252.44313pt>
 File: media/num_interface_kn.PNG Graphic file (type png)
 <use media/num_interface_kn.PNG>
 Package pdftex.def Info: media/num_interface_kn.PNG  used on input line 997.
@@ -2095,7 +2099,7 @@ Package pdftex.def Info: media/num_interface_kn.PNG  used on input line 997.
 Package natbib Warning: Citation `Itasca2020FLAC3D6.0' on page 46 undefined on 
 input line 1014.
 
-<media/num_interface2.PNG, id=565, 521.95pt x 233.37187pt>
+<media/num_interface2.PNG, id=562, 521.95pt x 233.37187pt>
 File: media/num_interface2.PNG Graphic file (type png)
 <use media/num_interface2.PNG>
 Package pdftex.def Info: media/num_interface2.PNG  used on input line 1018.
@@ -2150,7 +2154,7 @@ ined on input line 1065.
 Package natbib Warning: Citation `Andria-Ntoanina2011CaracterisationCentrifugeu
 se' on page 48 undefined on input line 1065.
 
-<media/num_tx_SF.PNG, id=588, 652.4375pt x 239.89626pt>
+<media/num_tx_SF.PNG, id=585, 652.4375pt x 239.89626pt>
 File: media/num_tx_SF.PNG Graphic file (type png)
 <use media/num_tx_SF.PNG>
 Package pdftex.def Info: media/num_tx_SF.PNG  used on input line 1088.
@@ -2244,10 +2248,10 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D05740D7154922A4E109D63349EA6941;2422.
  ) 
 Here is how much of TeX's memory you used:
- 13790 strings out of 479618
- 250705 string characters out of 2862651
+ 13786 strings out of 479618
+ 250568 string characters out of 2862651
  661382 words of memory out of 3000000
- 30510 multiletter control sequences out of 15000+200000
+ 30507 multiletter control sequences out of 15000+200000
  474357 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,12n,75p,1328b,856s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2285,9 +2289,9 @@ aforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Us
 ers/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><
 C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.p
 fb>
-Output written on manuscript.pdf (53 pages, 3605615 bytes).
+Output written on manuscript.pdf (53 pages, 3604899 bytes).
 PDF statistics:
- 709 PDF objects out of 1000 (max. 8388607)
- 164 named destinations out of 1000 (max. 500000)
+ 706 PDF objects out of 1000 (max. 8388607)
+ 163 named destinations out of 1000 (max. 500000)
  387 words of extra memory for PDF output out of 10000 (max. 10000000)
 
