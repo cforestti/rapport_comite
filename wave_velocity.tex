@@ -81,23 +81,23 @@ Les comparatifs se focalisent uniquement dans les résultats obtenus en laborato
 
 \subsection{Objectif}
 
-Ce document a pour objectif de comparer les résultats de la vitesse d'ondes de compression issus de l'essai DCLT ($c_p^{DCLT}$) aux résultats issus d'autres techniques. On souhaite vérifier dans quelle mesure la vitesse d’ondes issue de l’essai DCLT correspond la vitesse d’ondes de compression $c_p$ et ainsi si celle-ci permettrait, comme dans le cas d'autres techniques, d’estimer le module à faibles déformations ($E_0$ ou $E_{max}$ = $\rho c_p^2$).
+Ce document a pour objectif de comparer les résultats de la vitesse d'ondes de compression issus de l'essai DCLT ($c_p^{DCLT}$)\footnote{On adopte la notation $c_p$ pour la vitesse d'ondes, la notation $v_p$ faisant référence à la vitesse particulaire} aux résultats issus d'autres techniques. On souhaite vérifier dans quelle mesure la vitesse d’ondes issue de l’essai DCLT correspond la vitesse d’ondes de compression $c_p$ et ainsi si celle-ci permettrait, comme dans le cas d'autres techniques, d’estimer le module à faibles déformations ($E_0$ ou $E_{max}$ = $\rho c_p^2$).
 
-\section{RAPPEL : détermination de la vitesse d'ondes à partir de l'essai DCLT}
+\subsection{RAPPEL : détermination de la vitesse d'ondes à partir de l'essai DCLT}
 
-Dans les années 70, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l’application des essais de choc à l’essai de pénétration. Ils ont également réalisé des tests selon la méthode de barres de Hopkinson (Split Hopkinson Pressure Bar - SHPB) adaptés pour les sols. Ils se sont appuyés sur des principes des chocs et sur les équations d’état (équations de Rankine-Hugoniot), qui régit leur propagation. A l’aide des équations de la mécanique classique et des lois de comportement (équations rhéologiques), ces équations dites « mixtes » décrivent la relation entre les contraintes et les vitesses (nommé polaire de choc) lors de la propagation d’un ébranlement. Elles se sont basées sur le phénomène de l’onde plane et cherchent à relier les caractéristiques du milieu au front de choc. Ces relations permettent d’étudier le comportement du sol soumis à un impact, permettant de déterminer l’impédance mécanique de celui-ci (Z) et d’en déduire la vitesse de propagation d’ondes de compression.
+Dans les années 70, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l’application des essais de choc à l’essai de pénétration. Ils ont également réalisé des tests selon la méthode de barres de Hopkinson (Split Hopkinson Pressure Bar - SHPB) adaptés pour les sols. Ils se sont appuyés sur des principes des chocs et sur les équations d’état (équations de Rankine-Hugoniot), qui régit leur propagation. A l’aide des équations de la mécanique classique et des lois de comportement (équations rhéologiques), ces équations dites « mixtes » décrivent la relation entre les contraintes et les vitesses (nommé polaire de choc) lors de la propagation d’un ébranlement. Ces relations permettent d’étudier le comportement du sol soumis à un impact, permettant de déterminer l’impédance mécanique de celui-ci (Z) et d’en déduire la vitesse de propagation d’ondes de compression.
 
 \cite{Omidvar2012} expliquent que les essais des propagations d’ondes en géotechnique (comme les essais de choc) sont complexes à mettre en place car il est souvent difficile d’avoir le suivi des contraintes dans le sol et de s’affranchir de réflexions des ondes. Dans ce type d’essai l’instrumentation la plus courante est l’insertion de capteur à l’intérieur de l’échantillon ce qui conduit souvent à des erreurs.
 
 Cette limitation a été résolue avec l’instrumentation de la tige et l’application des méthodes découplage et de reconstruction d’ondes dans la tige applqué à l'essai DCLT au pénétromètre Panda 3$\up{\textregistered}$. Les capteurs situés dans au niveau de la tête enregistrent les contraintes engendrées par le passage de l’ébranlement et son retour de manière quasi-continue (50 kHz) pour un intervalle $\Delta t$ égal à 2L/c. Avec L la longueur de la barre et c la vitesse d’ondes dans l’acier (de l’ordre de 5200m/s).
 
-Au cours de l’essai, l’impact du marteau produit une onde incidente entrainant une vitesse $v_i$ et une contrainte qui se propage par la tige. Une partie de l’onde incidente de force $F_I$ dans le sol est réfléchie vers la tige avec une vitesse $v_R$ et une force $F_R$, tandis qu’une autre partie est transmise au sol. Dans la tige, l’onde réfléchie s’ajoute à l’onde incidente. Tant que les deux milieux adjacents restent collés, leurs particules situées des deux côtes présentent la même vitesse et des contraintes normales de même intensité (principe d’action et réaction). Ceci constitue le principe général d’obtention des forces transmises ($F_T$) au sol pour chaque impact et ainsi la contrainte en pointe $\sigma_p$.
+Au cours de l’essai DCLT, l’impact du marteau crée une onde incidente. Une partie de l’onde incidente de force $F_I$ et de vitesse $v_I$ est réfléchie. L'onde réfléchie de force $F_R$ se propage dans le sens inverse à une vitesse $v_R$, tandis qu’une autre partie est transmise au sol. Dans la tige, l’onde réfléchie s’ajoute à l’onde incidente. Tant que les deux milieux adjacents restent collés, leurs particules situées des deux côtes présentent la même vitesse et des contraintes normales de même intensité (principe d’action et réaction). Ceci constitue le principe général d’obtention des forces transmises ($F_T$) au sol pour chaque impact et ainsi la contrainte en pointe $\sigma_p$ (\ref{fig:polaire1}).
 
 \begin{figure}[H]
     \begin{center}
         \includegraphics[scale = .7]{media/polaire1.PNG}
-        \caption{(a) ondes découplées et (b) Polaire de choc de la tige et du sol}
-        \label{fig:polaire}
+        \caption{(a) ondes découplées et (b) polaire de choc de la tige et du sol}
+        \label{fig:polaire1}
   \end{center}
 \end{figure}
 
@@ -201,23 +201,19 @@ On constate que les valeurs de $c_p^{DCLT}$ sont supérieures à ceux figurant d
  
  
 
-\section{Conclusion et perspectives}
+\section{Bilan et perspectives}
 
-Ce document présente des comparatifs entre les résultats de vitesse d'ondes de compression rapportés dans la littérature et ceux issues de l'essai DCLT. L'objectif était de vérifier dans quelle mesure $c_p^{DCLT}$ est comparable à $c_p$. 
+Ce document présente des comparatifs entre les résultats de vitesse d'ondes de compression rapportés dans la littérature et ceux issus de l'essai DCLT. L'objectif était de vérifier dans quelle mesure $c_p^{DCLT}$ est comparable à $c_p$. 
 
 Ces comparatifs se sont basés en deux sables de référence, (SH et SF), secs. Pour les matériaux analysés, les principaux de facteurs influençant la vitesse d'ondes de compression sont l'état de densité et de contrainte. Ainsi, on compare les mesures pour lesquels ces facteurs sont identiques ou, lorsque cela n'est pas possible, le plus proche.
 
-Les comparatifs ont permis de constaté que pour ce cas de figure les valeurs de $c_p^{DCLT}$ sont supérieures à $c_p$. Cette constatation est en accord avec les résultats obtenus par \cite{Escobar2015}. L'auteur avait rapporté des résultats élevés de $c_p^{DCLT}$ pour des valeurs supérieures à 300 m/s. \cite{Escobar2015} attribué cette différence à des perturbations dues aux raccourcissements élastiques des tiges (L$\geq$6m). Les comparatifs montrés permettent de constater que la différence persiste pour des essais réalisés avec les tiges d'un mètre.
- 
- 
- Characterization of sand using the Kolsky bar is more complex than conventional
-materials such as metals. The longitudinal wave speed in a granular system, such as sand, is governed by complex interactions between sand particles, pore air, and pore water. Various parameters such as grain size distribution and moisture content affect the wave
- 
- 
- speed. Furthermore, as the sand compacts under the dynamic loading, the wave speed varies depending on the degree of compaction. Compared to most other engineering materials, the wave speeds in sand are orders of magnitude slower. Charlie et al. (1990) determined the longitudinal wave velocity in silica sand at various moisture con- tents using a conventional Kolsky bar. Using a sufficiently long sample to allow for a sin- gle passage ofthe stress wave through the sample, they determined the longitudinal wave velocities to lie in the range of212-454 ms?1. Brown et al. (2007) determined the lon- gitudinal wave velocity in silica sand to be 243 ms?1 using flyer plate experiments. Martin et al. (2009) used the conventional Kolsky bar method to determine the wave velocity in sand. They measured the wave velocity of about 300 ms?1 which is within the range reported by Charlie et al. During the Kolsky bar experiment, strain rate in the specimen has to be increased from zero to a desired level. The desired strain rate is achieved by the reflections of stress waves in the specimen from interfaces between the specimen and the bars. High wave speeds in the specimen facilitate an evenly distributed stress field in the specimen and is required to acquire stress equilibrium. When the longitudinal wave velocity is significantly lower, such as that in sand, the specimen may fail to achieve stress equilibrium ifthe loading rate is high. To allow for a more uniform deformation in the early stages ofthe experiment, the initial loading rate needs to be controlled such that the stress in the specimen increases nearly uniformly. A controlled loading rate is achieved using the pulse-shaping technique (Chen and Song, 2011; Frew et al., 2005). More details on pulse-shaping technique are presented in Section 2.1. Most types ofsands do not exhibit a cohesive behavior. Hence, to investigate the high
-strain-rate compressive response, sand specimens need to be confined prior to the dynamic compressive loading. Conventionally, confinement is provided by fitting a jacket over the sand specimen to hold the sand in place when compressed. It has been observed that the material of the jacket affects the dynamic response of sand (Junyu et al., 2014; Lu et al., 2009; Song et al., 2009). The jacket also introduces nonuniform state ofstress in the specimen due to inertia and friction effects. A triaxial Kolsky bar has been developed to study the effects of confinement on the dynamic response of sand (Kabir, 2010; Martin et al., 2013). Confinement methods and triaxial Kolsky bar tech- niques are expanded further in Sections 2.2 and 2.3, respectively.
+Les comparatifs ont permis de constaté que pour ce cas de figure les valeurs de $c_p^{DCLT}$ sont supérieures à $c_p$. Cette constatation est en accord avec les résultats obtenus par \cite{Escobar2015}. L'auteur avait rapporté des résultats élevés de $c_p^{DCLT}$ pour des valeurs supérieures à 300 m/s in situ. \cite{Escobar2015} a attribué cette différence à des perturbations dues aux raccourcissements élastiques des tiges (L$\geq$6m). Les comparatifs présentés dans ce document permettent de constater que la différence persiste pour des essais réalisés avec les tiges d'un mètre.
 
+La démarche appliquée pour déterminer $c_p^{DCLT}$ est celle des essais de choc. Les essais de choc sont réalisés en laboratoire avec des éprouvettes de petite taille. \cite{Omidvar2012, IskanderMaguedOmidivar2015} relatent que la caractérisation de sols à partir des essais de choc est plus complexe que pour d'autres matériaux (comme les métaux par exemple). Pour des essais de choc pour les matériaux de vitesse d'ondes plus élevés une distribution de contraintes dans l'échantillon est plus uniforme. Dans le cas de matériaux granulaires comme les sables, la vitesse de propagation n'étant pas très élevés, l'échantillon n'atteint pas l'équilibre pour des chargements rapides. D'après les auteurs cela est un aspect essentiel pour l'obtention des paramètres.
 
+Afin de garantir une déformation plus uniforme pour le début du chargement, la vitesse de chargement est contrôlée afin d'avoir une augmentation de contrainte quasi-uniforme. D'ailleurs pour les matériaux peut cohésifs (comme les sables) les éprouvettes doivent être confinés avant le chargement dynamique. Souvent un tubage est utilisé afin d'assurer un confinement latérale, même si certains travaux ont montré qui cela influe sur les résultats (Junyu et al., 2014; Lu et al., 2009; Song et al., 2009). D'autres travaux essaient de mettre en place un système triaxial afin de mieux étudier l'effet du confinement.
+
+Une suggestion serait d'utiliser le modèle numérique afin d'étudier l'influence de la forme de l'onde et de conditions aux limites.
  
  
 
@@ -228,10 +224,5 @@ strain-rate compressive response, sand specimens need to be confined prior to th
 \nocite{}
 \bibliographystyle{apalike}
 \bibliography{library}
-
-
   
 \end{document}
-
-
-explication BE : \cite{SHARIFIPOUR}

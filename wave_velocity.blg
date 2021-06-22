@@ -7,48 +7,49 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
 Warning--empty school in Aussedat1970
 Warning--empty school in Escobar2015
+Warning--empty publisher in IskanderMaguedOmidivar2015
 Warning--can't use both volume and number fields in LeKouby2008
 Warning--empty school in Muhammed2016
 Warning--empty journal in Sauzeat2003
-You've used 15 entries,
+You've used 16 entries,
             1935 wiz_defined-function locations,
-            567 strings with 6593 characters,
-and the built_in function-call counts, 5006 in all, are:
-= -- 500
-> -- 160
-< -- 14
-+ -- 50
-- -- 50
-* -- 392
-:= -- 909
-add.period$ -- 43
-call.type$ -- 15
-change.case$ -- 93
-chr.to.int$ -- 15
-cite$ -- 20
-duplicate$ -- 213
-empty$ -- 349
-format.name$ -- 67
-if$ -- 958
+            571 strings with 6815 characters,
+and the built_in function-call counts, 5318 in all, are:
+= -- 527
+> -- 173
+< -- 15
++ -- 54
+- -- 54
+* -- 418
+:= -- 964
+add.period$ -- 45
+call.type$ -- 16
+change.case$ -- 99
+chr.to.int$ -- 16
+cite$ -- 22
+duplicate$ -- 227
+empty$ -- 372
+format.name$ -- 74
+if$ -- 1018
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 7
-newline$ -- 76
-num.names$ -- 45
-pop$ -- 84
+missing$ -- 9
+newline$ -- 80
+num.names$ -- 48
+pop$ -- 94
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 107
 quote$ -- 0
-skip$ -- 170
+skip$ -- 180
 stack$ -- 0
-substring$ -- 315
-swap$ -- 29
+substring$ -- 327
+swap$ -- 30
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
-warning$ -- 5
-while$ -- 43
+type$ -- 94
+warning$ -- 6
+while$ -- 45
 width$ -- 0
-write$ -- 189
-(There were 5 warnings)
+write$ -- 199
+(There were 6 warnings)
