@@ -10,11 +10,28 @@ Benz-Navarrete, M.~A. (2009).
 \newblock {\em {MESURES DYNAMIQUES LORS DU BATTAGE DU PENETROMETRE PANDA 2}}.
 \newblock PhD thesis, Universit{\'{e}} Blaise Pascal.
 
+\bibitem[Cassan, 1988]{Cassan1988}
+Cassan (1988).
+\newblock {Essai in situ des m{\'{e}}caniques des sols. 1 r{\'{e}}alisation et
+  int{\'{e}}rpretation}.
+
+\bibitem[Duttine, 2005]{Duttine2005}
+Duttine, A. (2005).
+\newblock {\em {Comportement des sables et des m{\'{e}}langes sable / argile
+  sous sollicitations statiques et dynamiques avec et sans "rotations d '
+  axes"}}.
+\newblock PhD thesis, Institut National des Sciences Appliqu{\'{e}}es de Lyon.
+
 \bibitem[Emerson, 2005]{Emerson2005}
 Emerson, M. (2005).
 \newblock {\em {Corr{\'{e}}lations entre donn{\'{e}}es g{\'{e}}otechniques et
   g{\'{e}}ophysiques {\`{a}} faible profondeur dans des sables}}.
 \newblock PhD thesis, Institut National Polytechnique de Grenoble.
+
+\bibitem[Emerson and Foray, 2006]{Emerson2006}
+Emerson, M. and Foray, P. (2006).
+\newblock {Laboratory P-wave measurements in dry and saturated sand}.
+\newblock {\em Acta Geotechnica}, 1(3):167--177.
 
 \bibitem[Escobar, 2015]{Escobar2015}
 Escobar, E. (2015).
@@ -22,11 +39,38 @@ Escobar, E. (2015).
   reconnaisance des sols : le PANDA 3}}.
 \newblock PhD thesis.
 
+\bibitem[Hardin, 1972]{Hardin1972}
+Hardin, B.~O. (1972).
+\newblock {Shear modulus and damping in soil: Measurement and parameter
+  effects}.
+\newblock {\em Journal of Soil Mechanics {\&} Foundations Div}, 98(sm6):8977.
+
+\bibitem[Krause et~al., 2015]{Krause2015}
+Krause, M., Dackermann, U., and Li, J. (2015).
+\newblock {Elastic wave modes for the assessment of structural timber:
+  ultrasonic echo for building elements and guided waves for pole and pile
+  structures}.
+\newblock {\em Journal of Civil Structural Health Monitoring}, 5(2):221--249.
+
 \bibitem[{Le Kouby} et~al., 2008]{LeKouby2008}
 {Le Kouby}, A., Canou, J., and Dupla, J. (2008).
 \newblock {Contribution {\`{a}} l'{\'{e}}tude du comportement des pieux. Etude
   en chambre d'etalonnage}.
 \newblock In {\em JNGG 2006}, volume~1, pages 129--136.
+
+\bibitem[{Lopez Retamales} et~al., 2020]{LopezRetamales2020}
+{Lopez Retamales}, S., Canou, J., Dupla, J.~C., and {Benz Navarrete}, M.~A.
+  (2020).
+\newblock {PENETROMETRE DYNAMIQUE ET INDICE DE DENSITE DES SABLES . APPLICATION
+  A L ' EVALUATION DU RISQUE DE LIQUEFACTION DES MASSIFS SABLEUX}.
+\newblock In {\em Journ{\'{e}}es Nationales de G{\'{e}}otechnique et de
+  G{\'{e}}ologie de l'Ing{\'{e}}nieur (JNGG)}, pages 1--9.
+
+\bibitem[Meunier, 1974]{Meunier1974}
+Meunier, J. (1974).
+\newblock {\em {Contribuition {\`{a}} l'{\'{e}}tude des ondes et des ondes de
+  choc dans les sols}}.
+\newblock PhD thesis, Universit{\'{e}} de Grenoble.
 
 \bibitem[Muhammed, 2016]{Muhammed2016}
 Muhammed, R.~D. (2016).
@@ -39,5 +83,12 @@ Muhammed, R.~D. (2016).
 Omidvar, M., Iskander, M., and Bless, S. (2012).
 \newblock {Stress-strain behavior of sand at high strain rates}.
 \newblock {\em International Journal of Impact Engineering}, 49:192--213.
+
+\bibitem[Sauzeat, 2003]{Sauzeat2003}
+Sauzeat, C. (2003).
+\newblock {Comportement du sable dans le domaine des petites et moyennes
+  d{\'{e}}formations : rotations "d'axes" et effets visqueux [Behavior of sand
+  in the small and medium strain domains: rotation of axes and viscous
+  effects]}.
 
 \end{thebibliography}

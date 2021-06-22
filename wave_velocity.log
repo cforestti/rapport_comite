@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  21 JUN 2021 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  22 JUN 2021 13:11
 entering extended mode
 **./wave_velocity.tex
 (wave_velocity.tex
@@ -583,7 +583,14 @@ Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 ))
 (C:\Users\Caforestti\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (wave_velocity.aux)
+) (wave_velocity.aux
+
+LaTeX Warning: Label `fig:polaire' multiply defined.
+
+
+LaTeX Warning: Label `fig:polaire' multiply defined.
+
+)
 \openout1 = `wave_velocity.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -728,75 +735,91 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 (C:\Users\Caforestti\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-
-LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 50.
-
 [1
 
-{C:/Users/Caforestti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]pdfTeX warn
-ing (ext4): destination with the same identifier (name{page.1}) has been alread
-y used, duplicate ignored
+{C:/Users/Caforestti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+<media/polaire1.PNG, id=56, 397.98688pt x 171.64125pt>
+File: media/polaire1.PNG Graphic file (type png)
+<use media/polaire1.PNG>
+Package pdftex.def Info: media/polaire1.PNG  used on input line 98.
+(pdftex.def)             Requested size: 278.58891pt x 120.14804pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101 
-       [1]
-<media/polaire.PNG, id=67, 283.0575pt x 255.95625pt>
+l.102 \end{figure}
+                   [1]
+<media/polaire.PNG, id=81, 283.0575pt x 255.95625pt>
 File: media/polaire.PNG Graphic file (type png)
 <use media/polaire.PNG>
-Package pdftex.def Info: media/polaire.PNG  used on input line 112.
+Package pdftex.def Info: media/polaire.PNG  used on input line 122.
 (pdftex.def)             Requested size: 198.13889pt x 179.16814pt.
-<media/comparatifs_.PNG, id=80, 636.3775pt x 192.72pt>
+ [2 <./media/polaire1.PNG>]
+<media/cp.PNG, id=94, 375.4025pt x 243.40938pt>
+File: media/cp.PNG Graphic file (type png)
+<use media/cp.PNG>
+Package pdftex.def Info: media/cp.PNG  used on input line 131.
+(pdftex.def)             Requested size: 262.77995pt x 170.38539pt.
+ [3 <./media/polaire.PNG> <./media/cp.PNG>]
+<media/cp_SF.PNG, id=136, 784.43062pt x 745.78625pt>
+File: media/cp_SF.PNG Graphic file (type png)
+<use media/cp_SF.PNG>
+Package pdftex.def Info: media/cp_SF.PNG  used on input line 154.
+(pdftex.def)             Requested size: 392.21434pt x 372.89221pt.
+<media/cp_SH.PNG, id=137, 920.43875pt x 956.57375pt>
+File: media/cp_SH.PNG Graphic file (type png)
+<use media/cp_SH.PNG>
+Package pdftex.def Info: media/cp_SH.PNG  used on input line 162.
+(pdftex.def)             Requested size: 414.19362pt x 430.45421pt.
+ [4 <./media/cp_SF.PNG>] [5 <./media/cp_SH.PNG>]
+<media/comparatifs_.PNG, id=167, 636.3775pt x 192.72pt>
 File: media/comparatifs_.PNG Graphic file (type png)
 <use media/comparatifs_.PNG>
-Package pdftex.def Info: media/comparatifs_.PNG  used on input line 137.
-(pdftex.def)             Requested size: 445.46121pt x 134.90306pt.
+Package pdftex.def Info: media/comparatifs_.PNG  used on input line 183.
+(pdftex.def)             Requested size: 413.64047pt x 125.2665pt.
+<media/comparatifs_graphique_.PNG, id=168, 342.27875pt x 247.42438pt>
+File: media/comparatifs_graphique_.PNG Graphic file (type png)
+<use media/comparatifs_graphique_.PNG>
+Package pdftex.def Info: media/comparatifs_graphique_.PNG  used on input line 1
+93.
+(pdftex.def)             Requested size: 342.2779pt x 247.42377pt.
+ [6 <./media/comparatifs_.PNG> <./media/comparatifs_graphique_.PNG>] [7] (wave_
+velocity.bbl)
+[8] (wave_velocity.aux)
 
-Overfull \hbox (18.02968pt too wide) in paragraph at lines 137--138
- [] 
- []
-
-[2 <./media/polaire.PNG>]
-File: media/comparatifs_.PNG Graphic file (type png)
-<use media/comparatifs_.PNG>
-Package pdftex.def Info: media/comparatifs_.PNG  used on input line 147.
-(pdftex.def)             Requested size: 445.46121pt x 134.90306pt.
-
-Overfull \hbox (18.02968pt too wide) in paragraph at lines 147--148
- [] 
- []
-
-[3 <./media/comparatifs_.PNG>] (wave_velocity.bbl) [4] (wave_velocity.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `wave_velocity.out' has not changed.
-(rerunfilecheck)             Checksum: FD915D7D004B0222EFDD19AAF54B7342;631.
+(rerunfilecheck)             Checksum: AA6E3A735D4C880EA41FCEA4A34916CF;673.
  ) 
 Here is how much of TeX's memory you used:
- 13385 strings out of 479618
- 244006 string characters out of 2862651
- 658744 words of memory out of 3000000
- 30279 multiletter control sequences out of 15000+200000
- 449675 words of font info for 54 fonts, out of 3000000 for 9000
+ 13468 strings out of 479618
+ 245493 string characters out of 2862651
+ 659744 words of memory out of 3000000
+ 30338 multiletter control sequences out of 15000+200000
+ 453032 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,11n,75p,707b,786s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.e
-nc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.
-enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ma
-thit.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/
-lm-ts1.enc}<C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/lm/lmbx10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/lm/lmbx12.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/lm/lmcsc10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/lm/lmmi10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Caforestti/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Caforestti/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Caforestti/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmri10.pfb>
-Output written on wave_velocity.pdf (5 pages, 285735 bytes).
+ 71i,11n,75p,1945b,786s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-math
+sy.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm
+-ec.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
+m-rm.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/
+lm-ts1.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
+m/lm-mathit.enc}<C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/lm/lmbx10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/lm/lmbx12.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/lm/lmcsc10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Caforestti/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Caforestti/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Caforestti/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Caforestti/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Caforestti/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Caforestti/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Caforest
+ti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb>
+Output written on wave_velocity.pdf (9 pages, 1116215 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
