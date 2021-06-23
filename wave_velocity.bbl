@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Atkinson, 2000]{Atkinson2000}
+Atkinson, J.~H. (2000).
+\newblock {Non-linear soil stiffness in routine design}.
+\newblock {\em Geotechnique}, 50(5):487--508.
+
 \bibitem[Aussedat, 1970]{Aussedat1970}
 Aussedat, G. (1970).
 \newblock {\em {Sollicitations rapides des sols}}.
@@ -10,10 +15,27 @@ Benz-Navarrete, M.~A. (2009).
 \newblock {\em {MESURES DYNAMIQUES LORS DU BATTAGE DU PENETROMETRE PANDA 2}}.
 \newblock PhD thesis, Universit{\'{e}} Blaise Pascal.
 
+\bibitem[Briaud, 2001]{Briaud2001}
+Briaud, J.-L. (2001).
+\newblock {INTRODUCTION TO SOIL MODULI}.
+\newblock Technical report.
+
+\bibitem[Burland, 1989]{Burland1989}
+Burland, J.~B. (1989).
+\newblock {Ninth Laurits Bjerrum Memorial Lecture: "Small is beautiful"—the
+  stiffness of soils at small strains}.
+\newblock {\em Canadian Geotechnical Journal}.
+
 \bibitem[Cassan, 1988]{Cassan1988}
 Cassan (1988).
 \newblock {Essai in situ des m{\'{e}}caniques des sols. 1 r{\'{e}}alisation et
   int{\'{e}}rpretation}.
+
+\bibitem[{Dano, Christophe; Hicher}, 2002]{DanoChristophe;Hicher2018}
+{Dano, Christophe; Hicher}, P.-Y. (2002).
+\newblock {Mesure du module de cisaillement de diff{\'{e}}rents mat{\'{e}}riaux
+  par la technique des bender elements}.
+\newblock (January 2002).
 
 \bibitem[Duttine, 2005]{Duttine2005}
 Duttine, A. (2005).
@@ -39,6 +61,17 @@ Escobar, E. (2015).
   reconnaisance des sols : le PANDA 3}}.
 \newblock PhD thesis.
 
+\bibitem[Felice, 1986]{Felice1986}
+Felice (1986).
+\newblock {\em {THE RESPONSE OF SOIL TO IMPULSE LOADS USING THE SPLIT-HOPKINSON
+  PRESSURE BAR TECHNIQUE}}.
+\newblock PhD thesis, University of Utah,.
+
+\bibitem[{Gomes Correia}, 2004]{GomesCorreia2004}
+{Gomes Correia}, A. (2004).
+\newblock {Caracteristicas de deformabilidade dos solos que interessam {\`{a}}
+  funcionalidade das estruturas}.
+
 \bibitem[Hardin, 1972]{Hardin1972}
 Hardin, B.~O. (1972).
 \newblock {Shear modulus and damping in soil: Measurement and parameter
@@ -48,7 +81,7 @@ Hardin, B.~O. (1972).
 \bibitem[Iskander and Omidivar, 2015]{IskanderMaguedOmidivar2015}
 Iskander, M. and Omidivar, M. (2015).
 \newblock {\em {RAPID PENETRATION INTO GRANULAR MEDIA RAPID PENETRATION INTO
-  GRANULAR Visualizing the Fundamental Physics of Rapid Earth Penetration}}.
+  GRANULAR}}.
 
 \bibitem[Krause et~al., 2015]{Krause2015}
 Krause, M., Dackermann, U., and Li, J. (2015).
@@ -70,6 +103,13 @@ Krause, M., Dackermann, U., and Li, J. (2015).
   A L ' EVALUATION DU RISQUE DE LIQUEFACTION DES MASSIFS SABLEUX}.
 \newblock In {\em Journ{\'{e}}es Nationales de G{\'{e}}otechnique et de
   G{\'{e}}ologie de l'Ing{\'{e}}nieur (JNGG)}, pages 1--9.
+
+\bibitem[Lv et~al., 2019]{Lv2019}
+Lv, Y., Liu, J., and Xiong, Z. (2019).
+\newblock {One-dimensional dynamic compressive behavior of dry calcareous sand
+  at high strain rates}.
+\newblock {\em Journal of Rock Mechanics and Geotechnical Engineering},
+  11(1):192--201.
 
 \bibitem[Meunier, 1974]{Meunier1974}
 Meunier, J. (1974).
@@ -95,5 +135,11 @@ Sauzeat, C. (2003).
   d{\'{e}}formations : rotations "d'axes" et effets visqueux [Behavior of sand
   in the small and medium strain domains: rotation of axes and viscous
   effects]}.
+
+\bibitem[Semblat, 2012]{Semblat2012}
+Semblat, J.~F. (2012).
+\newblock {Modeling seismic wave propagation and amplification in 1D/2D/3D
+  linear and nonlinear unbounded media}.
+\newblock {\em International Journal of Geomechanics}, 11(6):440--448.
 
 \end{thebibliography}

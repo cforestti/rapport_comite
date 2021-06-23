@@ -73,9 +73,19 @@
 
 \section{Introduction}
 
-Comme on a vu, dans le domaine élastique, le module à faibles déformations peut être déterminé en connaissant la masse volumique du milieu.
+Le module de déformation est un des paramètres les plus difficiles à déterminer car il dépend de nombreux facteurs (granulométrie, densité, confinement, histoire de chargement, niveau de déformation …) \citep{Briaud2001}.
 
-En outre les particularités de chaque technique de mesure, il s’avère important de tenir compte du fait que, les essais fournissent des différents paramètres à faibles déformations (Emax, Gmax, vs, vp, comme synthétisé dans le Tableau 5). La vitesse d’ondes estimée par l'essai DCLT est, par hypothèse, de compression. Donc celle-ci ne serait comparable directement qu’à des techniques fournissant une mesure de $c_p$. Toutes les autres comparaisons reposent sur des hypothèses quant aux les valeurs de poisson e/ou des masses volumiques. Afin de prendre cela en compte, les comparatifs qui seront présenté son issue techniques déterminant $c_p$.
+Par ailleurs, à partir des années 70, le développement de techniques expérimentales de plus en plus précises ont mis en évidence la limitation des essais classiques pour traduire le comportement des sols à petites déformations \citep{Burland1989,Atkinson2000, GomesCorreia2004}.
+
+Ces travaux ont montré le domaine élastique pour les sols est assez restreint et difficile à déterminer (souvent associé à déformations $10^{-5}$). Les essais de propagations d’ondes (capteurs piezo-électriques en laboratoire et essais de forage in situ) induisent des déformations très faibles, inférieures à $10^{-5}$. L’hypothèse d’un comportement élastique linéaire est donc justifiée \citep{DanoChristophe;Hicher2018}. Il est donc possible d’obtenir le module à faibles déformations à partir des mesures de vitesse d’ondes et de la masse volumique du milieu $\rho$. Les essais de propagations d’ondes sont, toutefois, peu courant dans la pratique.
+
+Cela induit à des estimations de déformations peu réalistes dans les dimensionnements et constitue une limitation à l'application des modèles de comportement plus poussés (alimentés par les paramètres à faibles déformations).
+
+L'essai de chargement dynamique en pointe pénétrométrique (DCLT) au pénétromètre dynamique léger Panda 3$\up{\textregistered}$  est un technique simple et à faible coût. Lors des premiers instants suivant l'impact, cet essai est assimilable à un essai de choc \cite{Aussedat1970, Semblat2012, IskanderMaguedOmidivar2015}. Comme un essai de choc, l’exploitation des signaux de force et de vitesse dans le sol permet d’étudier le comportement à faibles déformations et d'estimer la vitesse d’ondes de compression ($c_p^{DCLT}$).
+
+Il reste évaluer dans quelle mesure $c_p^{DCLT}$ correspondrait à la vitesse d'ondes de compression $c_p$ issue des techniques connues. Dans ce document on compare les résultats de $c_p^{DCLT}$ et $c_p$ sous des conditions semblables.
+
+La vitesse d'ondes de compression issue de à l'essai DCLT étant par hypothèse de compression, les valeurs de $c_p$ utilisés sont issue techniques déterminant $c_p$ (pas de estimation à partir de $c_s$).
 
 Les comparatifs se focalisent uniquement dans les résultats obtenus en laboratoire pour les sables propres de référence (sable d'Hostun HN31 et de Fontainebleau NE34). Le choix de ces sables permettent de profiter des différents résultats rapportés dans la littérature pour ces matériaux.
 
@@ -89,7 +99,7 @@ Dans les années 70, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l�
 
 \cite{Omidvar2012} expliquent que les essais des propagations d’ondes en géotechnique (comme les essais de choc) sont complexes à mettre en place car il est souvent difficile d’avoir le suivi des contraintes dans le sol et de s’affranchir de réflexions des ondes. Dans ce type d’essai l’instrumentation la plus courante est l’insertion de capteur à l’intérieur de l’échantillon ce qui conduit souvent à des erreurs.
 
-Cette limitation a été résolue avec l’instrumentation de la tige et l’application des méthodes découplage et de reconstruction d’ondes dans la tige applqué à l'essai DCLT au pénétromètre Panda 3$\up{\textregistered}$. Les capteurs situés dans au niveau de la tête enregistrent les contraintes engendrées par le passage de l’ébranlement et son retour de manière quasi-continue (50 kHz) pour un intervalle $\Delta t$ égal à 2L/c. Avec L la longueur de la barre et c la vitesse d’ondes dans l’acier (de l’ordre de 5200m/s).
+Cette limitation a été résolue avec l’instrumentation de la tige et l’application des méthodes découplage et de reconstruction d’ondes dans la tige appliqué à l'essai DCLT. Les capteurs situés dans au niveau de la tête enregistrent les contraintes engendrées par le passage de l’ébranlement et son retour de manière quasi-continue (50 kHz) pour un intervalle $\Delta t$ égal à 2L/c. Avec L la longueur de la barre et c la vitesse d’ondes dans l’acier (de l’ordre de 5200m/s).
 
 Au cours de l’essai DCLT, l’impact du marteau crée une onde incidente. Une partie de l’onde incidente de force $F_I$ et de vitesse $v_I$ est réfléchie. L'onde réfléchie de force $F_R$ se propage dans le sens inverse à une vitesse $v_R$, tandis qu’une autre partie est transmise au sol. Dans la tige, l’onde réfléchie s’ajoute à l’onde incidente. Tant que les deux milieux adjacents restent collés, leurs particules situées des deux côtes présentent la même vitesse et des contraintes normales de même intensité (principe d’action et réaction). Ceci constitue le principe général d’obtention des forces transmises ($F_T$) au sol pour chaque impact et ainsi la contrainte en pointe $\sigma_p$ (\ref{fig:polaire1}).
 
@@ -130,11 +140,11 @@ L'équation \ref{eq:celerite} est déduite à partir de la conservation de la ma
     \begin{center}
         \includegraphics[scale = .7]{media/cp.PNG}
         \caption{Valeurs de $c_p^{DCLT}$ obtenues et valeurs typiques pour les matériaux testés \cite{Benz-Navarrete2009}. $^{(*)}$ \cite{Krause2015}, $^{(**)}$ \cite{Cassan1988}}
-        \label{fig:polaire}
+        \label{fig:cp}
   \end{center}
 \end{figure}
 
-\cite{Escobar2015} a également réalisé des comparatifs de ($c_p^{DCLT}$) et des estimations de $c_p$ à la partir de la méthode de surface MASW. Ces essais ont été importants pour montrer la faisabilité et répétabilité de la méthode. Bien qu'encouragents ces comparatifs n'ont pas permis de valider la mesure.
+\cite{Escobar2015} a également réalisé des comparatifs de ($c_p^{DCLT}$) et des estimations de $c_p$ à la partir de la méthode de surface MASW. Ces essais ont été importants pour montrer la faisabilité et répétabilité de la méthode. Bien qu'encouragents ces comparatifs n'ont pas permis de valider la mesure. La méthode MASW s’appuie sur la dispersion des ondes de surface. Celle-ci est utilisée pour estimer le profil vertical du terrain. A contrario, les mesures Panda 3 sont quasi- continues et possèdent un caractère ponctuel. En outre la précision de la mesure, la méthode MASW a comme limitation le fait de dépendre largement du modèle du terrain utilisé pour l’inversion des données
 
 \section{Comparatifs}
 
@@ -209,14 +219,15 @@ Ces comparatifs se sont basés en deux sables de référence, (SH et SF), secs. 
 
 Les comparatifs ont permis de constaté que pour ce cas de figure les valeurs de $c_p^{DCLT}$ sont supérieures à $c_p$. Cette constatation est en accord avec les résultats obtenus par \cite{Escobar2015}. L'auteur avait rapporté des résultats élevés de $c_p^{DCLT}$ pour des valeurs supérieures à 300 m/s in situ. \cite{Escobar2015} a attribué cette différence à des perturbations dues aux raccourcissements élastiques des tiges (L$\geq$6m). Les comparatifs présentés dans ce document permettent de constater que la différence persiste pour des essais réalisés avec les tiges d'un mètre.
 
-La démarche appliquée pour déterminer $c_p^{DCLT}$ est celle des essais de choc. Les essais de choc sont réalisés en laboratoire avec des éprouvettes de petite taille. \cite{Omidvar2012, IskanderMaguedOmidivar2015} relatent que la caractérisation de sols à partir des essais de choc est plus complexe que pour d'autres matériaux (comme les métaux par exemple). Pour des essais de choc pour les matériaux de vitesse d'ondes plus élevés une distribution de contraintes dans l'échantillon est plus uniforme. Dans le cas de matériaux granulaires comme les sables, la vitesse de propagation n'étant pas très élevés, l'échantillon n'atteint pas l'équilibre pour des chargements rapides. D'après les auteurs cela est un aspect essentiel pour l'obtention des paramètres.
+Comme expliqué, la démarche appliquée pour déterminer $c_p^{DCLT}$ est celle des essais de choc. Les essais de choc sont réalisés en laboratoire avec des éprouvettes de petite taille. \cite{Omidvar2012, IskanderMaguedOmidivar2015} relatent que la caractérisation de sols à partir des essais de choc est plus complexe que pour d'autres matériaux (comme les métaux par exemple). Pour des essais de choc pour les matériaux de vitesse d'ondes plus élevés une distribution de contraintes dans l'échantillon est plus uniforme. Dans le cas de matériaux granulaires comme les sables, la vitesse de propagation n'étant pas très élevée, parfois, l'échantillon n'atteint pas une distribution uniforme de contrainte pour des chargements rapides. D'après les auteurs cela constitue un aspect essentiel pour l'application de essais de choc \citep{Felice1986}.
 
-Afin de garantir une déformation plus uniforme pour le début du chargement, la vitesse de chargement est contrôlée afin d'avoir une augmentation de contrainte quasi-uniforme. D'ailleurs pour les matériaux peut cohésifs (comme les sables) les éprouvettes doivent être confinés avant le chargement dynamique. Souvent un tubage est utilisé afin d'assurer un confinement latérale, même si certains travaux ont montré qui cela influe sur les résultats (Junyu et al., 2014; Lu et al., 2009; Song et al., 2009). D'autres travaux essaient de mettre en place un système triaxial afin de mieux étudier l'effet du confinement.
+Selon \cite{Lv2019}, dans le cadre des essais de choc, deux solutions sont envisagées pour minimiser ce problème : réduire l'épaisseur de l'échantillon ou modifier l'onde incidente afin d'augmenter le temps de chargement quasi-uniforme (technique de pulse-shaping).
 
-Une suggestion serait d'utiliser le modèle numérique afin d'étudier l'influence de la forme de l'onde et de conditions aux limites.
- 
- 
+D'ailleurs pour les matériaux peu cohésifs (comme les sables) les éprouvettes doivent être confinés avant le chargement dynamique. Souvent un tubage est utilisé afin d'assurer un confinement latérale, même si certains travaux ont montré qui cela influe sur les résultats (Junyu et al., 2014; Lu et al., 2009; Song et al., 2009). D'autres travaux essaient de mettre en place un système triaxial afin de mieux étudier l'effet du confinement.
 
+Étant donné les constations des essais de choc pour les sols, il serait d'utiliser d'étudier dans un premier temps l'influence de la forme de l'onde, temps de monte de l'onde (matériau et géométrie du marteau, ...). Dans un deuxième temps, l'influence de la taille de l'échantillon et des conditions aux limites afin de mieux répondre aux hypothèses initiales (déformations radiales négligeables, ).
+
+Pour cela, le modèle numérique serait utile afin de mener une étude paramétrique initiale afin guider vers la solution plus économique capable de fournir des résultats attendus. Cette étude pourrait par le suite être valider expérimentalement.
 
 %%%________BIBLIO__________
 \newpage

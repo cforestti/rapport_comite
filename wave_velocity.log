@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  22 JUN 2021 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  23 JUN 2021 09:24
 entering extended mode
 **./wave_velocity.tex
 (wave_velocity.tex
@@ -583,11 +583,7 @@ Package: translator 2020-08-03 v1.12c Easy translation of strings in LaTeX
 ))
 (C:\Users\Caforestti\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (wave_velocity.aux
-
-LaTeX Warning: Label `fig:polaire' multiply defined.
-
-)
+) (wave_velocity.aux)
 \openout1 = `wave_velocity.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -736,71 +732,68 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 {C:/Users/Caforestti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 84.
+(Font)              <8> on input line 94.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 84.
-<media/polaire1.PNG, id=58, 397.98688pt x 171.64125pt>
-File: media/polaire1.PNG Graphic file (type png)
-<use media/polaire1.PNG>
-Package pdftex.def Info: media/polaire1.PNG  used on input line 98.
-(pdftex.def)             Requested size: 278.58891pt x 120.14804pt.
+(Font)              <6> on input line 94.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 
+l.101 
        [1]
-<media/polaire.PNG, id=89, 283.0575pt x 255.95625pt>
+<media/polaire1.PNG, id=98, 397.98688pt x 171.64125pt>
+File: media/polaire1.PNG Graphic file (type png)
+<use media/polaire1.PNG>
+Package pdftex.def Info: media/polaire1.PNG  used on input line 108.
+(pdftex.def)             Requested size: 278.58891pt x 120.14804pt.
+<media/polaire.PNG, id=113, 283.0575pt x 255.95625pt>
 File: media/polaire.PNG Graphic file (type png)
 <use media/polaire.PNG>
-Package pdftex.def Info: media/polaire.PNG  used on input line 122.
+Package pdftex.def Info: media/polaire.PNG  used on input line 132.
 (pdftex.def)             Requested size: 198.13889pt x 179.16814pt.
  [2 <./media/polaire1.PNG>]
-<media/cp.PNG, id=101, 375.4025pt x 243.40938pt>
+<media/cp.PNG, id=127, 375.4025pt x 243.40938pt>
 File: media/cp.PNG Graphic file (type png)
 <use media/cp.PNG>
-Package pdftex.def Info: media/cp.PNG  used on input line 131.
+Package pdftex.def Info: media/cp.PNG  used on input line 141.
 (pdftex.def)             Requested size: 262.77995pt x 170.38539pt.
  [3 <./media/polaire.PNG> <./media/cp.PNG>]
-<media/cp_SF.PNG, id=143, 784.43062pt x 745.78625pt>
+<media/cp_SF.PNG, id=167, 784.43062pt x 745.78625pt>
 File: media/cp_SF.PNG Graphic file (type png)
 <use media/cp_SF.PNG>
-Package pdftex.def Info: media/cp_SF.PNG  used on input line 154.
+Package pdftex.def Info: media/cp_SF.PNG  used on input line 164.
 (pdftex.def)             Requested size: 392.21434pt x 372.89221pt.
-<media/cp_SH.PNG, id=144, 920.43875pt x 956.57375pt>
+<media/cp_SH.PNG, id=168, 920.43875pt x 956.57375pt>
 File: media/cp_SH.PNG Graphic file (type png)
 <use media/cp_SH.PNG>
-Package pdftex.def Info: media/cp_SH.PNG  used on input line 162.
+Package pdftex.def Info: media/cp_SH.PNG  used on input line 172.
 (pdftex.def)             Requested size: 414.19362pt x 430.45421pt.
  [4 <./media/cp_SF.PNG>] [5 <./media/cp_SH.PNG>]
-<media/comparatifs_.PNG, id=174, 636.3775pt x 192.72pt>
+<media/comparatifs_.PNG, id=199, 636.3775pt x 192.72pt>
 File: media/comparatifs_.PNG Graphic file (type png)
 <use media/comparatifs_.PNG>
-Package pdftex.def Info: media/comparatifs_.PNG  used on input line 183.
+Package pdftex.def Info: media/comparatifs_.PNG  used on input line 193.
 (pdftex.def)             Requested size: 413.64047pt x 125.2665pt.
-<media/comparatifs_graphique_.PNG, id=175, 342.27875pt x 247.42438pt>
+<media/comparatifs_graphique_.PNG, id=200, 342.27875pt x 247.42438pt>
 File: media/comparatifs_graphique_.PNG Graphic file (type png)
 <use media/comparatifs_graphique_.PNG>
-Package pdftex.def Info: media/comparatifs_graphique_.PNG  used on input line 1
-93.
+Package pdftex.def Info: media/comparatifs_graphique_.PNG  used on input line 2
+03.
 (pdftex.def)             Requested size: 342.2779pt x 247.42377pt.
  [6 <./media/comparatifs_.PNG> <./media/comparatifs_graphique_.PNG>] [7] (wave_
-velocity.bbl) [8]
+velocity.bbl [8]) [9]
 (wave_velocity.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `wave_velocity.out' has not changed.
 (rerunfilecheck)             Checksum: 9EA9CFA1622EB1C3F36B3078CAEEDFD3;682.
  ) 
 Here is how much of TeX's memory you used:
- 13497 strings out of 479618
- 245910 string characters out of 2862651
- 660744 words of memory out of 3000000
- 30356 multiletter control sequences out of 15000+200000
+ 13532 strings out of 479618
+ 246575 string characters out of 2862651
+ 662744 words of memory out of 3000000
+ 30382 multiletter control sequences out of 15000+200000
  473015 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,11n,75p,962b,786s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,11n,75p,962b,915s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -808,8 +801,8 @@ st, replaced by a fixed one
 .enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-e
 c.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
 mathit.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/l
-m/lm-rm.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/
-lm/lm-ts1.enc}<C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+m/lm-ts1.enc}{C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
+/lm/lm-rm.enc}<C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/lm/lmbx10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/lm/lmbx12.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/font
 s/type1/public/lm/lmcsc10.pfb><C:/Users/Caforestti/AppData/Local/Programs/MiKTe
@@ -824,9 +817,9 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Caforestt
 i/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Cafo
 restti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users
 /Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb>
-Output written on wave_velocity.pdf (9 pages, 1154468 bytes).
+Output written on wave_velocity.pdf (10 pages, 1164602 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
  108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
