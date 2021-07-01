@@ -1,0 +1,87 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: model.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apalike.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Database file #1: library.bib
+Warning--I didn't find a database entry for "Gonin1979ReflexionPieux"
+Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
+Warning--I didn't find a database entry for "Smith1960Pile-drivingEquation"
+Warning--I didn't find a database entry for "Randolph2003ScienceDesign"
+Warning--I didn't find a database entry for "Lysmer1965VerticalFooting"
+Warning--I didn't find a database entry for "Holeyman1988ModellingBase"
+Warning--I didn't find a database entry for "Coyle1970EmpiricalClays"
+Warning--I didn't find a database entry for "Lee2020InstrumentedCharacterization"
+Warning--I didn't find a database entry for "Deeks1995ALoading"
+Warning--I didn't find a database entry for "Salgado2008TheFoundations"
+Warning--I didn't find a database entry for "Gazetas1985VerticalFoundations"
+Warning--I didn't find a database entry for "GourvesR.Mirat1977MethodeSols"
+Warning--I didn't find a database entry for "Faugeras1979LessaiAnalogique"
+Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
+Warning--I didn't find a database entry for "Ali2010CaracterisationProfondes"
+Warning--I didn't find a database entry for "Reiffsteck2003CaracterisationSitu"
+Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
+Warning--I didn't find a database entry for "Mindlin1936ForceSolid"
+Warning--I didn't find a database entry for "Combarieu2001LPressiometre"
+Warning--I didn't find a database entry for "Burland1989NinthStrains"
+Warning--I didn't find a database entry for "Atkinson2000Non-linearDesign"
+Warning--I didn't find a database entry for "Reiffsteck2009MeasurementsPenetrometer"
+Warning--I didn't find a database entry for "Obrzud2018TheGuidebook"
+Warning--I didn't find a database entry for "Benz2007Small-StrainConsequences"
+Warning--I didn't find a database entry for "FlavignyE.DesruesJ.Paylayer1990NoteRF"
+Warning--I didn't find a database entry for "Schanz1999TheVerification"
+Warning--I didn't find a database entry for "Cami2017ImagerieDeformations"
+Warning--I didn't find a database entry for "Fahey1993AModel"
+Warning--I didn't find a database entry for "Burns2007Small-Penetrometer"
+Warning--I didn't find a database entry for "Plumelle2013TheorieOuvrages"
+Warning--I didn't find a database entry for "Robertson2010EstimatingCPT"
+Warning--I didn't find a database entry for "Chaigneau2001CARACTERISATIONPENETROMETRE"
+Warning--I didn't find a database entry for "Morvan2016OptimisationEstimation"
+Warning--I didn't find a database entry for "Duttine2005ComportementAxes"
+Warning--I didn't find a database entry for "Middendorp200630Characteristics"
+Warning--empty school in Escobar2015
+Warning--empty publisher in Holscher2012
+Warning--empty school in Lysmer1965
+You've used 6 entries,
+            1935 wiz_defined-function locations,
+            580 strings with 6594 characters,
+and the built_in function-call counts, 1938 in all, are:
+= -- 183
+> -- 74
+< -- 5
++ -- 24
+- -- 24
+* -- 161
+:= -- 366
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 38
+chr.to.int$ -- 6
+cite$ -- 9
+duplicate$ -- 78
+empty$ -- 129
+format.name$ -- 32
+if$ -- 357
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 4
+newline$ -- 32
+num.names$ -- 18
+pop$ -- 36
+preamble$ -- 1
+purify$ -- 42
+quote$ -- 0
+skip$ -- 62
+stack$ -- 0
+substring$ -- 100
+swap$ -- 6
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 34
+warning$ -- 3
+while$ -- 15
+width$ -- 0
+write$ -- 75
+(There were 38 warnings)

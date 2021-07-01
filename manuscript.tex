@@ -29,7 +29,7 @@
 \setcounter{secnumdepth}{3}
 \usepackage{csquotes}
 \MakeOuterQuote{"}
-
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 
 \pagestyle{fancy}
@@ -41,39 +41,60 @@
 
 \begin{titlepage}
     \begin{center}
-    Thèse CIFRE N° 2018/1627
+%\includegraphics[width=0.35\textwidth]{./logo}~\\[1cm]
+
+\textsc{Institut Pascal}\\
+
+\textsc{Sol Solution}\\[1.cm]
+
+\textsc{CIFRE N° 2018/1627}\\[1.5cm]
+
+
+% Title
+\HRule \\[0.4cm]
+
+{\huge \bfseries Interprétation de l'essai de chargement dynamique en pointe pénétrométrique \\[0.4cm] }
+
+\HRule \\[1.5cm]
+
+\textsc{Caroline F Oliveira}\\[5.cm]
+
+
+\end{center}
+
+
+Encadrement:\\
+\textsc{Pierre Breul}\\
+\textsc{Bastien Chevalier}\\
+\textsc{Miguel Angel Benz-Navarrete}\\
+\textsc{Quoc Anh Tran}
+
+\vfill
+
+% Bottom of the page
+\begin{center}
+{\large \today}
+\end{center}
+
     
-    Sol Solution
+  %  Sol Solution
     
-    Institut Pascal – Axe M3G
-            \vspace*{5cm}
-              %  \vspace*{5cm}
+ %   Institut Pascal – Axe M3G
+  %          \vspace*{5cm}
+   %           %  \vspace*{5cm}
     
-    {Rapport d'activité}\\[0.3cm]
     
-     {\textsc{\textbf{Interprétation de l'essai de chargement dynamique en pointe pénétrométrique}}}\\[1.cm]
-     {Caroline F. Oliveira}\\[0.3cm]
+   %  {\textsc{\textbf{Interprétation de l'essai de %chargement dynamique en pointe pénétrométrique}}}\%\[1.cm]
+%     {Caroline F. Oliveira}\\[0.3cm]
      
      
-    \end{center}
-        \vspace*{8cm}
+ %   \end{center}
+  %      \vspace*{8cm}
     
     
-    
-%\begin{table} [H]
-%\begin{tabular}{ll}
-%\centering
-%        \element{\textbf{Pierre BREUL}} & \element{Directeur de thèse}\\
-%        \element{\textbf{Bastien CHEVALIER}} & \element{Encadrant}\\
-%        \element{\textbf{Claude BACCONNET}} & \element{Encadrant}\\
-%        \element{\textbf{Miguel Angel BENZ NAVARRETE}} & \element{Responsable en entreprise}\\
-%        \element{\textbf{Quoc Anh TRAN}} & \element{Encadrant en entreprise}\\
-%\end{tabular}
-%\end{table}
-%\centering
-%\emph{Présentation le 06 avril 2021}\\[0.3cm]
-    
-    \vspace*{\fill}
+     
+ %   \vspace*{\fill}
+
   \end{titlepage}
 
   % Table des matières
@@ -82,31 +103,40 @@
   
 
   \thispagestyle{empty}
-  \begin{center}
+
+\pagebreak
+ 
+ 
+%%________________________________ 
+\thispagestyle{empty}
+\begin{center}
   \textbf{RESUME}
-  \end{center}
-La caractérisation de sols est une condition indispensable pour le dimensionnement des fondations en génie civil. A niveau mondial, ces travaux de caractérisation, dont l’objectif est de fournir les paramètres du sol permettant d’adapter l’ouvrage au terrain, sont basés sur la réalisation d’essais in situ. Au-delà des limites techniques, la plupart de ces techniques ne permettent pas d’avoir une caractérisation fine des sols présents en surface à faible coût. Un pénétromètre dynamique léger instrumenté (Panda$3\up{\textregistered}$) a été développé afin de répondre à ces besoins. L’instrumentation et l’exploitation des signaux de force et d’accélération intégrés à cet appareil permettent d’obtenir une courbe de chargement en pointe du sol pour chaque impact. Celle-ci traduit la réponse effort-enfoncement sous chargement dynamique et riche de renseignements quant au comportement en déformation et en cisaillement des sols. Le caractère dynamique et transitoire de l’essais couplé à la précision et grand nombre de mesures obtenues facilite la mise en place de différentes méthodes d’analyse intégrant différentes approches (essais de choc, analyse temporelle, analyse spectrale, fonction des transfert…).
+\end{center}
+%\hskip2mm
+\begin{spacing}{1.}
+La caractérisation de sols est une condition indispensable pour le dimensionnement des fondations en génie civil. A niveau mondial, ces travaux de caractérisation, dont l’objectif est de fournir les paramètres du sol permettant d’adapter l’ouvrage au terrain, sont basés sur la réalisation d’essais in situ. Au-delà des limites techniques, la plupart de ces techniques ne permettent pas d’avoir une caractérisation fine des sols présents en surface à faible coût. Un pénétromètre dynamique léger instrumenté (Panda$3\up{\textregistered}$) a été développé afin de répondre à ces besoins. L’instrumentation et l’exploitation des signaux de force et d’accélération intégrés à cet appareil permettent d’obtenir une courbe de chargement en pointe du sol pour chaque impact. Celle-ci traduit la réponse effort-enfoncement sous chargement dynamique et riche de renseignements quant au comportement en déformation et en cisaillement des sols. Le caractère dynamique et transitoire de l’essais couplé à la précision et grand nombre de mesures obtenues facilite la mise en place de différentes méthodes d’analyse intégrant différentes approches (essais de choc, analyse temporelle, analyse spectrale, fonction des transfert…). D’une part, lors des premiers instants suivant le choc, cet essai de chargement dynamique en pointe pénétrométrique (DCLT) est assimilable à un essai de choc. L’exploitation l’exploitation des signaux de force et de vitesse entraînée au cours de l'intervalle de temps suivant le choc, permet d'étudier le comportement à faibles déformations et de déterminer une mesure de vitesse d’ondes du sol. Par ailleurs, le type de sollicitation, la géométrie et les conditions aux limites de l’essai ressemblent à un essai dynamique de pieu. De manière similaire à un essai de chargement dynamique de pieux, la réponse du sol en pointe peut être exprimée à l’aide d’un modèle d’interaction. Actuellement, le modèle appliqué à cet essai est le modèle masse-ressort-amortisseur. Toutefois, sa simplicité ne permet pas traduire correctement l’essai ni d’accéder à des paramètres d’usage courant en géotechnique (\emph{e.g.} paramètres effort-déformation). Il s’avère nécessaire appliquer un modèle d’interaction plus réaliste, basé sur des paramètres permettant de caractériser le comportement du sol et adapté à cet essai. Parmi les différents approches existantes, la modélisation numérique est, à l’heure actuelle, la méthode la plus réaliste pour reproduire le battage dans le sol. Elle sera un important outil dans ce travail afin mieux comprendre l’essai. D’une part, on souhaite vérifier si les hypothèses considérées dans la méthode d’obtention de la vitesse d’ondes sont valables et d’une autre part, le modèle numérique aidera à mettre au point le modèle d’interaction sol-pointe adapté. Un des atouts du modèle numérique est le fait permettre de confronter la réponse statique et dynamique sous des conditions identiques et ainsi d’aider à dissocier la réponde dynamique de la réponse statique. Une fois mis au point, le modèle d’interaction permettra de mieux saisir la composante dynamique dans la réponse globale de l’essai. On pourra ainsi estimer la réponse statique et l’exploiter à l’aide des modèles d’interprétation existants afin de remonter aux paramètres effort-déformation du sol.
+\end{spacing}
 
-D’une part, lors des premiers instants suivant le choc, cet essai de chargement dynamique en pointe pénétrométrique (DCLT) est assimilable à un essai de choc. L’exploitation l’exploitation des signaux de force et de vitesse entraînée au cours de l'intervalle de temps suivant le choc, permet d'étudier le comportement à faibles déformations et de déterminer une mesure de vitesse d’ondes du sol. 
+\textbf{Mots clés:} reconnaissance de sol – pénétromètre dynamique – courbe charge de chargement en pointe - paramètres rhéologiques de sols - modèle numérique en différences finies.
 
-Par ailleurs, le type de sollicitation, la géométrie et les conditions aux limites de l’essai ressemblent à un essai dynamique de pieu. De manière similaire à un essai de chargement dynamique de pieux, la réponse du sol en pointe peut être exprimée à l’aide d’un modèle d’interaction. Actuellement, le modèle appliqué à cet essai est le modèle masse-ressort-amortisseur. Toutefois, sa simplicité ne permet pas traduire correctement l’essai ni d’accéder à des paramètres d’usage courant en géotechnique (\emph{e.g.} paramètres effort-déformation). Il s’avère nécessaire appliquer un modèle d’interaction plus réaliste, basé sur des paramètres permettant de caractériser le comportement du sol et adapté à cet essai.
+\pagebreak
+  
 
-Parmi les différents approches existantes, la modélisation numérique est, à l’heure actuelle, la méthode la plus réaliste pour reproduire le battage dans le sol. Elle sera un important outil dans ce travail afin mieux comprendre l’essai. D’une part, on souhaite vérifier si les hypothèses considérées dans la méthode d’obtention de la vitesse d’ondes sont valables et d’une autre part, le modèle numérique aidera à mettre au point le modèle d’interaction sol-pointe adapté. Un des atouts du modèle numérique est le fait permettre de confronter la réponse statique et dynamique sous des conditions identiques et ainsi d’aider à dissocier la réponde dynamique de la réponse statique. Une fois mis au point, le modèle d’interaction permettra de mieux saisir la composante dynamique dans la réponse globale de l’essai. On pourra ainsi estimer la réponse statique et l’exploiter à l’aide des modèles d’interprétation existants afin de remonter aux paramètres effort-déformation du sol.
 
 
 \chapter{Introduction : \emph{rappel}}
 
 La pénétration est utilisée par différentes techniques afin de caractériser le sol en surface. L'essai pénétrométrique statique consiste à pénétrer à une vitesse constante tandis que dans les essais dynamiques, cela se fait par le battage d'une masse. L'essai de pénétration dynamique est la technique \emph{in situ} la plus utilisée au monde. Toutefois, l'analyse des résultats dynamiques demeurent plus complexe que celle des essais statiques \citep{Byun2015}. 
 
-De manière générale, les pénétromètres, statiques ou dynamiques, fournissent une mesure à la rupture. Dans la pratique du dimensionnement géotechnique, celle-ci est appliquée directement ou interprétée afin d'estimer les paramètres de cisaillement (par exemple, l'angle de frottement effectif $\phi'$, pour les sables, la résistance non-drainé $\tau_u$, des argiles) \citep{Robertson1983InterpretationClay, Schnaid2008InTests, Mayne2001Stress-strain-strength-flowHistories}. Toutefois, les pénétromètres, \emph{a priori}, ne permettent pas d'établir la relation effort-déformation au cours des essais.
+De manière générale, les pénétromètres, statiques ou dynamiques, fournissent une mesure à la rupture. Dans la pratique du dimensionnement géotechnique, celle-ci est appliquée directement ou interprétée afin d'estimer les paramètres de cisaillement (par exemple, l'angle de frottement effectif $\phi'$, pour les sables, la résistance non-drainé $\tau_u$, des argiles) \citep{Robertson1983a, Schnaid2008, Mayne2009}. Toutefois, les pénétromètres, \emph{a priori}, ne permettent pas d'établir la relation effort-déformation au cours des essais.
 
-Dans l’état actuel des connaissances, l’essai de chargement dynamique en pointe pénétrométrique (DCLT, de l’anglais \emph{Dynamic Cone Load Test}) réalisé à l’aide du pénétromètre $Panda 3\up{\textregistered}$\footnote{Désormais noté Panda 3} \citep{Benz-Navarrete2009MESURES2, Escobar2015Mise3} permet de répondre à un grand nombre des besoins (coût, rapidité, haut rendement de mesures). L’instrumentation et l’exploitation des mesures de force et d’accélération au niveau de tête de l’appareil permettent d’estimer les grandeurs cinématiques à l’interface pointe-sol, à savoir : force, vitesse, déplacement.
+Dans l’état actuel des connaissances, l’essai de chargement dynamique en pointe pénétrométrique (DCLT, de l’anglais \emph{Dynamic Cone Load Test}) réalisé à l’aide du pénétromètre $Panda 3\up{\textregistered}$\footnote{Désormais noté Panda 3} \citep{Benz-Navarrete2009, Escobar2015} permet de répondre à un grand nombre des besoins (coût, rapidité, haut rendement de mesures). L’instrumentation et l’exploitation des mesures de force et d’accélération au niveau de tête de l’appareil permettent d’estimer les grandeurs cinématiques à l’interface pointe-sol, à savoir : force, vitesse, déplacement.
 
-La réponse globale du sol à l’aide de l’essai DCLT est exprimée sous la forme d’une courbe chargement en fonction de l’enfoncement pour chaque impact (courbe charge enfoncement en pointe $\sigma_p-s_p$). Dans la méthode proposée par \cite{Benz-Navarrete2009MESURES2} et par \cite{Escobar2015Mise3}, l’exploitation de cette courbe s’appuie sur un modèle d’interaction pointe-sol de type Smith, très utilisé dans les essais de chargement dynamique de pieux. 
+La réponse globale du sol à l’aide de l’essai DCLT est exprimée sous la forme d’une courbe chargement en fonction de l’enfoncement pour chaque impact (courbe charge enfoncement en pointe $\sigma_p-s_p$). Dans la méthode proposée par \cite{Benz-Navarrete2009} et par \cite{Escobar2015}, l’exploitation de cette courbe s’appuie sur un modèle d’interaction pointe-sol de type Smith, très utilisé dans les essais de chargement dynamique de pieux. 
 
-Il est représenté par une loi élastoplastique parfaite avec une composante visqueuse de type newtonienne basée sur modèle masse-ressort-amortisseur de Smith (1962). Bien qu'intéressant, ce modèle ne permet pas caractériser le sol à l'aide de paramètres rhéologiques couramment appliqués en géotechnique.
+Il est représenté par une loi élastoplastique parfaite avec une composante visqueuse de type newtonienne basée sur modèle masse-ressort-amortisseur de Smith (1962). Bien qu'intéressant, ce modèle ne permet pas caractériser le sol à l'aide de paramètres rhéologiques couramment appliqués en géotechnique. Les nombreux avantages des pénétromètres pour la caractérisation des sols in situ ont poussé les chercheurs à essayer d'interpréter les résultats pénétrométriques afin de remonter aux paramètres caractérisant le comportement du sol \citep{Salgado2013}.
 
-L’objectif de ce travail est de mettre au point une méthode d’interprétation de l’essai de chargement dynamique en pointe pénétrométrique (DCLT). Cela afin de remonter aux propriétés intrinsèques du sol caractérisant son comportement (déformation et rupture) sous ce type de sollicitation. On s'intéresse aux paramètres utilisés pour le dimensionnement de ouvrages courants. Pour ce faire, on propose la démarche générale illustrée par le schéma présenté à la fin de ce chapitre (Figure \ref{fig:demarche}). 
+Dans ce contexte, l'objectif de ce travail est de mettre au point une méthode d’interprétation de l’essai de chargement dynamique en pointe pénétrométrique (DCLT). Cela afin de remonter aux propriétés intrinsèques du sol caractérisant son comportement (déformation et rupture) sous ce type de sollicitation. On s'intéresse aux paramètres utilisés pour le dimensionnement de ouvrages courants. Pour ce faire, on propose la démarche générale illustrée par le schéma présenté à la fin de ce chapitre (Figure \ref{fig:demarche}). 
 
 
 \section{Objectif}

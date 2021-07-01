@@ -6,11 +6,6 @@ The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
 Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
-Warning--I didn't find a database entry for "Robertson1983InterpretationClay"
-Warning--I didn't find a database entry for "Schnaid2008InTests"
-Warning--I didn't find a database entry for "Mayne2001Stress-strain-strength-flowHistories"
-Warning--I didn't find a database entry for "Benz-Navarrete2009MESURES2"
-Warning--I didn't find a database entry for "Escobar2015Mise3"
 Warning--I didn't find a database entry for "Aussedat1970SollicitationsSols"
 Warning--I didn't find a database entry for "Omidvar2012Stress-strainRates"
 Warning--I didn't find a database entry for "Itasca2020FLAC3D6.0"
@@ -19,6 +14,8 @@ Warning--I didn't find a database entry for "Smith1960Pile-drivingEquation"
 Warning--I didn't find a database entry for "Randolph2003ScienceDesign"
 Warning--I didn't find a database entry for "Lysmer1965VerticalFooting"
 Warning--I didn't find a database entry for "Holeyman1988ModellingBase"
+Warning--I didn't find a database entry for "Benz-Navarrete2009MESURES2"
+Warning--I didn't find a database entry for "Escobar2015Mise3"
 Warning--I didn't find a database entry for "Coyle1970EmpiricalClays"
 Warning--I didn't find a database entry for "Lee2020InstrumentedCharacterization"
 Warning--I didn't find a database entry for "Deeks1995ALoading"
@@ -89,45 +86,47 @@ Warning--I didn't find a database entry for "Ahmadi2005Thin-layerMeasurement"
 Warning--I didn't find a database entry for "Levasseur2007AnalyseGenetiques"
 Warning--I didn't find a database entry for "Vernay2017EtudeLiquefaction"
 Warning--I didn't find a database entry for "Andria-Ntoanina2011CaracterisationCentrifugeuse"
-You've used 2 entries,
+Warning--empty school in Escobar2015
+Warning--empty publisher in Schnaid2008
+You've used 8 entries,
             1935 wiz_defined-function locations,
-            656 strings with 8487 characters,
-and the built_in function-call counts, 877 in all, are:
-= -- 88
-> -- 31
-< -- 1
-+ -- 10
-- -- 10
-* -- 81
-:= -- 152
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 15
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 28
-empty$ -- 64
-format.name$ -- 14
-if$ -- 168
+            688 strings with 9489 characters,
+and the built_in function-call counts, 2867 in all, are:
+= -- 281
+> -- 100
+< -- 6
++ -- 32
+- -- 32
+* -- 240
+:= -- 513
+add.period$ -- 23
+call.type$ -- 8
+change.case$ -- 53
+chr.to.int$ -- 8
+cite$ -- 10
+duplicate$ -- 112
+empty$ -- 209
+format.name$ -- 44
+if$ -- 547
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 6
-pop$ -- 10
+missing$ -- 7
+newline$ -- 42
+num.names$ -- 24
+pop$ -- 50
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 56
 quote$ -- 0
-skip$ -- 22
+skip$ -- 82
 stack$ -- 0
-substring$ -- 83
-swap$ -- 2
+substring$ -- 205
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 0
-while$ -- 8
+type$ -- 46
+warning$ -- 2
+while$ -- 24
 width$ -- 0
-write$ -- 28
-(There were 84 warnings)
+write$ -- 101
+(There were 83 warnings)

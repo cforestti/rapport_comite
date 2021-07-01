@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  22 JUN 2021 08:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  1 JUL 2021 08:51
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -780,10 +780,6 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 (C:\Users\Caforestti\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-
-LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 54.
-
 [1
 
 {C:/Users/Caforestti/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
@@ -800,53 +796,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82 
-      [1
+l.103 
+       [1
 
 ] [2]
 Chapitre 1.
-
-Package natbib Warning: Citation `Robertson1983InterpretationClay' on page 3 un
-defined on input line 101.
-
-
-Package natbib Warning: Citation `Schnaid2008InTests' on page 3 undefined on in
-put line 101.
-
-
-Package natbib Warning: Citation `Mayne2001Stress-strain-strength-flowHistories
-' on page 3 undefined on input line 101.
-
-
-Package natbib Warning: Citation `Benz-Navarrete2009MESURES2' on page 3 undefin
-ed on input line 103.
-
-
-Package natbib Warning: Citation `Escobar2015Mise3' on page 3 undefined on inpu
-t line 103.
-
-
-Package natbib Warning: Citation `Benz-Navarrete2009MESURES2' on page 3 undefin
-ed on input line 105.
-
-
-Package natbib Warning: Citation `Escobar2015Mise3' on page 3 undefined on inpu
-t line 105.
-
 [3
 
 ]
 
 Package natbib Warning: Citation `Aussedat1970SollicitationsSols' on page 4 und
-efined on input line 119.
+efined on input line 149.
 
 
 Package natbib Warning: Citation `Omidvar2012Stress-strainRates' on page 4 unde
-fined on input line 119.
+fined on input line 149.
 
 
 Package natbib Warning: Citation `Itasca2020FLAC3D6.0' on page 4 undefined on i
-nput line 121.
+nput line 151.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -857,10 +825,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-<media/ana_demarche2.PNG, id=209, 619.31375pt x 387.94937pt>
+<media/ana_demarche2.PNG, id=234, 619.31375pt x 387.94937pt>
 File: media/ana_demarche2.PNG Graphic file (type png)
 <use media/ana_demarche2.PNG>
-Package pdftex.def Info: media/ana_demarche2.PNG  used on input line 162.
+Package pdftex.def Info: media/ana_demarche2.PNG  used on input line 192.
 (pdftex.def)             Requested size: 619.31224pt x 387.94843pt.
 
 
@@ -884,66 +852,66 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Chapitre 2.
 
 Package natbib Warning: Citation `Gonin1979ReflexionPieux' on page 7 undefined 
-on input line 173.
+on input line 203.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 7 un
-defined on input line 173.
+defined on input line 203.
 
 
 Package natbib Warning: Citation `Smith1960Pile-drivingEquation' on page 7 unde
-fined on input line 177.
+fined on input line 207.
 
 
 Package natbib Warning: Citation `Randolph2003ScienceDesign' on page 7 undefine
-d on input line 177.
+d on input line 207.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 7 un
-defined on input line 177.
+defined on input line 207.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 7 un
-defined on input line 181.
+defined on input line 211.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 7 un
-defined on input line 183.
+defined on input line 213.
 
 [7
 
 ]
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 8 undefine
-d on input line 185.
+d on input line 215.
 
 
 Package natbib Warning: Citation `Holeyman1988ModellingBase' on page 8 undefine
-d on input line 185.
+d on input line 215.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 8 un
-defined on input line 185.
+defined on input line 215.
 
 
 Package natbib Warning: Citation `Smith1960Pile-drivingEquation' on page 8 unde
-fined on input line 189.
+fined on input line 219.
 
 
 Package natbib Warning: Citation `Smith1960Pile-drivingEquation' on page 8 unde
-fined on input line 191.
+fined on input line 221.
 
 
 Package natbib Warning: Citation `Benz-Navarrete2009MESURES2' on page 8 undefin
-ed on input line 193.
+ed on input line 223.
 
 
 Package natbib Warning: Citation `Escobar2015Mise3' on page 8 undefined on inpu
-t line 193.
+t line 223.
 
 
 Package natbib Warning: Citation `Coyle1970EmpiricalClays' on page 8 undefined 
-on input line 207.
+on input line 237.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -956,11 +924,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [8]
 
 Package natbib Warning: Citation `Smith1960Pile-drivingEquation' on page 9 unde
-fined on input line 215.
+fined on input line 245.
 
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 9 undefine
-d on input line 219.
+d on input line 249.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -973,88 +941,88 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [9]
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 10 u
-ndefined on input line 241.
+ndefined on input line 271.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 10 u
-ndefined on input line 241.
+ndefined on input line 271.
 
 
 Package natbib Warning: Citation `Lee2020InstrumentedCharacterization' on page 
-10 undefined on input line 243.
+10 undefined on input line 273.
 
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 10 undefin
-ed on input line 243.
+ed on input line 273.
 
 
 Package natbib Warning: Citation `Holeyman1988ModellingBase' on page 10 undefin
-ed on input line 245.
+ed on input line 275.
 
 
 Package natbib Warning: Citation `Deeks1995ALoading' on page 10 undefined on in
-put line 245.
+put line 275.
 
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 10 undefin
-ed on input line 245.
+ed on input line 275.
 
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 10 undefin
-ed on input line 245.
+ed on input line 275.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 10 u
-ndefined on input line 245.
+ndefined on input line 275.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 10 u
-ndefined on input line 247.
+ndefined on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 247.
+(hyperref)                removing `\begingroup' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 247.
+(hyperref)                removing `\<let>-command' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 247.
+(hyperref)                removing `\NAT@ctype' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 247.
+(hyperref)                removing `\z@' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 247.
+(hyperref)                removing `\let' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 247.
+(hyperref)                removing `\let' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 247.
+(hyperref)                removing `\new@ifnextchar' on input line 277.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 10 u
-ndefined on input line 249.
+ndefined on input line 279.
 
-<media/ana_modele.JPG, id=244, 250.536pt x 104.7915pt>
+<media/ana_modele.JPG, id=269, 250.536pt x 104.7915pt>
 File: media/ana_modele.JPG Graphic file (type jpg)
 <use media/ana_modele.JPG>
-Package pdftex.def Info: media/ana_modele.JPG  used on input line 253.
+Package pdftex.def Info: media/ana_modele.JPG  used on input line 283.
 (pdftex.def)             Requested size: 275.59042pt x 115.271pt.
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 10 u
-ndefined on input line 254.
+ndefined on input line 284.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 10 u
-ndefined on input line 254.
+ndefined on input line 284.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1067,34 +1035,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [10 <./media/ana_modele.JPG>]
 
 Package natbib Warning: Citation `Holeyman1988ModellingBase' on page 11 undefin
-ed on input line 267.
+ed on input line 297.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 11 u
-ndefined on input line 269.
+ndefined on input line 299.
 
 
 Package natbib Warning: Citation `Coyle1970EmpiricalClays' on page 11 undefined
- on input line 269.
+ on input line 299.
 
 
 Package natbib Warning: Citation `Salgado2008TheFoundations' on page 11 undefin
-ed on input line 277.
+ed on input line 307.
 
 
 Package natbib Warning: Citation `Gazetas1985VerticalFoundations' on page 11 un
-defined on input line 281.
+defined on input line 311.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 11 u
-ndefined on input line 281.
+ndefined on input line 311.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 11 u
-ndefined on input line 283.
+ndefined on input line 313.
 
 
-LaTeX Warning: Reference `eq:Df' on page 11 undefined on input line 283.
+LaTeX Warning: Reference `eq:Df' on page 11 undefined on input line 313.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1107,35 +1075,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [11]
 
 Package natbib Warning: Citation `GourvesR.Mirat1977MethodeSols' on page 12 und
-efined on input line 316.
+efined on input line 346.
 
 
 Package natbib Warning: Citation `Faugeras1979LessaiAnalogique' on page 12 unde
-fined on input line 318.
+fined on input line 348.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 12 und
-efined on input line 318.
+efined on input line 348.
 
 
 Package natbib Warning: Citation `Ali2010CaracterisationProfondes' on page 12 u
-ndefined on input line 318.
+ndefined on input line 348.
 
 
 Package natbib Warning: Citation `Reiffsteck2003CaracterisationSitu' on page 12
- undefined on input line 318.
+ undefined on input line 348.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 12 unde
-fined on input line 318.
+fined on input line 348.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 12 und
-efined on input line 318.
+efined on input line 348.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 12 unde
-fined on input line 320.
+fined on input line 350.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1148,27 +1116,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [12]
 
 Package natbib Warning: Citation `Faugeras1979LessaiAnalogique' on page 13 unde
-fined on input line 334.
+fined on input line 364.
 
 
 Package natbib Warning: Citation `Faugeras1979LessaiAnalogique' on page 13 unde
-fined on input line 348.
+fined on input line 378.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 13 und
-efined on input line 362.
+efined on input line 392.
 
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 13 undefin
-ed on input line 362.
+ed on input line 392.
 
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 13 undefin
-ed on input line 362.
+ed on input line 392.
 
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 13 undefin
-ed on input line 362.
+ed on input line 392.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1181,70 +1149,70 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [13]
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 14 u
-ndefined on input line 372.
+ndefined on input line 402.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 14 und
-efined on input line 372.
+efined on input line 402.
 
 
 Package natbib Warning: Citation `Mindlin1936ForceSolid' on page 14 undefined o
-n input line 372.
+n input line 402.
 
 
 Package natbib Warning: Citation `Faugeras1979LessaiAnalogique' on page 14 unde
-fined on input line 389.
+fined on input line 419.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 14 unde
-fined on input line 389.
+fined on input line 419.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 14 und
-efined on input line 391.
+efined on input line 421.
 
 
 Package natbib Warning: Citation `Combarieu2001LPressiometre' on page 14 undefi
-ned on input line 391.
+ned on input line 421.
 
 
-Overfull \hbox (15.52579pt too wide) in paragraph at lines 391--392
+Overfull \hbox (15.52579pt too wide) in paragraph at lines 421--422
 []\T1/lmr/bx/n/12 ? \T1/lmr/m/n/12 évoque l'uti-lité de la réa-li-sa-tion des c
 ycles chargement-déchargement-rechargement
  []
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 14 und
-efined on input line 395.
+efined on input line 425.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 14 unde
-fined on input line 397.
+fined on input line 427.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 14 und
-efined on input line 397.
+efined on input line 427.
 
 
-LaTeX Warning: Command \` invalid in math mode on input line 397.
-
-
-Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 14 unde
-fined on input line 397.
+LaTeX Warning: Command \` invalid in math mode on input line 427.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 14 unde
-fined on input line 397.
+fined on input line 427.
+
+
+Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 14 unde
+fined on input line 427.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 14 und
-efined on input line 397.
+efined on input line 427.
 
-<media/ana_zhou_arbaoui_cycle.JPG, id=281, 564.9105pt x 342.078pt>
+<media/ana_zhou_arbaoui_cycle.JPG, id=306, 564.9105pt x 342.078pt>
 File: media/ana_zhou_arbaoui_cycle.JPG Graphic file (type jpg)
 <use media/ana_zhou_arbaoui_cycle.JPG>
 Package pdftex.def Info: media/ana_zhou_arbaoui_cycle.JPG  used on input line 4
-01.
+31.
 (pdftex.def)             Requested size: 395.43465pt x 239.45296pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1266,59 +1234,59 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [15 <./media/ana_zhou_arbaoui_cycle.JPG>]
 
 Package natbib Warning: Citation `Smith1960Pile-drivingEquation' on page 16 und
-efined on input line 412.
+efined on input line 442.
 
 
 Package natbib Warning: Citation `Smith1960Pile-drivingEquation' on page 16 und
-efined on input line 424.
+efined on input line 454.
 
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 16 undefin
-ed on input line 424.
+ed on input line 454.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 16 u
-ndefined on input line 424.
+ndefined on input line 454.
 
 
 Package natbib Warning: Citation `Smith1960Pile-drivingEquation' on page 16 und
-efined on input line 424.
+efined on input line 454.
 
 
 Package natbib Warning: Citation `Coyle1970EmpiricalClays' on page 16 undefined
- on input line 424.
+ on input line 454.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 16 u
-ndefined on input line 430.
+ndefined on input line 460.
 
 
 Package natbib Warning: Citation `Holeyman1988ModellingBase' on page 16 undefin
-ed on input line 430.
+ed on input line 460.
 
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 16 u
-ndefined on input line 430.
+ndefined on input line 460.
 
 
 Package natbib Warning: Citation `Burland1989NinthStrains' on page 16 undefined
- on input line 432.
+ on input line 462.
 
 
 Package natbib Warning: Citation `Burland1989NinthStrains' on page 16 undefined
- on input line 432.
+ on input line 462.
 
 
 Package natbib Warning: Citation `Atkinson2000Non-linearDesign' on page 16 unde
-fined on input line 432.
+fined on input line 462.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 16 und
-efined on input line 436.
+efined on input line 466.
 
 
 Package natbib Warning: Citation `Combarieu2001LPressiometre' on page 16 undefi
-ned on input line 436.
+ned on input line 466.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1331,48 +1299,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [16]
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 17 u
-ndefined on input line 438.
+ndefined on input line 468.
 
 
 Package natbib Warning: Citation `Lysmer1965VerticalFooting' on page 17 undefin
-ed on input line 438.
+ed on input line 468.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 17 unde
-fined on input line 438.
+fined on input line 468.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 17 und
-efined on input line 438.
+efined on input line 468.
 
 
 Package natbib Warning: Citation `Reiffsteck2009MeasurementsPenetrometer' on pa
-ge 17 undefined on input line 438.
+ge 17 undefined on input line 468.
 
-<media/ana_Eun3.png, id=303, 578.16pt x 329.73187pt>
+<media/ana_Eun3.png, id=328, 578.16pt x 329.73187pt>
 File: media/ana_Eun3.png Graphic file (type png)
 <use media/ana_Eun3.png>
-Package pdftex.def Info: media/ana_Eun3.png  used on input line 446.
+Package pdftex.def Info: media/ana_Eun3.png  used on input line 476.
 (pdftex.def)             Requested size: 346.89867pt x 197.84064pt.
 
 Package natbib Warning: Citation `Obrzud2018TheGuidebook' on page 17 undefined 
-on input line 454.
+on input line 484.
 
 
 Package natbib Warning: Citation `Benz2007Small-StrainConsequences' on page 17 
-undefined on input line 454.
+undefined on input line 484.
 
 
 Package natbib Warning: Citation `FlavignyE.DesruesJ.Paylayer1990NoteRF' on pag
-e 17 undefined on input line 454.
+e 17 undefined on input line 484.
 
 
 Package natbib Warning: Citation `Schanz1999TheVerification' on page 17 undefin
-ed on input line 454.
+ed on input line 484.
 
 
 Package natbib Warning: Citation `Cami2017ImagerieDeformations' on page 17 unde
-fined on input line 454.
+fined on input line 484.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1385,49 +1353,49 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [17 <./media/ana_Eun3.png>]
 
 Package natbib Warning: Citation `Fahey1993AModel' on page 18 undefined on inpu
-t line 458.
+t line 488.
 
 
 Package natbib Warning: Citation `Burns2007Small-Penetrometer' on page 18 undef
-ined on input line 470.
+ined on input line 500.
 
 
 Package natbib Warning: Citation `Plumelle2013TheorieOuvrages' on page 18 undef
-ined on input line 470.
+ined on input line 500.
 
 
 Package natbib Warning: Citation `Burns2007Small-Penetrometer' on page 18 undef
-ined on input line 470.
+ined on input line 500.
 
 
 Package natbib Warning: Citation `Robertson2010EstimatingCPT' on page 18 undefi
-ned on input line 470.
+ned on input line 500.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 18 unde
-fined on input line 472.
+fined on input line 502.
 
 
 Package natbib Warning: Citation `Chaigneau2001CARACTERISATIONPENETROMETRE' on 
-page 18 undefined on input line 472.
+page 18 undefined on input line 502.
 
 
 Package natbib Warning: Citation `Morvan2016OptimisationEstimation' on page 18 
-undefined on input line 472.
+undefined on input line 502.
 
 
 Package natbib Warning: Citation `Chaigneau2001CARACTERISATIONPENETROMETRE' on 
-page 18 undefined on input line 472.
+page 18 undefined on input line 502.
 
 
 Package natbib Warning: Citation `Cami2017ImagerieDeformations' on page 18 unde
-fined on input line 476.
+fined on input line 506.
 
-<media/ana_degradation_pressio.PNG, id=319, 513.41812pt x 164.11313pt>
+<media/ana_degradation_pressio.PNG, id=344, 513.41812pt x 164.11313pt>
 File: media/ana_degradation_pressio.PNG Graphic file (type png)
 <use media/ana_degradation_pressio.PNG>
 Package pdftex.def Info: media/ana_degradation_pressio.PNG  used on input line 
-480.
+510.
 (pdftex.def)             Requested size: 410.73505pt x 131.29066pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1440,7 +1408,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [18]
 
 Package natbib Warning: Citation `Duttine2005ComportementAxes' on page 19 undef
-ined on input line 486.
+ined on input line 516.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1454,25 +1422,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Chapitre 3.
 
 Package natbib Warning: Citation `Lancelot1996ComportementDraines' on page 20 u
-ndefined on input line 503.
+ndefined on input line 533.
 
 
 Package natbib Warning: Citation `Aris2012ExperimentalElements' on page 20 unde
-fined on input line 505.
+fined on input line 535.
 
 [20
 
 ]
-<media/exp_caracterisques_physiques.PNG, id=340, 420.57124pt x 319.69438pt>
+<media/exp_caracterisques_physiques.PNG, id=365, 420.57124pt x 319.69438pt>
 File: media/exp_caracterisques_physiques.PNG Graphic file (type png)
 <use media/exp_caracterisques_physiques.PNG>
 Package pdftex.def Info: media/exp_caracterisques_physiques.PNG  used on input 
-line 511.
+line 541.
 (pdftex.def)             Requested size: 420.57022pt x 319.69359pt.
-<media/exp_granulometrie.PNG, id=343, 376.90813pt x 218.31563pt>
+<media/exp_granulometrie.PNG, id=368, 376.90813pt x 218.31563pt>
 File: media/exp_granulometrie.PNG Graphic file (type png)
 <use media/exp_granulometrie.PNG>
-Package pdftex.def Info: media/exp_granulometrie.PNG  used on input line 523.
+Package pdftex.def Info: media/exp_granulometrie.PNG  used on input line 553.
 (pdftex.def)             Requested size: 301.5269pt x 174.65273pt.
 
 
@@ -1484,19 +1452,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [21 <./media/exp_caracterisques_physiques.PNG>]
-<media/exp_tx_eprouvette.PNG, id=352, 361.35pt x 121.45375pt>
+<media/exp_tx_eprouvette.PNG, id=377, 361.35pt x 121.45375pt>
 File: media/exp_tx_eprouvette.PNG Graphic file (type png)
 <use media/exp_tx_eprouvette.PNG>
-Package pdftex.def Info: media/exp_tx_eprouvette.PNG  used on input line 537.
+Package pdftex.def Info: media/exp_tx_eprouvette.PNG  used on input line 567.
 (pdftex.def)             Requested size: 433.61783pt x 145.74374pt.
 
-Overfull \hbox (6.1863pt too wide) in paragraph at lines 537--538
+Overfull \hbox (6.1863pt too wide) in paragraph at lines 567--568
  [] 
  []
 
 
 Package natbib Warning: Citation `AFNOR1994NFRevolution' on page 22 undefined o
-n input line 545.
+n input line 575.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1507,10 +1475,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [22 <./media/exp_granulometrie.PNG> <./media/exp_tx_eprouvette.PNG>]
-<media/exp_tx_SH.PNG, id=360, 376.40625pt x 381.92688pt>
+<media/exp_tx_SH.PNG, id=385, 376.40625pt x 381.92688pt>
 File: media/exp_tx_SH.PNG Graphic file (type png)
 <use media/exp_tx_SH.PNG>
-Package pdftex.def Info: media/exp_tx_SH.PNG  used on input line 556.
+Package pdftex.def Info: media/exp_tx_SH.PNG  used on input line 586.
 (pdftex.def)             Requested size: 376.40532pt x 381.92593pt.
 
 
@@ -1522,10 +1490,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [23]
-<media/exp_tx_SF.PNG, id=365, 374.39874pt x 381.425pt>
+<media/exp_tx_SF.PNG, id=390, 374.39874pt x 381.425pt>
 File: media/exp_tx_SF.PNG Graphic file (type png)
 <use media/exp_tx_SF.PNG>
-Package pdftex.def Info: media/exp_tx_SF.PNG  used on input line 564.
+Package pdftex.def Info: media/exp_tx_SF.PNG  used on input line 594.
 (pdftex.def)             Requested size: 374.39783pt x 381.42406pt.
 
 
@@ -1537,10 +1505,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [24 <./media/exp_tx_SH.PNG>]
-<media/exp_tx_rupture.PNG, id=378, 387.4475pt x 270.00874pt>
+<media/exp_tx_rupture.PNG, id=403, 387.4475pt x 270.00874pt>
 File: media/exp_tx_rupture.PNG Graphic file (type png)
 <use media/exp_tx_rupture.PNG>
-Package pdftex.def Info: media/exp_tx_rupture.PNG  used on input line 576.
+Package pdftex.def Info: media/exp_tx_rupture.PNG  used on input line 606.
 (pdftex.def)             Requested size: 271.2114pt x 189.00482pt.
 
 
@@ -1554,23 +1522,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [25 <./media/exp_tx_SF.PNG>]
 
 Package natbib Warning: Citation `Briaud2001INTRODUCTIONMODULI' on page 26 unde
-fined on input line 585.
+fined on input line 615.
 
 
 Package natbib Warning: Citation `Lancelot1996ComportementDraines' on page 26 u
-ndefined on input line 589.
+ndefined on input line 619.
 
 
 Package natbib Warning: Citation `Lancelot1996ComportementDraines' on page 26 u
-ndefined on input line 589.
+ndefined on input line 619.
 
 
 Package natbib Warning: Citation `Dano2001ComportementInjectes' on page 26 unde
-fined on input line 589.
+fined on input line 619.
 
 
 Package natbib Warning: Citation `Obrzud2018TheGuidebook' on page 26 undefined 
-on input line 589.
+on input line 619.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1583,55 +1551,55 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [26 <./media/exp_tx_rupture.PNG>]
 
 Package natbib Warning: Citation `Rouse2018RelationTest' on page 27 undefined o
-n input line 604.
+n input line 634.
 
 
 Package natbib Warning: Citation `Lancelot1996ComportementDraines' on page 27 u
-ndefined on input line 604.
+ndefined on input line 634.
 
 
 Package natbib Warning: Citation `Combarieu1997CapaciteLaboratoire' on page 27 
-undefined on input line 606.
+undefined on input line 636.
 
 
 Package natbib Warning: Citation `Dano2001ComportementInjectes' on page 27 unde
-fined on input line 606.
+fined on input line 636.
 
 
 Package natbib Warning: Citation `Dupla2007ComportementReference' on page 27 un
-defined on input line 606.
+defined on input line 636.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 27 und
-efined on input line 606.
+efined on input line 636.
 
 
 Package natbib Warning: Citation `Latini2016TriaxialReport' on page 27 undefine
-d on input line 606.
+d on input line 636.
 
 
 Package natbib Warning: Citation `Lancelot1996ComportementDraines' on page 27 u
-ndefined on input line 606.
+ndefined on input line 636.
 
 
 Package natbib Warning: Citation `Benahmed2004InitialSand' on page 27 undefined
- on input line 606.
+ on input line 636.
 
 
 Package natbib Warning: Citation `Aris2012ExperimentalElements' on page 27 unde
-fined on input line 608.
+fined on input line 638.
 
 
 Package natbib Warning: Citation `Benahmed2004InitialSand' on page 27 undefined
- on input line 608.
+ on input line 638.
 
-<media/exp_frictionangle3.PNG, id=393, 608.77437pt x 224.84pt>
+<media/exp_frictionangle3.PNG, id=418, 608.77437pt x 224.84pt>
 File: media/exp_frictionangle3.PNG Graphic file (type png)
 <use media/exp_frictionangle3.PNG>
-Package pdftex.def Info: media/exp_frictionangle3.PNG  used on input line 612.
+Package pdftex.def Info: media/exp_frictionangle3.PNG  used on input line 642.
 (pdftex.def)             Requested size: 456.57967pt x 168.62958pt.
 
-Overfull \hbox (29.14813pt too wide) in paragraph at lines 612--613
+Overfull \hbox (29.14813pt too wide) in paragraph at lines 642--643
  [] 
  []
 
@@ -1644,20 +1612,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [27 <./media/exp_frictionangle3.PNG>]
-<media/exp_eprouvettes2.png, id=402, 458.71375pt x 212.795pt>
+<media/exp_eprouvettes2.png, id=427, 458.71375pt x 212.795pt>
 File: media/exp_eprouvettes2.png Graphic file (type png)
 <use media/exp_eprouvettes2.png>
-Package pdftex.def Info: media/exp_eprouvettes2.png  used on input line 629.
+Package pdftex.def Info: media/exp_eprouvettes2.png  used on input line 659.
 (pdftex.def)             Requested size: 412.83856pt x 191.51372pt.
-<media/exp_DCLT_CLT.PNG, id=404, 637.38126pt x 374.90062pt>
+<media/exp_DCLT_CLT.PNG, id=429, 637.38126pt x 374.90062pt>
 File: media/exp_DCLT_CLT.PNG Graphic file (type png)
 <use media/exp_DCLT_CLT.PNG>
-Package pdftex.def Info: media/exp_DCLT_CLT.PNG  used on input line 643.
+Package pdftex.def Info: media/exp_DCLT_CLT.PNG  used on input line 673.
 (pdftex.def)             Requested size: 382.4317pt x 224.94211pt.
-<media/exp_penetro.png, id=406, 481.3182pt x 669.2202pt>
+<media/exp_penetro.png, id=431, 481.3182pt x 669.2202pt>
 File: media/exp_penetro.png Graphic file (type png)
 <use media/exp_penetro.png>
-Package pdftex.def Info: media/exp_penetro.png  used on input line 653.
+Package pdftex.def Info: media/exp_penetro.png  used on input line 683.
 (pdftex.def)             Requested size: 240.65851pt x 334.60928pt.
 
 
@@ -1683,11 +1651,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [29 <./media/exp_DCLT_CLT.PNG> <./media/exp_penetro.png>]
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 30 und
-efined on input line 661.
+efined on input line 691.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 30 unde
-fined on input line 661.
+fined on input line 691.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1698,10 +1666,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [30]
-<media/a.png, id=435, 248.42813pt x 378.91562pt>
+<media/a.png, id=460, 248.42813pt x 378.91562pt>
 File: media/a.png Graphic file (type png)
 <use media/a.png>
-Package pdftex.def Info: media/a.png  used on input line 669.
+Package pdftex.def Info: media/a.png  used on input line 699.
 (pdftex.def)             Requested size: 372.64128pt x 568.37202pt.
 
 
@@ -1713,10 +1681,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [31 <./media/a.png>]
-<media/b.png, id=441, 248.93pt x 373.395pt>
+<media/b.png, id=466, 248.93pt x 373.395pt>
 File: media/b.png Graphic file (type png)
 <use media/b.png>
-Package pdftex.def Info: media/b.png  used on input line 679.
+Package pdftex.def Info: media/b.png  used on input line 709.
 (pdftex.def)             Requested size: 373.39407pt x 560.09113pt.
 
 
@@ -1728,10 +1696,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [32 <./media/b.png>]
-<media/c.png, id=447, 245.41687pt x 379.91937pt>
+<media/c.png, id=472, 245.41687pt x 379.91937pt>
 File: media/c.png Graphic file (type png)
 <use media/c.png>
-Package pdftex.def Info: media/c.png  used on input line 689.
+Package pdftex.def Info: media/c.png  used on input line 719.
 (pdftex.def)             Requested size: 368.12439pt x 569.87764pt.
 
 
@@ -1743,10 +1711,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [33 <./media/c.png>]
-<media/d.png, id=453, 243.91125pt x 376.90813pt>
+<media/d.png, id=478, 243.91125pt x 376.90813pt>
 File: media/d.png Graphic file (type png)
 <use media/d.png>
-Package pdftex.def Info: media/d.png  used on input line 699.
+Package pdftex.def Info: media/d.png  used on input line 729.
 (pdftex.def)             Requested size: 365.86597pt x 565.3608pt.
 
 
@@ -1761,158 +1729,158 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Chapitre 4.
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 35 u
-ndefined on input line 724.
+ndefined on input line 754.
 
 
 Package natbib Warning: Citation `Le2013NumericalApplications' on page 35 undef
-ined on input line 724.
+ined on input line 754.
 
 
 Package natbib Warning: Citation `Nazem2012DynamicClay' on page 35 undefined on
- input line 743.
+ input line 773.
 
 
 Package natbib Warning: Citation `Zhang2019StandardChamber' on page 35 undefine
-d on input line 745.
+d on input line 775.
 
 
 Package natbib Warning: Citation `Quezada2012MecanismesVariabilite' on page 35 
-undefined on input line 745.
+undefined on input line 775.
 
 
 Package natbib Warning: Citation `Arroyo2011ConeChamberb' on page 35 undefined 
-on input line 745.
+on input line 775.
 
 
 Package natbib Warning: Citation `J.Butlanska2010VirtualSand' on page 35 undefi
-ned on input line 745.
+ned on input line 775.
 
 
 Package natbib Warning: Citation `Campos2005NUMERICALSOILS' on page 35 undefine
-d on input line 745.
+d on input line 775.
 
 
 Package natbib Warning: Citation `Pinto2008EvaluationTesting' on page 35 undefi
-ned on input line 745.
+ned on input line 775.
 
 
 Package natbib Warning: Citation `Nath1990AMETHOD' on page 35 undefined on inpu
-t line 745.
+t line 775.
 
 
 Package natbib Warning: Citation `Aguiar2009NumericalProblem' on page 35 undefi
-ned on input line 745.
+ned on input line 775.
 
 
 Package natbib Warning: Citation `Fakharian2014ComparisonModelling' on page 35 
-undefined on input line 745.
+undefined on input line 775.
 
 
 Package natbib Warning: Citation `Chatterjee2015DynamicCity' on page 35 undefin
-ed on input line 745.
+ed on input line 775.
 
 
 Package natbib Warning: Citation `Murthy20203D-ContinuumMethod' on page 35 unde
-fined on input line 745.
+fined on input line 775.
 
 
 Package natbib Warning: Citation `Fakharian2014ComparisonModelling' on page 35 
-undefined on input line 745.
+undefined on input line 775.
 
 
 Package natbib Warning: Citation `Fakharian2015NumericalClay' on page 35 undefi
-ned on input line 745.
+ned on input line 775.
 
 
 Package natbib Warning: Citation `Masouleh2008VerificationMethod' on page 35 un
-defined on input line 745.
+defined on input line 775.
 
 
 Package natbib Warning: Citation `Pinto2008EvaluationTesting' on page 35 undefi
-ned on input line 745.
+ned on input line 775.
 
 [35
 
 ]
 
 Package natbib Warning: Citation `Masouleh2008VerificationMethod' on page 36 un
-defined on input line 747.
+defined on input line 777.
 
 
 Package natbib Warning: Citation `Masouleh2008VerificationMethod' on page 36 un
-defined on input line 747.
+defined on input line 777.
 
 
 Package natbib Warning: Citation `Fakharian2014ComparisonModelling' on page 36 
-undefined on input line 749.
+undefined on input line 779.
 
 
 Package natbib Warning: Citation `Smith1960Pile-drivingEquation' on page 36 und
-efined on input line 749.
+efined on input line 779.
 
 
 Package natbib Warning: Citation `Pinto2008EvaluationTesting' on page 36 undefi
-ned on input line 751.
+ned on input line 781.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 36 unde
-fined on input line 753.
+fined on input line 783.
 
 
 Package natbib Warning: Citation `Tran2019NumericalTest' on page 36 undefined o
-n input line 753.
+n input line 783.
 
 
 Package natbib Warning: Citation `Escobar2015Mise3' on page 36 undefined on inp
-ut line 753.
+ut line 783.
 
 
 Package natbib Warning: Citation `Tran2015ModelisationDiscrets' on page 36 unde
-fined on input line 753.
+fined on input line 783.
 
 
 Package natbib Warning: Citation `Benz-Navarrete2009MESURES2' on page 36 undefi
-ned on input line 753.
+ned on input line 783.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 36 unde
-fined on input line 753.
+fined on input line 783.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 36 und
-efined on input line 753.
+efined on input line 783.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 36 unde
-fined on input line 755.
+fined on input line 785.
 
 
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 36 und
-efined on input line 755.
+efined on input line 785.
 
 
 Package natbib Warning: Citation `Ali2010CaracterisationProfondes' on page 36 u
-ndefined on input line 755.
+ndefined on input line 785.
 
 
 Package natbib Warning: Citation `Zhou1997CaracterisationPanda' on page 36 unde
-fined on input line 757.
+fined on input line 787.
 
 
 Package natbib Warning: Citation `Benz-Navarrete2009MESURES2' on page 36 undefi
-ned on input line 757.
+ned on input line 787.
 
 
 Package natbib Warning: Citation `Quezada2012MecanismesVariabilite' on page 36 
-undefined on input line 757.
+undefined on input line 787.
 
 
 Package natbib Warning: Citation `Tran2019NumericalTest' on page 36 undefined o
-n input line 757.
+n input line 787.
 
 
 Package natbib Warning: Citation `Tran2015ModelisationDiscrets' on page 36 unde
-fined on input line 757.
+fined on input line 787.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1923,14 +1891,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [36]
-Overfull \hbox (7.77458pt too wide) in paragraph at lines 759--760
+Overfull \hbox (7.77458pt too wide) in paragraph at lines 789--790
 []\T1/lmr/m/n/12 Ces tra-vaux ont per-mis de mettre en évi-dence la per-ti-nenc
 e du cou-plage numérique-
  []
 
 
 Package natbib Warning: Citation `Ghee2011FLAC3DPiles' on page 37 undefined on 
-input line 768.
+input line 798.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1943,39 +1911,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [37]
 
 Package natbib Warning: Citation `Lysmer1969FiniteMedia' on page 38 undefined o
-n input line 778.
+n input line 808.
 
 
 Package natbib Warning: Citation `Moug2019AxisymmetricClay' on page 38 undefine
-d on input line 787.
+d on input line 817.
 
 
 Package natbib Warning: Citation `Nagula2018EffectivenessModel' on page 38 unde
-fined on input line 787.
+fined on input line 817.
 
 
 Package natbib Warning: Citation `Fakharian2014ComparisonModelling' on page 38 
-undefined on input line 802.
+undefined on input line 832.
 
 
 Package natbib Warning: Citation `Masouleh2008VerificationMethod' on page 38 un
-defined on input line 802.
+defined on input line 832.
 
 
 Package natbib Warning: Citation `Pinto2008EvaluationTesting' on page 38 undefi
-ned on input line 802.
+ned on input line 832.
 
 
 Package natbib Warning: Citation `Benz-Navarrete2009MESURES2' on page 38 undefi
-ned on input line 802.
+ned on input line 832.
 
 
 Package natbib Warning: Citation `Escobar2015Mise3' on page 38 undefined on inp
-ut line 802.
+ut line 832.
 
 
 Package natbib Warning: Citation `Tran2019NumericalTest' on page 38 undefined o
-n input line 802.
+n input line 832.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1988,19 +1956,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [38]
 
 Package natbib Warning: Citation `Gonin1979ReflexionPieux' on page 39 undefined
- on input line 812.
+ on input line 842.
 
 
 Package natbib Warning: Citation `Fairhurst1959EnergyDrilling' on page 39 undef
-ined on input line 812.
+ined on input line 842.
 
 
 Package natbib Warning: Citation `Verruijt1994SoilDynamics' on page 39 undefine
-d on input line 836.
+d on input line 866.
 
 
 Package natbib Warning: Citation `Saint-Venant1898MemoireSys' on page 39 undefi
-ned on input line 836.
+ned on input line 866.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2012,25 +1980,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [39]
 
-LaTeX Warning: Reference `eq:F=Zv' on page 40 undefined on input line 850.
+LaTeX Warning: Reference `eq:F=Zv' on page 40 undefined on input line 880.
 
 
-LaTeX Warning: Reference `eq:FzV' on page 40 undefined on input line 856.
+LaTeX Warning: Reference `eq:FzV' on page 40 undefined on input line 886.
 
 
 Package natbib Warning: Citation `Fairhurst1959EnergyDrilling' on page 40 undef
-ined on input line 860.
+ined on input line 890.
 
 
-Package natbib Warning: Citation `eq:EF2' on page 40 undefined on input line 87
+Package natbib Warning: Citation `eq:EF2' on page 40 undefined on input line 90
 1.
 
 
 Package natbib Warning: Citation `Sy1991InternationalDynamics' on page 40 undef
-ined on input line 871.
+ined on input line 901.
 
 
-Package natbib Warning: Citation `eq:EFV' on page 40 undefined on input line 87
+Package natbib Warning: Citation `eq:EFV' on page 40 undefined on input line 90
 1.
 
 
@@ -2044,12 +2012,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [40]
 
 Package natbib Warning: Citation `Fairhurst1959EnergyDrilling' on page 41 undef
-ined on input line 890.
+ined on input line 920.
 
-<media/num_exp.png, id=509, 470.25688pt x 209.78375pt>
+<media/num_exp.png, id=534, 470.25688pt x 209.78375pt>
 File: media/num_exp.png Graphic file (type png)
 <use media/num_exp.png>
-Package pdftex.def Info: media/num_exp.png  used on input line 896.
+Package pdftex.def Info: media/num_exp.png  used on input line 926.
 (pdftex.def)             Requested size: 423.22728pt x 188.8036pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2060,10 +2028,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [41 <./media/num_exp.png>]
-<media/num_imp2.PNG, id=523, 388.95313pt x 378.91562pt>
+<media/num_imp2.PNG, id=548, 388.95313pt x 378.91562pt>
 File: media/num_imp2.PNG Graphic file (type png)
 <use media/num_imp2.PNG>
-Package pdftex.def Info: media/num_imp2.PNG  used on input line 925.
+Package pdftex.def Info: media/num_imp2.PNG  used on input line 955.
 (pdftex.def)             Requested size: 388.95216pt x 378.91469pt.
 
 
@@ -2076,7 +2044,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [42]
 
-LaTeX Warning: Reference `tab:marteau' on page 43 undefined on input line 931.
+LaTeX Warning: Reference `tab:marteau' on page 43 undefined on input line 961.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2087,20 +2055,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [43 <./media/num_imp2.PNG>]
-<media/num_radieur.png, id=540, 925.056pt x 445.9059pt>
+<media/num_radieur.png, id=565, 925.056pt x 445.9059pt>
 File: media/num_radieur.png Graphic file (type png)
 <use media/num_radieur.png>
-Package pdftex.def Info: media/num_radieur.png  used on input line 956.
+Package pdftex.def Info: media/num_radieur.png  used on input line 986.
 (pdftex.def)             Requested size: 462.52687pt x 222.95241pt.
 
-Overfull \hbox (35.09534pt too wide) in paragraph at lines 956--957
+Overfull \hbox (35.09534pt too wide) in paragraph at lines 986--987
  [] 
  []
 
-<media/num_vitesse.png, id=542, 581.7735pt x 549.252pt>
+<media/num_vitesse.png, id=567, 581.7735pt x 549.252pt>
 File: media/num_vitesse.png Graphic file (type png)
 <use media/num_vitesse.png>
-Package pdftex.def Info: media/num_vitesse.png  used on input line 968.
+Package pdftex.def Info: media/num_vitesse.png  used on input line 998.
 (pdftex.def)             Requested size: 290.88603pt x 274.62532pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2113,7 +2081,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [44 <./media/num_radieur.png>]
 
 Package natbib Warning: Citation `Itasca2020FLAC3D6.0' on page 45 undefined on 
-input line 997.
+input line 1027.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2124,20 +2092,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [45 <./media/num_vitesse.png>]
-<media/num_interface_kn.PNG, id=558, 334.24875pt x 252.44313pt>
+<media/num_interface_kn.PNG, id=583, 334.24875pt x 252.44313pt>
 File: media/num_interface_kn.PNG Graphic file (type png)
 <use media/num_interface_kn.PNG>
-Package pdftex.def Info: media/num_interface_kn.PNG  used on input line 1001.
+Package pdftex.def Info: media/num_interface_kn.PNG  used on input line 1031.
 (pdftex.def)             Requested size: 133.69713pt x 100.97545pt.
 
 
 Package natbib Warning: Citation `Itasca2020FLAC3D6.0' on page 46 undefined on 
-input line 1018.
+input line 1048.
 
-<media/num_interface2.PNG, id=562, 521.95pt x 233.37187pt>
+<media/num_interface2.PNG, id=587, 521.95pt x 233.37187pt>
 File: media/num_interface2.PNG Graphic file (type png)
 <use media/num_interface2.PNG>
-Package pdftex.def Info: media/num_interface2.PNG  used on input line 1022.
+Package pdftex.def Info: media/num_interface2.PNG  used on input line 1052.
 (pdftex.def)             Requested size: 365.3625pt x 163.35919pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2150,11 +2118,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [46 <./media/num_interface_kn.PNG> <./media/num_interface2.PNG>]
 
 Package natbib Warning: Citation `MestatJean-PierrreMagnan1991LoisImpacts' on p
-age 47 undefined on input line 1040.
+age 47 undefined on input line 1070.
 
 
 Package natbib Warning: Citation `Ahmadi2005Thin-layerMeasurement' on page 47 u
-ndefined on input line 1042.
+ndefined on input line 1072.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2167,35 +2135,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [47]
 
 Package natbib Warning: Citation `Levasseur2007AnalyseGenetiques' on page 48 un
-defined on input line 1069.
+defined on input line 1099.
 
 
 Package natbib Warning: Citation `Ahmadi2005Thin-layerMeasurement' on page 48 u
-ndefined on input line 1069.
+ndefined on input line 1099.
 
 
 Package natbib Warning: Citation `Dano2001ComportementInjectes' on page 48 unde
-fined on input line 1069.
+fined on input line 1099.
 
 
 Package natbib Warning: Citation `Dupla2007ComportementReference' on page 48 un
-defined on input line 1069.
+defined on input line 1099.
 
 
 Package natbib Warning: Citation `Vernay2017EtudeLiquefaction' on page 48 undef
-ined on input line 1069.
+ined on input line 1099.
 
 
 Package natbib Warning: Citation `Andria-Ntoanina2011CaracterisationCentrifugeu
-se' on page 48 undefined on input line 1069.
+se' on page 48 undefined on input line 1099.
 
-<media/num_tx_SF.PNG, id=585, 652.4375pt x 239.89626pt>
+<media/num_tx_SF.PNG, id=610, 652.4375pt x 239.89626pt>
 File: media/num_tx_SF.PNG Graphic file (type png)
 <use media/num_tx_SF.PNG>
-Package pdftex.def Info: media/num_tx_SF.PNG  used on input line 1092.
+Package pdftex.def Info: media/num_tx_SF.PNG  used on input line 1122.
 (pdftex.def)             Requested size: 456.70313pt x 167.92622pt.
 
-Overfull \hbox (29.27159pt too wide) in paragraph at lines 1092--1093
+Overfull \hbox (29.27159pt too wide) in paragraph at lines 1122--1123
  [] 
  []
 
@@ -2220,32 +2188,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Chapitre 5.
 
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 50 u
-ndefined on input line 1139.
+ndefined on input line 1169.
 
 [50
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1150
+Underfull \hbox (badness 10000) in paragraph at lines 1179--1180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1162--1163
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1165
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1166--1167
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1169
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1199
 
  []
 
@@ -2271,9 +2239,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [52] (manuscript.aux)
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
 LaTeX Warning: There were undefined references.
 
 
@@ -2283,13 +2248,13 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D05740D7154922A4E109D63349EA6941;2422.
  ) 
 Here is how much of TeX's memory you used:
- 14666 strings out of 479618
- 263750 string characters out of 2862651
- 673189 words of memory out of 3000000
- 31375 multiletter control sequences out of 15000+200000
- 474357 words of font info for 64 fonts, out of 3000000 for 9000
+ 14693 strings out of 479618
+ 264248 string characters out of 2862651
+ 673389 words of memory out of 3000000
+ 31394 multiletter control sequences out of 15000+200000
+ 477725 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,12n,75p,1328b,906s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,12n,75p,3542b,904s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -2320,13 +2285,14 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Caforestti/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Cafores
 tti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Cafo
 restti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/C
-aforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Us
-ers/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><
-C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.p
-fb>
-Output written on manuscript.pdf (53 pages, 3604899 bytes).
+aforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/User
+s/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:
+/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pf
+b><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
+8.pfb>
+Output written on manuscript.pdf (53 pages, 3636441 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 163 named destinations out of 1000 (max. 500000)
+ 736 PDF objects out of 1000 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
  387 words of extra memory for PDF output out of 10000 (max. 10000000)
 

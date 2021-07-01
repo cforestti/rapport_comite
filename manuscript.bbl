@@ -1,15 +1,51 @@
 \begin{thebibliography}{}
 
+\bibitem[Benz-Navarrete, 2009]{Benz-Navarrete2009}
+Benz-Navarrete, M.~A. (2009).
+\newblock {\em {MESURES DYNAMIQUES LORS DU BATTAGE DU PENETROMETRE PANDA 2}}.
+\newblock PhD thesis, Universit{\'{e}} Blaise Pascal.
+
 \bibitem[Byun et~al., 2015]{Byun2015}
 Byun, Y.~H., Hong, W.~T., and Lee, J.~S. (2015).
 \newblock {Characterization of railway substructure using a hybrid cone
   penetrometer}.
 \newblock {\em Smart Structures and Systems}, 15(4):1085--1101.
 
+\bibitem[Escobar, 2015]{Escobar2015}
+Escobar, E. (2015).
+\newblock {\em {Mise au point et exploitation d'une nouvelle technique pour la
+  reconnaisance des sols : le PANDA 3}}.
+\newblock PhD thesis.
+
+\bibitem[Mayne et~al., 2009]{Mayne2009}
+Mayne, P.~W., Coop, M.~R., Springman, S.~M., Huang, A.~B., and Zornberg, J.~G.
+  (2009).
+\newblock {Geomaterial behavior and testing}.
+\newblock In {\em Proceedings of the 17th International Conference on Soil
+  Mechanics and Geotechnical Engineering: The Academia and Practice of
+  Geotechnical Engineering}.
+
+\bibitem[Robertson and Campanella, 1983]{Robertson1983a}
+Robertson, P.~K. and Campanella, R.~G. (1983).
+\newblock {Interpretation of cone penetration tests. Part II: clay}.
+\newblock {\em Canadian Geotechnical Journal}, 20(4):734--745.
+
+\bibitem[Salgado, 2013]{Salgado2013}
+Salgado, R. (2013).
+\newblock {The mechanics of cone penetration: Contributions from experimental
+  and theoretical studies}.
+\newblock {\em Geotechnical and Geophysical Site Characterization 4 -
+  Proceedings of the 4th International Conference on Site Characterization 4,
+  ISC-4}, 1:131--153.
+
 \bibitem[Schmertmann and Palacios, 1979]{Schmertmann1979}
 Schmertmann, J. and Palacios, A. (1979).
 \newblock {Energy Dynamics of SPT}.
 \newblock {\em Journal of the Geotechnical Engineering Division},
   105(8):909--926.
+
+\bibitem[Schnaid, 2008]{Schnaid2008}
+Schnaid, F. (2008).
+\newblock {\em {In situ testing in geomechanics: The main tests}}.
 
 \end{thebibliography}
