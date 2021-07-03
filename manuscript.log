@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  1 JUL 2021 08:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.19)  3 JUL 2021 18:01
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -825,7 +825,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-<media/ana_demarche2.PNG, id=234, 619.31375pt x 387.94937pt>
+<media/ana_demarche2.PNG, id=233, 619.31375pt x 387.94937pt>
 File: media/ana_demarche2.PNG Graphic file (type png)
 <use media/ana_demarche2.PNG>
 Package pdftex.def Info: media/ana_demarche2.PNG  used on input line 192.
@@ -1011,7 +1011,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package natbib Warning: Citation `Loukidis2008AssessmentProcedure' on page 10 u
 ndefined on input line 279.
 
-<media/ana_modele.JPG, id=269, 250.536pt x 104.7915pt>
+<media/ana_modele.JPG, id=268, 250.536pt x 104.7915pt>
 File: media/ana_modele.JPG Graphic file (type jpg)
 <use media/ana_modele.JPG>
 Package pdftex.def Info: media/ana_modele.JPG  used on input line 283.
@@ -1208,7 +1208,7 @@ fined on input line 427.
 Package natbib Warning: Citation `Arbaoui2003MesurePenetrometre' on page 14 und
 efined on input line 427.
 
-<media/ana_zhou_arbaoui_cycle.JPG, id=306, 564.9105pt x 342.078pt>
+<media/ana_zhou_arbaoui_cycle.JPG, id=305, 564.9105pt x 342.078pt>
 File: media/ana_zhou_arbaoui_cycle.JPG Graphic file (type jpg)
 <use media/ana_zhou_arbaoui_cycle.JPG>
 Package pdftex.def Info: media/ana_zhou_arbaoui_cycle.JPG  used on input line 4
@@ -1317,7 +1317,7 @@ efined on input line 468.
 Package natbib Warning: Citation `Reiffsteck2009MeasurementsPenetrometer' on pa
 ge 17 undefined on input line 468.
 
-<media/ana_Eun3.png, id=328, 578.16pt x 329.73187pt>
+<media/ana_Eun3.png, id=327, 578.16pt x 329.73187pt>
 File: media/ana_Eun3.png Graphic file (type png)
 <use media/ana_Eun3.png>
 Package pdftex.def Info: media/ana_Eun3.png  used on input line 476.
@@ -1391,7 +1391,7 @@ page 18 undefined on input line 502.
 Package natbib Warning: Citation `Cami2017ImagerieDeformations' on page 18 unde
 fined on input line 506.
 
-<media/ana_degradation_pressio.PNG, id=344, 513.41812pt x 164.11313pt>
+<media/ana_degradation_pressio.PNG, id=343, 513.41812pt x 164.11313pt>
 File: media/ana_degradation_pressio.PNG Graphic file (type png)
 <use media/ana_degradation_pressio.PNG>
 Package pdftex.def Info: media/ana_degradation_pressio.PNG  used on input line 
@@ -1431,13 +1431,13 @@ fined on input line 535.
 [20
 
 ]
-<media/exp_caracterisques_physiques.PNG, id=365, 420.57124pt x 319.69438pt>
+<media/exp_caracterisques_physiques.PNG, id=364, 420.57124pt x 319.69438pt>
 File: media/exp_caracterisques_physiques.PNG Graphic file (type png)
 <use media/exp_caracterisques_physiques.PNG>
 Package pdftex.def Info: media/exp_caracterisques_physiques.PNG  used on input 
 line 541.
 (pdftex.def)             Requested size: 420.57022pt x 319.69359pt.
-<media/exp_granulometrie.PNG, id=368, 376.90813pt x 218.31563pt>
+<media/exp_granulometrie.PNG, id=367, 376.90813pt x 218.31563pt>
 File: media/exp_granulometrie.PNG Graphic file (type png)
 <use media/exp_granulometrie.PNG>
 Package pdftex.def Info: media/exp_granulometrie.PNG  used on input line 553.
@@ -1452,7 +1452,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [21 <./media/exp_caracterisques_physiques.PNG>]
-<media/exp_tx_eprouvette.PNG, id=377, 361.35pt x 121.45375pt>
+<media/exp_tx_eprouvette.PNG, id=376, 361.35pt x 121.45375pt>
 File: media/exp_tx_eprouvette.PNG Graphic file (type png)
 <use media/exp_tx_eprouvette.PNG>
 Package pdftex.def Info: media/exp_tx_eprouvette.PNG  used on input line 567.
@@ -1475,7 +1475,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [22 <./media/exp_granulometrie.PNG> <./media/exp_tx_eprouvette.PNG>]
-<media/exp_tx_SH.PNG, id=385, 376.40625pt x 381.92688pt>
+<media/exp_tx_SH.PNG, id=384, 376.40625pt x 381.92688pt>
 File: media/exp_tx_SH.PNG Graphic file (type png)
 <use media/exp_tx_SH.PNG>
 Package pdftex.def Info: media/exp_tx_SH.PNG  used on input line 586.
@@ -1490,7 +1490,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [23]
-<media/exp_tx_SF.PNG, id=390, 374.39874pt x 381.425pt>
+<media/exp_tx_SF.PNG, id=389, 374.39874pt x 381.425pt>
 File: media/exp_tx_SF.PNG Graphic file (type png)
 <use media/exp_tx_SF.PNG>
 Package pdftex.def Info: media/exp_tx_SF.PNG  used on input line 594.
@@ -1505,7 +1505,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [24 <./media/exp_tx_SH.PNG>]
-<media/exp_tx_rupture.PNG, id=403, 387.4475pt x 270.00874pt>
+<media/exp_tx_rupture.PNG, id=402, 387.4475pt x 270.00874pt>
 File: media/exp_tx_rupture.PNG Graphic file (type png)
 <use media/exp_tx_rupture.PNG>
 Package pdftex.def Info: media/exp_tx_rupture.PNG  used on input line 606.
@@ -1593,7 +1593,7 @@ fined on input line 638.
 Package natbib Warning: Citation `Benahmed2004InitialSand' on page 27 undefined
  on input line 638.
 
-<media/exp_frictionangle3.PNG, id=418, 608.77437pt x 224.84pt>
+<media/exp_frictionangle3.PNG, id=417, 608.77437pt x 224.84pt>
 File: media/exp_frictionangle3.PNG Graphic file (type png)
 <use media/exp_frictionangle3.PNG>
 Package pdftex.def Info: media/exp_frictionangle3.PNG  used on input line 642.
@@ -1612,17 +1612,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [27 <./media/exp_frictionangle3.PNG>]
-<media/exp_eprouvettes2.png, id=427, 458.71375pt x 212.795pt>
+<media/exp_eprouvettes2.png, id=426, 458.71375pt x 212.795pt>
 File: media/exp_eprouvettes2.png Graphic file (type png)
 <use media/exp_eprouvettes2.png>
 Package pdftex.def Info: media/exp_eprouvettes2.png  used on input line 659.
 (pdftex.def)             Requested size: 412.83856pt x 191.51372pt.
-<media/exp_DCLT_CLT.PNG, id=429, 637.38126pt x 374.90062pt>
+<media/exp_DCLT_CLT.PNG, id=428, 637.38126pt x 374.90062pt>
 File: media/exp_DCLT_CLT.PNG Graphic file (type png)
 <use media/exp_DCLT_CLT.PNG>
 Package pdftex.def Info: media/exp_DCLT_CLT.PNG  used on input line 673.
 (pdftex.def)             Requested size: 382.4317pt x 224.94211pt.
-<media/exp_penetro.png, id=431, 481.3182pt x 669.2202pt>
+<media/exp_penetro.png, id=430, 481.3182pt x 669.2202pt>
 File: media/exp_penetro.png Graphic file (type png)
 <use media/exp_penetro.png>
 Package pdftex.def Info: media/exp_penetro.png  used on input line 683.
@@ -1666,7 +1666,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [30]
-<media/a.png, id=460, 248.42813pt x 378.91562pt>
+<media/a.png, id=459, 248.42813pt x 378.91562pt>
 File: media/a.png Graphic file (type png)
 <use media/a.png>
 Package pdftex.def Info: media/a.png  used on input line 699.
@@ -1681,7 +1681,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [31 <./media/a.png>]
-<media/b.png, id=466, 248.93pt x 373.395pt>
+<media/b.png, id=465, 248.93pt x 373.395pt>
 File: media/b.png Graphic file (type png)
 <use media/b.png>
 Package pdftex.def Info: media/b.png  used on input line 709.
@@ -1696,7 +1696,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [32 <./media/b.png>]
-<media/c.png, id=472, 245.41687pt x 379.91937pt>
+<media/c.png, id=471, 245.41687pt x 379.91937pt>
 File: media/c.png Graphic file (type png)
 <use media/c.png>
 Package pdftex.def Info: media/c.png  used on input line 719.
@@ -1711,7 +1711,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [33 <./media/c.png>]
-<media/d.png, id=478, 243.91125pt x 376.90813pt>
+<media/d.png, id=477, 243.91125pt x 376.90813pt>
 File: media/d.png Graphic file (type png)
 <use media/d.png>
 Package pdftex.def Info: media/d.png  used on input line 729.
@@ -2014,7 +2014,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Package natbib Warning: Citation `Fairhurst1959EnergyDrilling' on page 41 undef
 ined on input line 920.
 
-<media/num_exp.png, id=534, 470.25688pt x 209.78375pt>
+<media/num_exp.png, id=533, 470.25688pt x 209.78375pt>
 File: media/num_exp.png Graphic file (type png)
 <use media/num_exp.png>
 Package pdftex.def Info: media/num_exp.png  used on input line 926.
@@ -2028,7 +2028,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [41 <./media/num_exp.png>]
-<media/num_imp2.PNG, id=548, 388.95313pt x 378.91562pt>
+<media/num_imp2.PNG, id=547, 388.95313pt x 378.91562pt>
 File: media/num_imp2.PNG Graphic file (type png)
 <use media/num_imp2.PNG>
 Package pdftex.def Info: media/num_imp2.PNG  used on input line 955.
@@ -2055,7 +2055,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [43 <./media/num_imp2.PNG>]
-<media/num_radieur.png, id=565, 925.056pt x 445.9059pt>
+<media/num_radieur.png, id=564, 925.056pt x 445.9059pt>
 File: media/num_radieur.png Graphic file (type png)
 <use media/num_radieur.png>
 Package pdftex.def Info: media/num_radieur.png  used on input line 986.
@@ -2065,7 +2065,7 @@ Overfull \hbox (35.09534pt too wide) in paragraph at lines 986--987
  [] 
  []
 
-<media/num_vitesse.png, id=567, 581.7735pt x 549.252pt>
+<media/num_vitesse.png, id=566, 581.7735pt x 549.252pt>
 File: media/num_vitesse.png Graphic file (type png)
 <use media/num_vitesse.png>
 Package pdftex.def Info: media/num_vitesse.png  used on input line 998.
@@ -2092,7 +2092,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
 
 [45 <./media/num_vitesse.png>]
-<media/num_interface_kn.PNG, id=583, 334.24875pt x 252.44313pt>
+<media/num_interface_kn.PNG, id=582, 334.24875pt x 252.44313pt>
 File: media/num_interface_kn.PNG Graphic file (type png)
 <use media/num_interface_kn.PNG>
 Package pdftex.def Info: media/num_interface_kn.PNG  used on input line 1031.
@@ -2102,7 +2102,7 @@ Package pdftex.def Info: media/num_interface_kn.PNG  used on input line 1031.
 Package natbib Warning: Citation `Itasca2020FLAC3D6.0' on page 46 undefined on 
 input line 1048.
 
-<media/num_interface2.PNG, id=587, 521.95pt x 233.37187pt>
+<media/num_interface2.PNG, id=586, 521.95pt x 233.37187pt>
 File: media/num_interface2.PNG Graphic file (type png)
 <use media/num_interface2.PNG>
 Package pdftex.def Info: media/num_interface2.PNG  used on input line 1052.
@@ -2157,7 +2157,7 @@ ined on input line 1099.
 Package natbib Warning: Citation `Andria-Ntoanina2011CaracterisationCentrifugeu
 se' on page 48 undefined on input line 1099.
 
-<media/num_tx_SF.PNG, id=610, 652.4375pt x 239.89626pt>
+<media/num_tx_SF.PNG, id=609, 652.4375pt x 239.89626pt>
 File: media/num_tx_SF.PNG Graphic file (type png)
 <use media/num_tx_SF.PNG>
 Package pdftex.def Info: media/num_tx_SF.PNG  used on input line 1122.
@@ -2248,11 +2248,11 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D05740D7154922A4E109D63349EA6941;2422.
  ) 
 Here is how much of TeX's memory you used:
- 14693 strings out of 479618
- 264248 string characters out of 2862651
- 673389 words of memory out of 3000000
- 31394 multiletter control sequences out of 15000+200000
- 477725 words of font info for 66 fonts, out of 3000000 for 9000
+ 14691 strings out of 479618
+ 264224 string characters out of 2862651
+ 673387 words of memory out of 3000000
+ 31393 multiletter control sequences out of 15000+200000
+ 474728 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,12n,75p,3542b,904s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
@@ -2285,14 +2285,13 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Caforestti/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Cafores
 tti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Cafo
 restti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/C
-aforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/User
-s/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:
-/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pf
-b><C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
-8.pfb>
-Output written on manuscript.pdf (53 pages, 3636441 bytes).
+aforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Us
+ers/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><
+C:/Users/Caforestti/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.p
+fb>
+Output written on manuscript.pdf (53 pages, 3616424 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
+ 732 PDF objects out of 1000 (max. 8388607)
  169 named destinations out of 1000 (max. 500000)
  387 words of extra memory for PDF output out of 10000 (max. 10000000)
 
