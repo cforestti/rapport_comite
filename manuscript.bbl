@@ -1,9 +1,39 @@
 \begin{thebibliography}{}
 
+\bibitem[Aguiar, 2009]{Aguiar2009}
+Aguiar, S. C.~D. (2009).
+\newblock {Numerical Modeling of Soil-Pile Axial Load Transfer Mechanisms in
+  Granular Soils Statement of the Problem}.
+
+\bibitem[Ali, 2010]{Ali2010}
+Ali, H. (2010).
+\newblock {\em {Caract{\'{e}}risation am{\'{e}}lior{\'{e}}e des sols par
+  l'essai de chargement de pointe au pi{\'{e}}zocone. Application au calcul des
+  fondations profondes}}.
+\newblock PhD thesis.
+
+\bibitem[Arbaoui, 2003]{Arbaoui2003}
+Arbaoui, H. (2003).
+\newblock {\em {M{\'{e}}sure de la d{\'{e}}formabilit{\'{e}} des sols en place
+  {\`{a}} l'aide d'un p{\'{e}}n{\'{e}}trom{\`{e}}tre}}.
+\newblock PhD thesis, Universit{\'{e}} Blaise Pascal.
+
+\bibitem[Aussedat, 1970]{Aussedat1970}
+Aussedat, G. (1970).
+\newblock {\em {Sollicitations rapides des sols}}.
+\newblock PhD thesis.
+
 \bibitem[Benz-Navarrete, 2009]{Benz-Navarrete2009}
 Benz-Navarrete, M.~A. (2009).
 \newblock {\em {MESURES DYNAMIQUES LORS DU BATTAGE DU PENETROMETRE PANDA 2}}.
 \newblock PhD thesis, Universit{\'{e}} Blaise Pascal.
+
+\bibitem[Burns and Mayne, 2007]{Burns2007}
+Burns, S. and Mayne, P. (2007).
+\newblock {Small- and High-Strain Measurements of In Situ Soil Properties Using
+  the Seismic Cone Penetrometer}.
+\newblock {\em Transportation Research Record: Journal of the Transportation
+  Research Board}, 1548:81--88.
 
 \bibitem[Byun et~al., 2015]{Byun2015}
 Byun, Y.~H., Hong, W.~T., and Lee, J.~S. (2015).
@@ -11,11 +41,86 @@ Byun, Y.~H., Hong, W.~T., and Lee, J.~S. (2015).
   penetrometer}.
 \newblock {\em Smart Structures and Systems}, 15(4):1085--1101.
 
+\bibitem[Chaigneau, 2001]{Chaigneau2001}
+Chaigneau, L. (2001).
+\newblock {\em {CARACTERISATION DES MILEUX GRANULAIRES DE SURFACE A L'AIDE D'UN
+  PENETROMETRE}}.
+\newblock PhD thesis, UNIVERSITE BLAISE PASCAL – CLERMONT II ECOLE.
+
+\bibitem[Chatterjee et~al., 2015]{Chatterjee2015a}
+Chatterjee, K., Choudhury, D., Rao, V.~D., and S.P, M. (2015).
+\newblock {Dynamic analyses and field observations on piles in kolkata city}.
+\newblock {\em Geomechanics and Engineering}, 8(3):415--440.
+
+\bibitem[Combarieu, 2001]{Combarieu2001}
+Combarieu, O. (2001).
+\newblock {L 'essai cyclique au pressiom{\`{e}}tre}.
+\newblock pages 37--65.
+
 \bibitem[Escobar, 2015]{Escobar2015}
 Escobar, E. (2015).
 \newblock {\em {Mise au point et exploitation d'une nouvelle technique pour la
   reconnaisance des sols : le PANDA 3}}.
 \newblock PhD thesis.
+
+\bibitem[Fairhurst, 1959]{Fairhurst1959}
+Fairhurst, C. (1959).
+\newblock {Energy transmission in percussive drilling}.
+\newblock {\em Fall Meeting of the Society of Petroleum Engineers of AIME}.
+
+\bibitem[Fakharian et~al., 2014]{Fakharian2014}
+Fakharian, K., {Feizee Masouleh}, S., and Mohammadlou, A.~S. (2014).
+\newblock {Comparison of end-of-drive and restrike signal matching analysis for
+  a real case using continuum numerical modelling}.
+\newblock {\em Soils and Foundations}, 54(2):155--167.
+
+\bibitem[Faug{\`{e}}ras, 1979]{Faugeras1979}
+Faug{\`{e}}ras, J.-C. (1979).
+\newblock {\em {L'essai de compressibilit{\'{e}} des sols au
+  p{\'{e}}n{\'{e}}trom{\`{e}}tre statique et son interpretation sur
+  mod{\`{e}}le analogique}}.
+\newblock PhD thesis.
+
+\bibitem[Gazetas et~al., 1985]{Gazetas1985}
+Gazetas, G., Dobry, R., and Tassoulas, J.~L. (1985).
+\newblock {Vertical response of arbitrarily shaped embedded foundations}.
+\newblock {\em Journal of Geotechnical Engineering}, 111(6):750--771.
+
+\bibitem[Ghee and Guo, 2011]{Ghee2011}
+Ghee, E. and Guo, W. (2011).
+\newblock {FLAC3D analysis on soil moving through piles}.
+\newblock {\em Frontiers in Offshore Geotechnics II}, (November 2011):507--512.
+
+\bibitem[Gonin, 1979]{Gonin1979}
+Gonin, H. (1979).
+\newblock {R{\'{e}}flexion sur le battage des pieux}.
+\newblock {\em Revue Fran{\c{c}}aise de G{\'{e}}otechnique}, (9):41--50.
+
+\bibitem[Itasca, 2020]{Itasca2020}
+Itasca (2020).
+\newblock {FLAC3D Version 6.0}.
+
+\bibitem[Le, 2013]{Le2013}
+Le, P.~T. (2013).
+\newblock {Numerical and Experimental Studies on Dynamic Load Testing of Open -
+  ended Pipe Piles and its Applications Numerical and Experimental Studies on
+  Dynamic Load Testing of Open - ended Pipe Piles and its Applications}.
+
+\bibitem[Loukidis et~al., 2008]{Loukidis2008}
+Loukidis, D., Salgado, R., and Abou-Jaoude, G. (2008).
+\newblock {Assessment of Axially-Loaded Pile Dynamic Design Methods and Review
+  of INDOT Axially-Loaded Design Procedure}.
+\newblock Technical Report October.
+
+\bibitem[Lysmer, 1969]{Lys1969}
+Lysmer (1969).
+\newblock {Finite dynamic model for infinite media}.
+
+\bibitem[Masouleh and Fakharian, 2008]{Masouleh2008}
+Masouleh, S.~F. and Fakharian, K. (2008).
+\newblock {Verification of Signal Matching Analysis of Pile Driving Using a
+  Finite Difference Based Continuum Numerical Method}.
+\newblock {\em International Journal of Civil Engineering}, 6(3):174--183.
 
 \bibitem[Mayne et~al., 2009]{Mayne2009}
 Mayne, P.~W., Coop, M.~R., Springman, S.~M., Huang, A.~B., and Zornberg, J.~G.
@@ -24,6 +129,73 @@ Mayne, P.~W., Coop, M.~R., Springman, S.~M., Huang, A.~B., and Zornberg, J.~G.
 \newblock In {\em Proceedings of the 17th International Conference on Soil
   Mechanics and Geotechnical Engineering: The Academia and Practice of
   Geotechnical Engineering}.
+
+\bibitem[Morvan and Breul, 2016]{Morvan2016}
+Morvan, M. and Breul, P. (2016).
+\newblock {Optimisation of in-situ dry density estimation}.
+\newblock {\em E3S Web of Conferences}, 9:6.
+
+\bibitem[Moug et~al., 2019]{Moug2019}
+Moug, D.~M., Boulanger, R.~W., DeJong, J.~T., and Jaeger, R.~A. (2019).
+\newblock {Axisymmetric simulations of cone penetration in saturated clay}.
+\newblock {\em Journal of Geotechnical and Geoenvironmental Engineering},
+  145(4):1--13.
+
+\bibitem[Murthy et~al., 2020]{Murthy2020}
+Murthy, D.~S., Gedela, R., Karpurapu, R., and Robinson, R.~G. (2020).
+\newblock {3D-Continuum Numerical Analysis of Offshore Driven Pipe Pile Using
+  Finite Difference Method}.
+\newblock {\em Lecture Notes in Civil Engineering}, 56:245--256.
+
+\bibitem[Nagula and Grabe, 2018]{Nagula2018}
+Nagula, S. and Grabe, I.~J. (2018).
+\newblock {First step to model the installation effect of geosynthetic encased
+  sand columns on existing columns}.
+\newblock (September).
+
+\bibitem[Nath, 1990]{Nath1990}
+Nath, B. (1990).
+\newblock {A CONTINUE METHOD OF PILE DRIVING ANALYSIS: COMPARISON WITH THE WAVE
+  EQUATION METHOD}.
+\newblock {\em Computers and Geotechnics}, 10(1990):265--285.
+
+\bibitem[Nazem et~al., 2012]{Nazem2012}
+Nazem, M., Carter, J.~P., Airey, D.~W., and Chow, S.~H. (2012).
+\newblock {Dynamic analysis of a smooth penetrometer free-falling into uniform
+  clay}.
+\newblock {\em Geotechnique}, 62(10):893--905.
+
+\bibitem[Omidvar et~al., 2012]{Omidvar2012}
+Omidvar, M., Iskander, M., and Bless, S. (2012).
+\newblock {Stress-strain behavior of sand at high strain rates}.
+\newblock {\em International Journal of Impact Engineering}, 49:192--213.
+
+\bibitem[Pinto et~al., 2008]{Pinto2008}
+Pinto, P.~L., Grazina, J.~C., and Louren{\c{c}}o, J.~C. (2008).
+\newblock {Evaluation of 1D and 2D numerical modelling techniques of dynamic
+  pile testing}.
+\newblock In {\em Proc. of the 8th Int. Conf., On Application of Stress Wave
+  Theory to Piles}, pages 353--357. Science, Technology and Practice:
+  Proceedings of the 8th International Conference on the Application of
+  Stress-Wave Theory to Piles.
+
+\bibitem[Quezada, 2012]{Quezada2012}
+Quezada, J.~C. (2012).
+\newblock {\em {M{\'{e}}canismes de tassement du ballast et sa
+  variabilit{\'{e}}}}.
+\newblock PhD thesis, UNIVERSITE MONTPELLIER.
+
+\bibitem[Quezada et~al., 2014]{Quezada2014a}
+Quezada, J.~C., Breul, P., Saussine, G., and Radjai, F. (2014).
+\newblock {Penetration test in coarse granular material using Contact Dynamics
+  Method}.
+\newblock {\em Computers and Geotechnics}, 55:248--253.
+
+\bibitem[Robertson and Cabal, 2010]{Robertson2010}
+Robertson, P.~K. and Cabal, K.~L. (2010).
+\newblock {Estimating soil unit weight from CPT}.
+\newblock {\em 2nd International Symposium on Cone Penetration Testing},
+  (May):8 p.
 
 \bibitem[Robertson and Campanella, 1983]{Robertson1983a}
 Robertson, P.~K. and Campanella, R.~G. (1983).
@@ -47,5 +219,36 @@ Schmertmann, J. and Palacios, A. (1979).
 \bibitem[Schnaid, 2008]{Schnaid2008}
 Schnaid, F. (2008).
 \newblock {\em {In situ testing in geomechanics: The main tests}}.
+
+\bibitem[Tran, 2015]{Tran2015}
+Tran, Q.~A. (2015).
+\newblock {\em {Mod{\'{e}}lisation num{\'{e}}rique du comportement des milieux
+  granulaires {\`{a}} partir de signaux p{\'{e}}n{\'{e}}trom{\'{e}}triques :
+  approche microm{\'{e}}canique par la m{\'{e}}thode des {\'{e}}l{\'{e}}ments
+  discrets}}.
+\newblock PhD thesis.
+
+\bibitem[Tran et~al., 2019]{Tran2019}
+Tran, Q.~A., Chevalier, B., Benz-Navarrete, M.~A., Breul, P., and
+  Gourv{\`{e}}s, R. (2019).
+\newblock {Numerical verification of the continuous calculation method for tip
+  stress during the driving process of the dynamic penetration test}.
+\newblock {\em Soils and Foundations}, 59:2344--2351.
+
+\bibitem[Verruijt, 1994]{Verruijt1994}
+Verruijt, A. (1994).
+\newblock {Soil Dynamics}.
+\newblock Technical report.
+
+\bibitem[Zhang, 2019]{Zhang2019}
+Zhang, N. (2019).
+\newblock {A micromechanical study of the Standard Penetration Test}.
+\newblock (November).
+
+\bibitem[Zhou, 1997]{Zhou1997}
+Zhou, S. (1997).
+\newblock {\em {Caracterisation des sols de surface a l'aide du penetrometre
+  dynamique leger a energie variable type Panda}}.
+\newblock PhD thesis, Clermont-Ferrand 2.
 
 \end{thebibliography}

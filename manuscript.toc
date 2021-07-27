@@ -7,29 +7,28 @@
 \contentsline {section}{\numberline {2.1}Modèles analytiques de la réaction en pointe pour les pieux}{7}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Modèle de Smith}{8}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Modèle basé sur l'analogie de Lysmer}{9}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Modèle de \cite {Loukidis2008AssessmentProcedure}}{10}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Modèle appliqué à l'essai CLT}{12}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Bilan et proposition pour l'essai DCLT}{16}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Étude expérimentale}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Matériaux utilisés}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Essais triaxiaux}{22}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Conception de l'éprouvette et protocole d'essai}{23}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Résultats}{23}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Paramètres de déformabilité}{26}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Paramètres de rupture}{26}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Essais DCLT-CLT en chambre d'étalonnage}{27}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Étude numérique}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}État de l'art}{35}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Modélisation numérique de la pénétration dynamique}{35}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Mise au point du modèle numérique}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {2.1.3}Modèle de \cite {Loukidis2008}}{10}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Bilan et proposition pour l'essai DCLT}{15}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Étude expérimentale}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Matériaux utilisés}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Essais triaxiaux}{21}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Conception de l'éprouvette et protocole d'essai}{22}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Résultats}{22}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Paramètres de déformabilité}{25}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Paramètres de rupture}{25}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Essais DCLT-CLT en chambre d'étalonnage}{26}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Étude numérique}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}État de l'art}{34}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Modélisation numérique de la pénétration dynamique}{34}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Mise au point du modèle numérique}{36}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Géométrie et conditions aux limites}{37}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Sollicitation}{38}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Cas du SPT}{39}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Théorie}{39}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Énergie transportée par l'onde}{40}{section.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.0.1}Calibration du battage}{41}{subsubsection.4.5.0.1}%
-\contentsline {subsection}{\numberline {4.5.1}Modélisation de l'interface}{45}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Modèle de comportement du sol}{47}{subsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.2.1}Paramètres rhéologiques alimentant le modèle}{48}{subsubsection.4.5.2.1}%
-\contentsline {section}{\numberline {4.6}Bilan}{49}{section.4.6}%
+\contentsline {subsection}{\numberline {4.2.3}Cas du SPT : simulation du battage}{39}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Théorie}{39}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}Énergie transportée par l'onde}{40}{subsubsection.4.2.3.2}%
+\contentsline {subsubsection}{\numberline {4.2.3.3}Calibration du battage}{41}{subsubsection.4.2.3.3}%
+\contentsline {subsection}{\numberline {4.2.4}Interface}{45}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Modèle de comportement du sol}{47}{subsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.5.1}Paramètres rhéologiques alimentant le modèle}{48}{subsubsection.4.2.5.1}%
+\contentsline {section}{\numberline {4.3}Bilan}{49}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Conclusion et perspectives}{50}{chapter.5}%

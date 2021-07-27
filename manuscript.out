@@ -6,27 +6,24 @@
 \BOOKMARK [1][-]{section.2.1}{Mod\350les analytiques de la r\351action en pointe pour les pieux}{chapter.2}% 6
 \BOOKMARK [2][-]{subsection.2.1.1}{Mod\350le de Smith}{section.2.1}% 7
 \BOOKMARK [2][-]{subsection.2.1.2}{Mod\350le bas\351 sur l'analogie de Lysmer}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.3}{Mod\350le de Loukidis2008AssessmentProcedure}{section.2.1}% 9
-\BOOKMARK [1][-]{section.2.2}{Mod\350le appliqu\351 \340 l'essai CLT}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.3}{Bilan et proposition pour l'essai DCLT}{chapter.2}% 11
-\BOOKMARK [0][-]{chapter.3}{\311tude exp\351rimentale}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Mat\351riaux utilis\351s}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Essais triaxiaux}{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.2.1}{Conception de l'\351prouvette et protocole d'essai}{section.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.2.2}{R\351sultats}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.3}{Param\350tres de d\351formabilit\351}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.4}{Param\350tres de rupture}{section.3.2}% 18
-\BOOKMARK [1][-]{section.3.3}{Essais DCLT-CLT en chambre d'\351talonnage}{chapter.3}% 19
-\BOOKMARK [0][-]{chapter.4}{\311tude num\351rique}{}% 20
-\BOOKMARK [1][-]{section.4.1}{\311tat de l'art}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.1.1}{Mod\351lisation num\351rique de la p\351n\351tration dynamique}{section.4.1}% 22
-\BOOKMARK [1][-]{section.4.2}{Mise au point du mod\350le num\351rique}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.2.1}{G\351om\351trie et conditions aux limites}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.2}{Sollicitation}{section.4.2}% 25
-\BOOKMARK [1][-]{section.4.3}{Cas du SPT}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.4}{Th\351orie}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.5}{\311nergie transport\351e par l'onde}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.5.1}{Mod\351lisation de l'interface}{section.4.5}% 29
-\BOOKMARK [2][-]{subsection.4.5.2}{Mod\350le de comportement du sol}{section.4.5}% 30
-\BOOKMARK [1][-]{section.4.6}{Bilan}{chapter.4}% 31
-\BOOKMARK [0][-]{chapter.5}{Conclusion et perspectives}{}% 32
+\BOOKMARK [2][-]{subsection.2.1.3}{Mod\350le de Loukidis2008}{section.2.1}% 9
+\BOOKMARK [1][-]{section.2.2}{Bilan et proposition pour l'essai DCLT}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{\311tude exp\351rimentale}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Mat\351riaux utilis\351s}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Essais triaxiaux}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.2.1}{Conception de l'\351prouvette et protocole d'essai}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.2}{R\351sultats}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.3}{Param\350tres de d\351formabilit\351}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.4}{Param\350tres de rupture}{section.3.2}% 17
+\BOOKMARK [1][-]{section.3.3}{Essais DCLT-CLT en chambre d'\351talonnage}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{\311tude num\351rique}{}% 19
+\BOOKMARK [1][-]{section.4.1}{\311tat de l'art}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.1.1}{Mod\351lisation num\351rique de la p\351n\351tration dynamique}{section.4.1}% 21
+\BOOKMARK [1][-]{section.4.2}{Mise au point du mod\350le num\351rique}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.2.1}{G\351om\351trie et conditions aux limites}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.2}{Sollicitation}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.3}{Cas du SPT : simulation du battage}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.4}{Interface}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.5}{Mod\350le de comportement du sol}{section.4.2}% 27
+\BOOKMARK [1][-]{section.4.3}{Bilan}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{Conclusion et perspectives}{}% 29

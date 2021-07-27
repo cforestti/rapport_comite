@@ -5,16 +5,43 @@ Benz-Navarrete, M.~A. (2009).
 \newblock {\em {MESURES DYNAMIQUES LORS DU BATTAGE DU PENETROMETRE PANDA 2}}.
 \newblock PhD thesis, Universit{\'{e}} Blaise Pascal.
 
+\bibitem[Das and Ramana, 2011]{Das2011}
+Das, B.~M. and Ramana, G.~V. (2011).
+\newblock {\em {PRINCIPLES OF SOIL DYNAMICS}}.
+\newblock Second edi edition.
+
+\bibitem[Deeks and Randolph, 1995]{Deeks1995}
+Deeks, A.~J. and Randolph, M.~F. (1995).
+\newblock {A simple model for inelastic footing response to transient loading}.
+\newblock {\em International Journal for Numerical and Analytical Methods in
+  Geomechanics}, 19(5):307--329.
+
 \bibitem[Escobar, 2015]{Escobar2015}
 Escobar, E. (2015).
 \newblock {\em {Mise au point et exploitation d'une nouvelle technique pour la
   reconnaisance des sols : le PANDA 3}}.
 \newblock PhD thesis.
 
+\bibitem[Gonin, 1979]{Gonin1979}
+Gonin, H. (1979).
+\newblock {R{\'{e}}flexion sur le battage des pieux}.
+\newblock {\em Revue Fran{\c{c}}aise de G{\'{e}}otechnique}, (9):41--50.
+
 \bibitem[H{\"{o}}lscher et~al., 2012]{Holscher2012}
 H{\"{o}}lscher, P., Brassinga, H., Brown, M., Middendorp, P., Profittlich, M.,
   and van Tol, F. (2012).
 \newblock {\em {Rapid Load Testing on Piles Interpretation Guidelines}}.
+
+\bibitem[Lee and Byun, 2020]{Lee2020}
+Lee, J.~S. and Byun, Y.~H. (2020).
+\newblock {Instrumented cone penetrometer for dense layer characterization}.
+\newblock {\em Sensors (Switzerland)}, 20(20):1--19.
+
+\bibitem[Loukidis et~al., 2008]{Loukidis2008}
+Loukidis, D., Salgado, R., and Abou-Jaoude, G. (2008).
+\newblock {Assessment of Axially-Loaded Pile Dynamic Design Methods and Review
+  of INDOT Axially-Loaded Design Procedure}.
+\newblock Technical Report October.
 
 \bibitem[Lysmer, 1965]{Lysmer1965}
 Lysmer, J. (1965).
@@ -32,5 +59,10 @@ Middendorp, P. and Verbeek, G.~E. (2006).
 Smith, E.~A. (1960).
 \newblock {Pile-driving analysis by the wave equation}.
 \newblock {\em Geotechnical Special Publication}, 86(EM 4):35--61.
+
+\bibitem[Whitman and Richart, 1969]{Whitman1969}
+Whitman, R.~V. and Richart, F.~E. (1969).
+\newblock {Closure to “Design Procedures for Dynamically Loaded
+  Foundations”}.
 
 \end{thebibliography}

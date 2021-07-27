@@ -5,11 +5,8 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
-Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
-Warning--I didn't find a database entry for "Aussedat1970SollicitationsSols"
-Warning--I didn't find a database entry for "Omidvar2012Stress-strainRates"
-Warning--I didn't find a database entry for "Itasca2020FLAC3D6.0"
 Warning--I didn't find a database entry for "Gonin1979ReflexionPieux"
+Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
 Warning--I didn't find a database entry for "Smith1960Pile-drivingEquation"
 Warning--I didn't find a database entry for "Randolph2003ScienceDesign"
 Warning--I didn't find a database entry for "Lysmer1965VerticalFooting"
@@ -20,17 +17,12 @@ Warning--I didn't find a database entry for "Coyle1970EmpiricalClays"
 Warning--I didn't find a database entry for "Lee2020InstrumentedCharacterization"
 Warning--I didn't find a database entry for "Deeks1995ALoading"
 Warning--I didn't find a database entry for "Salgado2008TheFoundations"
-Warning--I didn't find a database entry for "Gazetas1985VerticalFoundations"
-Warning--I didn't find a database entry for "GourvesR.Mirat1977MethodeSols"
-Warning--I didn't find a database entry for "Faugeras1979LessaiAnalogique"
-Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
-Warning--I didn't find a database entry for "Ali2010CaracterisationProfondes"
-Warning--I didn't find a database entry for "Reiffsteck2003CaracterisationSitu"
-Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
 Warning--I didn't find a database entry for "Mindlin1936ForceSolid"
-Warning--I didn't find a database entry for "Combarieu2001LPressiometre"
+Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
+Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
 Warning--I didn't find a database entry for "Burland1989NinthStrains"
 Warning--I didn't find a database entry for "Atkinson2000Non-linearDesign"
+Warning--I didn't find a database entry for "Combarieu2001LPressiometre"
 Warning--I didn't find a database entry for "Reiffsteck2009MeasurementsPenetrometer"
 Warning--I didn't find a database entry for "Obrzud2018TheGuidebook"
 Warning--I didn't find a database entry for "Benz2007Small-StrainConsequences"
@@ -40,9 +32,6 @@ Warning--I didn't find a database entry for "Cami2017ImagerieDeformations"
 Warning--I didn't find a database entry for "Fahey1993AModel"
 Warning--I didn't find a database entry for "Burns2007Small-Penetrometer"
 Warning--I didn't find a database entry for "Plumelle2013TheorieOuvrages"
-Warning--I didn't find a database entry for "Robertson2010EstimatingCPT"
-Warning--I didn't find a database entry for "Chaigneau2001CARACTERISATIONPENETROMETRE"
-Warning--I didn't find a database entry for "Morvan2016OptimisationEstimation"
 Warning--I didn't find a database entry for "Duttine2005ComportementAxes"
 Warning--I didn't find a database entry for "Lancelot1996ComportementDraines"
 Warning--I didn't find a database entry for "Aris2012ExperimentalElements"
@@ -54,30 +43,8 @@ Warning--I didn't find a database entry for "Combarieu1997CapaciteLaboratoire"
 Warning--I didn't find a database entry for "Dupla2007ComportementReference"
 Warning--I didn't find a database entry for "Latini2016TriaxialReport"
 Warning--I didn't find a database entry for "Benahmed2004InitialSand"
-Warning--I didn't find a database entry for "Le2013NumericalApplications"
-Warning--I didn't find a database entry for "Nazem2012DynamicClay"
-Warning--I didn't find a database entry for "Zhang2019StandardChamber"
-Warning--I didn't find a database entry for "Quezada2012MecanismesVariabilite"
-Warning--I didn't find a database entry for "Arroyo2011ConeChamberb"
-Warning--I didn't find a database entry for "J.Butlanska2010VirtualSand"
-Warning--I didn't find a database entry for "Campos2005NUMERICALSOILS"
-Warning--I didn't find a database entry for "Pinto2008EvaluationTesting"
-Warning--I didn't find a database entry for "Nath1990AMETHOD"
-Warning--I didn't find a database entry for "Aguiar2009NumericalProblem"
-Warning--I didn't find a database entry for "Fakharian2014ComparisonModelling"
-Warning--I didn't find a database entry for "Chatterjee2015DynamicCity"
-Warning--I didn't find a database entry for "Murthy20203D-ContinuumMethod"
-Warning--I didn't find a database entry for "Fakharian2015NumericalClay"
-Warning--I didn't find a database entry for "Masouleh2008VerificationMethod"
-Warning--I didn't find a database entry for "Tran2019NumericalTest"
-Warning--I didn't find a database entry for "Tran2015ModelisationDiscrets"
-Warning--I didn't find a database entry for "Ghee2011FLAC3DPiles"
-Warning--I didn't find a database entry for "Lysmer1969FiniteMedia"
-Warning--I didn't find a database entry for "Moug2019AxisymmetricClay"
-Warning--I didn't find a database entry for "Nagula2018EffectivenessModel"
-Warning--I didn't find a database entry for "Fairhurst1959EnergyDrilling"
-Warning--I didn't find a database entry for "Verruijt1994SoilDynamics"
 Warning--I didn't find a database entry for "Saint-Venant1898MemoireSys"
+Warning--I didn't find a database entry for "Fairhurst1959EnergyDrilling"
 Warning--I didn't find a database entry for "eq:EF2"
 Warning--I didn't find a database entry for "Sy1991InternationalDynamics"
 Warning--I didn't find a database entry for "eq:EFV"
@@ -86,47 +53,63 @@ Warning--I didn't find a database entry for "Ahmadi2005Thin-layerMeasurement"
 Warning--I didn't find a database entry for "Levasseur2007AnalyseGenetiques"
 Warning--I didn't find a database entry for "Vernay2017EtudeLiquefaction"
 Warning--I didn't find a database entry for "Andria-Ntoanina2011CaracterisationCentrifugeuse"
+Warning--empty journal in Aguiar2009
+Warning--empty school in Ali2010
+Warning--empty school in Aussedat1970
+Warning--empty journal in Combarieu2001
 Warning--empty school in Escobar2015
+Warning--empty school in Faugeras1979
+Warning--there's a number but no volume in Ghee2011
+Warning--there's a number but no volume in Gonin1979
+Warning--empty journal in Le2013
+Warning--empty institution in Loukidis2008
+Warning--empty journal in Nagula2018
+Warning--there's a number but no volume in Nagula2018
+Warning--there's a number but no volume in Robertson2010
 Warning--empty publisher in Schnaid2008
-You've used 8 entries,
+Warning--empty school in Tran2015
+Warning--empty institution in Verruijt1994
+Warning--empty journal in Zhang2019
+Warning--there's a number but no volume in Zhang2019
+You've used 43 entries,
             1935 wiz_defined-function locations,
-            688 strings with 9489 characters,
-and the built_in function-call counts, 2867 in all, are:
-= -- 281
-> -- 100
-< -- 6
-+ -- 32
-- -- 32
-* -- 240
-:= -- 513
-add.period$ -- 23
-call.type$ -- 8
-change.case$ -- 53
-chr.to.int$ -- 8
-cite$ -- 10
-duplicate$ -- 112
-empty$ -- 209
-format.name$ -- 44
-if$ -- 547
+            835 strings with 13835 characters,
+and the built_in function-call counts, 15064 in all, are:
+= -- 1497
+> -- 537
+< -- 33
++ -- 172
+- -- 172
+* -- 1252
+:= -- 2708
+add.period$ -- 125
+call.type$ -- 43
+change.case$ -- 291
+chr.to.int$ -- 43
+cite$ -- 61
+duplicate$ -- 588
+empty$ -- 1047
+format.name$ -- 231
+if$ -- 2866
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 7
-newline$ -- 42
-num.names$ -- 24
-pop$ -- 50
+missing$ -- 30
+newline$ -- 213
+num.names$ -- 129
+pop$ -- 247
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 301
 quote$ -- 0
-skip$ -- 82
+skip$ -- 452
 stack$ -- 0
-substring$ -- 205
-swap$ -- 8
-text.length$ -- 0
+substring$ -- 1031
+swap$ -- 51
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 46
-warning$ -- 2
-while$ -- 24
+type$ -- 256
+warning$ -- 18
+while$ -- 130
 width$ -- 0
-write$ -- 101
-(There were 83 warnings)
+write$ -- 535
+(There were 66 warnings)

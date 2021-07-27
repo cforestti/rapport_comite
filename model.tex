@@ -77,17 +77,22 @@ Un nombre de modèles existant et appliqués dans le domaine des essais de charg
 
 On cherche à remonter aux paramètres caractérisant le comportement des sols en déformabilité et en rupture. Cela afin de les appliquer aux dimensionnement courants en géotechnique (fondation superficielle et profondes).
 
-Dans ce document, on s'intéresse par les principaux modèles afin de choisir et de l'adapter, si nécessaire, celui qui s'adapte le mieux à l'essai DCLT.
+Dans ce document, on s'intéresse par les principaux modèles afin d'identifier et l'adapter celui qui s'adapte le mieux à l'essai DCLT.
 
 Dans ce document, on présente les différents modèles, ces points forts et ces limitations en appliquant à des signaux expérimentaux DCLT obtenus en laboratoire.
 
 \section{Modèles analytiques de la réaction en pointe pour les pieux}
 
-Différents travaux se sont intéressés à interpréter les essais dynamiques de pieux. Ceux-ci sont moins contraignants et plus économiques que les essais de chargement statique. Initialement, l'interprétation de ces essais était basée sur des relations empiriques appliquant la conservation d'énergie : l'énergie appliquée aux pieux correspondrait au travail réalisé par la résistance au pieu. Ces relations ont été d'ailleurs adoptées par un certain nombre de normes de calcul (e.g. Engineering News Record, la formule des Hollandais). Plus tard, certains chercheurs ont constaté les limitations de ces relations et la nécessité d'intégrer l'analyse de la propagation des ondes au sein du pieux afin de mieux comprendre le phénomène \citep{Gonin1979ReflexionPieux,Loukidis2008AssessmentProcedure}.
+
+
+
+
+
+Différents travaux se sont intéressés à interpréter les essais dynamiques de pieux. Ceux-ci sont moins contraignants et plus économiques que les essais de chargement statique. Initialement, l'interprétation de ces essais était basée sur des relations empiriques appliquant la conservation d'énergie : l'énergie appliquée aux pieux correspondrait au travail réalisé par la résistance au pieu. Ces relations ont été d'ailleurs adoptées par un certain nombre de normes de calcul (e.g. Engineering News Record, la formule des Hollandais). Plus tard, certains chercheurs ont constaté les limitations de ces relations et la nécessité d'intégrer l'analyse de la propagation des ondes au sein du pieux afin de mieux comprendre le phénomène \citep{Gonin1979,Loukidis2008}.
 
 De plus en plus, les chercheurs tentent d'interpréter ce problème en prenant en compte les concepts physiques et mécaniques de la pénétration dynamiques et de l'interaction sol-pieux. Ces modèles sont connus comme modèles phénoménologiques. Ceux-ci se basent sur la seconde loi de Newton du mouvement. 
 
-Le modèle proposé par \cite{Smith1960Pile-drivingEquation} constitue une grande avancée à la compréhension du phénomène mais reste très limité. D'autres modèles ont tenté de modéliser le phénomène à l'aide de paramètres caractérisants le sol pénétré \cite{Randolph2003ScienceDesign, Loukidis2008AssessmentProcedure}.
+Le modèle proposé par \cite{Smith1960} constitue une grande avancée à la compréhension du phénomène mais reste très limité. D'autres modèles ont tenté de modéliser le phénomène à l'aide de paramètres caractérisants le sol pénétré \cite{Randolph2003ScienceDesign, Loukidis2008AssessmentProcedure}.
 
 Les travaux dans le domaine évoluent graduellement vers une approche plus réaliste où les modèles sont alimentés par des paramètres du pieu (rayon, profondeur) et du sol ausculté.
 
@@ -104,7 +109,7 @@ Un paramètre important pour l'application des différents modèles . La résist
 
 Le modèle proposé par \cite{Smith1960} est largement appliqué pour le battage des pieux. Il a été mis au point dans le but de remplacer les formules de battage (basés sur des concepts d’énergie), utilisant le nombre de coups, par une approche numérique plus précise.
 
-Selon \cite{Smith1960}, la réaction du sol dépend uniquement des déplacements et de la vitesse. La réaction développée est proportionelle au déplacement jusqu'à une limite $R_u$ à laquelle correspond le \emph{quake} Q (ou enfoncement élastique). Le fonçage rapide du sol autour du pieu donne naissance à un amortissement $J_s$ représenté par un coefficient proportionnel à la vitesse de déplacement (v) (Équation \ref{eq:Rd}). La résistance totale $R_t$ est la somme des résistances statique $R_s$ et dynamique $R_d$ (Équation \ref{eq:Rt}).
+Selon \cite{Smith1960}, la réaction du sol dépend uniquement des déplacements et de la vitesse. La réaction développée est proportionnelle au déplacement jusqu'à une limite $R_u$ à laquelle correspond le \emph{quake} Q (ou enfoncement élastique). Le fonçage rapide du sol autour du pieu donne naissance à un amortissement $J_s$ représenté par un coefficient proportionnel à la vitesse de déplacement (v) (Équation \ref{eq:Rd}). La résistance totale $R_t$ est la somme des résistances statique $R_s$ et dynamique $R_d$ (Équation \ref{eq:Rt}).
 
 Ce modèle a été appliqué par \cite{Benz-Navarrete2009} et \cite{Escobar2015} à l’essai DCLT. Il a permis de caractériser le sol par le biais d’un coefficient d’amortissement $J_s$ et de dissocier la réponse statique $R_s$ de la réponse dynamique $R_d$ dans la résistance totale mesurée. La partie statique de la résistance $R_s$ est obtenue en admettant que lorsque la vitesse d’enfoncement $v$(t) est nulle, et donc l’enfoncement en pointe est maximal, la résistance totale est due uniquement à la partie statique. A cet instant donné, $q_d = R_s$.
 
@@ -163,7 +168,7 @@ La réaction du sol sur la base de la semelle correspond à la somme de la réac
     K_{Lys} = \frac{4 G R}{1-\nu} 
 \end{equation}
 
-Soit G le module de cisaillement du sol en Pascal, R le rayon de la semelle en mètres et $\nu$ le coefficient de Poisson. Le coefficient d'amortissement est donné par l'équation \ref{eq:CLys}.
+Soit G le module de cisaillement du sol en Pascal, R le rayon de la semelle en mètres et $\nu$ le coefficient de Poisson. Le coefficient d'amortissement est donné par l'équation \ref{eq:CLys}. Pour les sables non-saturé, \cite{Whitman1969} indique des valeurs entre 0,35 et 0,40 pour $\nu$.
 
 \begin{equation}  \label{eq:CLys}
     C_{Lys} = \frac{3.4 R^2}{1-\nu} \rho  Vs = \frac{3.4 R^2}{1-\nu} \sqrt{\rho G}  
@@ -175,20 +180,31 @@ La solution de Lysmer est largement employée dans le calcul de fondations de ma
 
 Le modèle de Lysmer a l'atout d'associer le ressort et l'amortissement de Smith à des paramètres courants du sol (paramètres élastiques et masse volumique). Par conséquent, ce modèle réduit l'empirisme du modèle de Smith, par contre il ne tient pas compte des certains aspects importants de la réaction du sol. On peut citer notamment la non-linéarité de la réponse du sol et les effets visqueux dans la résistance. Par conséquent, le modèle surestime la raideur en pointe.
 
-En effet, la solution présentée par Lysmer est valable pour les sollicitations statiques et dynamiques (toutes les fréquences), tant que l'encastrement est nul (D=0) \cite{Loukidis2008AssessmentProcedure}. Pour les applications en profondeur, \cite{Loukidis2008AssessmentProcedure} propose l'intégration d'un facteur afin de tenir compte de l'encastrement. Ce sujet sera abordé plus tard dans ce rapport.
+En effet, la solution présentée par Lysmer est valable pour les sollicitations statiques et dynamiques (toutes les fréquences), tant que l'encastrement est nul (D=0) \cite{Loukidis2008}. Cela requiert attention car le plupart des fondations et notamment 
+les fondations profondes D>0. Pour les fondations encastrées, le coefficient K observé est supérieur à la valeur théorique.
+La  présente l'évolution du coefficient K pour le cas d'une fondation rigide \citep{Das2011}. Pour les applications en profondeur, \cite{Loukidis2008} propose l'intégration d'un facteur afin de tenir compte de l'encastrement. Ce sujet sera abordé plus tard dans ce rapport.
 
-Récemment, \cite{Lee2020InstrumentedCharacterization} a appliqué l'amortissement matériel proposé par \cite{Lysmer1965VerticalFooting} afin de dissocier la partie dynamique de la résistance totale mesurée à l'essai au pénétromètre dynamique. Les auteurs ont montré qu'une fois la partie dynamique soustraite de la résistance totale, la résistance déduite était assez proche de la résistance pseudo-statique $q_c$ (CPT) (avec $q_c = 1,.01 q_d$ et $R^2=0.85$). 
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = 1.]{media/ana_emb.png}
+        \caption{Modèle de la réaction en pointe proposé par \cite{Whitman1969}}
+          \label{fig:ana_modele}
+      \end{center}
+ \end{figure}
 
-Plus tard, les travaux de Nguyen et al. (1988), de \cite{Holeyman1988ModellingBase} et de \cite{Deeks1995ALoading} ont permis d'améliorer la solution de \cite{Lysmer1965VerticalFooting}. Ils ont notamment avancé en prenant en compte les différents types d'amortissement (de radiation et d'hystérésis) qui étaient traduits par Smith par un seul paramètre ($J_s$). En autre limitation de la solution de \cite{Lysmer1965VerticalFooting} est le fait de ne pas modéliser des milieux hétérogènes ou non-élastiques. \cite{Loukidis2008AssessmentProcedure} a proposé un modèle afin de corriger certaines de ces limitations.
 
-\subsection{Modèle de \cite{Loukidis2008AssessmentProcedure}}
+Récemment, \cite{Lee2020} a appliqué l'amortissement matériel proposé par \cite{Lysmer1965} afin de dissocier la partie dynamique de la résistance totale mesurée à l'essai au pénétromètre dynamique. Les auteurs ont montré qu'une fois la partie dynamique soustraite de la résistance totale, la résistance déduite était assez proche de la résistance pseudo-statique $q_c$ (CPT) (avec $q_c = 1,.01 q_d$ et $R^2=0.85$). 
+
+Plus tard, les travaux de Nguyen et al. (1988), de \cite{Holeyman1988ModellingBase} et de \cite{Deeks1995} ont permis d'améliorer la solution de \cite{Lysmer1965}. Ils ont notamment avancé en prenant en compte les différents types d'amortissement (de radiation et d'hystérésis) qui étaient traduits par Smith par un seul paramètre ($J_s$). En autre limitation de la solution de \cite{Lysmer1965VerticalFooting} est le fait de ne pas modéliser des milieux hétérogènes ou non-élastiques. \cite{Loukidis2008AssessmentProcedure} a proposé un modèle afin de corriger certaines de ces limitations.
+
+\subsection{Modèle de \cite{Loukidis2008}}
 
 \cite{Loukidis2008AssessmentProcedure} a proposé un modèle d'interaction qui tient compte de la non-linéarité de la réponse en pointe, de l'effet visqueux dans la résistance et qui distingue les différents types d'amortissement (radiatif et d'hystérésis). La réponse totale en pointe R est la somme de la réaction du ressort $R_S$ et de l'amortisseur $R_D$ (Figure \ref{fig:ana_modele}).
 
   \begin{figure}[H]
    \begin{center}
         \includegraphics[scale = 1.1]{media/ana_modele.JPG}
-        \caption{Modèle de la réaction en pointe proposé par \cite{Loukidis2008AssessmentProcedure}}
+        \caption{Modèle de la réaction en pointe proposé par \cite{Loukidis2008}}
           \label{fig:ana_modele}
       \end{center}
  \end{figure}
