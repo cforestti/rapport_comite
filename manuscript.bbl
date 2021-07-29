@@ -19,6 +19,12 @@ Andria-Ntoanina, I. (2011).
   sismique de massifs sableux en centrifugeuse}}.
 \newblock PhD thesis.
 
+\bibitem[Aoki and de~Mello, 1992]{Aoki1992}
+Aoki, N. and de~Mello, V. (1992).
+\newblock {DYNAMIC LOADING TEST CURVES}.
+\newblock In {\em Proceeding of the 4th International Conference on the
+  Application of Stress-Wave Theory to Piles}, pages 525--530, The Netherlands.
+
 \bibitem[Arbaoui, 2003]{Arbaoui2003}
 Arbaoui, H. (2003).
 \newblock {\em {M{\'{e}}sure de la d{\'{e}}formabilit{\'{e}} des sols en place
@@ -48,11 +54,23 @@ Byun, Y.~H., Hong, W.~T., and Lee, J.~S. (2015).
   penetrometer}.
 \newblock {\em Smart Structures and Systems}, 15(4):1085--1101.
 
+\bibitem[Casem et~al., 2003]{Casem2003}
+Casem, D.~T., Fourney, W., and Chang, P. (2003).
+\newblock {Wave separation in viscoelastic pressure bars using single-point
+  measurements of strain and velocity}.
+\newblock {\em Polymer Testing}, 22(2):155--164.
+
 \bibitem[Chaigneau, 2001]{Chaigneau2001}
 Chaigneau, L. (2001).
 \newblock {\em {CARACTERISATION DES MILEUX GRANULAIRES DE SURFACE A L'AIDE D'UN
   PENETROMETRE}}.
 \newblock PhD thesis, UNIVERSITE BLAISE PASCAL – CLERMONT II ECOLE.
+
+\bibitem[Charue, 2004]{Charue2004}
+Charue, N. (2004).
+\newblock {\em {Loading rate effects on pile load-displacement behaviour
+  derived from back-analysis of two load testing procedures}}.
+\newblock PhD thesis, Universit{\'{e}} Catholique de Louvain.
 
 \bibitem[Chatterjee et~al., 2015]{Chatterjee2015a}
 Chatterjee, K., Choudhury, D., Rao, V.~D., and S.P, M. (2015).
@@ -64,10 +82,21 @@ Combarieu, O. (2001).
 \newblock {L 'essai cyclique au pressiom{\`{e}}tre}.
 \newblock pages 37--65.
 
+\bibitem[Coyle and Gibson, 1970]{Coyle1970}
+Coyle, H. and Gibson, G. (1970).
+\newblock {Empirical Damping Constants for Sands and Clays}.
+\newblock {\em Journal of the Soil Mechanics and Foundations Division},
+  96(3):949--965.
+
 \bibitem[Dano, 2001]{Dano2001}
 Dano, C. (2001).
 \newblock {\em {Comportement m{\'{e}}canique des sols inject{\'{e}}s}}.
 \newblock PhD thesis, Ecole Centrale de Nantes.
+
+\bibitem[Das and Ramana, 2011]{Das2011}
+Das, B.~M. and Ramana, G.~V. (2011).
+\newblock {\em {PRINCIPLES OF SOIL DYNAMICS}}.
+\newblock Second edi edition.
 
 \bibitem[Dupla et~al., 2007]{Dupla2007}
 Dupla, J.~C., Pedro, L.~S., Canou, J., and Dormieux, L. (2007).
@@ -115,9 +144,21 @@ Gonin, H. (1979).
 \newblock {R{\'{e}}flexion sur le battage des pieux}.
 \newblock {\em Revue Fran{\c{c}}aise de G{\'{e}}otechnique}, (9):41--50.
 
+\bibitem[Holeyman, 1988]{Holeyman1988}
+Holeyman, A.~E. (1988).
+\newblock {Modelling of dynamic behaviour at the pile base}.
+\newblock In {\em Proceedings of the Third International Conference on the
+  Application of Stress-Wave Theory to Piles}, pages 174--185, Vancouver,
+  Canada. BiTech Publishers.
+
 \bibitem[Itasca, 2020]{Itasca2020}
 Itasca (2020).
 \newblock {FLAC3D Version 6.0}.
+
+\bibitem[Jung and Park, 2005]{Jung2005}
+Jung, B. and Park, Y. (2005).
+\newblock {Axial Strain and Acceleration Measurements}.
+\newblock {\em Asia Pacific Vibration Conference (APVC)}, pages 515--518.
 
 \bibitem[Le, 2013]{Le2013}
 Le, P.~T. (2013).
@@ -125,15 +166,31 @@ Le, P.~T. (2013).
   ended Pipe Piles and its Applications Numerical and Experimental Studies on
   Dynamic Load Testing of Open - ended Pipe Piles and its Applications}.
 
+\bibitem[Lee and Byun, 2020]{Lee2020}
+Lee, J.~S. and Byun, Y.~H. (2020).
+\newblock {Instrumented cone penetrometer for dense layer characterization}.
+\newblock {\em Sensors (Switzerland)}, 20(20):1--19.
+
 \bibitem[Loukidis et~al., 2008]{Loukidis2008}
 Loukidis, D., Salgado, R., and Abou-Jaoude, G. (2008).
 \newblock {Assessment of Axially-Loaded Pile Dynamic Design Methods and Review
   of INDOT Axially-Loaded Design Procedure}.
 \newblock Technical Report October.
 
+\bibitem[Lundberg et~al., 1990]{Lundberg1990}
+Lundberg, B., Carlsson, J., and Sundin, K.~G. (1990).
+\newblock {Analysis of elastic waves in non-uniform rods from two-point strain
+  measurement}.
+\newblock {\em Journal of Sound and Vibration}, 137(3):483--493.
+
 \bibitem[Lysmer, 1969]{Lys1969}
 Lysmer (1969).
 \newblock {Finite dynamic model for infinite media}.
+
+\bibitem[Lysmer, 1965]{Lysmer1965}
+Lysmer, J. (1965).
+\newblock {\em {Vertical motion of rigid footing}}.
+\newblock PhD thesis.
 
 \bibitem[Masouleh and Fakharian, 2008]{Masouleh2008}
 Masouleh, S.~F. and Fakharian, K. (2008).
@@ -165,6 +222,11 @@ Murthy, D.~S., Gedela, R., Karpurapu, R., and Robinson, R.~G. (2020).
 \newblock {3D-Continuum Numerical Analysis of Offshore Driven Pipe Pile Using
   Finite Difference Method}.
 \newblock {\em Lecture Notes in Civil Engineering}, 56:245--256.
+
+\bibitem[Naggar and Novak, 1994]{Naggar1994}
+Naggar, M. H.~E. and Novak, M. (1994).
+\newblock {Non-linear model for dynamic axial pile response}.
+\newblock {\em Journal of geotechnical engineering}, 120(2):308--329.
 
 \bibitem[Nagula and Grabe, 2018]{Nagula2018}
 Nagula, S. and Grabe, I.~J. (2018).
@@ -249,6 +311,11 @@ Schmertmann, J. and Palacios, A. (1979).
 Schnaid, F. (2008).
 \newblock {\em {In situ testing in geomechanics: The main tests}}.
 
+\bibitem[Smith, 1960]{Smith1960}
+Smith, E.~A. (1960).
+\newblock {Pile-driving analysis by the wave equation}.
+\newblock {\em Geotechnical Special Publication}, 86(EM 4):35--61.
+
 \bibitem[Tran, 2015]{Tran2015}
 Tran, Q.~A. (2015).
 \newblock {\em {Mod{\'{e}}lisation num{\'{e}}rique du comportement des milieux
@@ -275,6 +342,11 @@ Vernay, M. (2017).
 Verruijt, A. (1994).
 \newblock {Soil Dynamics}.
 \newblock Technical report.
+
+\bibitem[Whitman and Richart, 1969]{Whitman1969}
+Whitman, R.~V. and Richart, F.~E. (1969).
+\newblock {Closure to “Design Procedures for Dynamically Loaded
+  Foundations”}.
 
 \bibitem[Zhang, 2019]{Zhang2019}
 Zhang, N. (2019).

@@ -9,17 +9,14 @@ Warning--I didn't find a database entry for "Gonin1979ReflexionPieux"
 Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
 Warning--I didn't find a database entry for "Smith1960Pile-drivingEquation"
 Warning--I didn't find a database entry for "Randolph2003ScienceDesign"
-Warning--I didn't find a database entry for "Lysmer1965VerticalFooting"
-Warning--I didn't find a database entry for "Holeyman1988ModellingBase"
-Warning--I didn't find a database entry for "Benz-Navarrete2009MESURES2"
-Warning--I didn't find a database entry for "Escobar2015Mise3"
+Warning--I didn't find a database entry for "Benz-Navarrete"
 Warning--I didn't find a database entry for "Coyle1970EmpiricalClays"
-Warning--I didn't find a database entry for "Lee2020InstrumentedCharacterization"
-Warning--I didn't find a database entry for "Deeks1995ALoading"
 Warning--I didn't find a database entry for "Salgado2008TheFoundations"
+Warning--I didn't find a database entry for "Lysmer1965VerticalFooting"
 Warning--I didn't find a database entry for "Mindlin1936ForceSolid"
 Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
 Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
+Warning--I didn't find a database entry for "Holeyman1988ModellingBase"
 Warning--I didn't find a database entry for "Burland1989NinthStrains"
 Warning--I didn't find a database entry for "Atkinson2000Non-linearDesign"
 Warning--I didn't find a database entry for "Combarieu2001LPressiometre"
@@ -43,7 +40,6 @@ Warning--I didn't find a database entry for "Combarieu1997CapaciteLaboratoire"
 Warning--I didn't find a database entry for "Dupla2007ComportementReference"
 Warning--I didn't find a database entry for "Latini2016TriaxialReport"
 Warning--I didn't find a database entry for "Benahmed2004InitialSand"
-Warning--I didn't find a database entry for "Fairhurst1959EnergyDrilling"
 Warning--I didn't find a database entry for "eq:EF2"
 Warning--I didn't find a database entry for "Sy1991InternationalDynamics"
 Warning--I didn't find a database entry for "eq:EFV"
@@ -56,12 +52,14 @@ Warning--empty school in Ali2010
 Warning--empty school in Andria-Ntoanina2011
 Warning--empty school in Aussedat1970
 Warning--empty journal in Combarieu2001
+Warning--empty publisher in Das2011
 Warning--empty school in Escobar2015
 Warning--empty school in Faugeras1979
 Warning--there's a number but no volume in Ghee2011
 Warning--there's a number but no volume in Gonin1979
 Warning--empty journal in Le2013
 Warning--empty institution in Loukidis2008
+Warning--empty school in Lysmer1965
 Warning--empty journal in Nagula2018
 Warning--there's a number but no volume in Nagula2018
 Warning--there's a number but no volume in Robertson2010
@@ -71,45 +69,45 @@ Warning--empty school in Vernay2017
 Warning--empty institution in Verruijt1994
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
-You've used 48 entries,
+You've used 61 entries,
             1935 wiz_defined-function locations,
-            860 strings with 14832 characters,
-and the built_in function-call counts, 16637 in all, are:
-= -- 1655
-> -- 588
-< -- 37
-+ -- 188
-- -- 188
-* -- 1379
-:= -- 3003
-add.period$ -- 140
-call.type$ -- 48
-change.case$ -- 321
-chr.to.int$ -- 48
-cite$ -- 68
-duplicate$ -- 652
-empty$ -- 1153
-format.name$ -- 252
-if$ -- 3157
+            942 strings with 16658 characters,
+and the built_in function-call counts, 21670 in all, are:
+= -- 2178
+> -- 743
+< -- 51
++ -- 236
+- -- 236
+* -- 1785
+:= -- 3849
+add.period$ -- 179
+call.type$ -- 61
+change.case$ -- 408
+chr.to.int$ -- 61
+cite$ -- 83
+duplicate$ -- 861
+empty$ -- 1519
+format.name$ -- 327
+if$ -- 4167
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 32
-newline$ -- 238
-num.names$ -- 144
-pop$ -- 271
+missing$ -- 43
+newline$ -- 302
+num.names$ -- 183
+pop$ -- 343
 preamble$ -- 1
-purify$ -- 334
+purify$ -- 423
 quote$ -- 0
-skip$ -- 503
+skip$ -- 673
 stack$ -- 0
-substring$ -- 1129
-swap$ -- 56
-text.length$ -- 3
+substring$ -- 1516
+swap$ -- 95
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 286
-warning$ -- 20
-while$ -- 144
+type$ -- 362
+warning$ -- 22
+while$ -- 191
 width$ -- 0
-write$ -- 598
-(There were 66 warnings)
+write$ -- 765
+(There were 64 warnings)
