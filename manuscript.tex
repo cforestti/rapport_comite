@@ -790,7 +790,7 @@ En ce qui concerne l'application de la modélisation numérique aux essais DCLT 
 Ces travaux ont permis de mettre en évidence la pertinence du couplage numérique- expérimental. Ils ont été important afin de validation de la technique et mieux comprendre l'essai, toutefois aucun parmi eux ne se sont intéressés à la modélisation de l’essai DCLT dans le but d’interpréter la courbe charge-enfoncement.
 
 \section{Mise au point du modèle numérique}
-\label{sec:developpement}
+\label{sec:Mise au point du modèle numérique}
 
 On emploie le logiciel $FLAC^{3D}$\footnote{\samepage Désormais nommé FLAC} (\emph{Fast Lagrangian Analysis of Continua in 3 Dimensions}). Il s’agit d’un logiciel aux différences finies explicite qui permet d’étudier le comportement mécanique d’un milieu continu en trois dimensions. Il applique des principes simples (définition des déformations et loi du mouvement) et des lois constitutives qui décrivent un matériau pour résoudre des équations différentielles à partir d’un schéma de discrétisation temporelle explicite. Les calculs sont réalisés en boucle pour chaque élément dans chaque pas de temps de façon indépendante (Figure \ref{fig:num_flac}).
 
@@ -809,8 +809,8 @@ La méthode explicite utilisée dans FLAC est associée à une analyse lagrangie
 On décrit par la suite certains aspects de la mise en point du modèle numérique, à savoir : géométrie, conditions aux limites, calibration du battage, modèle de comportement du sol et le choix des paramètres rhéologiques du modèle.
 
   \subsection{Géométrie et conditions aux limites}
-  \label{subsec:geo}
-On souhaite simuler les essais DCLT et CLT en chambre d'étalonnage. Le pénétromètre est doté une tige de 14 mm de diamètre et d’une pointe conique débordante (sommet de 90\degree) de section transversale de 4 $cm^2$ (22,5 mm de diamètre). La géométrie de la chambre d'étalonnage ainsi que celle du pénétromètre sont présentées sur la Figure \ref{fig:exp_penetro}. Les conditions aux limites sont celles d’une chambre d'étalonnage type BC3 (déplacements empêchés latéralement et contrainte constante en surface). Étant donné la caractère axisymétrique du problème et dans le but de réduire le temps de calcul, on a choisi de modéliser uniquement un quart de la géométrie. Ainsi, les déplacements sont empêchés dans les plans normaux latéralement (x ou y, selon le plan concerné). Pour ce faire, on a vérifié, dans un premier temps, si cela entraînait de différence dans le résultat. On a simulé l'essai DCLT pour les deux cas : (a) géométrie intégrale et (b) 1/4 de la géométrie. Comme on constate dans la Figure \ref{fig:num_axy.PNG}, le résultat de l'essai, synthétisé par la courbe DCLT, est essentiellement le même.
+  \label{subsec:Géométrie et conditions aux limites}
+On souhaite simuler les essais DCLT et CLT en chambre d'étalonnage. Le pénétromètre est doté une tige 14 mm de diamètre et de 1 mètre de longueur et d’une pointe conique débordante (sommet de 90\degree) de section transversale de 4 $cm^2$ (22,5 mm de diamètre). La géométrie de la chambre d'étalonnage ainsi que celle du pénétromètre sont présentées sur la Figure \ref{fig:exp_penetro}. Les conditions aux limites sont celles d’une chambre d'étalonnage type BC3 (déplacements empêchés latéralement et contrainte constante en surface). Étant donné la caractère axisymétrique du problème et dans le but de réduire le temps de calcul, on a choisi de modéliser uniquement un quart de la géométrie. Ainsi, les déplacements sont empêchés dans les plans normaux latéralement (x ou y, selon le plan concerné). Pour ce faire, on a vérifié, dans un premier temps, si cela entraînait de différence dans le résultat. On a simulé l'essai DCLT pour les deux cas : (a) géométrie intégrale et (b) 1/4 de la géométrie. Comme on constate dans la Figure \ref{fig:num_axy.PNG}, le résultat de l'essai, synthétisé par la courbe DCLT, est essentiellement le même.
 
    \begin{figure}[H]
         \begin{center}
@@ -840,20 +840,57 @@ La plupart des modèles emploient un maillage composé par des éléments homog�
 
 Différentes tailles d’élément de maillage ont été testées afin d’analyser la sensibilité des résultats. Le but étant de trouver un maillage suffisamment fin afin de converger vers une solution unique sans toutefois trop augmenter le temps de calcul. Le modèle est composé par 3048 éléments et 4664 nœuds.
 
+\subsection{Interface}
+\label{subsec:interface}
 
+Afin de simuler l’interaction entre le pénétromètre et le sol, il s’avère nécessaire introduire une interface entre les deux matériaux. Celle-ci permettra de reproduire correctement le choc au niveau de la pointe et le glissement entre les parois de la pointe et le sol. Dans FLAC, l’interface est modélisée par un maillage de triangles définis par trois nœuds placés sur la surface de l’objet. Celle-ci est caractérisée par des paramètres de raideur et de rupture (critère de rupture Mohr-Coulomb). Ces paramètres doivent être choisis afin de minimiser son effet dans le modèle.
+
+On a créé deux interfaces au niveau de la pointe : une latérale et une au sommet (Figure \ref{fig:num_interface2}). Le comportement de l’interface est caractérisée par (a) les paramètres de raideur : normale k\textsubscript{n} et tangentielle k\textsubscript{s} données en contrainte par mètre (Pa/m), et (b) de rupture suivant le critère Mohr-Coulomb, avec la cohésion (en Pa) et les angles de frottement et de dilatance (en dégrée). 
+
+Les raideurs apparentes de l’interface d’une zone perpendiculaire sont souvent estimées à partir de la taille de l’élément le plus petit dans la direction normale $\Delta Z_{min}$ et le module (E) du milieu adjacent \citep{Itasca2020}. \emph{A priori}, les raideurs de l’interface sont estimées à partir du module d'élasticité du matériau le plus raide, à l’exception des problèmes où les modules des deux matériaux sont trop différents. Dans ce cas spécifique, on estime les raideurs de l’interface à partir du module du matériau le moins raide (ici, le sol) (Équation \ref{eq:ks}).
+
+\begin{minipage}{0.45\textwidth}
+   \begin{figure}[H]
+    \includegraphics[scale =.4]{media/num_interface_kn.PNG}
+    \label{fig:num_interface_kn}
+    \caption{Définition de $\Delta Z_{min}$}
+    \end{figure}
+\end{minipage}%
+%\hfill
+\begin{minipage}{0.45\textwidth}
+    \begin{equation} \label{eq:ks}
+    k_{n} = k_{s} \geq 10 \frac{K+\frac{4}{3} G}{\Delta Z_{min}}
+    \end{equation}
+\end{minipage}
+
+%\vspace{1.5}
+%\newline
+%\\[2 cm]
+La définition des paramètres de l’interface constitue une tâche importante car ceux-ci influencent la réponse globale et interviennent comme « nouveau matériau ». Afin de vérifier si la relation proposée par le logiciel (Équation \ref{eq:ks}) permet d'empêcher cela, on a réalisé une étude paramétrique.
+
+Cinq valeurs de raideurs ont été testées en fixant toutes les autres variables. La raideur minimale été calculée à partir de l'équation \ref{eq:ks} pour un massif de caractéristiques connues (à savoir : E = 80 MPa, $\rho_d$ = 1700 kg/m$^3$, c = 0 kPa, $\phi$= 38\textdegree{} et $\psi$= 8\textdegree{}). Pour ce massif, la raideur minimale ($k_{min}$) devrait être de 5,3x$10^{9}$ Pa/m (\citep{Itasca2020}, Équation \ref{eq:ks}). Afin de vérifier si cette valeur permet de s'affranchir de l'effet de l'interface, on a testé autres cinq valeurs de raideur.  
+
+   \begin{figure}[H]
+        \begin{center}
+            \includegraphics[scale = .7]{media/num_interface2.PNG}
+            \caption{(a) Détail au niveau de la pointe montrant la localisation de l'interface (en jaune), (b) Courbes DCLT pour les différentes valeurs de raideurs testées}
+            \label{fig:num_interface2}
+      \end{center}
+    \end{figure}
+ 
+De la Figure \ref{fig:num_interface2}b, on constate que pour les raideurs inférieures à $k_{min}$ (ici 5,3 x 10$^9$ Pa/m), l'allure de la courbe présente un changement non-négligeable, présentant des contraintes plus petites et des enfoncements plus importants. Pour les valeurs supérieures à $k_{min}$, les courbes sont quantitativement similaires, on observe uniquement l'augmentation de bruits (courbes rose, jaune et rouge). On conclut que l'équation \ref{eq:ks} permet d'estimer à partir des paramètres de déformabilité du sol, les raideurs d'interface minimales de l'interface sol-pointe afin de garantir que celles-ci n'interviennent pas significativement dans les résultats.
 
 \subsection{Sollicitation}
 \label{subsec:sollicitation}
-  
+
 On a simulé le chargement pointe pénétrométrique statique et dynamique. Le chargement statique a été simulé en appliquant une vitesse constante (0,01 mm/s) à la face supérieure de l'extrémité de la tige. 
 
-Comme évoqué, la plupart des travaux numériques rapportés dans la littérature simulent le chargement dynamique en appliquant une contrainte sinusoïdale à l’extrémité supérieure des pieux \citep{Fakharian2014, Masouleh2008,Pinto2008}. Dans le cas de ce travail, ainsi que les travaux précédents \citep{Benz-Navarrete2009, Escobar2015, Tran2019}, on a choisi de simuler le battage.
+En ce qui concerne l'essai dynamique, comme déjà évoqué, la plupart des travaux numériques rapportés simulent le chargement dynamique en appliquant une contrainte sinusoïdale à l’extrémité supérieure des pieux \citep{Fakharian2014, Masouleh2008,Pinto2008}. Dans le cas de ce travail, ainsi que les travaux précédents \citep{Benz-Navarrete2009, Escobar2015, Tran2019}, on a choisi de simuler le battage.
 
-Pour ce faire, il s'avère nécessaire d'ajuster la sollicitation pour que celle-ci soit représentative de l'onde de choc observée expérimentalement. L'onde de compression générée suite à l'impact est triangulaire avec une légère asymétrie, celle-ci peut être caractérisée par la durée du choc ($\Delta t$) et une contrainte maximale ($\sigma_{max}$). On décrit par la suite la calibration du battage. Dans un premier, on vérifie la capacité de simuler la propagation d'une onde de compression.
+Pour ce faire, il s'avère nécessaire d'ajuster la sollicitation pour que celle-ci soit représentative de l'onde de choc observée expérimentalement. L'onde de compression générée suite à l'impact est triangulaire avec une légère asymétrie, celle-ci peut être caractérisée par la durée du choc ($\Delta t$) et une contrainte maximale au pic ($\sigma_{max}$). On décrit par la suite la calibration du battage réalisé afin d'obtenir une onde représentative de celle observé expérimentalement. Dans un premier, on vérifie la capacité d'un modèle simple en différences finies de simuler la propagation d'une onde de compression. Pour ce faire, on simule le cas de l'essai SPT. Dans un deuxième temps, on se focalise sur l'essai DCLT. Le battage numérique est calibré à l'aide des résultats expérimentaux en laboratoire.
 
 
-
-\subsection {Cas du SPT : simulation du battage}
+\subsubsection {Cas du SPT : simulation du battage}
  
 On souhaite simuler l'essai DCLT. L'essai DCLT consiste à enfoncer le pénétromètre par battage. Afin d'être réaliste vis-à-vis de la technique et pouvoir mieux comparer les résultats en terme d'énergie, on a choisi de simuler le battage.
 
@@ -881,7 +918,7 @@ Par ailleurs, en supposant la tige élastique,  $\sigma=E_t \varepsilon$, avec $
     \frac{ \partial \sigma}{\partial t^2}= c_t^2 \frac{\partial u}{\partial x}
 \end{equation}
 
-Il est possible l'équation de l'onde analytiquement par différentes méthodes (transformée de Laplace, séparation des variables, méthode des caractéristiques) ou numériquement. Chacun de ces méthodes est discuté par \cite{Verruijt1994}. Dans le cadre de ce travail, on retient la solution obtenue par la méthode des caractéristiques, proposé initialement par \cite{Saint-Venant1898MemoireSys}. Selon celle-ci, l'équation \ref{eq:onde} correspond à la superposition deux ondes $u_{f}(t-x/c_t)$ (descendante) et $u_{g}(t-x/c_t)$ (remontante) se propageant le long des tiges de manière continue à une vitesse d'ondes ($c_t$).
+Il est possible l'équation de l'onde analytiquement par différentes méthodes (transformée de Laplace, séparation des variables, méthode des caractéristiques) ou numériquement. Chacun de ces méthodes est discuté par \cite{Verruijt1994}. Dans le cadre de ce travail, on retient la solution obtenue par la méthode des caractéristiques, proposé initialement par \cite{Saint-Venant1898}. Selon celle-ci, l'équation \ref{eq:onde} correspond à la superposition deux ondes $u_{f}(t-x/c_t)$ (descendante) et $u_{g}(t-x/c_t)$ (remontante) se propageant le long des tiges de manière continue à une vitesse d'ondes ($c_t$).
 
 Le passage de l'onde u(x,t) à un instant t engendrera une vitesse particulaire v(x,t) à un point donnée de la tige, obtenue par la dérivation de l'équation \ref{eq:onde} en fonction du temps.
 
@@ -901,11 +938,11 @@ En tenant compte de l'élasticité des tiges, c'est-à-dire de $F=\varepsilon A_
     F(x,t)=-\frac{A_t E_t}{c_t}[v_f(t-x/c)-v_g(t-x/c)]
 \end{equation}
 
-Comme constaté sur l'équation \ref{eq:FzV}, dans le problème de la propagation longitudinale d'une onde mécanique dans un milieu élastique, la force F(x,t) et la vitesse particulaire v(t,x) sont proportionnels. Le rapport de proportionnalité entre ceux deux grandeurs étant ${A_t E_t}/{c_t}$, c'est-à-dire, l'impédance mécanique de la tige $Z_t$.
+Comme constaté sur l'équation \ref{eq:FZv}, dans le problème de la propagation longitudinale d'une onde mécanique dans un milieu élastique, la force F(x,t) et la vitesse particulaire v(t,x) sont proportionnels. Le rapport de proportionnalité entre ceux deux grandeurs étant ${A_t E_t}/{c_t}$, c'est-à-dire, l'impédance mécanique de la tige $Z_t$.
 
 \subsubsection{Énergie transportée par l'onde}
 
-La propagation d’une onde mécanique dans un milieu élastique, tel qu’une tige, est caractérisée par le transport d’énergie. Selon \cite{Fairhurst1959EnergyDrilling}, pour un pulse dont toutes les composantes se propagent dans une même direction, l'énergie totale transmise ($E_t$) est divisé également en deux parties : l'énergie potentielle (ou énergie de déformation) $(E_U)$ et l'énergie cinétique $(E_K)$.
+La propagation d’une onde mécanique dans un milieu élastique, tel qu’une tige, est caractérisée par le transport d’énergie. Selon \cite{Fairhurst1959}, pour un pulse dont toutes les composantes se propagent dans une même direction, l'énergie totale transmise ($E_t$) est divisé également en deux parties : l'énergie potentielle (ou énergie de déformation) $(E_U)$ et l'énergie cinétique $(E_K)$.
 
 \begin{equation} \label{EK}
     E_K=\frac{1}{2} \frac{A_t E_t}{c_t} \int v(x,t)^2 dt
@@ -927,13 +964,15 @@ L'énergie totale transmise étant le double de $E_U$, celle-ci peut être obten
 \end{equation}
 
 
+
 \subsubsection{Calibration du battage}
+\label{subsubsec:Calibration du battage}
 
 Lorsque le marteau heurte la tête de battage, il se crée une onde de compression dont les caractéristiques - durée, amplitude et forme - dépendent essentiellement des caractéristiques géométriques et mécaniques des différents éléments : marteau, tête de battage, train de tige.
 
 Pour que la sollicitation dynamique simulée dans le modèle numérique soit véritablement représentative de celle observée expérimentalement, il s'avère nécessaire de d'assurer que l'onde d'impact soit comparable à l'onde expérimentale. On s'intéresse par la suite à la caractérisation de l'onde mesurée expérimentalement et à l'ajustement de l'onde de compression numérique. Pour ce faire, une série d’essais ont été réalisée à l’aide d’un pendule en laboratoire. Le but est de caractériser l’onde engendrée par l'impact du marteau sous des conditions bien définies.
 
-L'essai consiste à disposer le pénétromètre Panda 3 horizontalement reposé sur des roulements à billes et à effectuer le battage à l'aide d'un pendule de choc. Cela afin de maintenir son horizontalité au cours du battage et de s’affranchir des efforts de frottement le long des tiges. La disposition horizontale du système n’a aucune influence sur la propagation de l’onde car les forces gravitationnelles ne modifient pas la propagation de l’onde \citep{Fairhurst1959EnergyDrilling}.
+L'essai consiste à disposer le pénétromètre Panda 3 horizontalement reposé sur des roulements à billes et à effectuer le battage à l'aide d'un pendule de choc. Cela afin de maintenir son horizontalité au cours du battage et de s’affranchir des efforts de frottement le long des tiges. La disposition horizontale du système n’a aucune influence sur la propagation de l’onde car les forces gravitationnelles ne modifient pas la propagation de l’onde \citep{Fairhurst1959}.
 
 L'utilisation du pendule à choc permet de maîtriser l’énergie de battage et, par conséquent, la vitesse de l'impact. Cet appareillage permet facilement de faire varier l’énergie de battage ainsi que la longueur du train de tiges. On emploie un train de tige assez long (à savoir de 7 m) afin d'empêcher la superposition des ondes incidentes et réfléchies en sein du train de tiges. Comme conditions aux limites, la pointe à l'extrémité du train de tige est fixée horizontalement. Le marteau est lâché en condition de pendule et heurte la tête du pénétromètre (voir Figure \ref{fig:num_exp}).
 
@@ -1032,60 +1071,43 @@ En effet, les différents sources de pertes énergétiques présentes dans l'ess
 
 %L'interaction entre l'extrémité de la tige et l'impactant est traduite par l'interface collée à la face inférieure est ceci. La raideur linéaire adoptée pour cette interface a été calibré à partir des données expérimentales. Pour cela, on procède de manière similaire à l'approche suivie par \citep{Tran2019NumericalTest}. On réalise une série d'impacts à différentes vitesses de frappe (1 kN, 2 kN, 5 kN) en testant différentes raideurs jusqu'à que la relation entre la force maximale et la vitesse de frappe soit cela observée expérimentalement.
 
+\subsubsection{Simulation de l'essai DCLT}
 
-\subsection{Interface}
-\label{sec:interface}
+Grâce à l'instrumentation et l'analyse des ondes appliqués au pénétromètre Panda 3, il est possible de suivre des différentes grandeurs cinématiques (force, vitesse et déplacement) en pointe suite à chaque l'impact. Cela constitue un des grands atouts et une des principales particularités de cette technique. Le résultat de l'essai étant souvent synthétisé sous la forme d'une courbe dynamique de chargement en pointe.
 
-Afin de simuler l’interaction entre le pénétromètre et le sol, il s’avère nécessaire introduire une interface entre les deux matériaux. Celle-ci permettra de reproduire correctement le choc au niveau de la pointe et le glissement entre les parois de la pointe et le sol. Dans FLAC, l’interface est modélisée par un maillage de triangles définis par trois nœuds placés sur la surface de l’objet. Celle-ci est caractérisée par des paramètres de raideur et de rupture (critère de rupture Mohr-Coulomb). Ces paramètres doivent être choisis afin de minimiser son effet dans le modèle.
+Par conséquent, pour que le modèle numérique soit représentatif de cet essai, il doit permettre de reconstruire les signaux de force, vitesse et déplacement en pointe à partir de mesures de signaux de force et de vitesse obtenus à proximité de l'enclume.
 
-On a créé deux interfaces au niveau de la pointe : une latérale et une au sommet (Figure \ref{fig:num_interface2}). Le comportement de l’interface est caractérisée par (a) les paramètres de raideur : normale k\textsubscript{n} et tangentielle k\textsubscript{s} données en contrainte par mètre (Pa/m), et (b) de rupture suivant le critère Mohr-Coulomb, avec la cohésion (en Pa) et les angles de frottement et de dilatance (en dégrée). 
+Afin de vérifier cela, on simule l'essai DCLT au sein d'un massif élasto-plastique parfait représentant un sol sec. Pour cette analyse, on applique au massif représentant le sol les paramètres illustrant le sable de Fontainebleau à l'état dense : E de 150 MPa, $\nu$ de 0.33, $\phi$' de 35° et cohésion apparente de 5 kPA, $\psi$ de 5°. La géométrie et les conditions aux limites sont celles décrites dans la section \ref{subsec:Géométrie et conditions aux limites} de ce document. Le battage est simulée comme décrit dans la section précédente. On a réalisé trois impacts à différentes vitesses de frappe : 1,75 m/s, 3,5 m/s et 7 m/s.
 
-Les raideurs apparentes de l’interface d’une zone perpendiculaire sont souvent estimées à partir de la taille de l’élément le plus petit dans la direction normale $\Delta Z_{min}$ et le module (E) du milieu adjacent \citep{Itasca2020}. \emph{A priori}, les raideurs de l’interface sont estimées à partir du module d'élasticité du matériau le plus raide, à l’exception des problèmes où les modules des deux matériaux sont trop différents. Dans ce cas spécifique, on estime les raideurs de l’interface à partir du module du matériau le moins raide (ici, le sol) (Équation \ref{eq:ks}).
+On a enregistré les forces, les vitesses et les déplacements à la proximité de l'enclume (voir emplacement sur la Figure \ref{fig:num_imp} et en pointe. Cela pour les 30 milliseconds suivants l'impact. 
 
-\begin{minipage}{0.45\textwidth}
-   \begin{figure}[H]
-    \includegraphics[scale =.4]{media/num_interface_kn.PNG}
-    \label{fig:num_interface_kn}
-    \caption{Définition de $\Delta Z_{min}$}
-    \end{figure}
-\end{minipage}%
-%\hfill
-\begin{minipage}{0.45\textwidth}
-    \begin{equation} \label{eq:ks}
-    k_{n} = k_{s} \geq 10 \frac{K+\frac{4}{3} G}{\Delta Z_{min}}
-    \end{equation}
-\end{minipage}
+A chaque impact, l’onde de choc engendrée parcours le train de tige jusqu'à la pointe. Au niveau de la pointe, une partie est transmise au sol et une partie est réfléchie vers le point de mesure à proximité de l’enclume. En supposant que les efforts extérieurs (frottement latéral) appliqués soient négligeables et que les tiges soient des corps élastiques, homogènes et de section uniforme, la propagation de l’onde de compression u(x,t) est décrite par l'équation de l'onde (équation \ref{eq:onde}). La solution correspond à la superposition de deux ondes (descendante $u_d$ et remontante $u_u$). La connaissance des ondes $\varepsilon_d$ et $\varepsilon_u$ permet de décrire entièrement le phénomène. Toutefois, dans la pratique la durée du chargement dépasse le temps de aller-retour de l’onde dans la tige donc celles-ci se superposent. Il s’avère nécessaire d’appliquer des méthodes de découplages afin de les séparer. 
 
-%\vspace{1.5}
-%\newline
-%\\[2 cm]
-La définition des paramètres de l’interface constitue une tâche importante car ceux-ci influencent la réponse globale et interviennent comme « nouveau matériau ». Afin de vérifier si la relation proposée par le logiciel (Équation \ref{eq:ks}) permet d'empêcher cela, on a réalisé une étude paramétrique.
-
-Cinq valeurs de raideurs ont été testées en fixant toutes les autres variables. La raideur minimale été calculée à partir de l'équation \ref{eq:ks} pour un massif de caractéristiques connues (à savoir : E = 80 MPa, $\rho_d$ = 1700 kg/m$^3$, c = 0 kPa, $\phi$= 38\textdegree{} et $\psi$= 8\textdegree{}). Pour ce massif, la raideur minimale ($k_{min}$) devrait être de 5,3x$10^{9}$ Pa/m (\citep{Itasca2020}, Équation \ref{eq:ks}). Afin de vérifier si cette valeur permet de s'affranchir de l'effet de l'interface, on a testé autres cinq valeurs de raideur.  
-
-   \begin{figure}[H]
-        \begin{center}
-            \includegraphics[scale = .7]{media/num_interface2.PNG}
-            \caption{(a) Détail au niveau de la pointe montrant la localisation de l'interface (en jaune), (b) Courbes DCLT pour les différentes valeurs de raideurs testées}
-            \label{fig:num_interface2}
-      \end{center}
-    \end{figure}
- 
-De la Figure \ref{fig:num_interface2}b, on constate que pour les raideurs inférieures à $k_{min}$ (ici 5,3 x 10$^9$ Pa/m), l'allure de la courbe présente un changement non-négligeable, présentant des contraintes plus petites et des enfoncements plus importants. Pour les valeurs supérieures à $k_{min}$, les courbes sont quantitativement similaires, on observe uniquement l'augmentation de bruits (courbes rose, jaune et rouge).
-
-On conclut que l'équation \ref{eq:ks} permet d'estimer à partir des paramètres de déformabilité du sol, les raideurs d'interface minimales afin de garantir que celles-ci n'interviennent pas significativement dans les résultats.
+Différentes méthodes peuvent être employées pour réaliser le découplage des ondes $\varepsilon_d$ et $\varepsilon_u$ (Lundberg et Henchoz 1977)  (Jung et Park 2005). Celles-ci diffèrent quant au type de mesure utilisée – déformation et/ou accélération – et quant à la quantité de capteurs à utiliser, ainsi que par l’imposition de certaines conditions aux limites. \cite{Benz-Navarrete2009} a montré que la méthode proposée dans (Casem et al. 2003) et (Jung et Park 2005) est celle qui s’adapte le mieux à l'essai DCLT. Celle-ci utilise au moins une mesure de déformation et une mesure de vitesse. Ainsi, à partir des enregistrements de déformation $\varepsilon_A(t)$ et de vitesse $v_A(t)$ réalisés sur les tiges dans une section A au voisinage de l’enclume, les ondes $\varepsilon_d$ et $\varepsilon_u$ sont découplées selon les Équation \ref{eq:decouplage_down} et \ref{eq:decouplage_down} respectivement. 
 
 
-  \subsection{Modèle de comportement du sol}
-  \label{subsec:comportement}
+
+\begin{equation} \label{eq:decouplage_down}
+    \varepsilon_d (t) = \frac{1}{2} \left[ \varepsilon_A (t) - \frac{v_A(t)}{c_t} \right]
+\end{equation}
+
+\begin{equation} \label{eq:decouplage_up}
+    \varepsilon_u (t) = \frac{1}{2} \left[ \varepsilon_A (t) + \frac{v_A(t)}{c_t} \right]
+\end{equation}
+
+Qualitativement, la forme de la réponse obtenue est conforme à ce qui peut être classiquement observé expérimentalement (voir Figures \ref{fig:a} à \ref{fig:d} du chapitre précédent). La réponse mécanique se compose d’une première phase de montée en charge rapide
+correspondant à l’augmentation initiale de la vitesse de la tige. Dans un second temps, l’effort sur la tige reste positif pendant l’enfoncement de la tige jusqu’à sa pénétration maximale. Enfin, on observe une phase de déchargement-rechargement correspondant à la stabilisation de la tige autour d’une position d’équilibre finale.
+
+\subsection{Modèle de comportement du sol}
+\label{subsec:comportement}
   
 Divers travaux numériques s’intéressent à étudier et à modéliser le comportement des sols lors de la pénétration. A l'heure actuelle, la plupart de modèles numériques appliquent des critères de rupture simple : Mohr-Coulomb (MC), Tresca, von Mises et Cam-clay pour les argiles non-drainées et MC et Drucker-Prager pour les sables drainés.
 
 Le critère de Mohr-Coulomb est utilisé afin de modéliser le comportement des sols pulvérulents (sables), des sols cohérents à long terme (argiles et limons) et de certaines roches. Les paramètres de rupture alimentant ce critère sont : la cohésion c, l’angle de frottement $\phi$ et la dilatance $\psi$. 
 
-En mécanique des sols, la cohésion et l’angle de frottement sont traditionnellement calculés dans le plan de Mohr ($\sigma$’, t) à partir des états de contraintes à la rupture, estimés pour chaque essai triaxial. La loi de Tresca, qui est un cas particulier de la loi de Mohr-Coulomb, est utilisée pour l’étude des argiles et des limons à court terme ($\phi$=0\degree et $\psi$=0\degree) \citep{MestatJean-PierrreMagnan1991LoisImpacts}.
+En mécanique des sols, la cohésion et l’angle de frottement sont traditionnellement calculés dans le plan de Mohr ($\sigma$’, t) à partir des états de contraintes à la rupture, estimés pour chaque essai triaxial. La loi de Tresca, qui est un cas particulier de la loi de Mohr-Coulomb, est utilisée pour l’étude des argiles et des limons à court terme ($\phi$=0\degree et $\psi$=0\degree) \citep{MestatJean-Pierrre}.
 
-Selon \cite{Ahmadi2005Thin-layerMeasurement}, ce critère de rupture simple est capable de traduire correctement le comportement des sables. Les auteurs l’appliquent afin de modéliser le comportement d’un sable purement frottant (comme le sable de Ticino). L’angle de frottement est obtenu à partir d’une série d’essais triaxiaux tandis que l’angle de dilatance est estimé à partir de l’angle de frottement effectif $\phi$’ et l’angle de frottement à l’état critique $\phi_{cv}$.
+Selon \cite{Ahmadi2005}, ce critère de rupture simple est capable de traduire correctement le comportement des sables. Les auteurs l’appliquent afin de modéliser le comportement d’un sable purement frottant (comme le sable de Ticino). L’angle de frottement est obtenu à partir d’une série d’essais triaxiaux tandis que l’angle de dilatance est estimé à partir de l’angle de frottement effectif $\phi$’ et l’angle de frottement à l’état critique $\phi_{cv}$.
 
 \begin{equation} \label{eq:dilatance}
     sin \psi' = sin \phi'- sin \phi_{cv}
@@ -1112,7 +1134,7 @@ L’angle de frottement $\phi$ est couramment compris entre 15\textdegree{} et 4
 
 En supposant la variation de $\phi'$ avec le confinement est négligeable, on a tracé l'évolution de $\phi$ en fonction de l'état de densité de trois éprouvettes testées à l'appareil triaxial. Le but étant d'estimer l'angle de frottement correspondant à l'état de densité des éprouvettes réalisées (e = 0,68 et e = 0,78, voir Figure \ref{fig:exp_eprouvettes}). La relation entre l'indices de vides et l'angle de frottement est présentée dans la Figure \ref{fig:exp_phi_SH_SF_tx}. Les valeurs de $\phi'$ obtenues sont : 30,8\textdegree{} et 35,9\textdegree{} pour les éprouvettes lâches et moyennement dense, respectivement.
 
-L’angle de dilatance $\psi$ est quant à lui généralement compris entre 0\degree et 15\degree. Les sables lâches et les argiles ont des valeurs de dilatance très faibles, quelques degrés à peine voire zéro. Il est souvent déterminé en laboratoire à partir de résultats de l'essai triaxial. Il existe également des relations empiriques simples reliant l’angle de dilatance et l’angle de frottement interne \citep{Levasseur2007AnalyseGenetiques}. De manière similaire à \cite{Ahmadi2005Thin-layerMeasurement}, on estime l'angle de dilatance à partir de l'angle de frottement en rupture et l'angle de frottement critique (Équation \ref{eq:dilatance}). Comme évoqué, les valeurs rapportées dans la littérature pour le $\phi_{cr}$ varient peu. Celles-ci sont comprises entre 29,3\textdegree{} et 31,0\textdegree{} \citep{Dano2001ComportementInjectes, Dupla2007ComportementReference, Vernay2017EtudeLiquefaction, Andria-Ntoanina2011CaracterisationCentrifugeuse}.
+L’angle de dilatance $\psi$ est quant à lui généralement compris entre 0\degree et 15\degree. Les sables lâches et les argiles ont des valeurs de dilatance très faibles, quelques degrés à peine voire zéro. Il est souvent déterminé en laboratoire à partir de résultats de l'essai triaxial. Il existe également des relations empiriques simples reliant l’angle de dilatance et l’angle de frottement interne \citep{Levasseur2007AnalyseGenetiques}. De manière similaire à \cite{Ahmadi2005Thin-layerMeasurement}, on estime l'angle de dilatance à partir de l'angle de frottement en rupture et l'angle de frottement critique (Équation \ref{eq:dilatance}). Comme évoqué, les valeurs rapportées dans la littérature pour le $\phi_{cr}$ varient peu. Celles-ci sont comprises entre 29,3\textdegree{} et 31,0\textdegree{} \citep{Dano2001, Dupla2007, Vernay2017, Andria-Ntoanina2011}.
 
 %Les sols pulvérulents n’ont pratiquement pas de cohésion, 0 < c < quelques kiloPascals. Pour ce type de matériau, on parle de cohésion capillaire ou de cimentation en place.
 
@@ -1182,7 +1204,7 @@ Par ailleurs, une série d'essais en chambre d'étalonnage ont été effectué a
 
 Du côte numérique, on a apporté un certain nombre d'améliorations au modèle. La géométrie actuelle est plus réaliste vis-à-vis de la forme et dimensions du pénétromètre (sections circulaires, dimensions conformes à celles du pénétromètre e et de la chambre d'étalonnage). Par rapport à sollicitation dynamique, au lieu d'appliquer un signal de force sinusoïdale, comme réalisé dans la plus part de travaux rapportés, on a choisi de simuler l'impact. Cela permet d'être plus réaliste par rapport à la technique et de mieux se caler par rapport aux résultats expérimentaux.
 
-L'étude bibliographique réalisée à propos des modèles d'interaction a permis de souligner leur points convergeants et leurs limitations. A l'issue de cette étude, on envisage d'appliquer un modèle d'interaction sol-pointe plus réaliste (comme à celui de \cite{Loukidis2008AssessmentProcedure}) afin de dissocier la composante dynamique et de pouvoir appliquer des modèles d'interprétation comme l'expansion de cavité à cette technique. 
+L'étude bibliographique réalisée à propos des modèles d'interaction a permis de souligner leur points convergeant et leurs limitations. A l'issue de cette étude, on envisage d'appliquer un modèle d'interaction sol-pointe plus réaliste (comme à celui de \cite{Loukidis2008AssessmentProcedure}) afin de dissocier la composante dynamique et de pouvoir appliquer des modèles d'interprétation comme l'expansion de cavité à cette technique. 
 
 En tenant compte des aspects abordés dans ce rapport, les principales activités prévues pour la troisième année sont : 
 \begin{itemize}
@@ -1209,7 +1231,7 @@ En tenant compte des aspects abordés dans ce rapport, les principales activité
     
 \emph{Oliveira, C. F. ; Breul, P. ; Benz-Navarrete, M. A. ; Tran, Q. A. Essais de chargement dynamique et statique en pointe pénétrométrique : comparatifs au laboratoire. 37èmes Rencontres Universitaires de Génie Civil de l’AUGC, Sophia Antipolis, juin 2019.}\\
 
-\emph{Oliveira, C. F. ; Breul, P. ; Chevalier, B. ; Benz-Navarrete, M. A. ; Tran, Q. A. ; Bacconnet, C. Modélisation du battage dynamique d'un pénétromètre en différences finies. Journées Nationales de Géotechnique et de Géologie de l’Ingénieur (JNGG), Lyon, novembre 2020.}\\[0.025cm]
+\emph{Oliveira, C. F. ; Breul, P. ; Chevalier, B. ; Benz-Navarrete, M. A. ; Tran, Q. A. ; Bacconnet, C. Modélisation du battage dynamique d'un pénétromètre en différences finies. Journées Nationales de Géotechnique et de Géologie de l’Ingénieur (JNGG), Lyon, novembre 2020.}\\[0.025cm] 
     
 \item \underline{Conférences internationales} :\\[0.005cm]
 

@@ -12,6 +12,13 @@ Ali, H. (2010).
   fondations profondes}}.
 \newblock PhD thesis.
 
+\bibitem[Andria-Ntoanina, 2011]{Andria-Ntoanina2011}
+Andria-Ntoanina, I. (2011).
+\newblock {\em {Caract{\'{e}}risation dynamique de sables de
+  r{\'{e}}f{\'{e}}rence en laboratoire - Application {\`{a}} la r{\'{e}}ponse
+  sismique de massifs sableux en centrifugeuse}}.
+\newblock PhD thesis.
+
 \bibitem[Arbaoui, 2003]{Arbaoui2003}
 Arbaoui, H. (2003).
 \newblock {\em {M{\'{e}}sure de la d{\'{e}}formabilit{\'{e}} des sols en place
@@ -56,6 +63,18 @@ Chatterjee, K., Choudhury, D., Rao, V.~D., and S.P, M. (2015).
 Combarieu, O. (2001).
 \newblock {L 'essai cyclique au pressiom{\`{e}}tre}.
 \newblock pages 37--65.
+
+\bibitem[Dano, 2001]{Dano2001}
+Dano, C. (2001).
+\newblock {\em {Comportement m{\'{e}}canique des sols inject{\'{e}}s}}.
+\newblock PhD thesis, Ecole Centrale de Nantes.
+
+\bibitem[Dupla et~al., 2007]{Dupla2007}
+Dupla, J.~C., Pedro, L.~S., Canou, J., and Dormieux, L. (2007).
+\newblock {Comportement m{\'{e}}canique de sols grossiers de
+  r{\'{e}}f{\'{e}}rence}.
+\newblock {\em Bulletin des Laboratoires des Ponts et Chaussees},
+  -(268-269):31--57.
 
 \bibitem[Escobar, 2015]{Escobar2015}
 Escobar, E. (2015).
@@ -202,6 +221,16 @@ Robertson, P.~K. and Campanella, R.~G. (1983).
 \newblock {Interpretation of cone penetration tests. Part II: clay}.
 \newblock {\em Canadian Geotechnical Journal}, 20(4):734--745.
 
+\bibitem[Saint-Venant, 1898]{Saint-Venant1898}
+Saint-Venant (1898).
+\newblock {M{\'{e}}moire sur le choc longitudinal de deux barres
+  {\'{e}}lastiques de grosseurs et de mati{\`{e}}res semblables ou
+  diff{\'{e}}rentes, et sur la proportion de leur force vive qui est perdue
+  pour la translation ult{\'{e}}rieure; et g{\'{e}}n{\'{e}}ralement sur le
+  mouvement longitudinal d'un sys}.
+\newblock {\em JOURNAL DE MATH{\'{E}}MATIQUES PURES ET APPLIQU{\'{E}}ES},
+  4:27--74.
+
 \bibitem[Salgado, 2013]{Salgado2013}
 Salgado, R. (2013).
 \newblock {The mechanics of cone penetration: Contributions from experimental
@@ -234,6 +263,13 @@ Tran, Q.~A., Chevalier, B., Benz-Navarrete, M.~A., Breul, P., and
 \newblock {Numerical verification of the continuous calculation method for tip
   stress during the driving process of the dynamic penetration test}.
 \newblock {\em Soils and Foundations}, 59:2344--2351.
+
+\bibitem[Vernay, 2017]{Vernay2017}
+Vernay, M. (2017).
+\newblock {\em {Etude exp{\'{e}}rimentale de l'influence du degr{\'{e}} de
+  saturation sur le comportement instable du sable de Fontainebleau sous
+  sollicitation cyclique : application aux risques de liqu{\'{e}}faction}}.
+\newblock PhD thesis.
 
 \bibitem[Verruijt, 1994]{Verruijt1994}
 Verruijt, A. (1994).

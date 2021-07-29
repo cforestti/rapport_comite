@@ -43,18 +43,17 @@ Warning--I didn't find a database entry for "Combarieu1997CapaciteLaboratoire"
 Warning--I didn't find a database entry for "Dupla2007ComportementReference"
 Warning--I didn't find a database entry for "Latini2016TriaxialReport"
 Warning--I didn't find a database entry for "Benahmed2004InitialSand"
-Warning--I didn't find a database entry for "Saint-Venant1898MemoireSys"
 Warning--I didn't find a database entry for "Fairhurst1959EnergyDrilling"
 Warning--I didn't find a database entry for "eq:EF2"
 Warning--I didn't find a database entry for "Sy1991InternationalDynamics"
 Warning--I didn't find a database entry for "eq:EFV"
-Warning--I didn't find a database entry for "MestatJean-PierrreMagnan1991LoisImpacts"
-Warning--I didn't find a database entry for "Ahmadi2005Thin-layerMeasurement"
+Warning--I didn't find a database entry for "MestatJean-Pierrre"
+Warning--I didn't find a database entry for "Ahmadi2005"
 Warning--I didn't find a database entry for "Levasseur2007AnalyseGenetiques"
-Warning--I didn't find a database entry for "Vernay2017EtudeLiquefaction"
-Warning--I didn't find a database entry for "Andria-Ntoanina2011CaracterisationCentrifugeuse"
+Warning--I didn't find a database entry for "Ahmadi2005Thin-layerMeasurement"
 Warning--empty journal in Aguiar2009
 Warning--empty school in Ali2010
+Warning--empty school in Andria-Ntoanina2011
 Warning--empty school in Aussedat1970
 Warning--empty journal in Combarieu2001
 Warning--empty school in Escobar2015
@@ -68,48 +67,49 @@ Warning--there's a number but no volume in Nagula2018
 Warning--there's a number but no volume in Robertson2010
 Warning--empty publisher in Schnaid2008
 Warning--empty school in Tran2015
+Warning--empty school in Vernay2017
 Warning--empty institution in Verruijt1994
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
-You've used 43 entries,
+You've used 48 entries,
             1935 wiz_defined-function locations,
-            835 strings with 13835 characters,
-and the built_in function-call counts, 15064 in all, are:
-= -- 1497
-> -- 537
-< -- 33
-+ -- 172
-- -- 172
-* -- 1252
-:= -- 2708
-add.period$ -- 125
-call.type$ -- 43
-change.case$ -- 291
-chr.to.int$ -- 43
-cite$ -- 61
-duplicate$ -- 588
-empty$ -- 1047
-format.name$ -- 231
-if$ -- 2866
+            860 strings with 14832 characters,
+and the built_in function-call counts, 16637 in all, are:
+= -- 1655
+> -- 588
+< -- 37
++ -- 188
+- -- 188
+* -- 1379
+:= -- 3003
+add.period$ -- 140
+call.type$ -- 48
+change.case$ -- 321
+chr.to.int$ -- 48
+cite$ -- 68
+duplicate$ -- 652
+empty$ -- 1153
+format.name$ -- 252
+if$ -- 3157
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 30
-newline$ -- 213
-num.names$ -- 129
-pop$ -- 247
+missing$ -- 32
+newline$ -- 238
+num.names$ -- 144
+pop$ -- 271
 preamble$ -- 1
-purify$ -- 301
+purify$ -- 334
 quote$ -- 0
-skip$ -- 452
+skip$ -- 503
 stack$ -- 0
-substring$ -- 1031
-swap$ -- 51
+substring$ -- 1129
+swap$ -- 56
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 256
-warning$ -- 18
-while$ -- 130
+type$ -- 286
+warning$ -- 20
+while$ -- 144
 width$ -- 0
-write$ -- 535
+write$ -- 598
 (There were 66 warnings)
