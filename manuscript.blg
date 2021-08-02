@@ -42,7 +42,6 @@ Warning--I didn't find a database entry for "Benahmed2004InitialSand"
 Warning--I didn't find a database entry for "eq:EF2"
 Warning--I didn't find a database entry for "Sy1991InternationalDynamics"
 Warning--I didn't find a database entry for "eq:EFV"
-Warning--I didn't find a database entry for "MestatJean-Pierrre"
 Warning--I didn't find a database entry for "Ahmadi2005"
 Warning--I didn't find a database entry for "Ahmadi2005Thin-layerMeasurement"
 Warning--empty journal in Aguiar2009
@@ -68,45 +67,45 @@ Warning--empty school in Vernay2017
 Warning--empty institution in Verruijt1994
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
-You've used 64 entries,
+You've used 65 entries,
             1935 wiz_defined-function locations,
-            955 strings with 17123 characters,
-and the built_in function-call counts, 22669 in all, are:
-= -- 2272
-> -- 780
-< -- 53
-+ -- 248
-- -- 248
-* -- 1865
-:= -- 4030
-add.period$ -- 187
-call.type$ -- 64
-change.case$ -- 428
-chr.to.int$ -- 64
-cite$ -- 87
-duplicate$ -- 902
-empty$ -- 1592
-format.name$ -- 342
-if$ -- 4357
+            962 strings with 17290 characters,
+and the built_in function-call counts, 23112 in all, are:
+= -- 2324
+> -- 787
+< -- 54
++ -- 250
+- -- 250
+* -- 1904
+:= -- 4100
+add.period$ -- 190
+call.type$ -- 65
+change.case$ -- 434
+chr.to.int$ -- 65
+cite$ -- 88
+duplicate$ -- 916
+empty$ -- 1628
+format.name$ -- 345
+if$ -- 4444
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 47
-newline$ -- 316
-num.names$ -- 192
-pop$ -- 365
+missing$ -- 48
+newline$ -- 321
+num.names$ -- 195
+pop$ -- 368
 preamble$ -- 1
-purify$ -- 444
+purify$ -- 450
 quote$ -- 0
-skip$ -- 704
+skip$ -- 715
 stack$ -- 0
-substring$ -- 1577
-swap$ -- 97
+substring$ -- 1640
+swap$ -- 98
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 378
+type$ -- 384
 warning$ -- 23
-while$ -- 199
+while$ -- 205
 width$ -- 0
-write$ -- 800
-(There were 63 warnings)
+write$ -- 813
+(There were 62 warnings)

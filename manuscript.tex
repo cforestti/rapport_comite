@@ -52,7 +52,7 @@
 
 
 % Title
-\HRule  \\[0.4cm]
+\HRule  \\[0.8cm]
 
 { \bfseries Interprétation de l'essai de chargement dynamique en pointe pénétrométrique \\[0.4cm] }
 
@@ -900,7 +900,7 @@ De la Figure \ref{fig:num_interface2}b, on constate que pour les raideurs infér
 
 On a simulé le chargement pointe pénétrométrique statique et dynamique. Le chargement statique a été simulé en appliquant une vitesse constante (0,01 mm/s) à la face supérieure de l'extrémité de la tige. 
 
-En ce qui concerne l'essai dynamique, comme déjà évoqué, la plupart des travaux numériques rapportés simulent le chargement dynamique en appliquant une contrainte sinusoïdale à l’extrémité supérieure des pieux \citep{Fakharian2014, Masouleh2008,Pinto2008}. Dans le cas de ce travail, ainsi que les travaux précédents \citep{Benz-Navarrete2009, Escobar2015, Tran2019}, on a choisi de simuler le battage.
+En ce qui concerne l'essai dynamique, comme déjà évoqué, la plupart des travaux numériques rapportés simulent le chargement dynamique en appliquant une contrainte sinusoïdale à l’extrémité supérieure des pieux \citep{Fakharian2014, Masouleh2008,Pinto2008}. Dans le cas de ce travail, comme dans les travaux précédents \citep{Benz-Navarrete2009, Escobar2015, Tran2019} simulant l'essai DCLT, on a choisi de simuler le battage.
 
 Pour ce faire, il s'avère nécessaire d'ajuster la sollicitation pour que celle-ci soit représentative de l'onde de choc observée expérimentalement. L'onde de compression générée suite à l'impact est triangulaire avec une légère asymétrie, celle-ci peut être caractérisée par la durée du choc ($\Delta t$) et une contrainte maximale au pic ($\sigma_{max}$). On décrit par la suite la calibration du battage réalisé afin d'obtenir une onde représentative de celle observé expérimentalement. Dans un premier, on vérifie la capacité d'un modèle simple en différences finies de simuler la propagation d'une onde de compression. Pour ce faire, on simule le cas de l'essai SPT. Dans un deuxième temps, on se focalise sur l'essai DCLT. Le battage numérique est calibré à l'aide des résultats expérimentaux en laboratoire.
 
@@ -909,9 +909,9 @@ Pour ce faire, il s'avère nécessaire d'ajuster la sollicitation pour que celle
  
 On souhaite simuler l'essai DCLT. L'essai DCLT consiste à enfoncer le pénétromètre par battage. Afin d'être réaliste vis-à-vis de la technique et pouvoir mieux comparer les résultats en terme d'énergie, on a choisi de simuler le battage.
 
-Afin de vérifier dans premier temps la faisabilité, dans un premier temps, on a simulé un essai similaire, mais plus simple : le SPT. En effet, le battage SPT étant plus simple (en terme de géométrie et de matériaux utilisés), le problème a été déjà modélisé analytiquement \citep{Schmertmann1979, Gonin1979, Fairhurst1959}.
+Afin de vérifier dans premier temps la faisabilité, dans un premier temps, on a simulé un essai similaire, mais plus simple : le SPT. En effet, le battage SPT étant plus simple (en terme de géométrie et de matériaux utilisés), le problème a été déjà modélisé analytiquement par d'autres travaux \citep{Schmertmann1979, Gonin1979, Fairhurst1959}. Ces travaux ont obtenus des bonnes correspondances entre les prédictions analytiques à des résultats expérimentaux.
 
-Ces travaux ont constaté des bonnes correspondances entre les prédictions analytiques à des résultats expérimentaux. En suivant la même démarche, on souhaite vérifier si on est capable de simuler le battage SPT en différences finies. Par la suite, on s'intéressa la transmission d'énergie entre le marteau et la tige. La compréhension des phénomènes dynamiques ayant lieu après l'impact permet d'estimer les forces.
+En suivant la même démarche, on souhaite vérifier si on est capable de simuler le battage SPT en différences finies. Pour ce faire, il s'avère nécessaire comprendre des phénomènes dynamiques ayant lieu après l'impact. Ce sujet sera brièvement abordé par la suite.
 
 \subsubsection{Théorie}
 
@@ -1130,60 +1130,39 @@ La géométrie et les conditions aux limites sont celles décrites dans la secti
 
 On présente par la suite le signaux de force et de vitesse mesurés à la proximité de l'enclume et permettant d'estimer les signaux en pointe. Les ondes descendante et remontante obtenues par découplage. Une fois les ondes découplées, on présente les signaux estimées et mesurés au niveau de la pointe. La force transmise déduite par la suite. Le signal de vitesse et de déplacement en pointe.
 
-
-%\begin{figure}[htb]
-%    \begin{minipage}[t]{.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{media/num_F_Zv.PNG}
-%        \subcaption{Les ondes descendante et remontante obtenues par découplage. Une fois les ondes découplées, on présente les signaux estimées et mesurés au niveau de la pointe. La force transmise déduite par la suite. Le signal de vitesse et de déplacement en pointe.}\label{fig:1}
-%    \end{minipage}
-%    \hfill
-%    \begin{minipage}[t]{.5\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{media/num_F_Zv.PNG}
-%        \subcaption{}\label{fig:2}
-%    \end{minipage}  
-%    \label{fig:1-2}
-%    \caption{(a) Mesures dans la tige à proximité de l'enclume (point A) : force et vitesse en fonction du temps pour un impact avec Mesures dans la tige à proximité de l'enclume (point A) : force et vitesse en fonction du temps pour un impact avec Mesures dans la tige à proximité de l'enclume (point A) : force et vitesse en fonction du temps pour un impact avec }
-%\end{figure}
-
-\begin{figure}[H]
-   \begin{center}
-        \includegraphics[scale =.4]{media/num_F_Zv.PNG}
-        \caption{Mesures dans la tige à proximité de l'enclume (point A) : force et vitesse en fonction du temps pour un impact avec $v_{imp}$ = 1,75 m/s}
-          \label{fig:num_F_Zv}
-      \end{center}
-\end{figure}
-
-\begin{figure}[H]
-   \begin{center}
-        \includegraphics[scale = .4]{media/num_tech_Ft.PNG}
-        \caption{Résultats des calculs pour signaux de force des ondes : onde descendante, onde remontante et onde transmise estimée (force en pointe) ; Signal de force mesuré en pointe  F(t) (Équation \ref{eq:reconstruction_F}}
-          \label{fig:num_tech_Ft}
-      \end{center}
-\end{figure}
-
+\newpage
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}[b]{.45\linewidth}
+\begin{subfigure}[H]{.85\linewidth}
 \includegraphics[width=\linewidth]{media/num_F_Zv.PNG}
-\caption{(a)}\label{fig:mouse}
+\caption{Mesures dans la tige (point A) : force ($F_A (t)$) et produit de la vitesse ($v_A (t)$) et de l'impédance en fonction du temps}\label{fig:num_F_Zv}
 \end{subfigure}
-
-
-\begin{subfigure}[b]{.45\linewidth}
-\includegraphics[width=\linewidth]{media/num_F_Zv.PNG}
-\caption{(b)}\label{fig:mouse}
+\begin{subfigure}[H]{.85\linewidth}
+\includegraphics[width=\linewidth]{media/num_tech_Ft.PNG}
+\caption{Résultats des calculs pour signaux de force des ondes : onde descendante $F_d (t)$, onde remontante $F_u (t)$ et onde transmise estimée en pointe $F(t)$ (Equation \ref{eq:reconstruction_F}) ; signal de force mesuré en pointe}\label{fig:num_tech_Ft}
 \end{subfigure}
-
-\caption{Picture of animals}
-\label{fig:animals}
+\begin{subfigure}[H]{.85\linewidth}
+\includegraphics[width=\linewidth]{media/num_tech_vt_st.png}
+\caption{Signaux de vitesse et de déplacement en pointe : signaux estimés ( et signaux mesuré en fonction du temps}\label{media/num_tech_vt_st.png}
+\end{subfigure}
+\caption{Application de la technique de découplage et reconstruction des ondes pour un impact avec $v_{imp}$ = 1,75 m/s}
+\label{fig:num_technique}
 \end{figure}
- 
-Qualitativement, la forme de la réponse obtenue est conforme à ce qui peut être classiquement observé expérimentalement (voir Figures \ref{fig:a} à \ref{fig:d} du chapitre précédent). La réponse mécanique se compose d’une première phase de montée en charge rapide correspondant à l’augmentation initiale de la vitesse de la tige. Dans un second temps, l’effort sur la tige reste positif pendant l’enfoncement de la tige jusqu’à sa pénétration maximale. Enfin, on observe une phase de déchargement-rechargement correspondant à la stabilisation de la tige autour d’une position d’équilibre finale.
 
-Enfin, on présente la courbe DCLT pour l'impact en question et pour d'autres deux impacts. On a réalisé trois impacts à différentes vitesses de frappe : 1,75 m/s, 3,5 m/s et 7 m/s. Les résultats sont aussi qualitativement et quantitativement comparables aux résultats numériques présentés par \cite{Tran2019} obtenus pour les mêmes énergie de frappe.
+
+
+Le résultat de l'essai est souvent synthétisé sous la forme de la courbe de chargement en pointe, c'est-à-dire contrainte en pointe en fonction du déplacement en pointe s(t). Qualitativement, la forme de la réponse obtenue est conforme à ce qui peut être classiquement observé expérimentalement (voir Figures \ref{fig:a} à \ref{fig:d} du chapitre précédent). La réponse mécanique se compose d’une première phase de montée en charge rapide correspondant à l’augmentation initiale de la vitesse de la tige. Dans un second temps, l’effort sur la tige reste positif pendant l’enfoncement de la tige jusqu’à sa pénétration maximale. Enfin, on observe une phase de déchargement-rechargement correspondant à la stabilisation de la tige autour d’une position d’équilibre finale.
+
+ \begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = .5]{media/num_DCLT.png}
+        \caption{Courbe DCLT estimées et courbes DCLT mesurées pour trois vitesses d'impact (1,75 m/s, 3,5 m/s et 7 m/s)}
+          \label{fig:num_DCLT}
+      \end{center}
+ \end{figure}
+
+Enfin, on présente la courbe DCLT pour l'impact en question et pour d'autres deux impacts. On a réalisé trois impacts à différentes vitesses de frappe : 1,75 m/s, 3,5 m/s et 7 m/s. Les résultats obtenus sont aussi qualitativement et quantitativement comparables aux résultats numériques présentés par \cite{Tran2019} obtenus pour les mêmes énergie de frappe.
 
 
 \subsection{Modèle de comportement du sol}
@@ -1193,7 +1172,7 @@ Divers travaux numériques s’intéressent à étudier et à modéliser le comp
 
 Le critère de Mohr-Coulomb est utilisé afin de modéliser le comportement des sols pulvérulents (sables), des sols cohérents à long terme (argiles et limons) et de certaines roches. Les paramètres de rupture alimentant ce critère sont : la cohésion c, l’angle de frottement $\phi$ et la dilatance $\psi$. 
 
-En mécanique des sols, la cohésion et l’angle de frottement sont traditionnellement calculés dans le plan de Mohr ($\sigma$’, t) à partir des états de contraintes à la rupture, estimés pour chaque essai triaxial. La loi de Tresca, qui est un cas particulier de la loi de Mohr-Coulomb, est utilisée pour l’étude des argiles et des limons à court terme ($\phi$=0\degree et $\psi$=0\degree) \citep{MestatJean-Pierrre}.
+En mécanique des sols, la cohésion et l’angle de frottement sont traditionnellement calculés dans le plan de Mohr ($\sigma$’, t) à partir des états de contraintes à la rupture, estimés pour chaque essai triaxial. La loi de Tresca, qui est un cas particulier de la loi de Mohr-Coulomb, est utilisée pour l’étude des argiles et des limons à court terme ($\phi$=0\degree et $\psi$=0\degree) \citep{MestatJean-Pierrre;Magnan1991}.
 
 Selon \cite{Ahmadi2005}, ce critère de rupture simple est capable de traduire correctement le comportement des sables. Les auteurs l’appliquent afin de modéliser le comportement d’un sable purement frottant (comme le sable de Ticino). L’angle de frottement est obtenu à partir d’une série d’essais triaxiaux tandis que l’angle de dilatance est estimé à partir de l’angle de frottement effectif $\phi$’ et l’angle de frottement à l’état critique $\phi_{cv}$.
 
