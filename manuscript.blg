@@ -5,20 +5,16 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
-Warning--I didn't find a database entry for "Gonin1979ReflexionPieux"
-Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
 Warning--I didn't find a database entry for "Smith1960Pile-drivingEquation"
-Warning--I didn't find a database entry for "Randolph2003ScienceDesign"
-Warning--I didn't find a database entry for "Benz-Navarrete"
 Warning--I didn't find a database entry for "Lysmer1965VerticalFooting"
-Warning--I didn't find a database entry for "Mindlin1936ForceSolid"
-Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
-Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
+Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
 Warning--I didn't find a database entry for "Coyle1970EmpiricalClays"
 Warning--I didn't find a database entry for "Holeyman1988ModellingBase"
 Warning--I didn't find a database entry for "Burland1989NinthStrains"
 Warning--I didn't find a database entry for "Atkinson2000Non-linearDesign"
+Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
 Warning--I didn't find a database entry for "Combarieu2001LPressiometre"
+Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
 Warning--I didn't find a database entry for "Reiffsteck2009MeasurementsPenetrometer"
 Warning--I didn't find a database entry for "Obrzud2018TheGuidebook"
 Warning--I didn't find a database entry for "Benz2007Small-StrainConsequences"
@@ -39,11 +35,8 @@ Warning--I didn't find a database entry for "Combarieu1997CapaciteLaboratoire"
 Warning--I didn't find a database entry for "Dupla2007ComportementReference"
 Warning--I didn't find a database entry for "Latini2016TriaxialReport"
 Warning--I didn't find a database entry for "Benahmed2004InitialSand"
-Warning--I didn't find a database entry for "eq:EF2"
-Warning--I didn't find a database entry for "Sy1991InternationalDynamics"
-Warning--I didn't find a database entry for "eq:EFV"
-Warning--I didn't find a database entry for "Ahmadi2005"
-Warning--I didn't find a database entry for "Ahmadi2005Thin-layerMeasurement"
+Warning--I didn't find a database entry for "eq:wave_EF2"
+Warning--I didn't find a database entry for "eq:wave_EFV"
 Warning--empty journal in Aguiar2009
 Warning--empty school in Ali2010
 Warning--empty school in Andria-Ntoanina2011
@@ -67,45 +60,45 @@ Warning--empty school in Vernay2017
 Warning--empty institution in Verruijt1994
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
-You've used 65 entries,
+You've used 70 entries,
             1935 wiz_defined-function locations,
-            962 strings with 17290 characters,
-and the built_in function-call counts, 23112 in all, are:
-= -- 2324
-> -- 787
-< -- 54
-+ -- 250
-- -- 250
-* -- 1904
-:= -- 4100
-add.period$ -- 190
-call.type$ -- 65
-change.case$ -- 434
-chr.to.int$ -- 65
-cite$ -- 88
-duplicate$ -- 916
-empty$ -- 1628
-format.name$ -- 345
-if$ -- 4444
+            980 strings with 17751 characters,
+and the built_in function-call counts, 25211 in all, are:
+= -- 2543
+> -- 845
+< -- 59
++ -- 268
+- -- 268
+* -- 2081
+:= -- 4443
+add.period$ -- 205
+call.type$ -- 70
+change.case$ -- 468
+chr.to.int$ -- 70
+cite$ -- 93
+duplicate$ -- 999
+empty$ -- 1792
+format.name$ -- 372
+if$ -- 4868
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 48
-newline$ -- 321
-num.names$ -- 195
-pop$ -- 368
+missing$ -- 53
+newline$ -- 346
+num.names$ -- 210
+pop$ -- 394
 preamble$ -- 1
-purify$ -- 450
+purify$ -- 484
 quote$ -- 0
-skip$ -- 715
+skip$ -- 780
 stack$ -- 0
-substring$ -- 1640
-swap$ -- 98
-text.length$ -- 6
+substring$ -- 1838
+swap$ -- 112
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 384
+type$ -- 414
 warning$ -- 23
-while$ -- 205
+while$ -- 226
 width$ -- 0
-write$ -- 813
-(There were 62 warnings)
+write$ -- 878
+(There were 55 warnings)

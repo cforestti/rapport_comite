@@ -5,6 +5,17 @@ Aguiar, S. C.~D. (2009).
 \newblock {Numerical Modeling of Soil-Pile Axial Load Transfer Mechanisms in
   Granular Soils Statement of the Problem}.
 
+\bibitem[Ahmadi et~al., 2005]{Ahmadi2005b}
+Ahmadi, M.~M., Bryne, P.~M., and Campanella, R.~G. (2005).
+\newblock {Cone tip resistance in sand: Modeling, verification, and
+  applications}.
+\newblock {\em Canadian Geotechnical Journal}, 42(4):977--993.
+
+\bibitem[Ahmadi and Robertson, 2005]{Ahmadi2005a}
+Ahmadi, M.~M. and Robertson, P.~K. (2005).
+\newblock {Thin-layer effects on the CPT qc measurement}.
+\newblock {\em Canadian Geotechnical Journal}, 42(5):1302--1317.
+
 \bibitem[Ali, 2010]{Ali2010}
 Ali, H. (2010).
 \newblock {\em {Caract{\'{e}}risation am{\'{e}}lior{\'{e}}e des sols par
@@ -216,6 +227,11 @@ Mayne, P.~W., Coop, M.~R., Springman, S.~M., Huang, A.~B., and Zornberg, J.~G.
 \newblock {Lois De Comportement Et Mod{\'{e}}lisation Des Impacts}.
 \newblock {\em Le Journal de Physique IV}, 01(C3):C3--937--C3--942.
 
+\bibitem[Mindlin, 1936]{Mindlin1936}
+Mindlin, R.~D. (1936).
+\newblock {Force at a point in the interior of a semi-infinite solid}.
+\newblock {\em Journal of Applied Physics}, 7(5):195--202.
+
 \bibitem[Morvan and Breul, 2016]{Morvan2016}
 Morvan, M. and Breul, P. (2016).
 \newblock {Optimisation of in-situ dry density estimation}.
@@ -290,6 +306,11 @@ Quezada, J.~C., Breul, P., Saussine, G., and Radjai, F. (2014).
   Method}.
 \newblock {\em Computers and Geotechnics}, 55:248--253.
 
+\bibitem[Randolph, 2003]{Randolph2003}
+Randolph, M.~F. (2003).
+\newblock {Science and empiricism in pile foundation design}.
+\newblock {\em G{\'{e}}otechnique}, 53(10):847--875.
+
 \bibitem[Robertson and Cabal, 2010]{Robertson2010}
 Robertson, P.~K. and Cabal, K.~L. (2010).
 \newblock {Estimating soil unit weight from CPT}.
@@ -338,6 +359,12 @@ Schnaid, F. (2008).
 Smith, E.~A. (1960).
 \newblock {Pile-driving analysis by the wave equation}.
 \newblock {\em Geotechnical Special Publication}, 86(EM 4):35--61.
+
+\bibitem[Sy and Campanella, 1991]{SyA.;Campanella1991}
+Sy, A. and Campanella, R. (1991).
+\newblock {An alternative method of measuring SPT energy}.
+\newblock In {\em International Conferences on Recent Advances in Geotechnical
+  Earthquake Engineering and Soil Dynamic}, pages 499--505.
 
 \bibitem[Tran, 2015]{Tran2015}
 Tran, Q.~A. (2015).
