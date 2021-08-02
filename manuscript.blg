@@ -6,16 +6,7 @@ The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
 Warning--I didn't find a database entry for "Smith1960Pile-drivingEquation"
-Warning--I didn't find a database entry for "Lysmer1965VerticalFooting"
 Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
-Warning--I didn't find a database entry for "Coyle1970EmpiricalClays"
-Warning--I didn't find a database entry for "Holeyman1988ModellingBase"
-Warning--I didn't find a database entry for "Burland1989NinthStrains"
-Warning--I didn't find a database entry for "Atkinson2000Non-linearDesign"
-Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
-Warning--I didn't find a database entry for "Combarieu2001LPressiometre"
-Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
-Warning--I didn't find a database entry for "Reiffsteck2009MeasurementsPenetrometer"
 Warning--I didn't find a database entry for "Obrzud2018TheGuidebook"
 Warning--I didn't find a database entry for "Benz2007Small-StrainConsequences"
 Warning--I didn't find a database entry for "FlavignyE.DesruesJ.Paylayer1990NoteRF"
@@ -26,15 +17,17 @@ Warning--I didn't find a database entry for "Burns2007Small-Penetrometer"
 Warning--I didn't find a database entry for "Plumelle2013TheorieOuvrages"
 Warning--I didn't find a database entry for "Duttine2005ComportementAxes"
 Warning--I didn't find a database entry for "Lancelot1996ComportementDraines"
-Warning--I didn't find a database entry for "Aris2012ExperimentalElements"
 Warning--I didn't find a database entry for "AFNOR1994NFRevolution"
 Warning--I didn't find a database entry for "Briaud2001INTRODUCTIONMODULI"
 Warning--I didn't find a database entry for "Dano2001ComportementInjectes"
 Warning--I didn't find a database entry for "Rouse2018RelationTest"
 Warning--I didn't find a database entry for "Combarieu1997CapaciteLaboratoire"
 Warning--I didn't find a database entry for "Dupla2007ComportementReference"
+Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
 Warning--I didn't find a database entry for "Latini2016TriaxialReport"
 Warning--I didn't find a database entry for "Benahmed2004InitialSand"
+Warning--I didn't find a database entry for "Aris2012ExperimentalElements"
+Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
 Warning--I didn't find a database entry for "eq:wave_EF2"
 Warning--I didn't find a database entry for "eq:wave_EFV"
 Warning--empty journal in Aguiar2009
@@ -60,45 +53,45 @@ Warning--empty school in Vernay2017
 Warning--empty institution in Verruijt1994
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
-You've used 70 entries,
+You've used 74 entries,
             1935 wiz_defined-function locations,
-            980 strings with 17751 characters,
-and the built_in function-call counts, 25211 in all, are:
-= -- 2543
-> -- 845
-< -- 59
-+ -- 268
-- -- 268
-* -- 2081
-:= -- 4443
-add.period$ -- 205
-call.type$ -- 70
-change.case$ -- 468
-chr.to.int$ -- 70
-cite$ -- 93
-duplicate$ -- 999
-empty$ -- 1792
-format.name$ -- 372
-if$ -- 4868
+            988 strings with 18066 characters,
+and the built_in function-call counts, 26598 in all, are:
+= -- 2681
+> -- 894
+< -- 62
++ -- 284
+- -- 284
+* -- 2196
+:= -- 4696
+add.period$ -- 217
+call.type$ -- 74
+change.case$ -- 495
+chr.to.int$ -- 74
+cite$ -- 97
+duplicate$ -- 1052
+empty$ -- 1889
+format.name$ -- 392
+if$ -- 5130
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 53
-newline$ -- 346
-num.names$ -- 210
-pop$ -- 394
+missing$ -- 56
+newline$ -- 366
+num.names$ -- 222
+pop$ -- 414
 preamble$ -- 1
-purify$ -- 484
+purify$ -- 512
 quote$ -- 0
-skip$ -- 780
+skip$ -- 822
 stack$ -- 0
-substring$ -- 1838
-swap$ -- 112
+substring$ -- 1936
+swap$ -- 116
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 414
+type$ -- 438
 warning$ -- 23
-while$ -- 226
+while$ -- 238
 width$ -- 0
-write$ -- 878
-(There were 55 warnings)
+write$ -- 929
+(There were 48 warnings)
