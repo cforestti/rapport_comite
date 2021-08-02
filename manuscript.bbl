@@ -171,6 +171,11 @@ Lee, J.~S. and Byun, Y.~H. (2020).
 \newblock {Instrumented cone penetrometer for dense layer characterization}.
 \newblock {\em Sensors (Switzerland)}, 20(20):1--19.
 
+\bibitem[Levasseur, 2007]{Levasseur2007}
+Levasseur, S. (2007).
+\newblock {Analyse Inverse en G{\'{e}}otechnique : d{\'{e}}veloppement d' une
+  m{\'{e}}thode {\`{a}} base d' algorithmes g{\'{e}}n{\'{e}}tiques}.
+
 \bibitem[Loukidis et~al., 2008]{Loukidis2008}
 Loukidis, D., Salgado, R., and Abou-Jaoude, G. (2008).
 \newblock {Assessment of Axially-Loaded Pile Dynamic Design Methods and Review
@@ -251,6 +256,14 @@ Omidvar, M., Iskander, M., and Bless, S. (2012).
 \newblock {Stress-strain behavior of sand at high strain rates}.
 \newblock {\em International Journal of Impact Engineering}, 49:192--213.
 
+\bibitem[Othman et~al., 2001]{Othman2001}
+Othman, R., Bussac, M.~N., Collet, P., and Gary, G. (2001).
+\newblock {S{\'{e}}paration et reconstruction des ondes dans les barres
+  {\'{e}}lastiques et visco{\'{e}}lastiques {\`{a}} partir de mesures
+  redondantes}.
+\newblock {\em Comptes Rendus de l'Academie de Sciences - Serie IIb:
+  Mecanique}, 329(5):369--376.
+
 \bibitem[Pinto et~al., 2008]{Pinto2008}
 Pinto, P.~L., Grazina, J.~C., and Louren{\c{c}}o, J.~C. (2008).
 \newblock {Evaluation of 1D and 2D numerical modelling techniques of dynamic
@@ -292,6 +305,11 @@ Saint-Venant (1898).
   mouvement longitudinal d'un sys}.
 \newblock {\em JOURNAL DE MATH{\'{E}}MATIQUES PURES ET APPLIQU{\'{E}}ES},
   4:27--74.
+
+\bibitem[Salgado, 2008]{Salgado2008}
+Salgado, R. (2008).
+\newblock {\em {The Engineering of Foundations}}.
+\newblock McGraw-Hill.
 
 \bibitem[Salgado, 2013]{Salgado2013}
 Salgado, R. (2013).

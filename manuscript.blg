@@ -10,12 +10,11 @@ Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
 Warning--I didn't find a database entry for "Smith1960Pile-drivingEquation"
 Warning--I didn't find a database entry for "Randolph2003ScienceDesign"
 Warning--I didn't find a database entry for "Benz-Navarrete"
-Warning--I didn't find a database entry for "Coyle1970EmpiricalClays"
-Warning--I didn't find a database entry for "Salgado2008TheFoundations"
 Warning--I didn't find a database entry for "Lysmer1965VerticalFooting"
 Warning--I didn't find a database entry for "Mindlin1936ForceSolid"
 Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
 Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
+Warning--I didn't find a database entry for "Coyle1970EmpiricalClays"
 Warning--I didn't find a database entry for "Holeyman1988ModellingBase"
 Warning--I didn't find a database entry for "Burland1989NinthStrains"
 Warning--I didn't find a database entry for "Atkinson2000Non-linearDesign"
@@ -45,7 +44,6 @@ Warning--I didn't find a database entry for "Sy1991InternationalDynamics"
 Warning--I didn't find a database entry for "eq:EFV"
 Warning--I didn't find a database entry for "MestatJean-Pierrre"
 Warning--I didn't find a database entry for "Ahmadi2005"
-Warning--I didn't find a database entry for "Levasseur2007AnalyseGenetiques"
 Warning--I didn't find a database entry for "Ahmadi2005Thin-layerMeasurement"
 Warning--empty journal in Aguiar2009
 Warning--empty school in Ali2010
@@ -58,6 +56,7 @@ Warning--empty school in Faugeras1979
 Warning--there's a number but no volume in Ghee2011
 Warning--there's a number but no volume in Gonin1979
 Warning--empty journal in Le2013
+Warning--empty journal in Levasseur2007
 Warning--empty institution in Loukidis2008
 Warning--empty school in Lysmer1965
 Warning--empty journal in Nagula2018
@@ -69,45 +68,45 @@ Warning--empty school in Vernay2017
 Warning--empty institution in Verruijt1994
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
-You've used 61 entries,
+You've used 64 entries,
             1935 wiz_defined-function locations,
-            942 strings with 16658 characters,
-and the built_in function-call counts, 21670 in all, are:
-= -- 2178
-> -- 743
-< -- 51
-+ -- 236
-- -- 236
-* -- 1785
-:= -- 3849
-add.period$ -- 179
-call.type$ -- 61
-change.case$ -- 408
-chr.to.int$ -- 61
-cite$ -- 83
-duplicate$ -- 861
-empty$ -- 1519
-format.name$ -- 327
-if$ -- 4167
+            955 strings with 17123 characters,
+and the built_in function-call counts, 22669 in all, are:
+= -- 2272
+> -- 780
+< -- 53
++ -- 248
+- -- 248
+* -- 1865
+:= -- 4030
+add.period$ -- 187
+call.type$ -- 64
+change.case$ -- 428
+chr.to.int$ -- 64
+cite$ -- 87
+duplicate$ -- 902
+empty$ -- 1592
+format.name$ -- 342
+if$ -- 4357
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 43
-newline$ -- 302
-num.names$ -- 183
-pop$ -- 343
+missing$ -- 47
+newline$ -- 316
+num.names$ -- 192
+pop$ -- 365
 preamble$ -- 1
-purify$ -- 423
+purify$ -- 444
 quote$ -- 0
-skip$ -- 673
+skip$ -- 704
 stack$ -- 0
-substring$ -- 1516
-swap$ -- 95
+substring$ -- 1577
+swap$ -- 97
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 362
-warning$ -- 22
-while$ -- 191
+type$ -- 378
+warning$ -- 23
+while$ -- 199
 width$ -- 0
-write$ -- 765
-(There were 64 warnings)
+write$ -- 800
+(There were 63 warnings)

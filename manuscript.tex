@@ -7,6 +7,7 @@
 \usepackage{url}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage{fancyhdr}
 \usepackage{lmodern}
 \usepackage{vmargin}
@@ -51,9 +52,9 @@
 
 
 % Title
-\HRule \\[0.4cm]
+\HRule  \\[0.4cm]
 
-{\huge \bfseries Interprétation de l'essai de chargement dynamique en pointe pénétrométrique \\[0.4cm] }
+{ \bfseries Interprétation de l'essai de chargement dynamique en pointe pénétrométrique \\[0.4cm] }
 
 \HRule \\[1.5cm]
 
@@ -66,7 +67,7 @@
 Encadrement:\\
 \textsc{Pierre Breul}\\
 \textsc{Bastien Chevalier}\\
-\textsc{Miguel Angel Benz-Navarrete}\\
+\textsc{Miguel Angel Benz Navarrete}\\
 \textsc{Quoc Anh Tran}
 
 \vfill
@@ -309,7 +310,7 @@ Plus tard, d'autres travaux comme celui de \cite{Holeyman1988}, de \cite{Naggar1
 
 La raideur non-linéaire du ressort en pointe est donnée par l'équation hyperbolique représentant la réponse charge-déplacement en pointe. Cette raideur est réduite à partir de la valeur maximale $K_{max}$ associée à un comportement purement élastique. La réaction en pointe tend asymptotiquement vers la résistance en pointe $R_{bf}$. Lorsqu'on observe un chargement de signal du déplacement, la raideur est $K_{max}$. En effet pour phase de décharge, l'allure de courbe est gouvernée par le module initial \citep{Holeyman1988}.
 
-La courbure de l'hyperbole dépend du type de pieux et du sol. On assimile le pénétromètre à un pieu battu. \cite{Loukidis2008AssessmentProcedure} observe que $b_f$ varie entre 1,0 et 2,0 pour les pieux battus. L'effet visqueux dans la résistance sont pris en compte d'après la relation proposé par \cite{Coyle1970EmpiricalClays} (Équation \ref{eq:Coyle}).
+La courbure de l'hyperbole dépend du type de pieux et du sol. On assimile le pénétromètre à un pieu battu. \cite{Loukidis2008AssessmentProcedure} observe que $b_f$ varie entre 1,0 et 2,0 pour les pieux battus. L'effet visqueux dans la résistance sont pris en compte d'après la relation proposé par \cite{Coyle1970} (Équation \ref{eq:Coyle}).
 
 \begin{equation}  \label{eq:Coyle}
     R_{Sf} = Q_{bL} (1 + m v^n) 
@@ -317,7 +318,7 @@ La courbure de l'hyperbole dépend du type de pieux et du sol. On assimile le p�
 
 Avec m et n des coefficients contrôlant l'effet de la vitesse. Le coefficient n présente une variation est assez petite quel que soit le sol, et est souvent pris 0,2. Le coefficient m varie entre 0,34 et 0,56 pour les sables et entre 0,95 et 1,55 pour les argiles.
 
-Lorsque que la vitesse de nulle, $R_{Sf}$ est égale $Q_{bL}$, soit $Q_{bL}$ la résistance limite en pointe. La résistance $Q_{bL}$ est égale au produit résistance unitaire et de la section du pieu. Selon \cite{Salgado2008TheFoundations}, la résistance unitaire en pointe est approximativement la résistance quasi-statique $q_c$ issue de l'essai CPT.
+Lorsque que la vitesse de nulle, $R_{Sf}$ est égale $Q_{bL}$, soit $Q_{bL}$ la résistance limite en pointe. La résistance $Q_{bL}$ est égale au produit résistance unitaire et de la section du pieu. Selon \cite{Salgado2008}, la résistance unitaire en pointe est approximativement la résistance quasi-statique $q_c$ issue de l'essai CPT.
 
 La raideur non-linéaire intègre les pertes d'énergie lié à la plastification (hystérésis du matériau). Le coefficient d'amortissement (C) intègre l'amortissement radiatif et de l'hystérésis du sol plus loin de la pointe réduit graduellement avec l'augmentation lorsque la réaction du ressort s'approche de la résistance en pointe ultime. 
 
@@ -1091,11 +1092,11 @@ Grâce à l'instrumentation et l'analyse des ondes appliqués au pénétromètre
 
 Par conséquent, pour que le modèle numérique soit représentatif de cet essai, il doit permettre de reconstruire les signaux de force, vitesse et déplacement en pointe à partir de mesures de signaux de force et de vitesse obtenus à proximité de l'enclume.
 
-Afin de vérifier cela, on simule l'essai DCLT au sein d'un massif élasto-plastique parfait représentant un sol sec. Pour cette analyse, on applique au massif représentant le sol les paramètres illustrant le sable de Fontainebleau à l'état dense : E de 150 MPa, $\nu$ de 0,33, $\phi$' de 35° et cohésion apparente de 5 kPA, $\psi$ de 5°. La géométrie et les conditions aux limites sont celles décrites dans la section \ref{subsec:Géométrie et conditions aux limites} de ce document. Le battage est simulée comme décrit dans la section précédente. On a réalisé trois impacts à différentes vitesses de frappe : 1,75 m/s, 3,5 m/s et 7 m/s. On a enregistré les historiques de force, de vitesse et de déplacement à la proximité de l'enclume (voir emplacement sur la Figure \ref{fig:num_imp} et en pointe. Cela pour les 60 milliseconds suivants l'impact. 
-
 A chaque impact, l’onde de choc engendrée parcours le train de tige jusqu'à la pointe. Au niveau de la pointe, une partie est transmise au sol et une partie est réfléchie vers le point de mesure à proximité de l’enclume. En supposant que les efforts extérieurs (frottement latéral) appliqués soient négligeables et que les tiges soient des corps élastiques, homogènes et de section uniforme, la propagation de l’onde de compression u(x,t) est décrite par l'équation de l'onde (équation \ref{eq:onde}). La solution correspond à la superposition de deux ondes (descendante $u_d$ et remontante $u_u$). La connaissance des ondes $\varepsilon_d$ et $\varepsilon_u$ permet de décrire entièrement le phénomène. Toutefois, dans la pratique la durée du chargement dépasse le temps de aller-retour de l’onde dans la tige donc celles-ci se superposent. Il s’avère nécessaire d’appliquer des méthodes de découplages afin de les séparer. 
 
-Différentes méthodes peuvent être employées pour réaliser le découplage des ondes $\varepsilon_d$ et $\varepsilon_u$ \citep{Lundberg1990, Casem2003, Jung2005}. Celles-ci diffèrent quant au type de mesure utilisée (déformation et/ou accélération), quant à la quantité de capteurs à utiliser ainsi que par l’imposition de certaines conditions aux limites. \cite{Benz-Navarrete2009} a montré que la méthode proposée par \cite{Casem2003} et par \cite{Jung2005} est celle qui s’adapte le mieux à cet essai. Celle-ci utilise au moins une mesure de déformation et une mesure de vitesse. Ainsi, à partir des enregistrements de déformation $\varepsilon_A(t)$ et de vitesse $v_A(t)$ réalisés sur les tiges dans une section A au voisinage de l’enclume, les ondes $\varepsilon_d$ et $\varepsilon_u$ sont découplées selon les Équation \ref{eq:decouplage_down} et \ref{eq:decouplage_down} respectivement. 
+Différentes méthodes peuvent être employées pour réaliser le découplage des ondes $\varepsilon_d$ et $\varepsilon_u$ \citep{Lundberg1990, Casem2003, Jung2005, Othman2001}. Celles-ci diffèrent quant au type de mesure utilisée (déformation et/ou accélération), quant à la quantité de capteurs à utiliser ainsi que par l’imposition de certaines conditions aux limites. \cite{Benz-Navarrete2009} a montré que la méthode proposée par \cite{Casem2003} et par \cite{Jung2005} est celle qui s’adapte le mieux à cet essai. Celle-ci utilise une mesure de déformation et une mesure de vitesse. Cette solution est assez précise et aucune condition aux limites ne doit être vérifiée. Il s'agit de la technique de découplage des ondes souvent appliquée lors des essais de chargement dynamique de pieux. 
+
+Ainsi, à partir des enregistrements de déformation $\varepsilon_A(t)$ et de vitesse $v_A(t)$ réalisés sur les tiges dans une section A au voisinage de l’enclume, les ondes $\varepsilon_d$ et $\varepsilon_u$ sont découplées selon les Équation \ref{eq:decouplage_down} et \ref{eq:decouplage_up} respectivement. 
 
 \begin{equation} \label{eq:decouplage_down}
     \varepsilon_d (t) = \frac{1}{2} \left[ \varepsilon_A (t) - \frac{v_A(t)}{c_t} \right]
@@ -1105,18 +1106,85 @@ Différentes méthodes peuvent être employées pour réaliser le découplage de
     \varepsilon_u (t) = \frac{1}{2} \left[ \varepsilon_A (t) + \frac{v_A(t)}{c_t} \right]
 \end{equation}
 
+En connaissant les signaux $\varepsilon_A(t)$ et $v_A(t)$, il est possible de reconstruire les signaux de déformation $\varepsilon(t)$, de force $F(t)$ et de vitesse particulaire $v(t)$ pour une section donnée C situé en dessous du point de mesure. Cela en supposant que les efforts extérieurs (frottement latéral) nuls entre le point de mesure (A) et la section analysée (C). Avec une tige homogène et de section constante $A_t$ (impédance uniforme $Z_t$), la reconstruction des signaux de force $F(t)$ et de vitesse $v(t)$ est donné par les Équations \ref{eq:reconstruction_F} et \ref{eq:reconstruction_v} respectivement. Soit $\Delta x = x_C - x_A$.
 
 
+\begin{equation} \label{eq:reconstruction_F}
+    F (t) = \frac{E_t A_t}{2} \left[ \varepsilon_A (t + 2 \Delta x / c_t) + \varepsilon_A (t) \right] + \left[ \frac{Z_t}{2}  v_A (t) + v_A (t + 2 \Delta x/c_t)  \right]
+\end{equation}
 
 
+\begin{equation} \label{eq:reconstruction_v}
+    v (t) = \frac{1}{2} \left[ v_A \left( t + \frac{2 \Delta x}{c_t} \right) + v_A (t)  \right] + \left( \frac{E_t A_t}{2 Z_t} \right) \left[ \varepsilon_A \left( t + \frac{2 \Delta x}{c_t} \right) + \varepsilon_A (t) \right]
+\end{equation}
+
+Le déplacement s(t) d'un point de la section C est déduit par la suite par intégration du signal de vitesse v(t) \ref{eq:reconstruction_s}.
+
+\begin{equation} \label{eq:reconstruction_s}
+    s (t) = \int{v(t)} \,dt      
+\end{equation}
+
+On a appliqué ce principe au modèle numérique afin de vérifier s'il est capable de reproduire la technique intégré dans l'essai DCLT. Pour ce faire, on a simulé l'essai DCLT au sein d'un massif élasto-plastique parfait représentant un sol sec. Pour cette analyse, on applique au massif représentant le sol les paramètres illustrant le sable de Fontainebleau à l'état dense : E de 150 MPa, $\nu$ de 0,33, $\phi$' de 35° et cohésion apparente de 5 kPA, $\psi$ de 5°. 
+
+La géométrie et les conditions aux limites sont celles décrites dans la section \ref{subsec:Géométrie et conditions aux limites} de ce document. Le battage est simulé comme décrit dans la section précédente. On a enregistré les historiques de force, de vitesse et de déplacement à la proximité de l'enclume (section A) comme montré sur la Figure \ref{fig:num_imp}, et en pointe (section C). Cela pour les 40 milliseconds suivants l'impact.
+
+On présente par la suite le signaux de force et de vitesse mesurés à la proximité de l'enclume et permettant d'estimer les signaux en pointe. Les ondes descendante et remontante obtenues par découplage. Une fois les ondes découplées, on présente les signaux estimées et mesurés au niveau de la pointe. La force transmise déduite par la suite. Le signal de vitesse et de déplacement en pointe.
 
 
+%\begin{figure}[htb]
+%    \begin{minipage}[t]{.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{media/num_F_Zv.PNG}
+%        \subcaption{Les ondes descendante et remontante obtenues par découplage. Une fois les ondes découplées, on présente les signaux estimées et mesurés au niveau de la pointe. La force transmise déduite par la suite. Le signal de vitesse et de déplacement en pointe.}\label{fig:1}
+%    \end{minipage}
+%    \hfill
+%    \begin{minipage}[t]{.5\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{media/num_F_Zv.PNG}
+%        \subcaption{}\label{fig:2}
+%    \end{minipage}  
+%    \label{fig:1-2}
+%    \caption{(a) Mesures dans la tige à proximité de l'enclume (point A) : force et vitesse en fonction du temps pour un impact avec Mesures dans la tige à proximité de l'enclume (point A) : force et vitesse en fonction du temps pour un impact avec Mesures dans la tige à proximité de l'enclume (point A) : force et vitesse en fonction du temps pour un impact avec }
+%\end{figure}
+
+\begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale =.4]{media/num_F_Zv.PNG}
+        \caption{Mesures dans la tige à proximité de l'enclume (point A) : force et vitesse en fonction du temps pour un impact avec $v_{imp}$ = 1,75 m/s}
+          \label{fig:num_F_Zv}
+      \end{center}
+\end{figure}
+
+\begin{figure}[H]
+   \begin{center}
+        \includegraphics[scale = .4]{media/num_tech_Ft.PNG}
+        \caption{Résultats des calculs pour signaux de force des ondes : onde descendante, onde remontante et onde transmise estimée (force en pointe) ; Signal de force mesuré en pointe  F(t) (Équation \ref{eq:reconstruction_F}}
+          \label{fig:num_tech_Ft}
+      \end{center}
+\end{figure}
 
 
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{.45\linewidth}
+\includegraphics[width=\linewidth]{media/num_F_Zv.PNG}
+\caption{(a)}\label{fig:mouse}
+\end{subfigure}
 
 
-Qualitativement, la forme de la réponse obtenue est conforme à ce qui peut être classiquement observé expérimentalement (voir Figures \ref{fig:a} à \ref{fig:d} du chapitre précédent). La réponse mécanique se compose d’une première phase de montée en charge rapide
-correspondant à l’augmentation initiale de la vitesse de la tige. Dans un second temps, l’effort sur la tige reste positif pendant l’enfoncement de la tige jusqu’à sa pénétration maximale. Enfin, on observe une phase de déchargement-rechargement correspondant à la stabilisation de la tige autour d’une position d’équilibre finale.
+\begin{subfigure}[b]{.45\linewidth}
+\includegraphics[width=\linewidth]{media/num_F_Zv.PNG}
+\caption{(b)}\label{fig:mouse}
+\end{subfigure}
+
+\caption{Picture of animals}
+\label{fig:animals}
+\end{figure}
+ 
+Qualitativement, la forme de la réponse obtenue est conforme à ce qui peut être classiquement observé expérimentalement (voir Figures \ref{fig:a} à \ref{fig:d} du chapitre précédent). La réponse mécanique se compose d’une première phase de montée en charge rapide correspondant à l’augmentation initiale de la vitesse de la tige. Dans un second temps, l’effort sur la tige reste positif pendant l’enfoncement de la tige jusqu’à sa pénétration maximale. Enfin, on observe une phase de déchargement-rechargement correspondant à la stabilisation de la tige autour d’une position d’équilibre finale.
+
+Enfin, on présente la courbe DCLT pour l'impact en question et pour d'autres deux impacts. On a réalisé trois impacts à différentes vitesses de frappe : 1,75 m/s, 3,5 m/s et 7 m/s. Les résultats sont aussi qualitativement et quantitativement comparables aux résultats numériques présentés par \cite{Tran2019} obtenus pour les mêmes énergie de frappe.
+
 
 \subsection{Modèle de comportement du sol}
 \label{subsec:comportement}
@@ -1154,7 +1222,7 @@ L’angle de frottement $\phi$ est couramment compris entre 15\textdegree{} et 4
 
 En supposant la variation de $\phi'$ avec le confinement est négligeable, on a tracé l'évolution de $\phi$ en fonction de l'état de densité de trois éprouvettes testées à l'appareil triaxial. Le but étant d'estimer l'angle de frottement correspondant à l'état de densité des éprouvettes réalisées (e = 0,68 et e = 0,78, voir Figure \ref{fig:exp_eprouvettes}). La relation entre l'indices de vides et l'angle de frottement est présentée dans la Figure \ref{fig:exp_phi_SH_SF_tx}. Les valeurs de $\phi'$ obtenues sont : 30,8\textdegree{} et 35,9\textdegree{} pour les éprouvettes lâches et moyennement dense, respectivement.
 
-L’angle de dilatance $\psi$ est quant à lui généralement compris entre 0\degree et 15\degree. Les sables lâches et les argiles ont des valeurs de dilatance très faibles, quelques degrés à peine voire zéro. Il est souvent déterminé en laboratoire à partir de résultats de l'essai triaxial. Il existe également des relations empiriques simples reliant l’angle de dilatance et l’angle de frottement interne \citep{Levasseur2007AnalyseGenetiques}. De manière similaire à \cite{Ahmadi2005Thin-layerMeasurement}, on estime l'angle de dilatance à partir de l'angle de frottement en rupture et l'angle de frottement critique (Équation \ref{eq:dilatance}). Comme évoqué, les valeurs rapportées dans la littérature pour le $\phi_{cr}$ varient peu. Celles-ci sont comprises entre 29,3\textdegree{} et 31,0\textdegree{} \citep{Dano2001, Dupla2007, Vernay2017, Andria-Ntoanina2011}.
+L’angle de dilatance $\psi$ est quant à lui généralement compris entre 0\degree et 15\degree. Les sables lâches et les argiles ont des valeurs de dilatance très faibles, quelques degrés à peine voire zéro. Il est souvent déterminé en laboratoire à partir de résultats de l'essai triaxial. Il existe également des relations empiriques simples reliant l’angle de dilatance et l’angle de frottement interne \citep{Levasseur2007}. De manière similaire à \cite{Ahmadi2005Thin-layerMeasurement}, on estime l'angle de dilatance à partir de l'angle de frottement en rupture et l'angle de frottement critique (Équation \ref{eq:dilatance}). Comme évoqué, les valeurs rapportées dans la littérature pour le $\phi_{cr}$ varient peu. Celles-ci sont comprises entre 29,3\textdegree{} et 31,0\textdegree{} \citep{Dano2001, Dupla2007, Vernay2017, Andria-Ntoanina2011}.
 
 %Les sols pulvérulents n’ont pratiquement pas de cohésion, 0 < c < quelques kiloPascals. Pour ce type de matériau, on parle de cohésion capillaire ou de cimentation en place.
 
