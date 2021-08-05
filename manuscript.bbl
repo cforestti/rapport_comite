@@ -1,5 +1,13 @@
 \begin{thebibliography}{}
 
+\bibitem[AFNOR, 1994a]{AFNOR1994b}
+AFNOR (1994a).
+\newblock {NF P 94-070 Essais {\`{a}} l'appareil triaxial de r{\'{e}}volution}.
+
+\bibitem[AFNOR, 1994b]{AFNOR1994a}
+AFNOR (1994b).
+\newblock {NF P94 074 Essai {\`{a}} l'appareil triaxial de r{\'{e}}volution}.
+
 \bibitem[Aguiar, 2009]{Aguiar2009}
 Aguiar, S. C.~D. (2009).
 \newblock {Numerical Modeling of Soil-Pile Axial Load Transfer Mechanisms in
@@ -60,10 +68,25 @@ Aussedat, G. (1970).
 \newblock {\em {Sollicitations rapides des sols}}.
 \newblock PhD thesis.
 
+\bibitem[Benahmed et~al., 2004]{Benahmed2004}
+Benahmed, N., Canou, J., and Dupla, J.~C. (2004).
+\newblock {Initial structure and static liquefaction properties of sand}.
+\newblock {\em Comptes Rendus - Mecanique}, 332(11):887--894.
+
+\bibitem[Benz, 2007]{Benz2007}
+Benz, T. (2007).
+\newblock {\em {Small-Strain Stiffness of Soils and its Numerical
+  Consequences}}.
+
 \bibitem[Benz-Navarrete, 2009]{Benz-Navarrete2009}
 Benz-Navarrete, M.~A. (2009).
 \newblock {\em {MESURES DYNAMIQUES LORS DU BATTAGE DU PENETROMETRE PANDA 2}}.
 \newblock PhD thesis, Universit{\'{e}} Blaise Pascal.
+
+\bibitem[Briaud, 2001]{Briaud2001}
+Briaud, J.-L. (2001).
+\newblock {INTRODUCTION TO SOIL MODULI}.
+\newblock Technical report.
 
 \bibitem[Burland, 1989]{Burland1989}
 Burland, J.~B. (1989).
@@ -83,6 +106,13 @@ Byun, Y.~H., Hong, W.~T., and Lee, J.~S. (2015).
 \newblock {Characterization of railway substructure using a hybrid cone
   penetrometer}.
 \newblock {\em Smart Structures and Systems}, 15(4):1085--1101.
+
+\bibitem[Cami, 2017]{Cami2017}
+Cami (2017).
+\newblock {\em {Imagerie du module de cisaillement in situ du sol par
+  m{\'{e}}thodes d'ondes de surface et essais g{\'{e}}otechniques :
+  caract{\'{e}}risation des petites aux grandes d{\'{e}}formations}}.
+\newblock PhD thesis.
 
 \bibitem[Casem et~al., 2003]{Casem2003}
 Casem, D.~T., Fourney, W., and Chang, P. (2003).
@@ -107,10 +137,17 @@ Chatterjee, K., Choudhury, D., Rao, V.~D., and S.P, M. (2015).
 \newblock {Dynamic analyses and field observations on piles in kolkata city}.
 \newblock {\em Geomechanics and Engineering}, 8(3):415--440.
 
-\bibitem[Combarieu, 2001]{Combarieu2001}
-Combarieu, O. (2001).
+\bibitem[Combarieu, 1997]{Combarieu1997}
+Combarieu, O. (1997).
+\newblock {Capacit{\'{e}} portante des fondations superficielles
+  pressiom{\`{e}}tre et essais de laboratoire}.
+\newblock {\em Bulletin des Laboratoires des Ponts et Chaussees},
+  0(211):53--72.
+
+\bibitem[Combarieu and Can{\'{e}}pa, 2001]{Combarieu2001}
+Combarieu, O. and Can{\'{e}}pa, Y. (2001).
 \newblock {L 'essai cyclique au pressiom{\`{e}}tre}.
-\newblock pages 37--65.
+\newblock {\em BULLETIN-LABORATOIRES DES PONTS ET CHAUSSEES}, pages 37--65.
 
 \bibitem[Coyle and Gibson, 1970]{Coyle1970}
 Coyle, H. and Gibson, G. (1970).
@@ -135,11 +172,24 @@ Dupla, J.~C., Pedro, L.~S., Canou, J., and Dormieux, L. (2007).
 \newblock {\em Bulletin des Laboratoires des Ponts et Chaussees},
   -(268-269):31--57.
 
+\bibitem[Duttine, 2005]{Duttine2005}
+Duttine, A. (2005).
+\newblock {\em {Comportement des sables et des m{\'{e}}langes sable / argile
+  sous sollicitations statiques et dynamiques avec et sans "rotations d '
+  axes"}}.
+\newblock PhD thesis, Institut National des Sciences Appliqu{\'{e}}es de Lyon.
+
 \bibitem[Escobar, 2015]{Escobar2015}
 Escobar, E. (2015).
 \newblock {\em {Mise au point et exploitation d'une nouvelle technique pour la
   reconnaisance des sols : le PANDA 3}}.
 \newblock PhD thesis.
+
+\bibitem[Fahey and Carter, 1993]{Fahey1993}
+Fahey, M. and Carter, J.~P. (1993).
+\newblock {A finite element study of the pressuremeter test in sand using a
+  nonlinear elastic plastic model}.
+\newblock {\em Canadian Geotechnical Journal}.
 
 \bibitem[Fairhurst, 1959]{Fairhurst1959}
 Fairhurst, C. (1959).
@@ -151,13 +201,6 @@ Fakharian, K., {Feizee Masouleh}, S., and Mohammadlou, A.~S. (2014).
 \newblock {Comparison of end-of-drive and restrike signal matching analysis for
   a real case using continuum numerical modelling}.
 \newblock {\em Soils and Foundations}, 54(2):155--167.
-
-\bibitem[Faug{\`{e}}ras, 1979]{Faugeras1979}
-Faug{\`{e}}ras, J.-C. (1979).
-\newblock {\em {L'essai de compressibilit{\'{e}} des sols au
-  p{\'{e}}n{\'{e}}trom{\`{e}}tre statique et son interpretation sur
-  mod{\`{e}}le analogique}}.
-\newblock PhD thesis.
 
 \bibitem[Gazetas et~al., 1985]{Gazetas1985}
 Gazetas, G., Dobry, R., and Tassoulas, J.~L. (1985).
@@ -190,6 +233,17 @@ Jung, B. and Park, Y. (2005).
 \newblock {Axial Strain and Acceleration Measurements}.
 \newblock {\em Asia Pacific Vibration Conference (APVC)}, pages 515--518.
 
+\bibitem[Lancelot et~al., 1996]{Lancelot1996}
+Lancelot, L., Shahrour, I., and {Al Mahmoud}, M. (1996).
+\newblock {Comportement du sable d ' Hostun sous faibles contraintes Behavior
+  of Hostun sand for small stresses Essais drain{\'{e}}s}.
+\newblock {\em Revue Fran{\c{c}}aise de G{\'{e}}otechnique}, 63-74(1):74.
+
+\bibitem[Latini and Zania, 2016]{Latini2016}
+Latini, C. and Zania, V. (2016).
+\newblock {Triaxial tests in Fontainebleau sand. Internal Report}.
+\newblock Technical report, Technical University of Denmark.
+
 \bibitem[Le, 2013]{Le2013}
 Le, P.~T. (2013).
 \newblock {Numerical and Experimental Studies on Dynamic Load Testing of Open -
@@ -203,8 +257,9 @@ Lee, J.~S. and Byun, Y.~H. (2020).
 
 \bibitem[Levasseur, 2007]{Levasseur2007}
 Levasseur, S. (2007).
-\newblock {Analyse Inverse en G{\'{e}}otechnique : d{\'{e}}veloppement d' une
-  m{\'{e}}thode {\`{a}} base d' algorithmes g{\'{e}}n{\'{e}}tiques}.
+\newblock {\em {Analyse Inverse en G{\'{e}}otechnique : d{\'{e}}veloppement d'
+  une m{\'{e}}thode {\`{a}} base d' algorithmes g{\'{e}}n{\'{e}}tiques}}.
+\newblock PhD thesis.
 
 \bibitem[Loukidis et~al., 2008]{Loukidis2008}
 Loukidis, D., Salgado, R., and Abou-Jaoude, G. (2008).
@@ -218,14 +273,15 @@ Lundberg, B., Carlsson, J., and Sundin, K.~G. (1990).
   measurement}.
 \newblock {\em Journal of Sound and Vibration}, 137(3):483--493.
 
-\bibitem[Lysmer, 1969]{Lys1969}
-Lysmer (1969).
-\newblock {Finite dynamic model for infinite media}.
-
 \bibitem[Lysmer, 1965]{Lysmer1965}
 Lysmer, J. (1965).
 \newblock {\em {Vertical motion of rigid footing}}.
 \newblock PhD thesis.
+
+\bibitem[Lysmer and Kuhlemeyer, 1969]{Lys1969}
+Lysmer, J. and Kuhlemeyer, R.~L. (1969).
+\newblock {Finite dynamic model for infinite media}.
+\newblock {\em Journal of the Engineering Mechanics Division}, 95(4):859--877.
 
 \bibitem[Masouleh and Fakharian, 2008]{Masouleh2008}
 Masouleh, S.~F. and Fakharian, K. (2008).
@@ -245,11 +301,6 @@ Mayne, P.~W., Coop, M.~R., Springman, S.~M., Huang, A.~B., and Zornberg, J.~G.
 {Mestat, Jean-Pierrre; Magnan}, P. (1991).
 \newblock {Lois De Comportement Et Mod{\'{e}}lisation Des Impacts}.
 \newblock {\em Le Journal de Physique IV}, 01(C3):C3--937--C3--942.
-
-\bibitem[Mindlin, 1936]{Mindlin1936}
-Mindlin, R.~D. (1936).
-\newblock {Force at a point in the interior of a semi-infinite solid}.
-\newblock {\em Journal of Applied Physics}, 7(5):195--202.
 
 \bibitem[Morvan and Breul, 2016]{Morvan2016}
 Morvan, M. and Breul, P. (2016).
@@ -291,6 +342,11 @@ Nazem, M., Carter, J.~P., Airey, D.~W., and Chow, S.~H. (2012).
   clay}.
 \newblock {\em Geotechnique}, 62(10):893--905.
 
+\bibitem[Obrzud and Truty, 2018]{Obrzud2018}
+Obrzud, R.~F. and Truty, A. (2018).
+\newblock {The Hardening Soil model - A practical guidebook}.
+\newblock Technical report, Z Soil.PC 100701 report.
+
 \bibitem[Omidvar et~al., 2012]{Omidvar2012}
 Omidvar, M., Iskander, M., and Bless, S. (2012).
 \newblock {Stress-strain behavior of sand at high strain rates}.
@@ -312,6 +368,12 @@ Pinto, P.~L., Grazina, J.~C., and Louren{\c{c}}o, J.~C. (2008).
   Theory to Piles}, pages 353--357. Science, Technology and Practice:
   Proceedings of the 8th International Conference on the Application of
   Stress-Wave Theory to Piles.
+
+\bibitem[Plumelle, 2013]{Plumelle2013}
+Plumelle, C. (2013).
+\newblock {\em {Th{\'{e}}orie et pratique de la g{\'{e}}otechnique. Tome 1-
+  Outils pour la conception des ouvrages}}.
+\newblock Paris, le moniteu edition.
 
 \bibitem[Quezada, 2012]{Quezada2012}
 Quezada, J.~C. (2012).
@@ -347,6 +409,12 @@ Robertson, P.~K. and Campanella, R.~G. (1983).
 \newblock {Interpretation of cone penetration tests. Part II: clay}.
 \newblock {\em Canadian Geotechnical Journal}, 20(4):734--745.
 
+\bibitem[Rous{\'{e}}, 2018]{Rouse2018}
+Rous{\'{e}}, P.~C. (2018).
+\newblock {Relation between the critical state friction angle of sands and low
+  vertical stresses in the direct shear test}.
+\newblock {\em Soils and Foundations}, 58(5):1282--1287.
+
 \bibitem[Saint-Venant, 1898]{Saint-Venant1898}
 Saint-Venant (1898).
 \newblock {M{\'{e}}moire sur le choc longitudinal de deux barres
@@ -369,6 +437,13 @@ Salgado, R. (2013).
 \newblock {\em Geotechnical and Geophysical Site Characterization 4 -
   Proceedings of the 4th International Conference on Site Characterization 4,
   ISC-4}, 1:131--153.
+
+\bibitem[Schanz et~al., 1999]{Schanz1999}
+Schanz, T., Vermeer, P.~A., and Bonnier, P.~G. (1999).
+\newblock {The hardening soil model: Formulation and verification}.
+\newblock {\em Beyond 2000 in computational geotechnics. Ten Years of PLAXIS
+  International. Proceedings of the international symposium, Amsterdam, March
+  1999.}, pages 281--296.
 
 \bibitem[Schmertmann and Palacios, 1979]{Schmertmann1979}
 Schmertmann, J. and Palacios, A. (1979).
@@ -413,10 +488,10 @@ Vernay, M. (2017).
   sollicitation cyclique : application aux risques de liqu{\'{e}}faction}}.
 \newblock PhD thesis.
 
-\bibitem[Verruijt, 1994]{Verruijt1994}
-Verruijt, A. (1994).
-\newblock {Soil Dynamics}.
-\newblock Technical report.
+\bibitem[Verruijt, 2009]{Verruijt2009}
+Verruijt, A. (2009).
+\newblock {\em {An Introduction to Soil Dynamics}}.
+\newblock Springer Science {\&} Business Media, 24 edition.
 
 \bibitem[Whitman and Richart, 1969]{Whitman1969}
 Whitman, R.~V. and Richart, F.~E. (1969).

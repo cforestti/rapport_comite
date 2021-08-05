@@ -5,93 +5,71 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
-Warning--I didn't find a database entry for "Smith1960Pile-drivingEquation"
-Warning--I didn't find a database entry for "Loukidis2008AssessmentProcedure"
-Warning--I didn't find a database entry for "Obrzud2018TheGuidebook"
-Warning--I didn't find a database entry for "Benz2007Small-StrainConsequences"
-Warning--I didn't find a database entry for "FlavignyE.DesruesJ.Paylayer1990NoteRF"
-Warning--I didn't find a database entry for "Schanz1999TheVerification"
-Warning--I didn't find a database entry for "Cami2017ImagerieDeformations"
-Warning--I didn't find a database entry for "Fahey1993AModel"
-Warning--I didn't find a database entry for "Burns2007Small-Penetrometer"
-Warning--I didn't find a database entry for "Plumelle2013TheorieOuvrages"
-Warning--I didn't find a database entry for "Duttine2005ComportementAxes"
-Warning--I didn't find a database entry for "Lancelot1996ComportementDraines"
-Warning--I didn't find a database entry for "AFNOR1994NFRevolution"
-Warning--I didn't find a database entry for "Briaud2001INTRODUCTIONMODULI"
-Warning--I didn't find a database entry for "Dano2001ComportementInjectes"
-Warning--I didn't find a database entry for "Rouse2018RelationTest"
-Warning--I didn't find a database entry for "Combarieu1997CapaciteLaboratoire"
-Warning--I didn't find a database entry for "Dupla2007ComportementReference"
-Warning--I didn't find a database entry for "Arbaoui2003MesurePenetrometre"
-Warning--I didn't find a database entry for "Latini2016TriaxialReport"
-Warning--I didn't find a database entry for "Benahmed2004InitialSand"
-Warning--I didn't find a database entry for "Aris2012ExperimentalElements"
-Warning--I didn't find a database entry for "Zhou1997CaracterisationPanda"
 Warning--I didn't find a database entry for "eq:wave_EF2"
-Warning--I didn't find a database entry for "eq:wave_EFV"
 Warning--empty journal in Aguiar2009
 Warning--empty school in Ali2010
 Warning--empty school in Andria-Ntoanina2011
 Warning--empty school in Aussedat1970
-Warning--empty journal in Combarieu2001
+Warning--empty publisher in Benz2007
+Warning--empty institution in Briaud2001
+Warning--empty school in Cami2017
 Warning--empty publisher in Das2011
 Warning--empty school in Escobar2015
-Warning--empty school in Faugeras1979
 Warning--there's a number but no volume in Ghee2011
 Warning--there's a number but no volume in Gonin1979
 Warning--empty journal in Le2013
-Warning--empty journal in Levasseur2007
+Warning--empty school in Levasseur2007
 Warning--empty institution in Loukidis2008
 Warning--empty school in Lysmer1965
 Warning--empty journal in Nagula2018
 Warning--there's a number but no volume in Nagula2018
+Warning--empty publisher in Plumelle2013
 Warning--there's a number but no volume in Robertson2010
 Warning--empty publisher in Schnaid2008
 Warning--empty school in Tran2015
 Warning--empty school in Vernay2017
-Warning--empty institution in Verruijt1994
+Warning--can't use both author and editor fields in Verruijt2009
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
-You've used 74 entries,
+You've used 87 entries,
             1935 wiz_defined-function locations,
-            988 strings with 18066 characters,
-and the built_in function-call counts, 26598 in all, are:
-= -- 2681
-> -- 894
-< -- 62
-+ -- 284
-- -- 284
-* -- 2196
-:= -- 4696
-add.period$ -- 217
-call.type$ -- 74
-change.case$ -- 495
-chr.to.int$ -- 74
-cite$ -- 97
-duplicate$ -- 1052
-empty$ -- 1889
-format.name$ -- 392
-if$ -- 5130
-int.to.chr$ -- 1
+            1020 strings with 19110 characters,
+and the built_in function-call counts, 30990 in all, are:
+= -- 3120
+> -- 1048
+< -- 73
++ -- 333
+- -- 332
+* -- 2550
+:= -- 5486
+add.period$ -- 255
+call.type$ -- 87
+change.case$ -- 583
+chr.to.int$ -- 86
+cite$ -- 112
+duplicate$ -- 1229
+empty$ -- 2193
+format.name$ -- 463
+if$ -- 5978
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 56
-newline$ -- 366
-num.names$ -- 222
-pop$ -- 414
+missing$ -- 67
+newline$ -- 430
+num.names$ -- 261
+pop$ -- 484
 preamble$ -- 1
-purify$ -- 512
+purify$ -- 601
 quote$ -- 0
-skip$ -- 822
+skip$ -- 962
 stack$ -- 0
-substring$ -- 1936
-swap$ -- 116
-text.length$ -- 7
+substring$ -- 2205
+swap$ -- 138
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 438
-warning$ -- 23
-while$ -- 238
+type$ -- 510
+warning$ -- 25
+while$ -- 274
 width$ -- 0
-write$ -- 929
-(There were 48 warnings)
+write$ -- 1094
+(There were 26 warnings)
