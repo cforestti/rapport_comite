@@ -252,26 +252,26 @@ Afin de rendre le modèle initialement proposés par \cite{Smith1960} plus réal
 
 Certains travaux se sont intéressés à la détermination des tassements d'une semelle, mais la solution de Lysmer a la particularité d'être valable pour toutes les fréquences de sollicitation, tandis que les solutions précédentes (Sung, Bycroft, Hsieh) s'appliquent pour de faibles fréquences.
 
-La réaction du sol sur la base de la semelle correspond à la somme de la réaction d'un ressort (fonction du déplacement) et de la réaction d'amortisseur (fonction de la vitesse). La raideur ($K_{Lys}$) de ce ressort est celle de la solution statique (Équation \ref{eq:KLys}).
+La réaction du sol sur la base de la semelle correspond à la somme de la réaction d'un ressort (fonction du déplacement) et de la réaction d'amortisseur (fonction de la vitesse). La raideur ($K_{b,Lys}$) de ce ressort est celle de la solution statique (Équation \ref{eq:KLys}).
 
 \begin{equation} \label{eq:KLys}
-    K_{Lys} = \frac{4 G R}{1-\nu} 
+    K_{b,Lys} = \frac{4 G R}{1-\nu} 
 \end{equation}
 
 Soit G le module de cisaillement du sol en Pascal, R le rayon de la semelle en mètres et $\nu$ le coefficient de Poisson. Le coefficient d'amortissement est donné par l'équation \ref{eq:CLys}.
 
 \begin{equation}  \label{eq:CLys}
-    C_{Lys} = \frac{3.4 R^2}{1-\nu} \rho  Vs = \frac{3.4 R^2}{1-\nu} \sqrt{\rho G}  
+    C_{b,Lys} = \frac{3.4 R^2}{1-\nu} \rho  Vs = \frac{3.4 R^2}{1-\nu} \sqrt{\rho G}  
 \end{equation}
 
 Soit $\rho$ la masse volumique en kg/m$^3$ et $V_s$ la vitesse d'ondes de cisaillement du sol en m/s. L'amortissement dans le modèle de Lysmer représente l'amortissement radiatif, c'est-à-dire dissipation d'énergie associée la propagation d'ondes (de volume et Rayleigh) dans le milieu semi-infini. Dans ce modèle, l'amortissement ne dépend pas de la fréquence. Le modèle basé sur l'analogie de Lysmer est adapté pour un sol élastique parfait soumis à un chargement vertical transitoire (pulse). La conformité de la solution générale et les résultats pour un milieu semi-infini reste suffisante pour les applications aux problèmes d'ingénierie. 
 
-La solution de Lysmer est largement employée dans le calcul de fondations de machine. Ce modèle suppose un comportement élastique parfait et le sol présente un comportement élastique restreint à des déformations très faibles. Par conséquent, le module G adapté pour déterminer la raideur K correspond au module à faibles déformations ($G_{max}$ ou $G_0$). Certains chercheurs suggèrent l'utilisation du module associé à la gamme de déformation du problème traité, mais la détermination la gamme de déformation associée au problème n'est pas simple (e.g. fonction de la distance de la source, du temps,...). Quant au module permettant de déterminer $C_{Lys}$, ceci est strictement le module à faibles déformations ($G_{max}$).
+La solution de Lysmer est largement employée dans le calcul de fondations de machine. Ce modèle suppose un comportement élastique parfait et le sol présente un comportement élastique restreint à des déformations très faibles. Par conséquent, le module G adapté pour déterminer la raideur K correspond au module à faibles déformations ($G_{max}$ ou $G_0$). Certains chercheurs suggèrent l'utilisation du module associé à la gamme de déformation du problème traité, mais la détermination la gamme de déformation associée au problème n'est pas simple (e.g. fonction de la distance de la source, du temps,...). Quant au module permettant de déterminer $C_{b,Lys}$, ceci est strictement le module à faibles déformations ($G_{max}$).
 
 Le modèle de Lysmer a l'atout d'associer le ressort et l'amortissement de Smith à des paramètres courants du sol (paramètres élastiques et masse volumique). Par conséquent, ce modèle réduit l'empirisme du modèle de Smith, par contre il ne tient pas compte des certains aspects importants de la réaction du sol. On peut citer notamment la non-linéarité de la réponse du sol et les effets visqueux dans la résistance. Par conséquent, le modèle surestime la raideur en pointe.
 
 En effet, la solution présentée par Lysmer est valable pour les sollicitations statiques et dynamiques (toutes les fréquences), tant que l'encastrement est nul (D=0) \cite{Loukidis2008}. Cela requiert attention car le plupart des fondations et notamment 
-les fondations profondes D>0. Pour les fondations encastrées, le coefficient K observé est supérieur à la valeur théorique.
+les fondations profondes D>>B, soit B le diamètre du pieu. Pour les fondations encastrées, le coefficient K observé est supérieur à la valeur théorique.
 La  présente l'évolution du coefficient K pour le cas d'une fondation rigide \citep{Das2011}. Pour les applications en profondeur, \cite{Loukidis2008} propose l'intégration d'un facteur afin de tenir compte de l'encastrement. Ce sujet sera abordé plus tard dans ce rapport.
 
   \begin{figure}[H]
@@ -320,7 +320,7 @@ Lorsque que la vitesse de nulle, $R_{Sf}$ est égale $Q_{b,lim}$, soit $Q_{b,lim
 
 La raideur non-linéaire intègre les pertes d'énergie lié à la plastification (hystérésis du matériau). Le coefficient d'amortissement (C) intègre l'amortissement radiatif et de l'hystérésis du sol plus loin de la pointe réduit graduellement avec l'augmentation lorsque la réaction du ressort s'approche de la résistance en pointe ultime. 
 
-La raideur maximale du ressort ($K_{max}$) et le coefficient de l'amortissement (C) sont basés sur les coefficient de Lysmer ($K_{Lys}$, Équation \ref{eq:KLys} et $C_{Lys}$, Équation \ref{eq:CLys}). Comme évoqué, la solution de Lysmer s'est basée sur une fondation chargée en surface. En réalité, dans le cas d'une fondation à une profondeur D, celle-ci va transmettre la chargement à un sol placé en profondeur et généralement plus rigide. Par conséquent, cet effet entraîne l'augmentation du coefficient $K_{max}$ \citep{Gazetas1985}. Il est ainsi important d'intégrer un facteur tenant compte de l'encastrement. \cite{Loukidis2008} a analysé cet effet et a introduit le coefficient d'encastrement $D_f$. L'utilisation de ce coefficient permet d'appliquer la solution de Lysmer aux problèmes en profondeur.
+La raideur maximale du ressort ($K_{max}$) et le coefficient de l'amortissement (C) sont basés sur les coefficient de Lysmer ($K_{b,Lys}$, Équation \ref{eq:KLys} et $C_{b,Lys}$, Équation \ref{eq:CLys}). Comme évoqué, la solution de Lysmer s'est basée sur une fondation chargée en surface. En réalité, dans le cas d'une fondation à une profondeur D, celle-ci va transmettre la chargement à un sol placé en profondeur et généralement plus rigide. Par conséquent, cet effet entraîne l'augmentation du coefficient $K_{max}$ \citep{Gazetas1985}. Il est ainsi important d'intégrer un facteur tenant compte de l'encastrement. \cite{Loukidis2008} a analysé cet effet et a introduit le coefficient d'encastrement $D_f$. L'utilisation de ce coefficient permet d'appliquer la solution de Lysmer aux problèmes en profondeur.
 
 Afin d'estimer ce coefficient, \cite{Loukidis2008} ont fait varié la profondeur d'une semelle au sein d'un matériau parfaitement élastique. Ce coefficient nommé $D_f$ est ainsi estimé à partir du rapport entre la profondeur et le diamètre B (Équation \ref{eq:Df}). Ils ont observé également que sous chargement dynamique ce paramètre était élevé à 1,7 (Équation \ref{eq:Df_dyn}). Pour les rapports D/B>8, $D_f$ devient constant, $D_f$ varie entre 1,36, pour $\nu$=0,5 (argiles saturées), et 1,5, pour $\nu$=0,15 (sables).
 
@@ -450,31 +450,59 @@ Le module à faibles déformations est obtenu en laboratoire par l'essai de colo
 
 
 
-\subsection{Vérification numérique : application du coefficient de Lysmer et l'encastrement à l'essai DCLT}
+\subsection{Vérification numérique : application de la raideur de Lysmer et d'encastrement à l'essai DCLT}
  
-En assimilant l'essai DCLT à un essai de chargement de pieu en échelle réduite, on souhaite appliquer les modèles d'interaction proposé pour les pieux à cet essai. A l'exception de modèle de Smith, tous les modèle présenté se sont basé sur le coefficient de Lysmer ($K_b$) d'exprimer le déplacement en pointe en fonction des paramètres de déformabilité du sol ($\nu$, $G$). Pour les utilisation en profondeur, certains travaux proposé de corriger l'effet d'augmentation de ($K_b$) à l'aide d'un coefficient ($D_f$).
+En assimilant l'essai DCLT à un essai de chargement de pieu en échelle réduite, on souhaite appliquer les modèles d'interaction proposé pour les pieux à cet essai. A l'exception de modèle de Smith, tous les modèle présenté se sont basé sur le coefficient de Lysmer ($K_{b,Lys}$) d'exprimer le déplacement en pointe en fonction des paramètres de déformabilité du sol ($\nu$, $G$). Pour les utilisation en profondeur, \cite{Loukidis2008} ont proposé de corriger l'effet d'augmentation de ($K_{b,Lys}$) à l'aide d'un coefficient d'encastrement ($D_f$ ou $D_{f,dyn}$).
 
 Même si les différents points communs entre les deux techniques : le type de sollicitation, la géométrie et les conditions aux limites de l’essai ressemblent à un essai dynamique de pieu, l'application de ces relations à un pénétromètre dynamique léger reste limité. Les difficultés liés d'obtention d'une courbe de chargement dynamique in situ rend l'application de ces relations impossible pour la plus part des techniques courants.
 
-Il s'avère importante vérifier si ces relations sont valables pour l'essai DCLT. Cela pour les conditions comme celles supposé par \cite{Lysmer1965} et par \cite{Loukidis2019} : milieu parfaitement élastique, isotropique et homogène. On souhaite vérifier si pour un milieu comme celui supposé par \cite{Lysmer1965}, en simulant l'essai DCLT, il est possible de remonter au module d'élastique en appliquant le coefficient de Lysmer. A la différence de la solution initial proposé par l'auteur, ici on respectera la géométrie du pénétromètre. Cela permettra de vérifier de sa solution, développé pour une plaque cylindrique chargé, est valable pour la géométrie de l'essai DCLT : pointe débordante. Par ailleurs, on vérifie si le coefficient proposé par \cite{Loukidis2008} pour également pour une plaque encastrée est valable pour l'essai DCLT.
+Il s'avère important vérifier si les relations mises ont point pour la plaque en surface et plus tard adapté appliquées aux pieux sont valables pour l'essai DCLT. Cela pour un milieu comme celui supposé par \cite{Lysmer1965} et par \cite{Loukidis2019} : homogène, isotrope et parfaitement élastique. On souhaite vérifier si pour un milieu comme celui supposé par \cite{Lysmer1965}, en simulant l'essai DCLT, il est possible de remonter au module d'élastique en appliquant le coefficient de Lysmer. A la différence de la solution initial proposé par l'auteur, ici on respectera la géométrie du pénétromètre. Cela permettra de vérifier de sa solution, développé pour une plaque circulaire rigide en surface, est valable pour la géométrie de l'essai DCLT. Par ailleurs, on vérifie si le coefficient introduit par \cite{Loukidis2008} pour le cas d'une plaque circulaire, cette fois-ci encastrée, est valable pour l'essai DCLT. La Figure \ref{fig:ana_DCLT} compare le trois cas. Le cas supposé originalement par \cite{Lysmer1965}, le cas des pieux utilisant les paramètres de Lysmer avec un coefficient d'encastrement et la cas de l'essai DCLT.
 
-Afin de vérifier cela, on a réalisé 
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[width = \linewidth ]{media/ana_DCLT.PNG}
+        \caption{Schéma comparant entre les différents cas : (a) conditions de la solution initiale proposé par \cite{Lysmer1965}, (b) cas de pieux appliqué à l'aide du coefficient d'encastrement et (c) cas de l'essai DCLT}
+          \label{fig:ana_DCLT}
+      \end{center}
+ \end{figure}
+
+Afin de vérifier cela, on a simulé l'essai en appliquant d'une vitesse d'impact de 3 m/s dans trois milieux homogènes parfaitement élastiques. Les étapes de la mise au point du modèle numérique sont détallé dans le prochain chapitre, consacré à l'étude numérique. Les paramètres physiques et rhéologiques du milieu sont les mêmes dans toutes les simulations, à l'exception du module d'élasticité (E) qu'on a fait varié. On a testé sept valeurs de module allant de 10 MPa à 400 MPa. Pour chacun de ces valeurs, la simulation est réalisé de la même façon. On crée le pénétromètre à la profondeur d'essai (ici 32 cm). Les nœuds de faces latérales des parois de la cavité où le pénétromètre est installé sont fixes. On applique une vitesse de 3 m/s au cylindre représentant le marteau. On enregistre les forces et les vitesses en tête en pointe afin d'avoir les courbes DCLT mesurés et estimées par découplage des ondes. Par la suite, on exploite les courbes numériques obtenues pour les différentes valeurs de E.
+
+Afin obtenir le module d'élasticité à partir de la courbe DCLT, on calcule la pente en phase de décharge. La pente est calculée entre le point dont la vitesse en point dévient nulle et le point où la contrainte est la moitié de la valeur dans le premier point. A partir de cette pente, on applique la raideur de ($K_{b,Lys}$) afin de déterminer le module de cisaillement $G$ (Équation \ref{eq:KLys}). Le milieu simulé étant parfaitement élastique, le module d'élasticité E peut être obtenu directement à partir de G et de $\nu$ (Équation \ref{eq:E}). Le coefficient de Poisson est constant égal à 0,33 pour toutes les simulations. Comme l'essai DCLT est simulé en profondeur (D>>B).
+ 
+\begin{equation} \label{eq:E}
+    E = 2 G (1+\nu)
+\end{equation}
+
+La Figure \ref{fig:ana_DCLT_Eun} présente les courbes DCLT numériques pour les différentes valeurs de module E testés ainsi que les modules $E_{un,50}$ obtenus à partir des courbes DCLT suivant la démarche décrite.
 
 
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[width = \linewidth ]{media/ana_DCLT_Eun.PNG}
+        \caption{Courbes DCLT numériques pour les valeurs de E testés et les valeurs $E_{un,50}$ obtenus}
+          \label{fig:ana_DCLT_Eun}
+      \end{center}
+ \end{figure}
 
+La Figure \ref{fig:ana_Eun_E} présente la synthèse des résultats obtenus. Elle compare les valeurs de $E_{un,50}$ obtenues en appliquant la raideur de Lysmer et le coefficient d'encastrement aux module d'élasticité du milieu testé. On constate que la solution proposé par \cite{Lysmer1965} et le coefficient d'encastrement sont valable pour l'essai DCLT, malgré les différences géométriques entre ces trois cas. Cela permet de montrer pour le cas d'un milieu homogène isotrope parfaitement élastique et en connaissant $\nu$, il est possible de déterminer le module d'élasticité à partir de la courbe DCLT.
+ 
+  \begin{figure}[H]
+   \begin{center}
+        \includegraphics[width = \linewidth ]{media/ana_DCLT_Eun_E.PNG}
+        \caption{Synthèse des résultats numériques : comparaison entre E du modèle rhéologique (élasto-plastique parfait) et $E_{un,50}^{DCLT}$}
+          \label{fig:ana_Eun_E}
+      \end{center}
+ \end{figure}
  
  
- 
- 
+  
  
 \subsection{Résistance ultime}
 
 Dans tous les modèles d'interaction présentés, la résistance ultime est un paramètre essentielle afin d'estimer la réaction en pointe. L'essai DCLT comme d'autres essais pénétrométriques est capable d'évaluer la résistance du sol ausculté. Toutefois, contrairement à d'autres pénétromètres (i.e. SPT ou CPT) fournissant uniquement une valeur de résistance, ceci fournit une courbe de chargement en pointe. Bien que plus complet, ce résultat soulève la question de la définition de la résistance ultime associée à l'essai.
 
-Or, le caractère dynamique transitoire du chargement rend plus complexe la définition de cette valeur de résistance. Cela car la composante dynamique présente dans le résultat obtenue n'est pas négligeable et est fonction, entres autres, de la vitesse de pénétration.
-
-Dans le cas d'un pieu isolé sous chargement statique, la résistance ultime total $Q_{ult}$ est la somme des résistances latérales et en pointe.
-
+Or, le caractère dynamique transitoire du chargement rend plus complexe la définition de cette valeur de résistance. Cela car la composante dynamique présente dans le résultat obtenue n'est pas négligeable et est fonction, entres autres, de la vitesse de pénétration. Dans le cas d'un pieu isolé, la résistance ultime total $Q_{ult}$ est la somme des résistances latérales et en pointe.
 
 \begin{equation} \label{eq:Qult}
    Q_{ult} = Q_b + Q_L
@@ -515,9 +543,6 @@ Pour les applications courantes, il est raisonnable d'appliquer des critères ba
 
 
 Dans le cadre de travail, l'objectif reste celui de l'obtention des paramètres de ruptures, en l'occurence l'angle de frottement pour les sables propres. Notre but ici n'est pas celui de définir ou appliquer une critère afin d'assurer l'utilisation d'une résistance ultime directement dans le dimensionnement. L'objectif est remonter à un paramètre de rupture. La rupture est associé à la valeur $Q_{b,lim}$. Les critères d'intérêt sont ceux basés sur la valeur $Q_{b,lim}$. Dans le cas de l'essai CLT, la valeur $Q_{b,lim}$ peut être déduite à partir de l'exploitation de la courbe celle-ci étant la réponse statique en pointe. Toutefois, dans le cas le d'essai DCLT cela n'est pas praticable, la composante dynamique en phase de chargement étant non-négligeable.
-
-
-
 
 
 
