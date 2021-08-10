@@ -189,21 +189,21 @@ Afin d’aboutir aux objectifs évoqués, la problématique est étudiée suivan
 
 Différents travaux se sont intéressés à interpréter les essais dynamiques de pieux. Ceux-ci sont moins contraignants et plus économiques que les essais de chargement statique. Initialement, l'interprétation de ces essais était basée sur des relations empiriques appliquant la conservation d'énergie : l'énergie appliquée aux pieux correspondrait au travail réalisé par la résistance au pieu. Ces relations ont été d'ailleurs adoptées par un certain nombre de normes de calcul (e.g. Engineering News Record, la formule des Hollandais). Plus tard, certains chercheurs ont constaté les limitations de ces relations et la nécessité d'intégrer l'analyse de la propagation des ondes au sein du pieux afin de mieux comprendre le phénomène \citep{Gonin1979,Loukidis2008}.
 
-De plus en plus, les chercheurs tentent d'interpréter ce problème en prenant en compte les concepts physiques et mécaniques de la pénétration dynamiques et de l'interaction sol-pieux. Ces modèles sont connus comme modèles phénoménologiques. La troisième loi de Newton implique que la force exercée par le pieu dans le sol et égale à la force que le sol exerce dans le pieu. Celle est la somme de force latéral et la force en pointe (Équation \ref{eq:model}). En basant sur la seconde loi de Newton du mouvement, celles-ci sont exprimées comme des polynôme avec différents ordre de dépendance du déplacement w. La relation générique est donnée par l'équation (\ref{eq:model}).
+De plus en plus, les chercheurs tentent d'interpréter ce problème en prenant en compte les concepts physiques et mécaniques de la pénétration dynamiques et de l'interaction sol-pieux. Ces modèles sont connus comme modèles phénoménologiques. La troisième loi de Newton implique que la force exercée par le pieu dans le sol et égale à la force que le sol exerce dans le pieu. Celle est la somme de réaction latérale $R_L$ et la réaction en pointe $R_b$ (Équation \ref{eq:model}). En basant sur la seconde loi de Newton du mouvement, celles-ci sont exprimées comme des polynôme avec différents ordre de dépendance du déplacement w. La relation générique est donnée par l'équation (\ref{eq:model}).
 
 \begin{equation} \label{eq:model}
-    F = F_b + F_L
+    R = R_b + R_L
 \end{equation}
 
 \begin{equation} \label{eq:model_lateral}
-    F_L = K_L w + C_L \dot w + M \ddot w 
+    R_L = R_L w + R_L \dot w + M \ddot w
 \end{equation}
 
 \begin{equation} \label{eq:model_pointe}
-    F_b = K_b w + C_b \dot w
+    R_b = R_b w + C_b \dot w
 \end{equation}
 
-Soit K, C et M des coefficients modélisés différemment par les modèles proposés et $\dot w$ la vitesse et $\ddot w$ l'accélération. L'approche proposée par \cite{Smith1960} constitue une grande avancée à la compréhension du phénomène mais reste très limité. D'autres modèles ont tenté de modéliser le phénomène à l'aide de paramètres caractérisants le sol pénétré \citep{Randolph2003, Loukidis2008}. Les travaux dans le domaine évoluent graduellement vers une approche plus réaliste où les modèles sont alimentés par des paramètres du pieu (rayon, profondeur) et du sol ausculté.
+Soit $K_i$, $C_i$ et $M_i$ des coefficients du modèle, i=L pour les coefficient latéraux et i=B pour les coefficients en pointe. Les grandeurs cinématiques sont indiquées: vitesse $\dot{w}$ et accélération $\ddot{w}$. L'approche proposée par \cite{Smith1960} constitue une grande avancée à la compréhension du phénomène mais reste très limité. D'autres modèles ont tenté de modéliser le phénomène en reliant les coefficient du modèles aux paramètres caractérisants le sol \citep{Lysmer1965, Randolph2003, Loukidis2008}. Les travaux dans le domaine évoluent graduellement vers une approche plus réaliste où les modèles sont alimentés par des paramètres du pieu (rayon, profondeur) et du sol ausculté.
 
 Les modèles analytiques décrivant la relation contrainte (ou charge) - enfoncement pour les pieux font souvent la différences entre la réaction latérale et la réaction en pointe, même pour certains le mécanisme de réaction est pareille. Selon \cite{Loukidis2008}, l'approche continue souvent appliquée aux modèles analytiques latéraux comme celle proposée par Randolph (1995) n'est pas adaptée à la réponse en pointe, la réaction développée en pointe ne peut pas être dissocié des mécanismes du milieu adjacent à la pointe. En plus, la réaction en pointe, au contraire de la réaction latérale, est un problème à 2 dimensions.
 
@@ -218,20 +218,20 @@ Différents travaux proposent des modèles pour la réaction en pointe de pieux.
 
 Le modèle proposé par \cite{Smith1960} est largement appliqué pour le battage des pieux. Il a été mis au point dans le but de remplacer les formules de battage (basés sur des concepts d’énergie), utilisant le nombre de coups, par une approche numérique plus précise.
 
-Selon \cite{Smith1960}, la réaction du sol dépend uniquement des déplacements et de la vitesse. La réaction développée est proportionelle au déplacement jusqu'à une limite $R_u$ à laquelle correspond le \emph{quake} Q (ou enfoncement élastique). Le fonçage rapide du sol autour du pieu donne naissance à un amortissement $J_s$ représenté par un coefficient proportionnel à la vitesse de déplacement (v) (Équation \ref{eq:Rd}). La résistance totale $R_t$ est la somme des résistances statique $R_s$ et dynamique $R_d$ (Équation \ref{eq:Rt}).
+Selon \cite{Smith1960}, la réaction du sol dépend uniquement des déplacements et de la vitesse. La réaction développée est proportionnelle au déplacement jusqu'à une limite $R_u$ à laquelle correspond le \emph{quake} Q (ou enfoncement élastique). Le fonçage rapide du sol autour du pieu donne naissance à un amortissement $J_s$ représenté par un coefficient proportionnel à la vitesse de déplacement $\dot{w}$ (Équation \ref{eq:Rd}). La résistance totale $R_t$ est la somme des résistances statique $R_s$ et dynamique $R_d$ (Équation \ref{eq:Rt}).
 
-Ce modèle a été appliqué par \cite{Benz-Navarrete2009} et \cite{Escobar2015} à l’essai DCLT. Il a permis de caractériser le sol par le biais d’un coefficient d’amortissement $J_s$ et de dissocier la réponse statique $R_s$ de la réponse dynamique $R_d$ dans la résistance totale mesurée. La partie statique de la résistance $R_s$ est obtenue en admettant que lorsque la vitesse d’enfoncement $v$(t) est nulle, et donc l’enfoncement en pointe est maximal, la résistance totale est due uniquement à la partie statique. A cet instant donné, $q_d = R_s$ (Middendorp et al. 1992).
+Ce modèle a été appliqué par \cite{Benz-Navarrete2009} et \cite{Escobar2015} à l’essai DCLT. Il a permis de caractériser le sol par le biais d’un coefficient d’amortissement $J_s$ et de dissocier la réponse statique $R_s$ de la réponse dynamique $R_d$ dans la résistance totale mesurée. La partie statique de la résistance $R_s$ est obtenue en admettant que lorsque la vitesse d’enfoncement $\dot{w}$ est nulle, et donc l’enfoncement en pointe est maximal, la résistance totale est due uniquement à la partie statique. A cet instant donné, $q_d = R_s$ \citep{Middendorp1992}.
 
 \begin{equation} \label{eq:Rt}
-    R_t = R_s + R_d 
+    R_b = R_s + R_d 
 \end{equation}
 
 \begin{equation} \label{eq:Rd}
-    R_d = R_s J_s v 
+    R_d = R_s J_s \dot{w} 
 \end{equation}
 
 \begin{equation} \label{eq:Rd2}
-    R_d = R_s J_n v^n 
+    R_d = R_s J_n \dot{w}^n 
 \end{equation}
 
 Bien que largement appliquée dans le domaine des pieux, la solution de Smith présente des grandes limitations. Certains travaux ont montré que l'amortissement radiatif (en anglais radiation damping) est fonction de la raideur du sol et non de la résistance. En plus, des résultats expérimentaux ont montré que la relation entre l'amortissement visqueux et la résistance statique n'est pas du type linéaire mais exponentielle \citep{Coyle1970}. Globalement, les principales limitations identifiées dans ce modèle sont : 
@@ -282,9 +282,7 @@ La  présente l'évolution du coefficient K pour le cas d'une fondation rigide \
       \end{center}
  \end{figure}
 
-Récemment, \cite{Lee2020} a appliqué l'amortissement matériel proposé par \cite{Lysmer1965} afin de dissocier la partie dynamique de la résistance totale mesurée à l'essai au pénétromètre dynamique. Les auteurs ont montré qu'une fois la partie dynamique soustraite de la résistance totale, la résistance déduite était assez proche de la résistance pseudo-statique $q_c$ (CPT) (avec $q_c = 1,01 q_d$ et $R^2=0.85$). 
-
-
+Récemment, \cite{Lee2020} a appliqué l'amortissement matériel proposé par \cite{Lysmer1965} afin de dissocier la partie dynamique de la résistance totale mesurée à l'essai au pénétromètre dynamique. Les auteurs ont montré qu'une fois la partie dynamique soustraite de la résistance totale, la résistance déduite était assez proche de la résistance pseudo-statique $q_c$ (CPT) (avec $q_c = 1,01 q_d$ et $R^2=0,85$). 
 
 Plus tard, d'autres travaux comme celui de \cite{Holeyman1988}, de \cite{Naggar1994} et de \cite{Loukidis2008} ont permis de compléter celui proposé par \cite{Lysmer1965}. Ils ont notamment avancé en prenant en compte les différents types d'amortissement (de radiation et d'hystérésis) qui étaient traduits par Smith par un seul paramètre ($J_s$). En autre limitation de la solution de \cite{Lysmer1965} est le fait de ne pas modéliser des milieux hétérogènes ou non-élastiques. \cite{Loukidis2008} a proposé un modèle afin de corriger certaines de ces limitations.
 
@@ -313,25 +311,25 @@ La raideur non-linéaire du ressort en pointe est donnée par l'équation hyperb
 La courbure de l'hyperbole dépend du type de pieux et du sol. On assimile le pénétromètre à un pieu battu. \cite{Loukidis2008} observe que $b_f$ varie entre 1,0 et 2,0 pour les pieux battus. L'effet visqueux dans la résistance sont pris en compte d'après la relation proposé par \cite{Coyle1970} (Équation \ref{eq:Coyle}).
 
 \begin{equation}  \label{eq:Coyle}
-    R_{Sf} = Q_{bL} (1 + m v^n) 
+    R_{Sf} = Q_{b,lim} (1 + m v^n) 
 \end{equation}
 
 Avec m et n des coefficients contrôlant l'effet de la vitesse. Le coefficient n présente une variation est assez petite quel que soit le sol, et est souvent pris 0,2. Le coefficient m varie entre 0,34 et 0,56 pour les sables et entre 0,95 et 1,55 pour les argiles.
 
-Lorsque que la vitesse de nulle, $R_{Sf}$ est égale $Q_{bL}$, soit $Q_{bL}$ la résistance limite en pointe. La résistance $Q_{bL}$ est égale au produit résistance unitaire et de la section du pieu. Selon \cite{Salgado2008}, la résistance unitaire en pointe est approximativement la résistance quasi-statique $q_c$ issue de l'essai CPT.
+Lorsque que la vitesse de nulle, $R_{Sf}$ est égale $Q_{b,lim}$, soit $Q_{b,lim}$ la résistance limite en pointe. La résistance $Q_{bL}$ est égale au produit résistance unitaire et de la section du pieu. Selon \cite{Salgado2008}, la résistance unitaire en pointe est approximativement la résistance quasi-statique $q_c$ issue de l'essai CPT.
 
 La raideur non-linéaire intègre les pertes d'énergie lié à la plastification (hystérésis du matériau). Le coefficient d'amortissement (C) intègre l'amortissement radiatif et de l'hystérésis du sol plus loin de la pointe réduit graduellement avec l'augmentation lorsque la réaction du ressort s'approche de la résistance en pointe ultime. 
 
 La raideur maximale du ressort ($K_{max}$) et le coefficient de l'amortissement (C) sont basés sur les coefficient de Lysmer ($K_{Lys}$, Équation \ref{eq:KLys} et $C_{Lys}$, Équation \ref{eq:CLys}). Comme évoqué, la solution de Lysmer s'est basée sur une fondation chargée en surface. En réalité, dans le cas d'une fondation à une profondeur D, celle-ci va transmettre la chargement à un sol placé en profondeur et généralement plus rigide. Par conséquent, cet effet entraîne l'augmentation du coefficient $K_{max}$ \citep{Gazetas1985}. Il est ainsi important d'intégrer un facteur tenant compte de l'encastrement. \cite{Loukidis2008} a analysé cet effet et a introduit le coefficient d'encastrement $D_f$. L'utilisation de ce coefficient permet d'appliquer la solution de Lysmer aux problèmes en profondeur.
 
-Afin d'estimer ce coefficient, \cite{Loukidis2008} ont fait varié la profondeur d'une semelle au sein d'un matériau parfaitement élastique. Ce coefficient nommé $D_f$ est ainsi estimé à partir du rapport entre la profondeur et le diamètre B (Équation \ref{eq:Df}). Ils ont observé également que sous chargement dynamique ce paramètre était élevé à 1,7 (Equation \ref{eq:Df_dyn}). Pour les rapports D/B>8, $D_f$ devient constant, $D_f$ varie entre 1,36, pour $\nu$=0,5 (argiles saturées), et 1,5, pour $\nu$=0,15 (sables).
+Afin d'estimer ce coefficient, \cite{Loukidis2008} ont fait varié la profondeur d'une semelle au sein d'un matériau parfaitement élastique. Ce coefficient nommé $D_f$ est ainsi estimé à partir du rapport entre la profondeur et le diamètre B (Équation \ref{eq:Df}). Ils ont observé également que sous chargement dynamique ce paramètre était élevé à 1,7 (Équation \ref{eq:Df_dyn}). Pour les rapports D/B>8, $D_f$ devient constant, $D_f$ varie entre 1,36, pour $\nu$=0,5 (argiles saturées), et 1,5, pour $\nu$=0,15 (sables).
 
 \begin{equation} \label{eq:Df}
-    D_f = \left( 1,27 - 0,12 \ln \nu \right) - \left( 0,27 - 0,12 \ln \nu \right) \ln \nu \left[ \exp{-0,83 \left( \frac{D}{B}^{0,826} \right)} \right]
+    D_f = \left( 1,27 - 0,12 \ln \nu \right) - \left( 0,27 - 0,12 \ln \nu \right) \ln \nu \left[ \exp{-0,83 \left( \frac{D}{B} \right)^{0,826}} \right]
 \end{equation}
 
 \begin{equation} \label{eq:Df_dyn}
-    D_{f,dyn} = D_f^{1.7}
+    D_{f,dyn} = \left( D_f  \right) ^{1.7}
 \end{equation}
 
 Ce modèle a l'avantage d'être alimenté par des paramètres courants caractérisant le sol. Aucun de ces paramètres n'est particulier au problème du battage des pieux. Cela permet donc de réduire le niveau d'empirisme de l'analyse. Les paramètres du modèle sont déterminés à partir des essais en laboratoire ou estimé à partir des données in situ. Pour estimé la réaction en pointe d'un pieu, les paramètres sont : 
@@ -456,14 +454,58 @@ Le module à faibles déformations est obtenu en laboratoire par l'essai de colo
  
 \subsection{Résistance ultime}
 
-Dans les modèles d'interaction présentés, la résistance ultime est paramètre essentielle afin d'estimer la réation en pointe. L'essai DCLT comme d'autres essais pénétrométriques est capable d'évaluer la résistance du sol ausculte. Toutefois, contrairement à d'autres pénétromètre (i.e. SPT ou CPT) fournissant uniquement une valeur de résistance ceci fourni une courbe de chargement. Bien que plus complet, ce résultat soulève la question de la définition de la résistance ultime associé à l'essai.
+Dans tous les modèles d'interaction présentés, la résistance ultime est un paramètre essentielle afin d'estimer la réaction en pointe. L'essai DCLT comme d'autres essais pénétrométriques est capable d'évaluer la résistance du sol ausculté. Toutefois, contrairement à d'autres pénétromètres (i.e. SPT ou CPT) fournissant uniquement une valeur de résistance, ceci fournit une courbe de chargement en pointe. Bien que plus complet, ce résultat soulève la question de la définition de la résistance ultime associée à l'essai.
 
-Or, l'essai 
+Or, le caractère dynamique transitoire du chargement rend plus complexe la définition de cette valeur de résistance. Cela car la composante dynamique présente dans le résultat obtenue n'est pas négligeable et est fonction, entres autres, de la vitesse de pénétration.
+
+Dans le cas d'un pieu isolé sous chargement statique, la résistance ultime total $Q_{ult}$ est la somme des résistances latérales et en pointe.
+
+
+\begin{equation} \label{eq:Qult}
+   Q_{ult} = Q_b + Q_L
+\end{equation}
+
+
+\begin{equation} \label{eq:Qbult}
+   Q_{b,ult} = q_{b,ult} A_b
+\end{equation}
+
+Avec $q{b,ult}$ la résistance de pointe unitaire et $A_b$ la section transversale du pieu. Pour le calcul de $Q_L$, la partie du pieu pénétré dans le sol est divisé en couches.
+
+\begin{equation} \label{eq:Qbult}
+   Q_{L} = \sum_{i=1}^{n} q_{L,i} A_{L,i}
+\end{equation}
+
+Soit $q_{L,i}$ la résistance latéral unitaire pour la $n_{ème}$ couche et $A_{L,i}$ l'aire latérale correspondante. Les couches sont établie généralement à partir de résultats pour le terrain. 
+
+La résistance limite est différente de résistance ultime. Les résistances, de pointe et latérale, augmentent en profondeur mais le taux d'augmentation diminue avec la profondeur. A partir d'un certain déplacement, la résistance atteint la valeur maximale. Cette valeur maximale est la résistance limite. Le déplacement nécessaire afin d'atteindre cette résistance limite latérale est relativement petit (de l'ordre de 0,25-1,0\% du diamètre). Par conséquent, il est courant d'admettre que $Q_L$ soit complètement mobilisé à l'état ultime de dimensionnement, à l'exception de pieu dont la contribution latérale est très importante. 
+
+Contrairement à la résistance latérale, la résistance de pointe limite est $Q_{b,lim}$ est mobilisé uniquement pour des déplacements importants, voire supérieur à 20\% du diamètre dans le sables. Dans le cas de chargement des pieux, on peut atteindre la résistance ultime (bearing capacity failure) dans les argiles compressibles et sables lâches, pour les autres matériaux les équipements courants ne permettent pas d'atteindre cette valeur. Pour la plus part, il est impossible d'atteindre $Q_{b,lim}$ car cela demande des déplacements importants exigeant l'utilisation d'un système de réaction non-viable économiquement. La Figure \ref{fig:ana_qult} illustre l'évolution de la réaction latérale et en pointe.
+
+
+\begin{figure}[H]
+  \begin{center}
+       \includegraphics[width = \linewidth]{media/ana_qult.png}
+        \caption{Évolution des résistances de pointe (base resistance) et latérale (shaft resistance) pour un pieu isolé sous chargement statique}
+          \label{fig:ana_qult}
+      \end{center}
+\end{figure}
+
+Les structures courantes aurait dépassait leur l'état ultime avant que le déplacement nécessaire pour atteindre $Q_{b,lim}$. Dû aux difficultés techniques de déterminer $Q_{b,lim}$ et aux déplacements excessives qui finirait aussi pour entrainer l'état ultime, $Q_{b,ult}$ est plus utilisé que $Q_{b,lim}$. Les critères pour déterminer $Q_{b,ult}$ sont souvent fixé afin d'éviter l'endommagement des structures plutôt que sur la valeur $Q_{b,lim}$. Plusieurs de critère existent. Ceux-ci sont souvent établi à la partir de la courbe charge-enfoncement. Une partie se sont basés sur l'extrapolation de la courbe afin d'estimer la valeur de $Q_{b,lim}$ (critère de \cite{Chin1970} et critère de \cite{VanderVeen1953} et une autre partie est associé à un enfoncement donnée.
+
+Pour les applications courantes, il est raisonnable d'appliquer des critères basés sur un enfoncement car pour la plupart de structure, l'état limite ultime est atteinte bien avant la $Q_{b,lim}$. Le critère basé sur l'enfoncement le plus répandu est celui définissant $Q_{b,ult}$ comme la charge à 10\% du diamètre proposé par Terzaghi (1942). Un autre critère très répandu, notamment aux États-Unis est celui de proposé par \cite{Davisson1972}. Pour les applications courantes les critères basées associés à un enfoncement données sont plus applicables car les ceux utilisant $Q_{b,lim}$ fournissent de valeurs importantes pour lesquels la plus part des structures aurait déjà dépassait l'état ultime.
+
+
+%Des résultats expérimentaux et analytiques ont montré que la résistance de pointe limite $Q_{b,lim}$ est approximativement la résistance pseudo-statique issue du CPT \citep{Lee1999, Salgado2008}.
+
+
+Dans le cadre de travail, l'objectif reste celui de l'obtention des paramètres de ruptures, en l'occurence l'angle de frottement pour les sables propres. Notre but ici n'est pas celui de définir ou appliquer une critère afin d'assurer l'utilisation d'une résistance ultime directement dans le dimensionnement. L'objectif est remonter à un paramètre de rupture. La rupture est associé à la valeur $Q_{b,lim}$. Les critères d'intérêt sont ceux basés sur la valeur $Q_{b,lim}$. Dans le cas de l'essai CLT, la valeur $Q_{b,lim}$ peut être déduite à partir de l'exploitation de la courbe celle-ci étant la réponse statique en pointe. Toutefois, dans le cas le d'essai DCLT cela n'est pas praticable, la composante dynamique en phase de chargement étant non-négligeable.
 
 
 
 
- 
+
+
 \section{Bilan et proposition pour l'essai DCLT}
 
 On a pu voir l'effort des différents chercheurs afin d'améliorer le modèle de réaction initialement proposé par \cite{Smith1960}. Différents aspects du phénomène de la pénétration sont intégrés afin de mieux modéliser la résistance en pointe.

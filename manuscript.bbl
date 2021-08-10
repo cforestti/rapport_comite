@@ -137,6 +137,13 @@ Chatterjee, K., Choudhury, D., Rao, V.~D., and S.P, M. (2015).
 \newblock {Dynamic analyses and field observations on piles in kolkata city}.
 \newblock {\em Geomechanics and Engineering}, 8(3):415--440.
 
+\bibitem[Chin, 1970]{Chin1970}
+Chin, F.~V. (1970).
+\newblock {The distribution and formation of recent sediment in South East
+  Asia}.
+\newblock In {\em The Second Southeast Asian Conference on Soil Engineering},
+  page 648.
+
 \bibitem[Combarieu, 1997]{Combarieu1997}
 Combarieu, O. (1997).
 \newblock {Capacit{\'{e}} portante des fondations superficielles
@@ -164,6 +171,12 @@ Dano, C. (2001).
 Das, B.~M. and Ramana, G.~V. (2011).
 \newblock {\em {PRINCIPLES OF SOIL DYNAMICS}}.
 \newblock Second edi edition.
+
+\bibitem[Davisson, 1972]{Davisson1972}
+Davisson, M.~T. (1972).
+\newblock {High Capacity Piles}.
+\newblock In {\em Proceedings, Lecture Series, Innovations in Foundation
+  Construction, ASCE}, pages 81--112.
 
 \bibitem[Dupla et~al., 2007]{Dupla2007}
 Dupla, J.~C., Pedro, L.~S., Canou, J., and Dormieux, L. (2007).
@@ -301,6 +314,12 @@ Mayne, P.~W., Coop, M.~R., Springman, S.~M., Huang, A.~B., and Zornberg, J.~G.
 {Mestat, Jean-Pierrre; Magnan}, P. (1991).
 \newblock {Lois De Comportement Et Mod{\'{e}}lisation Des Impacts}.
 \newblock {\em Le Journal de Physique IV}, 01(C3):C3--937--C3--942.
+
+\bibitem[Middendorp et~al., 1992]{Middendorp1992}
+Middendorp, P., Bermingham, P., and Kuiper, B. (1992).
+\newblock {Statnamic load testing of foundation piles}.
+\newblock In {\em 4th Int. Conf. on the Application of Stresswave Theory to
+  Piles}, volume~19, pages 265--272, The Hague.
 
 \bibitem[Morvan and Breul, 2016]{Morvan2016}
 Morvan, M. and Breul, P. (2016).
@@ -480,6 +499,12 @@ Tran, Q.~A., Chevalier, B., Benz-Navarrete, M.~A., Breul, P., and
 \newblock {Numerical verification of the continuous calculation method for tip
   stress during the driving process of the dynamic penetration test}.
 \newblock {\em Soils and Foundations}, 59:2344--2351.
+
+\bibitem[{Van der Veen}, 1953]{VanderVeen1953}
+{Van der Veen}, C. (1953).
+\newblock {The bearing capacity a pile}.
+\newblock {\em Proceedings of the third international conference on soil
+  mechanics and foundation Engineering}, pages 84--90.
 
 \bibitem[Vernay, 2017]{Vernay2017}
 Vernay, M. (2017).
