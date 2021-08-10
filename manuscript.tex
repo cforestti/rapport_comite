@@ -449,7 +449,22 @@ Le module à faibles déformations est obtenu en laboratoire par l'essai de colo
 % \end{figure}
 
 
- \newpage
+
+\subsection{Vérification numérique : application du coefficient de Lysmer et l'encastrement à l'essai DCLT}
+ 
+En assimilant l'essai DCLT à un essai de chargement de pieu en échelle réduite, on souhaite appliquer les modèles d'interaction proposé pour les pieux à cet essai. A l'exception de modèle de Smith, tous les modèle présenté se sont basé sur le coefficient de Lysmer ($K_b$) d'exprimer le déplacement en pointe en fonction des paramètres de déformabilité du sol ($\nu$, $G$). Pour les utilisation en profondeur, certains travaux proposé de corriger l'effet d'augmentation de ($K_b$) à l'aide d'un coefficient ($D_f$).
+
+Même si les différents points communs entre les deux techniques : le type de sollicitation, la géométrie et les conditions aux limites de l’essai ressemblent à un essai dynamique de pieu, l'application de ces relations à un pénétromètre dynamique léger reste limité. Les difficultés liés d'obtention d'une courbe de chargement dynamique in situ rend l'application de ces relations impossible pour la plus part des techniques courants.
+
+Il s'avère importante vérifier si ces relations sont valables pour l'essai DCLT. Cela pour les conditions comme celles supposé par \cite{Lysmer1965} et par \cite{Loukidis2019} : milieu parfaitement élastique, isotropique et homogène. On souhaite vérifier si pour un milieu comme celui supposé par \cite{Lysmer1965}, en simulant l'essai DCLT, il est possible de remonter au module d'élastique en appliquant le coefficient de Lysmer. A la différence de la solution initial proposé par l'auteur, ici on respectera la géométrie du pénétromètre. Cela permettra de vérifier de sa solution, développé pour une plaque cylindrique chargé, est valable pour la géométrie de l'essai DCLT : pointe débordante. Par ailleurs, on vérifie si le coefficient proposé par \cite{Loukidis2008} pour également pour une plaque encastrée est valable pour l'essai DCLT.
+
+Afin de vérifier cela, on a réalisé 
+
+
+
+ 
+ 
+ 
  
  
 \subsection{Résistance ultime}
@@ -491,7 +506,7 @@ Contrairement à la résistance latérale, la résistance de pointe limite est $
       \end{center}
 \end{figure}
 
-Les structures courantes aurait dépassait leur l'état ultime avant que le déplacement nécessaire pour atteindre $Q_{b,lim}$. Dû aux difficultés techniques de déterminer $Q_{b,lim}$ et aux déplacements excessives qui finirait aussi pour entrainer l'état ultime, $Q_{b,ult}$ est plus utilisé que $Q_{b,lim}$. Les critères pour déterminer $Q_{b,ult}$ sont souvent fixé afin d'éviter l'endommagement des structures plutôt que sur la valeur $Q_{b,lim}$. Plusieurs de critère existent. Ceux-ci sont souvent établi à la partir de la courbe charge-enfoncement. Une partie se sont basés sur l'extrapolation de la courbe afin d'estimer la valeur de $Q_{b,lim}$ (critère de \cite{Chin1970} et critère de \cite{VanderVeen1953} et une autre partie est associé à un enfoncement donnée.
+Les structures courantes aurait dépassait leur l'état ultime avant que le déplacement nécessaire pour atteindre $Q_{b,lim}$. Dû aux difficultés techniques de déterminer $Q_{b,lim}$ et aux déplacements excessives qui finirait aussi pour entrainer l'état ultime, $Q_{b,ult}$ est plus utilisé que $Q_{b,lim}$. Les critères pour déterminer $Q_{b,ult}$ sont souvent fixé afin d'éviter l'endommagement des structures plutôt que sur la valeur $Q_{b,lim}$. Plusieurs de critère existent. Ceux-ci sont souvent établi à la partir de la courbe charge-enfoncement. Une partie se sont basés sur l'extrapolation de la courbe afin d'estimer la valeur de $Q_{b,lim}$ (critère de \cite{Chin1970} et critère de \cite{VanderVeen1953}) et une autre partie est associé à un enfoncement donnée.
 
 Pour les applications courantes, il est raisonnable d'appliquer des critères basés sur un enfoncement car pour la plupart de structure, l'état limite ultime est atteinte bien avant la $Q_{b,lim}$. Le critère basé sur l'enfoncement le plus répandu est celui définissant $Q_{b,ult}$ comme la charge à 10\% du diamètre proposé par Terzaghi (1942). Un autre critère très répandu, notamment aux États-Unis est celui de proposé par \cite{Davisson1972}. Pour les applications courantes les critères basées associés à un enfoncement données sont plus applicables car les ceux utilisant $Q_{b,lim}$ fournissent de valeurs importantes pour lesquels la plus part des structures aurait déjà dépassait l'état ultime.
 
