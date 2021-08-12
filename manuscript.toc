@@ -7,9 +7,10 @@
 \contentsline {subsection}{\numberline {2.1.1}Modèle de \cite {Smith1960}}{9}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Modèle de \cite {Lysmer1965}}{10}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Modèle de \cite {Loukidis2008}}{12}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Vérification numérique : application de la raideur de Lysmer et d'encastrement à l'essai DCLT}{15}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Résistance ultime}{18}{subsection.2.1.5}%
-\contentsline {section}{\numberline {2.2}Bilan et proposition pour l'essai DCLT}{21}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Application des modèles d'interaction à l'essai DCLT}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Vérification numérique : application de la raideur de Lysmer et d'encastrement à l'essai DCLT}{15}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Proposition pour l'essai DCLT : intégration de la non-linéarité}{18}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Résistance ultime}{22}{subsection.2.3.1}%
 \contentsline {chapter}{\numberline {3}Étude expérimentale}{25}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Matériaux utilisés}{25}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Essais triaxiaux}{27}{section.3.2}%
@@ -17,16 +18,16 @@
 \contentsline {subsection}{\numberline {3.2.2}Résultats}{28}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Paramètres de déformabilité}{31}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Paramètres de rupture}{31}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Essais DCLT-CLT en chambre d'étalonnage}{32}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Essais DCLT-CLT en chambre d'étalonnage}{33}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Bilan}{40}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Étude numérique}{41}{chapter.4}%
 \contentsline {section}{\numberline {4.1}État de l'art}{41}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Modélisation numérique de la pénétration dynamique}{41}{subsection.4.1.1}%
 \contentsline {section}{\numberline {4.2}Mise au point du modèle numérique}{43}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Géométrie et conditions aux limites}{44}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Interface}{45}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Interface}{46}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Sollicitation}{47}{subsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}Cas du SPT : simulation du battage}{47}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Cas du SPT : simulation du battage et propagation de l'onde}{48}{subsubsection.4.2.3.1}%
 \contentsline {subsubsection}{\numberline {4.2.3.2}Théorie}{48}{subsubsection.4.2.3.2}%
 \contentsline {subsubsection}{\numberline {4.2.3.3}Énergie transportée par l'onde}{49}{subsubsection.4.2.3.3}%
 \contentsline {subsubsection}{\numberline {4.2.3.4}Calibration du battage}{50}{subsubsection.4.2.3.4}%

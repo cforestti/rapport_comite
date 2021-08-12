@@ -114,6 +114,13 @@ Cami (2017).
   caract{\'{e}}risation des petites aux grandes d{\'{e}}formations}}.
 \newblock PhD thesis.
 
+\bibitem[Can{\'{e}}pa et~al., 2002]{Canepa2002}
+Can{\'{e}}pa, Y., Borel, S., and Deconinck, J. (2002).
+\newblock {DETERMINATION OF THE DEGRADATION SHEAR MODULUS CURVE FROM FIELD
+  MECHANICAL TESTS}.
+\newblock In {\em Param{\`{e}}tres de calcul g{\'{e}}otechnique. Magnan (ed.)
+  2002, Presses de l'ENPC/LCPC}.
+
 \bibitem[Casem et~al., 2003]{Casem2003}
 Casem, D.~T., Fourney, W., and Chang, P. (2003).
 \newblock {Wave separation in viscoelastic pressure bars using single-point
@@ -246,6 +253,11 @@ Holeyman, A.~E. (1988).
 \bibitem[Itasca, 2020]{Itasca2020}
 Itasca (2020).
 \newblock {FLAC3D Version 6.0}.
+
+\bibitem[Jaky, 1944]{Jaky1944}
+Jaky, J. (1944).
+\newblock {The coefficient of earth pressure at rest}.
+\newblock {\em J. Soc. Hungarian Architects and Engineers}, pages 355--358.
 
 \bibitem[Jung and Park, 2005]{Jung2005}
 Jung, B. and Park, Y. (2005).
@@ -392,6 +404,12 @@ Othman, R., Bussac, M.~N., Collet, P., and Gary, G. (2001).
 \newblock {\em Comptes Rendus de l'Academie de Sciences - Serie IIb:
   Mecanique}, 329(5):369--376.
 
+\bibitem[Pham, 2008]{Pham2008}
+Pham, P. T.~N. (2008).
+\newblock {{\'{E}}tude En Place Et Au Laboratoire Du Comportement En Petites
+  Deformations Des Sols Argileux Naturels}.
+\newblock pages 1--226.
+
 \bibitem[Pinto et~al., 2008]{Pinto2008}
 Pinto, P.~L., Grazina, J.~C., and Louren{\c{c}}o, J.~C. (2008).
 \newblock {Evaluation of 1D and 2D numerical modelling techniques of dynamic
@@ -470,12 +488,11 @@ Salgado, R. (2013).
   Proceedings of the 4th International Conference on Site Characterization 4,
   ISC-4}, 1:131--153.
 
-\bibitem[Schanz et~al., 1999]{Schanz1999}
-Schanz, T., Vermeer, P.~A., and Bonnier, P.~G. (1999).
-\newblock {The hardening soil model: Formulation and verification}.
-\newblock {\em Beyond 2000 in computational geotechnics. Ten Years of PLAXIS
-  International. Proceedings of the international symposium, Amsterdam, March
-  1999.}, pages 281--296.
+\bibitem[Salgado et~al., 2015]{Salgado2015}
+Salgado, R., Loukidis, D., Abou-Jaoude, G., and Zhang, Y. (2015).
+\newblock {The role of soil stiffness non-linearity in 1D pile driving
+  simulations}.
+\newblock {\em Geotechnique}, 65(3):169--187.
 
 \bibitem[Schmertmann and Palacios, 1979]{Schmertmann1979}
 Schmertmann, J. and Palacios, A. (1979).
