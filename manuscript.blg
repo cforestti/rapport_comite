@@ -34,45 +34,45 @@ Warning--empty school in Vernay2017
 Warning--can't use both author and editor fields in Verruijt2009
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
-You've used 97 entries,
+You've used 100 entries,
             1935 wiz_defined-function locations,
-            1084 strings with 20833 characters,
-and the built_in function-call counts, 35047 in all, are:
-= -- 3527
-> -- 1166
-< -- 86
-+ -- 371
-- -- 370
-* -- 2850
-:= -- 6149
-add.period$ -- 285
-call.type$ -- 97
-change.case$ -- 652
-chr.to.int$ -- 96
-cite$ -- 125
-duplicate$ -- 1423
-empty$ -- 2511
-format.name$ -- 511
-if$ -- 6819
+            1103 strings with 21335 characters,
+and the built_in function-call counts, 36266 in all, are:
+= -- 3650
+> -- 1204
+< -- 89
++ -- 383
+- -- 382
+* -- 2943
+:= -- 6349
+add.period$ -- 294
+call.type$ -- 100
+change.case$ -- 673
+chr.to.int$ -- 99
+cite$ -- 128
+duplicate$ -- 1480
+empty$ -- 2609
+format.name$ -- 528
+if$ -- 7071
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 77
-newline$ -- 480
-num.names$ -- 291
-pop$ -- 563
+missing$ -- 80
+newline$ -- 495
+num.names$ -- 300
+pop$ -- 588
 preamble$ -- 1
-purify$ -- 670
+purify$ -- 691
 quote$ -- 0
-skip$ -- 1106
+skip$ -- 1144
 stack$ -- 0
-substring$ -- 2489
-swap$ -- 184
-text.length$ -- 14
+substring$ -- 2574
+swap$ -- 194
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 570
+type$ -- 588
 warning$ -- 28
-while$ -- 311
+while$ -- 322
 width$ -- 0
-write$ -- 1223
+write$ -- 1262
 (There were 29 warnings)

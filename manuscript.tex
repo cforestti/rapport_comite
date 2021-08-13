@@ -590,7 +590,7 @@ Il s'avère nécessaire d'évaluer la pertinence de la courbe estimée. Pour ce 
 
 Dans tous les modèles d'interaction présentés, la résistance ultime est un paramètre essentielle afin d'estimer la réaction en pointe. L'essai DCLT comme d'autres essais pénétrométriques est capable d'évaluer la résistance du sol ausculté. Toutefois, contrairement à d'autres pénétromètres (i.e. SPT ou CPT) fournissant uniquement une valeur de résistance, ceci fournit une courbe de chargement en pointe. Bien que plus complet, ce résultat soulève la question de la définition de la résistance ultime associée à l'essai.
 
-Or, le caractère dynamique transitoire du chargement rend plus complexe la définition de cette valeur de résistance. Cela car la composante dynamique présente dans le résultat obtenue n'est pas négligeable et est fonction, entres autres, de la vitesse de pénétration. Dans le cas d'un pieu isolé, la résistance ultime total $Q_{ult}$ est la somme des résistances latérales et en pointe.
+Or, le caractère dynamique transitoire du chargement rend plus complexe la définition de cette valeur de résistance. Cela car la composante dynamique présente dans le résultat global obtenue n'est pas négligeable et est fonction, entres autres, de la vitesse de pénétration. Dans le cas d'un pieu isolé, la résistance ultime total $Q_{ult}$ est la somme des résistances latérales et en pointe.
 
 \begin{equation} \label{eq:Qult}
    Q_{ult} = Q_b + Q_L
@@ -601,7 +601,7 @@ Or, le caractère dynamique transitoire du chargement rend plus complexe la déf
    Q_{b,ult} = q_{b,ult} A_b
 \end{equation}
 
-Avec $q{b,ult}$ la résistance de pointe unitaire et $A_b$ la section transversale du pieu. Pour le calcul de $Q_L$, la partie du pieu pénétré dans le sol est divisé en couches.
+Avec $q_{b,ult}$ la résistance de pointe unitaire et $A_b$ la section transversale du pieu. Pour le calcul de $Q_L$, la partie du pieu pénétré dans le sol est divisé en couches.
 
 \begin{equation} \label{eq:Qbult}
    Q_{L} = \sum_{i=1}^{n} q_{L,i} A_{L,i}
@@ -609,9 +609,9 @@ Avec $q{b,ult}$ la résistance de pointe unitaire et $A_b$ la section transversa
 
 Soit $q_{L,i}$ la résistance latéral unitaire pour la $n_{ème}$ couche et $A_{L,i}$ l'aire latérale correspondante. Les couches sont établie généralement à partir de résultats pour le terrain. 
 
-La résistance limite est différente de résistance ultime. Les résistances, de pointe et latérale, augmentent en profondeur mais le taux d'augmentation diminue avec la profondeur. A partir d'un certain déplacement, la résistance atteint la valeur maximale. Cette valeur maximale est la résistance limite. Le déplacement nécessaire afin d'atteindre cette résistance limite latérale est relativement petit (de l'ordre de 0,25-1,0\% du diamètre). Par conséquent, il est courant d'admettre que $Q_L$ soit complètement mobilisé à l'état ultime de dimensionnement, à l'exception de pieu dont la contribution latérale est très importante. 
+La résistance limite est différente de résistance ultime. Les résistances, de pointe et latérale, augmentent en profondeur mais le taux d'augmentation diminue avec la profondeur. A partir d'un certain déplacement, la résistance atteint la valeur maximale. Cette valeur maximale est la résistance limite. Le déplacement nécessaire afin d'atteindre cette résistance limite pour la résistance latérale est relativement petit (de l'ordre de 0,25-1,0\% du diamètre). Par conséquent, il est courant d'admettre que $Q_L$ soit complètement mobilisé à l'état ultime de dimensionnement, à l'exception de pieu dont la contribution latérale est très importante \citep{Franke1993}.
 
-Contrairement à la résistance latérale, la résistance de pointe limite est $Q_{b,lim}$ est mobilisé uniquement pour des déplacements importants, voire supérieur à 20\% du diamètre dans le sables. Dans le cas de chargement des pieux, on peut atteindre la résistance ultime (bearing capacity failure) dans les argiles compressibles et sables lâches, pour les autres matériaux les équipements courants ne permettent pas d'atteindre cette valeur. Pour la plus part, il est impossible d'atteindre $Q_{b,lim}$ car cela demande des déplacements importants exigeant l'utilisation d'un système de réaction non-viable économiquement. La Figure \ref{fig:ana_qult} illustre l'évolution de la réaction latérale et en pointe.
+Contrairement à la résistance latérale, la résistance de pointe limite est $Q_{b,lim}$ est mobilisé uniquement pour des déplacements importants, parfois supérieurs à 20\% du diamètre pour des sables. Dans le cas de chargement des pieux, on peut atteindre la résistance ultime (bearing capacity failure) dans les argiles compressibles et sables lâches, pour les autres matériaux les équipements courants ne permettent pas d'atteindre cette valeur. Pour la plus part, il est impossible d'atteindre $Q_{b,lim}$ car cela demande des déplacements importants exigeant l'utilisation d'un système de réaction non-viable économiquement. La Figure \ref{fig:ana_qult} illustre l'évolution de la réaction latérale et en pointe.
 
 
 \begin{figure}[H]
@@ -772,13 +772,13 @@ Une série d'essais a été réalisé en laboratoire en utilisant les deux sable
 
 Les matériaux sont préparés dans une chambre d'étalonnage cylindrique de 372 mm de diamètre et 805 mm de hauteur. Avant de déposer les sables à l'intérieur de la chambre, une nappe plastique est collée à ces parois latérales afin de minimiser le frottement latéral. Un système de guidage est fixé à la chambre d'étalonnage afin de garantir la verticalité du pénétromètre et de minimiser le possible flambement des barres au cours du chargement.
 
-Pour chacun de ces sables, deux échantillons ont été préparés par damage humide à différentes densités (voir \ref{fig:exp_eprouvettes}). Ces échantillons ont été préparés en huit couches de sol d'environ 10 cm de façon à garantir l'homogénéité de l'éprouvette. Le compactage dynamique a été réalisé manuellement à l'aide une dame. Des échantillons sont prélevés afin de déterminer la teneur en eau et d'obtenir la densité sèche en place. La Figure \ref{fig:exp_eprouvettes} montre les conditions des éprouvettes testées.
+Pour chacun de ces sables, deux échantillons ont été préparés par damage humide à différentes densités. Ces échantillons ont été préparés en huit couches de sol d'environ 10 cm de façon à garantir l'homogénéité de l'éprouvette. Le compactage dynamique a été réalisé manuellement à l'aide une dame. Des échantillons sont prélevés afin de déterminer la teneur en eau et d'obtenir la densité sèche en place. La Figure \ref{fig:exp_DCLT_CLT_eprouvettes} montre les conditions des éprouvettes testées.
 
 \begin{figure}[H]
 \begin{center}
-    \includegraphics[width=\linewidth]{media/exp_eprouvettes2.png}
-    \caption{Caractéristiques des éprouvettes (SF : $e_{min}$=0.54 et $e_{max}$=0.96 ; SH : $e_{min}$=0.62 et $e_{max}$=0.96 ; $G_s$ = 2.65 pour les deux sables)}
-      \label{fig:exp_eprouvettes}
+    \includegraphics[width=\linewidth]{media/exp_DCLT_CLT_eprouvettes.png}
+    \caption{Caractéristiques des éprouvettes (Paramètres adoptés : pour SF : $e_{min}$=0.54 et $e_{max}$=0.96 ; pour SH : $e_{min}$=0.62 et $e_{max}$=0.96 ; $G_s$ = 2.65 pour les deux sables)}
+      \label{fig:exp_DCLT_CLT_eprouvettes}
   \end{center}
 \end{figure}
 
@@ -801,19 +801,19 @@ La Figure \ref{fig:exp_penetro} présente les pénétrogrammes des échantillons
 \begin{figure}[H]
 \begin{center}
     \includegraphics[scale = .5]{media/exp_penetro.png}
-    \caption{Pénétrogrammes des échantillons montrant les trois niveaux de réalisation de chargement CLT (\emph{level} 1, 2 e 3)}
+    \caption{Pénétrogrammes des échantillons montrant les trois niveaux de réalisation de chargement CLT (niveaux 1, 2 e 3)}
       \label{fig:exp_penetro}
   \end{center}
 \end{figure}
 
-On présente par la suite l'ensemble des courbes CLT obtenues. Les courbes DCLT présentés sont celles de 5 impacts réalisés immédiatement avant et après les chargements CLT. Les différentes couleurs indiquent les profondeurs (marqué \emph{level} sur la Figure) : bleus, rouges et vertes correspondent respectivement aux profondeurs 1 a($\approx$ 30cm), 2 ($\approx$ 43cm) et 3 ($\approx$ 56cm) de chaque échantillon. 
+On présente par la suite l'ensemble des courbes CLT obtenues. Les courbes DCLT présentés sont celles de 5 impacts réalisés immédiatement avant et après les chargements CLT. Les différentes couleurs indiquent les profondeurs (marqué \emph{level} sur la Figure) : bleus, rouges et vertes correspondent respectivement aux profondeurs 1 a($\approx$ 30 cm), 2 ($\approx$ 43 cm) et 3 ($\approx$ 56 cm) de chaque échantillon. 
 
 \newpage
 \begin{figure}[H]
 \begin{center}
     %\includegraphics[scale = .7]{media/exp_DCLT-CLT_Hostun.png}
-    \includegraphics[scale = 1.5]{media/a.png}
-    \caption{Courbes CLT et DCLT pour le sable de Fontainebleau à DR=43\%}
+    \includegraphics[width=\linewidth]{media/a.png}
+    \caption{Courbes CLT et DCLT pour le sable de Fontainebleau à DR=46\%}
       \label{fig:a}
   \end{center}
 \end{figure}
@@ -822,8 +822,8 @@ On présente par la suite l'ensemble des courbes CLT obtenues. Les courbes DCLT 
 \begin{figure}[H]
 \begin{center}
     %\includegraphics[scale = .7]{media/exp_DCLT-CLT_Hostun.png}
-    \includegraphics[scale = 1.5]{media/b.png}
-    \caption{Courbes CLT et DCLT pour le sable de Fontainebleau à DR=58\%}
+    \includegraphics[width=\linewidth]{media/b.png}
+    \caption{Courbes CLT et DCLT pour le sable de Fontainebleau à DR=71\%}
       \label{fig:b}
   \end{center}
 \end{figure}
@@ -832,7 +832,7 @@ On présente par la suite l'ensemble des courbes CLT obtenues. Les courbes DCLT 
 \begin{figure}[H]
 \begin{center}
     %\includegraphics[scale = .7]{media/exp_DCLT-CLT_Fontainebleau.png}
-    \includegraphics[scale = 1.5]{media/c.png}
+    \includegraphics[width=\linewidth]{media/c.png}
     \caption{Courbes CLT et DCLT pour le sable d'Hostun à DR=51\%}
       \label{fig:c}
   \end{center}
@@ -842,7 +842,7 @@ On présente par la suite l'ensemble des courbes CLT obtenues. Les courbes DCLT 
 \begin{figure}[H]
 \begin{center}
     %\includegraphics[scale = .7]{media/exp_DCLT-CLT_Fontainebleau.png}
-    \includegraphics[scale = 1.5]{media/d.png}
+    \includegraphics[width=\linewidth]{media/d.png}
     \caption{Courbes CLT et DCLT pour le sable d'Hostun à DR=67\%}
       \label{fig:d}
   \end{center}
@@ -851,11 +851,24 @@ On présente par la suite l'ensemble des courbes CLT obtenues. Les courbes DCLT 
 
 Dans les Figures \ref{fig:a},\ref{fig:b},\ref{fig:c} et \ref{fig:d}, on constate que les deux techniques sont bien sensibles à la variation de la densité des éprouvettes. On observe que les séries de courbes DCLT sont assez répétables. Pour les courbes CLT, on observe des différences entre le premier chargement et ceux qui suivent. Le premier chargement CLT présentant des contraintes légèrement plus faibles que les autres d'une même série. Cet effet est conforme aux constatation des \cite{Arbaoui2003} et \cite{Zhou1997}. Il peut être attribué en partie à la densification du sol autour de la pointe. Globalement, les courbes DCLT sont comparables au premier chargement CLT. 
 
-En plus, on constate que les courbes CLT vertes pour les éprouvettes plus denses (SHM2 et SFM2) présentent une augmentation des contraintes. On attribue ceci à la proximité du fond de l'éprouvette. Cela est en accord avec les résultats en chambre de calibration de cite{Salgado1998}. Ceux-ci ont montré que l'augmentation de la résistance statique attribuée aux effects de bords sont plus expressives pour de sables plus dense (ayant un comportement dilatant).
+En plus, on constate que les courbes CLT vertes pour les éprouvettes plus denses (HS-M2-CLT3 et FS-M2-CLT3) présentent une augmentation des contraintes. On attribue cela à la proximité du fond de l'éprouvette. Cette constatation est en accord avec autres résultats rapportées pour des sables en chambre d'étalonnage \citep{Salgado1998, Balachowski2014}. Ceux-ci ont montré que l'augmentation de la résistance statique attribuée aux effets de bords sont plus expressives pour de sables plus dense (ayant un comportement dilatant).
 
 %Par ailleurs, cet effet est encore plus expressif pour le sable de Fontainebleau (Figure \ref{fig:d}). Il est important que rappeler la principal différence entre ces deux matériaux : la forme de grains. Comme déjà évoqué les grains du sable de Fontainebleau sont plus arrondie tandis que ceux d'Hostun sont anguleux. Certains travaux ont montré que les grains ayant une forme arrondie présentent un comportement plus dilatant que ceux de forme angulaire \citep{}.
 
 Pour ce cas de figure analysé, les courbes de chargement issues des deux techniques sont qualitativement comparables. Ces résultats permettront de plus tard ajuster la loi de comportement appliquée au modèle numérique.
+
+Comme évoque dans le premier chapitre de document, la résistance limite en pointe peut être déterminé à partir des courbes de chargement statiques ($Q_b$). Selon, la méthode \cite{Chin1970}, cette valeur correspond à l'inverse du coefficient d'un calage hyperbolique simple. Souvent pour les courbes de chargement des pieux, il est difficile d'appliquer cette méthode car les équipements courants ne permettent pas d'atteindre de déplacements conséquents. Toutefois, pour les essais de chargements en pointe réalisés, on a pu atteindre de déplacement de l'ordre de 5 mm.
+
+Pour les cas de l'essai DCLT, l'application de la méthode de \cite{Chin1970} n'est pas direct vu qu'un calage hyperbolique de la phase de chargement de courbe intégrerait la composante dynamique. Ce calage serait ainsi fonction de la vitesse de chargement.
+
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[width=\linewidth]{media/exp_DCLT_CLT_qlim.PNG}
+    \caption{Comparaison entre la résistance limites d'essai CLT et des courbes DCLT pour le niveau 3 des échantillons}
+      \label{fig:exp_DCLT_CLT_qlim}
+  \end{center}
+\end{figure}
+
 
 \section{Bilan}
 

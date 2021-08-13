@@ -68,6 +68,11 @@ Aussedat, G. (1970).
 \newblock {\em {Sollicitations rapides des sols}}.
 \newblock PhD thesis.
 
+\bibitem[Balachowski and Dembicki, 2002]{Balachowski2014}
+Balachowski, L. and Dembicki, E. (2002).
+\newblock {UNE ETUDE DE PIEUX FONCES DANS UNE CHAMBRE D ' ETALONNAGE}.
+\newblock In {\em JNGG}.
+
 \bibitem[Benahmed et~al., 2004]{Benahmed2004}
 Benahmed, N., Canou, J., and Dupla, J.~C. (2004).
 \newblock {Initial structure and static liquefaction properties of sand}.
@@ -227,6 +232,13 @@ Fakharian, K., {Feizee Masouleh}, S., and Mohammadlou, A.~S. (2014).
 \newblock {Comparison of end-of-drive and restrike signal matching analysis for
   a real case using continuum numerical modelling}.
 \newblock {\em Soils and Foundations}, 54(2):155--167.
+
+\bibitem[Franke, 1993]{Franke1993}
+Franke, E. (1993).
+\newblock {Design of bored piles, including negative skin friction and
+  horizontal loading}.
+\newblock In {\em Proc., 2nd Int. Geotech. Seminar on Deep Found. on Bored and
+  Auger Piles}, pages 43--57, Rotterdam, The Netherlands.
 
 \bibitem[Gazetas et~al., 1985]{Gazetas1985}
 Gazetas, G., Dobry, R., and Tassoulas, J.~L. (1985).
@@ -493,6 +505,12 @@ Salgado, R., Loukidis, D., Abou-Jaoude, G., and Zhang, Y. (2015).
 \newblock {The role of soil stiffness non-linearity in 1D pile driving
   simulations}.
 \newblock {\em Geotechnique}, 65(3):169--187.
+
+\bibitem[Salgado et~al., 1998]{Salgado1998}
+Salgado, R., Mitchell, J.~K., and Jamiolkowski, M. (1998).
+\newblock {CALIBRATION CHAMBER SIZE EFFECTS ON PENETRATION RESISTANCE IN SAND}.
+\newblock {\em Journal of Geotechnical and Geoenvironmental Engineering},
+  124(September):878--888.
 
 \bibitem[Schmertmann and Palacios, 1979]{Schmertmann1979}
 Schmertmann, J. and Palacios, A. (1979).
