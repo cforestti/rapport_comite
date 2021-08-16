@@ -5,7 +5,6 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
-Warning--I didn't find a database entry for "eq:wave_EF2"
 Warning--empty journal in Aguiar2009
 Warning--empty school in Ali2010
 Warning--empty school in Andria-Ntoanina2011
@@ -28,51 +27,50 @@ Warning--there's a number but no volume in Nagula2018
 Warning--empty journal in Pham2008
 Warning--empty publisher in Plumelle2013
 Warning--there's a number but no volume in Robertson2010
-Warning--empty publisher in Schnaid2008
 Warning--empty school in Tran2015
 Warning--empty school in Vernay2017
 Warning--can't use both author and editor fields in Verruijt2009
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
-You've used 100 entries,
+You've used 101 entries,
             1935 wiz_defined-function locations,
-            1103 strings with 21335 characters,
-and the built_in function-call counts, 36266 in all, are:
-= -- 3650
-> -- 1204
-< -- 89
-+ -- 383
-- -- 382
-* -- 2943
-:= -- 6349
-add.period$ -- 294
-call.type$ -- 100
-change.case$ -- 673
-chr.to.int$ -- 99
+            1108 strings with 21394 characters,
+and the built_in function-call counts, 36586 in all, are:
+= -- 3681
+> -- 1217
+< -- 90
++ -- 387
+- -- 386
+* -- 2963
+:= -- 6408
+add.period$ -- 298
+call.type$ -- 101
+change.case$ -- 679
+chr.to.int$ -- 100
 cite$ -- 128
-duplicate$ -- 1480
-empty$ -- 2609
-format.name$ -- 528
-if$ -- 7071
+duplicate$ -- 1494
+empty$ -- 2632
+format.name$ -- 535
+if$ -- 7135
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 80
-newline$ -- 495
-num.names$ -- 300
-pop$ -- 588
+missing$ -- 82
+newline$ -- 501
+num.names$ -- 303
+pop$ -- 596
 preamble$ -- 1
-purify$ -- 691
+purify$ -- 698
 quote$ -- 0
-skip$ -- 1144
+skip$ -- 1154
 stack$ -- 0
-substring$ -- 2574
-swap$ -- 194
+substring$ -- 2586
+swap$ -- 195
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 588
-warning$ -- 28
-while$ -- 322
+type$ -- 592
+warning$ -- 27
+while$ -- 324
 width$ -- 0
-write$ -- 1262
-(There were 29 warnings)
+write$ -- 1276
+(There were 27 warnings)

@@ -956,9 +956,9 @@ On décrit par la suite certains aspects de la mise en point du modèle numériq
 \subsection{Géométrie et conditions aux limites}
 \label{subsec:Géométrie et conditions aux limites}
 
-On souhaite simuler les essais DCLT et CLT en chambre d'étalonnage. Les essais sont simulés au sein d'un massif homogène représentant un sol frottant sec. Ce massif possède la forme et les dimensions de la chambre d'étalonnage. Afin de simuler les conditions aux limites de la chambre d'étalonnage utilisée les déplacements sont empêchés latéralement.
+On souhaite simuler les essais DCLT et CLT en chambre d'étalonnage. Les essais sont simulés au sein d'un massif homogène représentant un sol frottant sec. Ce massif possède la forme et les dimensions de la chambre d'étalonnage. Afin de simuler les conditions aux limites de la chambre d'étalonnage utilisée, les déplacements sont empêchés latéralement.
 
-Les différents éléments composant le pénétromètre sont modélisés comme des cylindres. Les dimensions sont celles de la géométrie réelle : tige de 14 mm de diamètre et un mètre de longueur ; une pointe conique débordante (sommet de 90\degree) de section transversale de 4 $cm^2$ (22,5 mm de diamètre). Les éléments composant le pénétromètre sont modélisées des corps élastiques dont les paramètres sont ceux de l'acier ($\nu$ = 0,3, E=206 GPa). La géométrie de la chambre d'étalonnage ainsi que celle du pénétromètre sont présentées dans la Figure \ref{fig:exp_penetro}. 
+Les différents éléments composant le pénétromètre sont modélisés comme des cylindres. Les dimensions sont celles de la géométrie réelle : tige de 14 mm de diamètre et un mètre de longueur ; une pointe conique débordante (sommet de 90\degree) de section transversale de 4 $cm^2$ (22,5 mm de diamètre). Les éléments composants le pénétromètre sont modélisées des corps élastiques dont les paramètres sont ceux de l'acier ($\nu$ = 0,3, E=206 GPa). La géométrie de la chambre d'étalonnage ainsi que celle du pénétromètre sont présentées dans la Figure \ref{fig:exp_penetro}. 
 
 Un état initial de contraintes d’origine géostatique est pris en considération. Il correspond à l’effet du poids de couche de sol, avec le poids volumique sec $\gamma_d$. Dans le modèle, la contrainte latérale est engendrée par le coefficient des terres au repos $K_0$, $K_0$ étant le rapport entre les contraintes radiales et verticales ($K_0 =\sigma_{rr}/\sigma_{zz}$). Pour les sables, ceci est estimée à l’aide de la relation proposée par \cite{Jaky1944} : $K_0=1-\sin \phi'$ , avec $\phi'$ l’angle de frottement drainé du massif. Le choix de l'angle de frottement ainsi que d'autres paramètres physiques et rhéologiques sera aborder plus tard. Une cavité est crée au sein du massif afin de donner lieu au pénétromètre. Les parois de cette cavité sont stabilisés, c'est-à-dire les déplacements sont empêchés latéralement
 
@@ -1070,24 +1070,42 @@ Par ailleurs, en supposant la tige élastique,  $\sigma=E_t \varepsilon$, avec $
     \frac{ \partial \sigma}{\partial t^2}= c_t^2 \frac{\partial u}{\partial x}
 \end{equation}
 
-Il est possible l'équation de l'onde analytiquement par différentes méthodes (transformée de Laplace, séparation des variables, méthode des caractéristiques) ou numériquement. Chacun de ces méthodes est discuté par \cite{Verruijt2009}. Dans le cadre de ce travail, on retient la solution obtenue par la méthode des caractéristiques, proposé initialement par \cite{Saint-Venant1898}. Selon celle-ci, l'équation \ref{eq:wave} correspond à la superposition deux ondes $u_{f}(t-x/c_t)$ (descendante) et $u_{g}(t-x/c_t)$ (remontante) se propageant le long des tiges de manière continue à une vitesse d'ondes ($c_t$).
+Il est possible l'équation de l'onde analytiquement par différentes méthodes (transformée de Laplace, séparation des variables, méthode des caractéristiques) ou numériquement. Chacun de ces méthodes est discuté par \cite{Verruijt2009}. Dans le cadre de ce travail, on retient la solution obtenue par la méthode des caractéristiques, proposé initialement par \cite{Saint-Venant1898}. Selon celle-ci, l'équation \ref{eq:wave} correspond à la superposition deux ondes $u_{d}(t-x/c_t)$ (descendante) et $u_{u}(t-x/c_t)$ (remontante) se propageant le long des tiges de manière continue à une vitesse d'ondes ($c_t$) (Équation \ref{eq:wave_deplacement}).
 
-Le passage de l'onde u(x,t) à un instant t engendrera une vitesse particulaire v(x,t) à un point donnée de la tige, obtenue par la dérivation de l'équation \ref{eq:wave} en fonction du temps.
+\begin{equation} \label{eq:wave_deplacement}
+u(x,t) = u_d(t-x/c_t)-u_u(t+x/c_t)
+\end{equation}
+
+L’impact engendre une onde de compression u(x,t) dans le pénétromètre qui se propage à vitesse constante dans le sens longitudinal. La vitesse de propagation d’une onde de compression $c$ dans un milieu solide infini est déterminée par l'équation (\ref{eq:wave_c}). La vitesse de propagation $c$ étant une fonction des propriétés du matériau du milieu traversé (module d'Young E, coefficient de Poisson $\nu$ et densité $\rho$).
+
+\begin{equation} \label{eq:wave_c}
+    c = \sqrt{\frac{1}{\rho}\frac{E(1-\nu)}{(1+\nu)(1-2\nu)}}
+\end{equation}
+
+Pour le cas des tiges élancées, la vitesse de propagation de l’onde de compression u(x,t) se déplaçant longitudinalement est indépendante du coefficient de Poisson $\nu$ \citep{Timoshenko1951} et est donc donnée par l’équation \ref{eq:wave_ct}.
+
+\begin{equation} \label{eq:wave_ct}
+    c_t = \sqrt{\frac{E_t}{\rho_t}}
+\end{equation}
+
+Soit $c_t$, $E_t$, et $\rho_t$ la vitesse de propagation de l'onde, le module d'Young et la densité des tiges respectivement. 
+
+Le passage de l'onde u(x,t) à un instant t engendrera des variations de déformation et de vitesse particulaire v(x,t) à un point donnée de la tige x.  La vitesse particulaire v(x,t) est obtenue en dérivation de l'équation \ref{eq:wave_deplacement} en fonction du temps.
 
 \begin{equation} \label{eq:wave_vitesse}
-v(x,t) = v_f(t-x/c_t)-v_g(t+x/c_t)
+v(x,t) = v_d(t-x/c_t)-v_u(t+x/c_t)
 \end{equation}
 
 La déformation entraînée par le passage de l'onde u(x,t), celle-ci obtenue à partir de la dérivation de l'équation \ref{eq:wave_def} en fonction de x. Cette déformation $\varepsilon$ peut être exprimée en terme de la vitesse particulaire des ondes, incidente et remontante, afin d'obtenir l'équation \ref{eq:wave_def2}.
 
 \begin{equation} \label{eq:wave_def2}
-    \varepsilon(x,t)=-\frac{1}{c_t}[v_f(t-x/c_t]-v_f(t+x/c_t)]
+    \varepsilon(x,t)=-\frac{1}{c_t}[v_d(t-x/c_t]-v_u(t+x/c_t)]
 \end{equation}
 
 En tenant compte de l'élasticité des tiges, c'est-à-dire de $F=\varepsilon A_t E_t$, on obtient l'équation \ref{eq:wave_FZv}
 
 \begin{equation} \label{eq:wave_FZv}
-    F(x,t)=-\frac{A_t E_t}{c_t}[v_f(t-x/c)-v_g(t-x/c)]
+    F(x,t)=-\frac{A_t E_t}{c_t}[v_d(t-x/c)-v_u(t-x/c)]
 \end{equation}
 
 Comme constaté sur l'équation \ref{eq:wave_FZv}, dans le problème de la propagation longitudinale d'une onde mécanique dans un milieu élastique, la force F(x,t) et la vitesse particulaire v(t,x) sont proportionnels. Le rapport de proportionnalité entre ceux deux grandeurs étant ${A_t E_t}/{c_t}$, c'est-à-dire, l'impédance mécanique de la tige $Z_t$.
@@ -1105,7 +1123,7 @@ La propagation d’une onde mécanique dans un milieu élastique, tel qu’une t
     E_U=\frac{1}{2} \frac{c_t}{A_t E_t} \int F(x,t)^2 dt
 \end{equation}
 
-L'énergie totale transmise étant le double de $E_U$, celle-ci peut être obtenue en intégrant la force mesurée expérimentalement à l'aide des jauges de déformation (équation \cite{eq:wave_EF2}). Cette méthode a été appliqué à l'essai SPT afin de connaître la vrai énergie transmise par l'impact du marteau. Plus tard, en appliquant la proportionnalité entre les signaux de force et de vitesse (Équation \ref{eq:wave_FZv}), \citep{SyA.;Campanella1991} proposent le calcul de l'énergie transmise à partir de la force (à l'aide des jauges de déformation) et la vitesse particulaire (à l'aide d'accéléromètre)(Équation \ref{eq:wave_EFV}). Cette méthode est connue comme EFV, tandis que l'obtention de l'énergie uniquement à partir de la force est connue comme méthode EF2.
+L'énergie totale transmise étant le double de $E_U$, celle-ci peut être obtenue en intégrant la force mesurée expérimentalement à l'aide des jauges de déformation (équation \ref{eq:wave_EF2}). Cette méthode a été appliqué à l'essai SPT afin de connaître la vrai énergie transmise par l'impact du marteau. Plus tard, en appliquant la proportionnalité entre les signaux de force et de vitesse (Équation \ref{eq:wave_FZv}), \citep{SyA.;Campanella1991} proposent le calcul de l'énergie transmise à partir de la force (à l'aide des jauges de déformation) et la vitesse particulaire (à l'aide d'accéléromètre)(Équation \ref{eq:wave_EFV}). Cette méthode est connue comme EFV, tandis que l'obtention de l'énergie uniquement à partir de la force est connue comme méthode EF2.
 
 \begin{equation} \label{eq:wave_EF2}
     E_t^{EF2}= \frac{c_t}{A_t E_t} \int F(x,t)^2 dt      
@@ -1120,8 +1138,8 @@ La Figure \ref{fig:num_spt} présente les signaux calculés et ceux obtenus à p
 \begin{figure}[H]
 	\centering
     \includegraphics[width=\linewidth]{media/num_spt.png}
-          \label{fig:num_spt}
 	\caption{Comparatifs analytique-numériques pour deux cas : sans enclume (à gauche) et avec enclume (à droite)}
+          \label{fig:num_spt}
 \end{figure}
 
 On a constaté un bonne correspondance entre les prévisions analytiques et les résultats numériques. Cela permet de conclure qu'un modèle numérique en différences finies comme qu'on propose est capable de simuler correctement le battage et la propagation des ondes au sein des tiges.
@@ -1173,22 +1191,22 @@ On a simulé cet essai à l'aide d'un modèle numérique afin d'ajuster l'impact
 
 Le marteau est composé de deux embouts en polystyrène à haut impact (HIPS) et d'une cavité cylindrique de parois de 2 mm en acier. Celle-ci est remplie de limaille de fer. Afin de simplifier l'analyse, dans le modèle, le marteau est modélisé comme un cylindre homogène de 6 cm de diamètre et 13,6 cm de hauteur. Celui-ci est considéré comme étant composé par un seul matériau, parfaitement élastique. Le module d'Young équivalent attribué au marteau $(E_m)$ est déduit à partir de sa géométrie et des modules de l'acier et du HIPS. On a adopté des valeurs de module pour la HIPS de 0,5 GPa, selon les informations du fabricant (Tableau \ref{tab:marteau}).
 
-%\begin{table} [H]
-%\caption{Définition du module d'Young équivalent du marteau ($E_m$)}
-%\label{tab:marteau}
-%\centering
-%\begin{tabular}{cccc}
-%\hline
-%\tabhead{Élément} & \tabhead{Épaisseur} & \tabhead{Diamètre} & \tabhead{Module d'Young}\\
-%            -     & (mm)                & (mm)               & (Pa) \\
-%\hline
-%Embout (x2)     & 25    & 60   & 5,0 $10^{8}$ \\
-%Cavité centrale & 86    &D$_{ext}$: 60 / D$_{int}$: 56,4 & 2,06 $10^{11}$ \\
-%\hline
-%Marteau         & 136   & 0.75  & 2,5 $10^{10}$ \\
-%\hline\\
-%\end{tabular}
-%\end{table}
+\begin{table} [H]
+\caption{Définition du module d'Young équivalent du marteau ($E_m$)}
+\label{tab:marteau}
+\centering
+\begin{tabular}{cccc}
+\hline
+{Élément} & {Épaisseur} & {Diamètre} & {Module d'Young}\\
+            -     & (mm)                & (mm)               & (Pa) \\
+\hline
+Embout (x2)     & 25    & 60   & 5,0 $10^{8}$ \\
+Cavité centrale & 86    &D$_{ext}$: 60 / D$_{int}$: 56,4 & 2,06 $10^{11}$ \\
+\hline
+Marteau         & 136   & 0.75  & 2,5 $10^{10}$ \\
+\hline\\
+\end{tabular}
+\end{table}
 
 Pour simuler l'impact entre deux objets dans FLAC, on doit créer une interface. L'interface est accolée à une (ou les deux) faces qui interagissent. Son comportement est caractérisé par des paramètres de rupture ($\phi$ et c) et de déformation (raideur normale $k_n$ et tangentielle $k_s$). 
 
