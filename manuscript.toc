@@ -20,19 +20,19 @@
 \contentsline {subsection}{\numberline {3.2.4}Paramètres de rupture}{31}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Essais DCLT-CLT en chambre d'étalonnage}{33}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Bilan}{41}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Étude numérique}{42}{chapter.4}%
-\contentsline {section}{\numberline {4.1}État de l'art}{42}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Modélisation numérique de la pénétration dynamique}{42}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Mise au point du modèle numérique}{44}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Géométrie et conditions aux limites}{45}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Interface}{47}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Sollicitation}{48}{subsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.3.1}Cas du SPT : simulation du battage et propagation de l'onde}{49}{subsubsection.4.2.3.1}%
-\contentsline {subsubsection}{\numberline {4.2.3.2}Théorie}{49}{subsubsection.4.2.3.2}%
-\contentsline {subsubsection}{\numberline {4.2.3.3}Énergie transportée par l'onde}{50}{subsubsection.4.2.3.3}%
-\contentsline {subsubsection}{\numberline {4.2.3.4}Calibration du battage}{52}{subsubsection.4.2.3.4}%
-\contentsline {subsubsection}{\numberline {4.2.3.5}Simulation de l'essai DCLT}{56}{subsubsection.4.2.3.5}%
-\contentsline {subsection}{\numberline {4.2.4}Modèle de comportement du sol}{60}{subsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.4.1}Paramètres rhéologiques alimentant le modèle}{61}{subsubsection.4.2.4.1}%
-\contentsline {section}{\numberline {4.3}Bilan}{62}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Conclusion et perspectives}{64}{chapter.5}%
+\contentsline {chapter}{\numberline {4}Étude numérique}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}État de l'art}{43}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Modélisation numérique de la pénétration dynamique}{43}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Mise au point du modèle numérique}{45}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Géométrie et conditions aux limites}{46}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Interface}{48}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Sollicitation}{49}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}Cas du SPT : simulation du battage et propagation de l'onde}{50}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}Théorie}{50}{subsubsection.4.2.3.2}%
+\contentsline {subsubsection}{\numberline {4.2.3.3}Énergie transportée par l'onde}{51}{subsubsection.4.2.3.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.4}Calibration du battage}{53}{subsubsection.4.2.3.4}%
+\contentsline {subsubsection}{\numberline {4.2.3.5}Simulation de l'essai DCLT}{57}{subsubsection.4.2.3.5}%
+\contentsline {subsection}{\numberline {4.2.4}Modèle de comportement du sol}{61}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Paramètres rhéologiques alimentant le modèle}{62}{subsubsection.4.2.4.1}%
+\contentsline {section}{\numberline {4.3}Bilan}{63}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusion et perspectives}{65}{chapter.5}%
