@@ -10,6 +10,12 @@ Aussedat, G. (1970).
 \newblock {\em {Sollicitations rapides des sols}}.
 \newblock PhD thesis.
 
+\bibitem[Bachrach and Nur, 1998]{Bachrach1998a}
+Bachrach, R. and Nur, A. (1998).
+\newblock {High-resolution shallow-seismic experiments in sand, Part I: water
+  table, fluid flow, and saturation}.
+\newblock {\em Geophysics}, 63(4):1225--1233.
+
 \bibitem[Benz-Navarrete, 2009]{Benz-Navarrete2009}
 Benz-Navarrete, M.~A. (2009).
 \newblock {\em {MESURES DYNAMIQUES LORS DU BATTAGE DU PENETROMETRE PANDA 2}}.
@@ -83,6 +89,12 @@ Iskander, M. and Omidivar, M. (2015).
 \newblock {\em {RAPID PENETRATION INTO GRANULAR MEDIA RAPID PENETRATION INTO
   GRANULAR}}.
 
+\bibitem[Jamiolkowski, 2012]{Jamiolkowski2012}
+Jamiolkowski, M. (2012).
+\newblock {Role of Geophysical Testing in Geotechnical Site Characterization}.
+\newblock {\em Soils and Rocks International Journal of Geotechnical and
+  Geoenvironmental Engineering}, 2(2):1--21.
+
 \bibitem[Krause et~al., 2015]{Krause2015}
 Krause, M., Dackermann, U., and Li, J. (2015).
 \newblock {Elastic wave modes for the assessment of structural timber:
@@ -141,5 +153,11 @@ Semblat, J.~F. (2012).
 \newblock {Modeling seismic wave propagation and amplification in 1D/2D/3D
   linear and nonlinear unbounded media}.
 \newblock {\em International Journal of Geomechanics}, 11(6):440--448.
+
+\bibitem[Tsukamoto et~al., 2002]{Tsukamoto2002}
+Tsukamoto, Y., Ishihara, K., Nakazawa, H., Kamada, K., and Huang, Y. (2002).
+\newblock {Resistance of partly saturated sand to liquefaction with reference
+  to longitudinal and shear wave velocities}.
+\newblock {\em Soils and foundations}, 42(6):93--104.
 
 \end{thebibliography}
