@@ -35,4 +35,5 @@
 \contentsline {subsection}{\numberline {4.2.4}Modèle de comportement du sol}{61}{subsection.4.2.4}%
 \contentsline {subsubsection}{\numberline {4.2.4.1}Paramètres rhéologiques alimentant le modèle}{62}{subsubsection.4.2.4.1}%
 \contentsline {section}{\numberline {4.3}Bilan}{63}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Vérification du modèle de comportement du modèle numérique}{64}{subsection.4.3.1}%
 \contentsline {chapter}{\numberline {5}Conclusion et perspectives}{65}{chapter.5}%

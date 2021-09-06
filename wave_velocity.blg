@@ -5,10 +5,10 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
+Warning--I didn't find a database entry for "Hicher2018"
 Warning--empty school in Aussedat1970
+Warning--empty publisher in Benz2007
 Warning--empty institution in Briaud2001
-Warning--empty journal in DanoChristophe;Hicher2018
-Warning--there's a number but no volume in DanoChristophe;Hicher2018
 Warning--empty school in Escobar2015
 Warning--empty journal in GomesCorreia2004
 Warning--empty publisher in IskanderMaguedOmidivar2015
@@ -17,43 +17,43 @@ Warning--empty school in Muhammed2016
 Warning--empty journal in Sauzeat2003
 You've used 27 entries,
             1935 wiz_defined-function locations,
-            644 strings with 8646 characters,
-and the built_in function-call counts, 9053 in all, are:
-= -- 900
+            648 strings with 8576 characters,
+and the built_in function-call counts, 9044 in all, are:
+= -- 897
 > -- 288
 < -- 24
 + -- 90
 - -- 90
-* -- 729
-:= -- 1635
-add.period$ -- 77
+* -- 727
+:= -- 1632
+add.period$ -- 76
 call.type$ -- 27
-change.case$ -- 172
+change.case$ -- 171
 chr.to.int$ -- 27
-cite$ -- 37
-duplicate$ -- 373
-empty$ -- 646
+cite$ -- 36
+duplicate$ -- 374
+empty$ -- 648
 format.name$ -- 123
 if$ -- 1728
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 18
-newline$ -- 134
+missing$ -- 19
+newline$ -- 133
 num.names$ -- 81
-pop$ -- 148
+pop$ -- 151
 preamble$ -- 1
 purify$ -- 180
 quote$ -- 0
 skip$ -- 295
 stack$ -- 0
 substring$ -- 603
-swap$ -- 38
+swap$ -- 39
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 160
-warning$ -- 10
+type$ -- 158
+warning$ -- 9
 while$ -- 79
 width$ -- 0
-write$ -- 336
+write$ -- 334
 (There were 10 warnings)

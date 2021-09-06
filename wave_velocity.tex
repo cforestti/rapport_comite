@@ -82,26 +82,68 @@ Le module de déformation d'un sol est un des paramètres les plus difficiles à
 
 Par ailleurs, à partir des années 1970, le développement de techniques expérimentales de plus en plus précises ont mis en évidence la limitation des essais classiques pour traduire le comportement des sols à petites déformations \citep{Burland1989,Atkinson2000, GomesCorreia2004}.
 
-Ces travaux ont montré que le domaine élastique pour les sols est assez restreint et difficile à déterminer (souvent associé à des déformations de l'ordre de $10^{-5}$). Les essais de propagations d’ondes (capteurs piezo-électriques en laboratoire et essais de forage in situ) induisent des déformations très faibles, inférieures à $10^{-5}$. L’hypothèse d’un comportement élastique linéaire pour ces essais est donc justifiée \citep{DanoChristophe;Hicher2018}. Il est donc possible d’obtenir le module à faibles déformations ($E_{max}$ ou $E_0$) à partir des mesures de vitesse d’ondes de compression ($c_p$) et de la masse volumique du milieu $\rho$ (équation \ref{eq:Emax}).
+Ces travaux ont montré que le domaine élastique pour les sols est assez restreint et difficile à déterminer (souvent associé à des déformations de l'ordre de $10^{-5}$). Les essais de propagations d’ondes (capteurs piezo-électriques en laboratoire et essais de forage in situ) induisent des déformations très faibles, inférieures à $10^{-5}$. L’hypothèse d’un comportement élastique linéaire pour ces essais est donc justifiée \citep{ Dano2002, Benz2007}. Il est donc possible d’obtenir le module à faibles déformations ($E_{max}$ ou $E_0$) à partir des mesures de vitesse d’ondes de compression ($c_p$) et de la masse volumique du milieu $\rho$ (équation \ref{eq:Emax}).
 
 \begin{equation} \label{eq:Emax}
    E_{max} = \rho c_p^2
 \end{equation}
 
-Les essais de propagations d’ondes sont, toutefois sont peu courants dans la pratique. Dans la pratique les valeurs appliquées sont souvent obtenues à partir des estimations parfois peu réalistes. Par ailleurs, le manque des données à faibles déformations constitue une limitation à l'application des modèles de comportement plus poussés intégrant le dégradation du module et permettant d'avoir des estimations plus réaliste des déformations entrainées par les ouvrages.
+Soit $c_p$ l'onde de volume de compression se propagent au sein du matériau. Les ondes $c_p$ ou ondes-P sont comparables aux ondes sonores. Celles-ci se propagent dans le sens de vibration. Elles se propagent à travers des fluides et des solides et sont a priori plus rapides que les ondes de volume de cisaillement ($c_s$ ou onde-S). Les ondes-S se propagent perpendiculairement à la direction de vibration. Elles se propagent à la condition que le milieu soit capable de reprendre des efforts de cisaillement. C’est pourquoi celles-ci ne se propagent pas à travers des fluides.
+
+Ces essais de propagations d’ondes sont, toutefois sont peu courants dans la pratique. Au delà des limitations pratiques : manque de personnel et d'équipement pour la réalisation et l'interprétation de ces essais, on peut citer des limitations techniques. Dans le cas des essais en laboratoire (capteurs piezo-électriques) réalisés sur des petits échantillons, les limitations sont liées à la représentativité et aux conditions des échantillons (qualité des échantillons et contrainte initiale en place). Dans le cas des essais de forage, ils sont délicats à réaliser et aussi coûteux.
+
+La limitation des essais de vitesse d'ondes en laboratoire comme  Dans la pratique les valeurs appliquées sont souvent obtenues à partir des estimations parfois peu réalistes. Par ailleurs, le manque des données à faibles déformations constitue une limitation à l'application des modèles de comportement plus poussés intégrant le dégradation du module et permettant d'avoir des estimations plus réaliste des déformations entrainées par les ouvrages.
 
 L'essai de chargement dynamique en pointe pénétrométrique (DCLT) au pénétromètre dynamique léger Panda 3$\up{\textregistered}$  est un technique simple et à faible coût. Lors des premiers instants suivant l'impact, cet essai est assimilable à un essai de choc \citep{Aussedat1970, Semblat2012, IskanderMaguedOmidivar2015}. De ce fait, comme pour les essais de choc, l’exploitation des signaux de force et de vitesse dans le sol juste après la sollicitation permet d’étudier le comportement à faibles déformations et d'estimer la vitesse d’ondes de compression ($c_p^{DCLT}$).
 
 Dans ce cas, il resterait à évaluer la précision des vitesse ainsi déterminées. Dans ce document, on compare les résultats de $c_p^{DCLT}$ et $c_p$ sous des conditions similaires. La vitesse d'ondes de compression issue de à l'essai DCLT étant par hypothèse de compression, les valeurs de $c_p$ présentées sont issues techniques déterminant $c_p$ (aucune estimation à partir de $c_s$).
 
 
-\section{RAPPEL : détermination de la vitesse d'ondes à partir de l'essai DCLT}
+\section{Détermination de la vitesse d'ondes à partir de l'essai DCLT}
 
-On va explique la démarche d'obtention de la vitesse d'ondes à l'aide de l'essai DCLT en deux étapes. Dans un premier temps, on explique l'obtention des contraintes et de vitesses en pointe en pointe. 
+On va expliquer la méthode d'obtention de $c_p^{DCLT}$ à l'aide de l'essai DCLT en deux étapes. Dans un premier temps, on explique l'obtention des contraintes et de vitesses en pointe en pointe. Dans un deuxième temps, on explique la démarche et les hypothèses permettant de déterminer la vitesse d'ondes $c_p^{DCLT}$ à partir de mesures de contrainte et de mesures de vitesse en pointe et la masse volumique du milieu.
 
-Dans un deuxième temps, on explique la démarche et les hypothèses permettant de déterminer la vitesse d'ondes $c_p$ à partir de l'essai 
+\subsection{Obtention des contraintes et des vitesses en pointe}
+
+
+
+
+
+\subsection{Détermination de la vitesse d'onde }
+
+L'application d'un impact dans le sol crée un état de contrainte complexe. Selon la location par rapport au point d'application de l'impact, le sol adjacent peut être affecté par des ondes de compression, de cisaillement ou des ondes Rayleigh ou encore par une combinaison de celles-ci. Cet état de contrainte est encore plus complexe en surface.
+
+L'onde de contrainte crée par l'impact est caractérisé par une montée de rapide, des amplitudes importantes et des petites durées. L'étude de la réponse du sol subit à des impacts est normalement mené en laboratoire en se basant sur les concepts suivants :
+
+
+
+
+
+%The application of an impact stress to a soil mass introduces a complex stress wave propagating in the soil. Depending on the location with respect to the point ofapplica- tion ofthe impact loading, the surrounding soil may be affected by a compressive stress wave, a shear stress wave, a Rayleigh stress wave, or a combination ofthese stress waves. The stress state is more complicated near the ground surface. Stress waves produced by an impact load are typically characterized by fast rise and fall times, high amplitude, and short durations. The study ofthe response ofsoil to HSR loading is commonly carried out in the laboratory using one of the following two concepts: - Reproducing the stress conditions at the propagating front, by applying a uniform stress throughout a small soil sample to represent the soil affected by the wave front
+%- Generating a stress wave and allowing its propagation through a longer soil sample and studying wave propagation characteristics to derive the HSR response Common testing methods based on the above concepts may be divided into four main categories: (1) uniaxial compression tests, also referred to as confined compression or oedometer tests; (2) SHPB tests; (3) triaxial compression and direct shear tests; and (4) plane wave shock tests.
+
+
+
+
+Characterization of sand using the Kolsky bar is more complex than conventional
+materials such as metals. The longitudinal wave speed in a granular system, such as sand, is governed by complex interactions between sand particles, pore air, and pore water.
+Des essais 
+
+The tests covered include uniaxial and triaxial compression, split Hopkinson pressure bar (SHPB), and plate impact tests. Results ofthese tests are summarized, in order to provide a deeper understanding ofthe response ofgranular media to HSR loading
+
+
+Sand is subjected to high-rate compressive loading in many engineering applications including explosions, air blasts, mine blasting, drilling, vehicle and aircraft wheel loading, dynamic compaction, pile driving, and projectile penetration. Sand
 
 Dans les années 1970, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l’application des essais de choc à l’essai de pénétration. Ils ont également réalisé des tests selon la méthode des barres de Hopkinson (Split Hopkinson Pressure Bar - SHPB) adaptés pour les sols. Ils se sont appuyés sur des principes des chocs et sur les équations d’état (équations de Rankine-Hugoniot), qui régissent leur propagation. A l’aide des équations de la mécanique classique et des lois de comportement (équations rhéologiques), ces équations dites « mixtes » décrivent la relation entre les contraintes et les vitesses (nommé polaire de choc) lors de la propagation d’un ébranlement. Ces relations permettent d’étudier le comportement du sol soumis à un impact et de déterminer l’impédance mécanique de celui-ci (Z) pour en déduire la vitesse de propagation d’ondes de compression.
+%%_______________
+%Les variables qui caractérisent le matériau sont la masse volumique, le tenseur des contraintes (6 composantes inconnues) et le tenseur des déformations (6 composantes inconnues). Pour simplement par les éléments de leur diagonale. Or, par symétrie ?:: = ?;;. Les particules sont l’onde longitudinale plane, l’axe 0x est principal et les deux tenseurs sont décrits tout sollicitées verticalement surtout sous le centre de tige et développent une vitesse verticale. Les déformations générées sont essentiellement normales au plan de propagation (εxx). Cette hypothèse s’appuie sur la vitesse de l’impulsion. Ce phénomène étant trop rapide, le bulbe de uniquement trois variables ?<<, ?:: et ?<< principales décrivant le problème.
+
+%On analyse un tube cylindrique dans un milieu infini de masse et de section S constantes lors du passage de la surface d’onde de choc. A un instant t donné, lorsque l’onde vient juste de passer le plan A, l’élément AB présente une masse volumique ρ0. Lors du passage de l’onde, toute la matière initialement comprise entre A et B sera comprise entre A’ et B. En appliquant la conservation de la masse à cet élément et puis en exprimant les longueurs de ces régions en fonction de la vitesse des particules v et de la vitesse d’onde D, on obtient l’Équation 21
+
+
+%%________________________
+
+Le passage de l’onde de choc entraine un changement de volume dans le milieu et par conséquent un changement de sa masse volumique. Pour l’ébranlement longitudinal, on assume que la variation de volume ∆V est essentiellement axiale et exprimée en fonction des masses volumique initiales ?0 et de la masse volumique finale ρ (Équation 19).
 
 \cite{Omidvar2012} expliquent que les essais des propagations d’ondes en géotechnique (comme les essais de choc) sont complexes à mettre en place car il est souvent difficile d’avoir le suivi des contraintes dans le sol et de s’affranchir des réflexions des ondes. Dans ce type d’essai l’instrumentation la plus courante est l’insertion de capteur à l’intérieur de l’échantillon ce qui conduit souvent à des erreurs.
 
@@ -158,7 +200,7 @@ L'équation \ref{eq:celerite} est déduite à partir de la conservation de la ma
 
 La vitesse d’ondes de compression dans le sol est fonction de divers facteurs (état de densité, hydrique et de contrainte, plasticité, ...). Pour les sables propres, les facteurs majeures sont : l’indice de vides (ou densité relative indique par l'acronyme DR), l’état de contrainte, l’état hydrique et les caractéristiques intrinsèques du matériau (tailles, forme des grains) \citep{Hardin1972}.
 
-Pour l’état hydrique, il est permet de distinguer l'état saturé et le non saturés. Pour le différent état non saturés, c'est-à-dire degré de saturation variant entre 0\% et 95\%, ce facteur est secondaire car il n'engendre une variation maximale que de l’ordre de 10\% \citep{Emerson2005}. Par contre, au-delà de 95\%,  $c_p$ croît brutalement vers la valeur de la vitesse d'ondes dans l'eau dépassant 1500 m/s. La capacité de $c_p$ de détecter la présence de zones saturés, c'est-à-dire distinguer les milieux quasi-saturés aux milieux saturés a été sujet de nombreux travaux portant sur l'évaluation du risque de liquéfaction des milieux granulaires \citep{Jamiolkowski2012, Tsukamoto2002, Bachrach1998a}.
+Pour l’état hydrique, il est permet de distinguer l'état saturé et le non saturés. Pour le différent état non saturés, c'est-à-dire degré de saturation variant entre 0\% et 95\%, ce facteur est secondaire car il n'engendre une variation maximale que de l’ordre de 10\% \citep{Emerson2005}. Par contre, au-delà de 95\%, $c_p$ croît brutalement vers la valeur de la vitesse d'ondes dans l'eau dépassant 1500 m/s. La capacité de $c_p$ de détecter la présence de zones saturés, c'est-à-dire distinguer les milieux quasi-saturés aux milieux saturés a été sujet de nombreux travaux portant sur l'évaluation du risque de liquéfaction des milieux granulaires \citep{Jamiolkowski2012, Tsukamoto2002, Bachrach1998a}.
 
 Par ailleurs, afin de minimiser les effets intrinsèques liés aux matériaux, on travaille avec des sables de référence dont on dispose des résultats DCLT et des résultats $c_p$ rapportés.
 
