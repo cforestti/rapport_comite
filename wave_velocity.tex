@@ -99,9 +99,9 @@ L'essai de chargement dynamique en pointe pénétrométrique (DCLT) au pénétro
 Dans ce cas, il resterait à évaluer la précision des vitesse ainsi déterminées. Dans ce document, on compare les résultats de $c_p^{DCLT}$ et $c_p$ sous des conditions similaires. La vitesse d'ondes de compression issue de à l'essai DCLT étant par hypothèse de compression, les valeurs de $c_p$ présentées sont issues techniques déterminant $c_p$ (aucune estimation à partir de $c_s$).
 
 
-\section{Détermination de la vitesse d'ondes à partir de l'essai DCLT}
+\section{Détermination de la vitesse d'ondes à partir de l'essai DCLT : analogie avec les essais de choc}
 
-On va expliquer la méthode d'obtention de $c_p^{DCLT}$ à l'aide de l'essai DCLT en deux étapes. Dans un premier temps, on explique l'obtention des contraintes et de vitesses en pointe en pointe. Dans un deuxième temps, on explique la démarche et les hypothèses permettant de déterminer la vitesse d'ondes $c_p^{DCLT}$ à partir de mesures de contrainte et de mesures de vitesse en pointe et la masse volumique du milieu.
+On va expliquer la méthode d'obtention de $c_p^{DCLT}$ à l'aide de l'essai DCLT en deux étapes. Dans un premier temps, on explique la méthode d'obtention des contraintes et de vitesses en pointe. Dans un deuxième temps, on explique la démarche et les hypothèses permettant de déterminer la vitesse d'ondes $c_p^{DCLT}$ à partir de mesures de contrainte et de mesures de vitesse en pointe et la masse volumique du milieu.
 
 \subsection{Obtention des contraintes et des vitesses en pointe}
 
@@ -113,28 +113,34 @@ On va expliquer la méthode d'obtention de $c_p^{DCLT}$ à l'aide de l'essai DCL
 
 L'application d'un impact dans le sol crée un état de contrainte complexe. Selon la location par rapport au point d'application de l'impact, le sol adjacent peut être affecté par des ondes de compression, de cisaillement ou des ondes Rayleigh ou encore par une combinaison de celles-ci. Cet état de contrainte est encore plus complexe en surface.
 
-L'onde de contrainte crée par l'impact est caractérisé par une montée de rapide, des amplitudes importantes et des petites durées. L'étude de la réponse du sol subit à des impacts est normalement mené en laboratoire en se basant sur les concepts suivants :
+L'onde de contrainte crée par l'impact est caractérisé par une montée de rapide, des amplitudes importantes et des petites durées. L'étude de la réponse du sol subit à des impacts est normalement mené en laboratoire en se basant sur les concepts suivants : (a) reproduction d'un état de contrainte uniforme en utilisant un échantillon assez petit, (b) propager une onde de contrainte au long d'échantillon de sol assez long.
+
+Les techniques courantes appliquant ces concepts sont : (1) essai de compression uniaxial (aussi appelée compression confiné ou teste oedométrique, (2) les essais de barres de Hopkinson (connu par l'acronyme anglais Split Hopkinson Pressure Bar - SHPB) et les essais de choc plan.
+
+Certains travaux rapportent la détermination de vitesse d'ondes des sols. Charlie et al. (1990) ont déterminé la vitesse d'ondes de compression pour une sable silicieux  à des différentes teneur en eau à l'aide des essais SHPB. Il a utilisé des échantillons suffisamment long afin d'assurer une seule passage de l'onde de contrainte. Ils ont obtenus des valeurs variant entre 212-454 m/s. Brown et al. (2007) ont déterminé la vitesse d'ondes de compression dans des sols siliceux de 243 m/s à l'aide des essais de flyer plate experiments. Martin et al. (2009) ont utilisé l'essai de SHPB pour déterminer la vitesse d'ondes de sables.
+
+Pour des matériaux caractérisés par des vitesse d'ondes importantes, il est plus facile de garantir une homogénéité des contraintes au sein de l'éprouvette. Afin d'assurer un distribution plus homogène dans les premiers instants du chargement, l'évolution des contraintes appliquées doit être controllé de façon à entrainer une augmentation des contraintes dans l'échantillon quasi-uniforme. Cela est souvent réalisé par le biais des techniques de ajustement du pulse (pulse shaping techniques).
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale = .7]{media/ana_cp2.PNG}
+        \caption{Effets de l'application de la méthode d'ajustement de pulse (pulse shaping techniques) dans les historiques de contraintes des essais SHPB}
+        \label{fig:ana_cp2}
+  \end{center}
+\end{figure}
 
 
+%High wave speeds in the specimen facilitate an evenly distributed stress field in the specimen and is required to acquire stress equilibrium
+
+%Characterization of sand using the Kolsky bar is more complex than conventional materials such as metals. The longitudinal wave speed in a granular system, such as sand, is governed by complex interactions between sand particles, pore air, and pore water.
+
+%The tests covered include uniaxial and triaxial compression, split Hopkinson pressure bar (SHPB), and plate impact tests. Results ofthese tests are summarized, in order to provide a deeper understanding ofthe response ofgranular media to HSR loading
 
 
+%Sand is subjected to high-rate compressive loading in many engineering applications including explosions, air blasts, mine blasting, drilling, vehicle and aircraft wheel loading, dynamic compaction, pile driving, and projectile penetration. Sand
 
-%The application of an impact stress to a soil mass introduces a complex stress wave propagating in the soil. Depending on the location with respect to the point ofapplica- tion ofthe impact loading, the surrounding soil may be affected by a compressive stress wave, a shear stress wave, a Rayleigh stress wave, or a combination ofthese stress waves. The stress state is more complicated near the ground surface. Stress waves produced by an impact load are typically characterized by fast rise and fall times, high amplitude, and short durations. The study ofthe response ofsoil to HSR loading is commonly carried out in the laboratory using one of the following two concepts: - Reproducing the stress conditions at the propagating front, by applying a uniform stress throughout a small soil sample to represent the soil affected by the wave front
-%- Generating a stress wave and allowing its propagation through a longer soil sample and studying wave propagation characteristics to derive the HSR response Common testing methods based on the above concepts may be divided into four main categories: (1) uniaxial compression tests, also referred to as confined compression or oedometer tests; (2) SHPB tests; (3) triaxial compression and direct shear tests; and (4) plane wave shock tests.
+%Dans les années 1970, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l’application des essais de choc à l’essai de pénétration. Ils ont également réalisé des tests SHPB. Ils se sont appuyés sur des principes des chocs et sur les équations d’état (équations de Rankine-Hugoniot), qui régissent leur propagation. A l’aide des équations de la mécanique classique et des lois de comportement (équations rhéologiques), ces équations dites « mixtes » décrivent la relation entre les contraintes et les vitesses (nommé polaire de choc) lors de la propagation d’un ébranlement. Ces relations permettent d’étudier le comportement du sol soumis à un impact et de déterminer l’impédance mécanique de celui-ci (Z) pour en déduire la vitesse de propagation d’ondes de compression.
 
-
-
-
-Characterization of sand using the Kolsky bar is more complex than conventional
-materials such as metals. The longitudinal wave speed in a granular system, such as sand, is governed by complex interactions between sand particles, pore air, and pore water.
-Des essais 
-
-The tests covered include uniaxial and triaxial compression, split Hopkinson pressure bar (SHPB), and plate impact tests. Results ofthese tests are summarized, in order to provide a deeper understanding ofthe response ofgranular media to HSR loading
-
-
-Sand is subjected to high-rate compressive loading in many engineering applications including explosions, air blasts, mine blasting, drilling, vehicle and aircraft wheel loading, dynamic compaction, pile driving, and projectile penetration. Sand
-
-Dans les années 1970, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l’application des essais de choc à l’essai de pénétration. Ils ont également réalisé des tests selon la méthode des barres de Hopkinson (Split Hopkinson Pressure Bar - SHPB) adaptés pour les sols. Ils se sont appuyés sur des principes des chocs et sur les équations d’état (équations de Rankine-Hugoniot), qui régissent leur propagation. A l’aide des équations de la mécanique classique et des lois de comportement (équations rhéologiques), ces équations dites « mixtes » décrivent la relation entre les contraintes et les vitesses (nommé polaire de choc) lors de la propagation d’un ébranlement. Ces relations permettent d’étudier le comportement du sol soumis à un impact et de déterminer l’impédance mécanique de celui-ci (Z) pour en déduire la vitesse de propagation d’ondes de compression.
 %%_______________
 %Les variables qui caractérisent le matériau sont la masse volumique, le tenseur des contraintes (6 composantes inconnues) et le tenseur des déformations (6 composantes inconnues). Pour simplement par les éléments de leur diagonale. Or, par symétrie ?:: = ?;;. Les particules sont l’onde longitudinale plane, l’axe 0x est principal et les deux tenseurs sont décrits tout sollicitées verticalement surtout sous le centre de tige et développent une vitesse verticale. Les déformations générées sont essentiellement normales au plan de propagation (εxx). Cette hypothèse s’appuie sur la vitesse de l’impulsion. Ce phénomène étant trop rapide, le bulbe de uniquement trois variables ?<<, ?:: et ?<< principales décrivant le problème.
 
@@ -143,11 +149,11 @@ Dans les années 1970, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l
 
 %%________________________
 
-Le passage de l’onde de choc entraine un changement de volume dans le milieu et par conséquent un changement de sa masse volumique. Pour l’ébranlement longitudinal, on assume que la variation de volume ∆V est essentiellement axiale et exprimée en fonction des masses volumique initiales ?0 et de la masse volumique finale ρ (Équation 19).
+Le passage de l’onde de choc entraine un changement de volume dans le milieu et par conséquent un changement de sa masse volumique. Pour l’ébranlement longitudinal, on assume que la variation de volume  est essentiellement axiale et exprimée en fonction des masses volumique initiales $\rho_0$ et de la masse volumique finale  $\rho$ (Équation 19).
 
-\cite{Omidvar2012} expliquent que les essais des propagations d’ondes en géotechnique (comme les essais de choc) sont complexes à mettre en place car il est souvent difficile d’avoir le suivi des contraintes dans le sol et de s’affranchir des réflexions des ondes. Dans ce type d’essai l’instrumentation la plus courante est l’insertion de capteur à l’intérieur de l’échantillon ce qui conduit souvent à des erreurs.
+\cite{Omidvar2012} expliquent que les essais des propagations d’ondes en géotechnique (comme les essais de choc) sont complexes à mettre en place car comme déjà évoqué les hypothèse de base sont difficile assurées et, en plus, d'un point de vue technique il souvent difficile d’avoir le suivi des contraintes et des vitesses dans le sol suite l'impact. Dans ce type d’essai, l’instrumentation la plus courante est l’insertion de capteur à l’intérieur de l’échantillon ce qui conduit souvent à des erreurs.
 
-Cette limitation a été résolue par l’instrumentation du pénétromètre et l’application des méthodes de découplage et de reconstruction d’ondes dans la tige à l'essai DCLT. Des capteurs situés au niveau de la tête enregistrent les forces engendrées par le passage de l’ébranlement et son retour de manière quasi-continue (100 kHz) pour un intervalle $\Delta t$ égal à 2L/c. Avec L la longueur de la barre et c la vitesse d’ondes dans l’acier (de l’ordre de 5200m/s).
+Des problèmes liés à l'obtention des historiques de contraintes et des vitesses a été résolue par l’instrumentation du pénétromètre et l’application des méthodes de découplage et de reconstruction d’ondes dans la tige à l'essai DCLT. Des capteurs situés au niveau de la tête enregistrent les forces engendrées par le passage de l’ébranlement et son retour de manière quasi-continue (100 kHz) pour un intervalle $\Delta t$ égal à 2L/c. Avec L la longueur de la barre et c la vitesse d’ondes dans l’acier (de l’ordre de 5200m/s).
 
 Au cours de l’essai DCLT, l’impact du marteau crée une onde incidente. Une partie de l’onde incidente de force $F_I$ et de vitesse $v_I$ est réfléchie. L'onde réfléchie de force $F_R$ se propage dans le sens inverse à une vitesse $v_R$, tandis qu’une autre partie de l'onde incidente est transmise au sol. Dans la tige, l’onde réfléchie s’ajoute à l’onde incidente. Tant que les deux milieux adjacents restent collés, leurs particules situées des deux côtes présentent la même vitesse et des contraintes normales de même intensité (principe d’action et réaction). Ceci constitue le principe général d’obtention des forces transmises ($F_T$) au sol pour chaque impact. La contrainte en pointe $\sigma_p = \frac{F_T}{A}$ (Figure \ref{fig:polaire1}).
 

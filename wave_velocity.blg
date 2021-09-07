@@ -5,8 +5,10 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
-Warning--I didn't find a database entry for "Hicher2018"
-Warning--empty school in Aussedat1970
+Repeated entry---line 5911 of file library.bib
+ : @article{Dano2002
+ :                  ,
+I'm skipping whatever remains of this entry
 Warning--empty publisher in Benz2007
 Warning--empty institution in Briaud2001
 Warning--empty school in Escobar2015
@@ -15,45 +17,45 @@ Warning--empty publisher in IskanderMaguedOmidivar2015
 Warning--can't use both volume and number fields in LeKouby2008
 Warning--empty school in Muhammed2016
 Warning--empty journal in Sauzeat2003
-You've used 27 entries,
+You've used 28 entries,
             1935 wiz_defined-function locations,
-            648 strings with 8576 characters,
-and the built_in function-call counts, 9044 in all, are:
-= -- 897
-> -- 288
+            653 strings with 8909 characters,
+and the built_in function-call counts, 9503 in all, are:
+= -- 943
+> -- 311
 < -- 24
-+ -- 90
-- -- 90
-* -- 727
-:= -- 1632
-add.period$ -- 76
-call.type$ -- 27
-change.case$ -- 171
-chr.to.int$ -- 27
++ -- 98
+- -- 98
+* -- 770
+:= -- 1713
+add.period$ -- 79
+call.type$ -- 28
+change.case$ -- 180
+chr.to.int$ -- 28
 cite$ -- 36
-duplicate$ -- 374
-empty$ -- 648
-format.name$ -- 123
-if$ -- 1728
+duplicate$ -- 388
+empty$ -- 678
+format.name$ -- 132
+if$ -- 1816
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 19
-newline$ -- 133
-num.names$ -- 81
-pop$ -- 151
+missing$ -- 20
+newline$ -- 138
+num.names$ -- 84
+pop$ -- 157
 preamble$ -- 1
-purify$ -- 180
+purify$ -- 189
 quote$ -- 0
-skip$ -- 295
+skip$ -- 305
 stack$ -- 0
-substring$ -- 603
-swap$ -- 39
+substring$ -- 640
+swap$ -- 40
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 158
-warning$ -- 9
-while$ -- 79
+type$ -- 164
+warning$ -- 8
+while$ -- 83
 width$ -- 0
-write$ -- 334
-(There were 10 warnings)
+write$ -- 348
+(There was 1 error message)
