@@ -27,6 +27,7 @@
 \usepackage{siunitx}
 \usepackage{textcomp}
 \setcounter{secnumdepth}{3}
+\usepackage{amsmath}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -82,7 +83,7 @@ Le module de déformation d'un sol est un des paramètres les plus difficiles à
 
 Par ailleurs, à partir des années 1970, le développement de techniques expérimentales de plus en plus précises ont mis en évidence la limitation des essais classiques pour traduire le comportement des sols à petites déformations \citep{Burland1989,Atkinson2000, GomesCorreia2004}.
 
-Ces travaux ont montré que le domaine élastique pour les sols est assez restreint et difficile à déterminer (souvent associé à des déformations de l'ordre de $10^{-5}$). Les essais de propagations d’ondes (capteurs piezo-électriques en laboratoire et essais de forage in situ) induisent des déformations très faibles, inférieures à $10^{-5}$. L’hypothèse d’un comportement élastique linéaire pour ces essais est donc justifiée \citep{ Dano2002, Benz2007}. Il est donc possible d’obtenir le module à faibles déformations ($E_{max}$ ou $E_0$) à partir des mesures de vitesse d’ondes de compression ($c_p$) et de la masse volumique du milieu $\rho$ (équation \ref{eq:Emax}).
+Ces travaux ont montré que le domaine élastique pour les sols est assez restreint et difficile à déterminer (souvent associé à des déformations de l'ordre de $10^{-5}$). Les essais de propagations d’ondes (capteurs piezo-électriques en laboratoire et essais de forage in situ) induisent des déformations très faibles, inférieures à $10^{-5}$. L’hypothèse d’un comportement élastique linéaire pour ces essais est donc justifiée \citep{ Benz2007}. Il est donc possible d’obtenir le module à faibles déformations ($E_{max}$ ou $E_0$) à partir des mesures de vitesse d’ondes de compression ($c_p$) et de la masse volumique du milieu $\rho$ (équation \ref{eq:Emax}).
 
 \begin{equation} \label{eq:Emax}
    E_{max} = \rho c_p^2
@@ -101,15 +102,9 @@ Dans ce cas, il resterait à évaluer la précision des vitesse ainsi détermin�
 
 \section{Détermination de la vitesse d'ondes à partir de l'essai DCLT : analogie avec les essais de choc}
 
-On va expliquer la méthode d'obtention de $c_p^{DCLT}$ à l'aide de l'essai DCLT en deux étapes. Dans un premier temps, on explique la méthode d'obtention des contraintes et de vitesses en pointe. Dans un deuxième temps, on explique la démarche et les hypothèses permettant de déterminer la vitesse d'ondes $c_p^{DCLT}$ à partir de mesures de contrainte et de mesures de vitesse en pointe et la masse volumique du milieu.
+Suite à une brève introduction sur les essais de choc, on va expliquer la méthode d'obtention de $c_p^{DCLT}$ à l'aide de l'essai DCLT en deux étapes. Dans un premier temps, on explique la méthode d'obtention des contraintes et de vitesses en pointe. Dans un deuxième temps, on explique la démarche et les hypothèses permettant de déterminer la vitesse d'ondes $c_p^{DCLT}$ à partir de mesures de historique de contrainte et de vitesse en pointe et de la masse volumique du milieu (polaire de choc).
 
-\subsection{Obtention des contraintes et des vitesses en pointe}
-
-
-
-
-
-\subsection{Détermination de la vitesse d'onde }
+\subsection{Introduction : les essais de choc}
 
 L'application d'un impact dans le sol crée un état de contrainte complexe. Selon la location par rapport au point d'application de l'impact, le sol adjacent peut être affecté par des ondes de compression, de cisaillement ou des ondes Rayleigh ou encore par une combinaison de celles-ci. Cet état de contrainte est encore plus complexe en surface.
 
@@ -129,6 +124,96 @@ Pour des matériaux caractérisés par des vitesse d'ondes importantes, il est p
   \end{center}
 \end{figure}
 
+\cite{Omidvar2012} expliquent que les essais des propagations d’ondes en géotechnique (comme les essais de choc) sont complexes à mettre en place car comme déjà évoqué les hypothèse de base sont difficiles assurées et, en plus, d'un point de vue technique il souvent difficile d'avoir le suivi des contraintes et des vitesses dans le sol suite l'impact. Dans ce type d’essai, l’instrumentation la plus courante est l’insertion de capteur à l’intérieur de l’échantillon ce qui conduit souvent à des erreurs.
+
+Des problèmes liés à l'obtention des historiques de contraintes et des vitesses a été résolue par l’instrumentation du pénétromètre et l’application des méthodes de découplage et de reconstruction d’ondes dans la tige à l'essai DCLT. Des capteurs situés au niveau de la tête enregistrent les forces engendrées par le passage de l’ébranlement et son retour de manière quasi-continue (100 kHz) pour un intervalle $\Delta t$ égal à 2L/c. Avec L la longueur de la barre et c la vitesse d’ondes dans l’acier (de l’ordre de 5200m/s).
+
+\subsection{Obtention des contraintes et des vitesses en pointe : essai DCLT}
+
+Au cours de l’essai DCLT, chaque impact de marteau crée une onde incidente. Celle-ci se propage le long du train de tige. En pointe, une partie de cette onde incidente est réfléchie vers la tête, tandis qu’une autre partie de l'onde incidente est transmise au sol. Dans la tige, l’onde réfléchie s'ajoute à l’onde incidente. Pour comprendre l'obtention des historiques de contraintes et de vitesse en pointe, il faut s'intéresser aux phénomènes dynamiques ayant lieu après l'impact.
+
+La déformation entraînée par le passage de cette onde de compression incidente $\varepsilon$ peut être exprimée par l'équation \ref{eq:wave_def}.
+
+\begin{equation} \label{eq:wave_def}
+    \varepsilon = \frac{\partial u}{\partial x}
+\end{equation}
+
+%En appliquant la relation deuxième loi de Newton (F=ma), avec la masse m comme m=Atrhoρt dx et l'accélération $a=\partial^2/\partial t^2$ pour une portion %de la tige, on obtient à l'équation \ref{eq:stress}.
+
+\begin{equation} \label{eq:wave_stress}
+    \frac{ \partial \sigma}{\partial^2}= \rho_t^2 \frac{\partial u}{\partial x}
+\end{equation}
+
+Par ailleurs, en supposant la tige élastique,  $\sigma=E_t \varepsilon$, avec $\varepsilon$ donné par l'équation \ref{eq:wave_def}, on obtient l'équation différentielle qui gouverne la propagation de l'onde u(x,t), connue simplement équation de l'onde. 
+
+\begin{equation} \label{eq:wave}
+    \frac{ \partial \sigma}{\partial t^2}= c_t^2 \frac{\partial u}{\partial x}
+\end{equation}
+
+Il est possible l'équation de l'onde analytiquement par différentes méthodes (transformée de Laplace, séparation des variables, méthode des caractéristiques) ou numériquement. Chacun de ces méthodes est discuté par \cite{Verruijt2009}. Dans le cadre de ce travail, on retient la solution obtenue par la méthode des caractéristiques, proposé initialement par \cite{Saint-Venant1898}. Selon celle-ci, l'équation \ref{eq:wave} correspond à la superposition deux ondes $u_{d}(t-x/c_t)$ (descendante) et $u_{u}(t-x/c_t)$ (remontante) se propageant le long des tiges de manière continue à une vitesse d'ondes ($c_t$) (Équation \ref{eq:wave_deplacement}).
+
+\begin{equation} \label{eq:wave_deplacement}
+u(x,t) = u_d(t-x/c_t)-u_u(t+x/c_t)
+\end{equation}
+
+L’impact engendre une onde de compression u(x,t) dans le pénétromètre qui se propage à vitesse constante dans le sens longitudinal. La vitesse de propagation d’une onde de compression $c$ dans un milieu solide infini est déterminée par l'équation (\ref{eq:wave_c}). La vitesse de propagation $c$ étant une fonction des propriétés du matériau du milieu traversé (module d'Young E, coefficient de Poisson $\nu$ et densité $\rho$).
+
+\begin{equation} \label{eq:wave_c}
+    c = \sqrt{\frac{1}{\rho}\frac{E(1-\nu)}{(1+\nu)(1-2\nu)}}
+\end{equation}
+
+Pour le cas des tiges élancées, la vitesse de propagation de l’onde de compression u(x,t) se déplaçant longitudinalement est indépendante du coefficient de Poisson $\nu$ \citep{Timoshenko1951} et est donc donnée par l’équation \ref{eq:wave_ct}.
+
+\begin{equation} \label{eq:wave_ct}
+    c_t = \sqrt{\frac{E_t}{\rho_t}}
+\end{equation}
+
+Soit $c_t$, $E_t$, et $\rho_t$ la vitesse de propagation de l'onde, le module d'Young et la densité des tiges respectivement. 
+
+Le passage de l'onde u(x,t) à un instant t engendrera des variations de déformation et de vitesse particulaire v(x,t) à un point donnée de la tige x.  La vitesse particulaire v(x,t) est obtenue en dérivation de l'équation \ref{eq:wave_deplacement} en fonction du temps.
+
+\begin{equation} \label{eq:wave_vitesse}
+v(x,t) = v_d(t-x/c_t)-v_u(t+x/c_t)
+\end{equation}
+
+La déformation entraînée par le passage de l'onde u(x,t), celle-ci obtenue à partir de la dérivation de l'équation \ref{eq:wave_def} en fonction de x. Cette déformation $\varepsilon$ peut être exprimée en terme de la vitesse particulaire des ondes, incidente et remontante, afin d'obtenir l'équation \ref{eq:wave_def2}.
+
+\begin{equation} \label{eq:wave_def2}
+    \varepsilon(x,t)=-\frac{1}{c_t}[v_d(t-x/c_t]-v_u(t+x/c_t)]
+\end{equation}
+
+En tenant compte de l'élasticité des tiges, c'est-à-dire de $F=\varepsilon A_t E_t$, on obtient l'équation \ref{eq:wave_FZv}
+
+\begin{equation} \label{eq:wave_FZv}
+    F(x,t)=-\frac{A_t E_t}{c_t}[v_d(t-x/c)-v_u(t-x/c)]
+\end{equation}
+
+Comme constaté sur l'équation \ref{eq:wave_FZv}, dans le problème de la propagation longitudinale d'une onde mécanique dans un milieu élastique, la force F(x,t) et la vitesse particulaire v(t,x) sont proportionnels. Le rapport de proportionnalité entre ceux deux grandeurs étant ${A_t E_t}/{c_t}$, c'est-à-dire, l'impédance mécanique de la tige $Z_t$.
+
+Ainsi, à partir des enregistrements de déformation $\varepsilon_A(t)$ et de vitesse $v_A(t)$ réalisés sur les tiges dans une section A au voisinage de l’enclume, les ondes $\varepsilon_d$ et $\varepsilon_u$ sont découplées selon les Équation \ref{eq:decouplage_down} et \ref{eq:decouplage_up} respectivement. 
+
+\begin{equation} \label{eq:decouplage_down}
+    \varepsilon_d (t) = \frac{1}{2} \left[ \varepsilon_A (t) - \frac{v_A(t)}{c_t} \right]
+\end{equation}
+
+\begin{equation} \label{eq:decouplage_up}
+    \varepsilon_u (t) = \frac{1}{2} \left[ \varepsilon_A (t) + \frac{v_A(t)}{c_t} \right]
+\end{equation}
+
+En connaissant les signaux $\varepsilon_A(t)$ et $v_A(t)$, il est possible de reconstruire les signaux de déformation $\varepsilon(t)$, de force $F(t)$ et de vitesse particulaire $v(t)$ pour une section donnée C situé en dessous du point de mesure. Cela en supposant que les efforts extérieurs (frottement latéral) nuls entre le point de mesure (A) et la section analysée (C). Avec une tige homogène et de section constante $A_t$ (impédance uniforme $Z_t$), la reconstruction des signaux de force $F(t)$ et de vitesse $v(t)$ est donné par les Équations \ref{eq:reconstruction_F} et \ref{eq:reconstruction_v} respectivement. Soit $\Delta x = x_C - x_A$.
+
+\begin{equation} \label{eq:reconstruction_F}
+    F (t) = \frac{E_t A_t}{2} \left[ \varepsilon_A (t + 2 \Delta x / c_t) + \varepsilon_A (t) \right] + \left[ \frac{Z_t}{2}  v_A (t) + v_A (t + 2 \Delta x/c_t)  \right]
+\end{equation}
+
+
+\begin{equation} \label{eq:reconstruction_v}
+    v (t) = \frac{1}{2} \left[ v_A \left( t + \frac{2 \Delta x}{c_t} \right) + v_A (t)  \right] + \left( \frac{E_t A_t}{2 Z_t} \right) \left[ \varepsilon_A \left( t + \frac{2 \Delta x}{c_t} \right) + \varepsilon_A (t) \right]
+\end{equation}
+
+Ainsi, on obtient les suivis de contrainte et de vitesse particulaire en pointe pour chaque impact. On s'intéresse par la suite à méthode et aux hypothèses permettant de déterminer la vitesse d'ondes à partir de mesures de contrainte et de vitesse particulaire. Ces relations et ces hypothèses sont appliqués aux essais de choc évoqués dans l'introduction de cette section (à savoir essais de choc unixial, essais SHPB). Ces relations et ces hypothèses ont été plus tard appliqués aux pénétromètres dynamiques par \cite{Aussedat1970} et \cite{Meunier1974}.
+
+\subsection{Détermination de la vitesse d'ondes à partir de mesures de contrainte et de vitesse particulaire en pointe}
 
 %High wave speeds in the specimen facilitate an evenly distributed stress field in the specimen and is required to acquire stress equilibrium
 
@@ -139,9 +224,10 @@ Pour des matériaux caractérisés par des vitesse d'ondes importantes, il est p
 
 %Sand is subjected to high-rate compressive loading in many engineering applications including explosions, air blasts, mine blasting, drilling, vehicle and aircraft wheel loading, dynamic compaction, pile driving, and projectile penetration. Sand
 
-%Dans les années 1970, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l’application des essais de choc à l’essai de pénétration. Ils ont également réalisé des tests SHPB. Ils se sont appuyés sur des principes des chocs et sur les équations d’état (équations de Rankine-Hugoniot), qui régissent leur propagation. A l’aide des équations de la mécanique classique et des lois de comportement (équations rhéologiques), ces équations dites « mixtes » décrivent la relation entre les contraintes et les vitesses (nommé polaire de choc) lors de la propagation d’un ébranlement. Ces relations permettent d’étudier le comportement du sol soumis à un impact et de déterminer l’impédance mécanique de celui-ci (Z) pour en déduire la vitesse de propagation d’ondes de compression.
+%Dans les années 1970, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l’application des essais de choc à l’essai de pénétration. Ils ont également réalisé des tests SHPB. 
 
-%%_______________
+La détermination de la vitesse d'ondes de compression $c_p$ à partir des mesures de contrainte et de vitesse particulaire s'appuie sur des principes des chocs et sur les équations d’état (aussi connue comme équations de Rankine-Hugoniot), qui régissent leur propagation. A l’aide des équations de la mécanique classique et des lois de comportement (équations rhéologiques), ces équations dites « mixtes » décrivent la relation entre les contraintes et les vitesses (nommé polaire de choc) lors de la propagation d’un ébranlement. Ces relations permettent d’étudier le comportement du sol soumis à un impact et de déterminer l’impédance mécanique de celui-ci (Z) et, la masse volumique connue, déduire la vitesse de propagation d’ondes de compression ($c_p$).
+
 %Les variables qui caractérisent le matériau sont la masse volumique, le tenseur des contraintes (6 composantes inconnues) et le tenseur des déformations (6 composantes inconnues). Pour simplement par les éléments de leur diagonale. Or, par symétrie ?:: = ?;;. Les particules sont l’onde longitudinale plane, l’axe 0x est principal et les deux tenseurs sont décrits tout sollicitées verticalement surtout sous le centre de tige et développent une vitesse verticale. Les déformations générées sont essentiellement normales au plan de propagation (εxx). Cette hypothèse s’appuie sur la vitesse de l’impulsion. Ce phénomène étant trop rapide, le bulbe de uniquement trois variables ?<<, ?:: et ?<< principales décrivant le problème.
 
 %On analyse un tube cylindrique dans un milieu infini de masse et de section S constantes lors du passage de la surface d’onde de choc. A un instant t donné, lorsque l’onde vient juste de passer le plan A, l’élément AB présente une masse volumique ρ0. Lors du passage de l’onde, toute la matière initialement comprise entre A et B sera comprise entre A’ et B. En appliquant la conservation de la masse à cet élément et puis en exprimant les longueurs de ces régions en fonction de la vitesse des particules v et de la vitesse d’onde D, on obtient l’Équation 21
@@ -149,21 +235,74 @@ Pour des matériaux caractérisés par des vitesse d'ondes importantes, il est p
 
 %%________________________
 
-Le passage de l’onde de choc entraine un changement de volume dans le milieu et par conséquent un changement de sa masse volumique. Pour l’ébranlement longitudinal, on assume que la variation de volume  est essentiellement axiale et exprimée en fonction des masses volumique initiales $\rho_0$ et de la masse volumique finale  $\rho$ (Équation 19).
+Le passage de l’onde de choc entraine un changement de volume dans le milieu et par conséquent un changement de sa masse volumique. Pour l’ébranlement longitudinal, on assume que la variation de volume $\Delta V$ est essentiellement axiale et exprimée en fonction des masses volumique initiales $\rho_0$ et de la masse volumique finale  $\rho$ (Équation 19).
 
-\cite{Omidvar2012} expliquent que les essais des propagations d’ondes en géotechnique (comme les essais de choc) sont complexes à mettre en place car comme déjà évoqué les hypothèse de base sont difficile assurées et, en plus, d'un point de vue technique il souvent difficile d’avoir le suivi des contraintes et des vitesses dans le sol suite l'impact. Dans ce type d’essai, l’instrumentation la plus courante est l’insertion de capteur à l’intérieur de l’échantillon ce qui conduit souvent à des erreurs.
+Les variables qui caractérisent le matériau sont la masse volumique, le tenseur des contraintes (6 composantes inconnues) et le tenseur des déformations (6 composantes inconnues). Dans le cas des essais de choc, on suppose onde longitudinale plane, l'axe 0x est principal et les deux tenseurs sont décrits tout simplement par les éléments de leur diagonale. Par ailleurs, par symétrie, $\sigma_{yy} = \sigma_{zz}$. Les particules sont sollicités verticalement et développent une vitesse verticale. Les déformations générées sont essentiellement normales au plan de propagation $\varepsilon$. Cette hypothèse s'appuie sur la vitesse de l’impulsion. Ce phénomène étant trop rapide, le bulbe de déformation n'est pas encore formé. Donc, pour un ébranlement longitudinal plan, on aura uniquement trois variables $\sigma_{xx}$, $\sigma_{yy}$ et $\epsilon_{yy}$  principales décrivant le problème
 
-Des problèmes liés à l'obtention des historiques de contraintes et des vitesses a été résolue par l’instrumentation du pénétromètre et l’application des méthodes de découplage et de reconstruction d’ondes dans la tige à l'essai DCLT. Des capteurs situés au niveau de la tête enregistrent les forces engendrées par le passage de l’ébranlement et son retour de manière quasi-continue (100 kHz) pour un intervalle $\Delta t$ égal à 2L/c. Avec L la longueur de la barre et c la vitesse d’ondes dans l’acier (de l’ordre de 5200m/s).
-
-Au cours de l’essai DCLT, l’impact du marteau crée une onde incidente. Une partie de l’onde incidente de force $F_I$ et de vitesse $v_I$ est réfléchie. L'onde réfléchie de force $F_R$ se propage dans le sens inverse à une vitesse $v_R$, tandis qu’une autre partie de l'onde incidente est transmise au sol. Dans la tige, l’onde réfléchie s’ajoute à l’onde incidente. Tant que les deux milieux adjacents restent collés, leurs particules situées des deux côtes présentent la même vitesse et des contraintes normales de même intensité (principe d’action et réaction). Ceci constitue le principe général d’obtention des forces transmises ($F_T$) au sol pour chaque impact. La contrainte en pointe $\sigma_p = \frac{F_T}{A}$ (Figure \ref{fig:polaire1}).
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[scale = .7]{media/polaire1.PNG}
+        \includegraphics[width=\linewidth]{media/ana_choc.PNG}
+        \caption{(a) Onde longitudinale plane et surface de choc assumée plane (b) Conservation de la masse au passage d’une onde de choc}
+        \label{fig:ana_choc}
+  \end{center}
+\end{figure}
+
+
+%Au cours de l’essai DCLT, l’impact du marteau crée une onde incidente. Une partie de l’onde incidente de force $F_I$ et de vitesse $v_I$ est réfléchie. L'onde réfléchie de force $F_R$ se propage dans le sens inverse à une vitesse $v_R$, tandis qu’une autre partie de l'onde incidente est transmise au sol. Dans la tige, l’onde réfléchie s’ajoute à l’onde incidente. Tant que les deux milieux adjacents restent collés, leurs particules situées des deux côtes présentent la même vitesse et des contraintes normales de même intensité (principe d’action et réaction). Ceci constitue le principe général d’obtention des forces transmises ($F_T$) au sol pour chaque impact. La contrainte en pointe $\sigma_p = \frac{F_T}{A}$ (Figure \ref{fig:polaire1}).
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=\linewidth]{media/polaire1.PNG}
         \caption{(a) ondes découplées et (b) polaire de choc de la tige et du sol}
         \label{fig:polaire1}
   \end{center}
 \end{figure}
+
+\[
+{\begin{pmatrix}
+\sigma_{xx}    &   \tau_{xy}     &   \tau_{xz}\\
+\tau_{yx}      &   \sigma_{yy}   &   \tau_{yz}\\
+\tau_{zx}      &   \tau_{zy}     &   \sigma_{zz}\\
+            \end{pmatrix}
+            }
+    = f
+{\begin{pmatrix}
+\varepsilon_{xx}    &   \varepsilon_{xy}   &   \varepsilon_{xz}\\
+\varepsilon_{yx}    &   \varepsilon_{yy}   &   \varepsilon_{yz}\\
+\varepsilon_{zx}    &   \varepsilon_{zy}   &   \varepsilon_{zz}\\
+            \end{pmatrix}
+            }
+\]
+
+
+\begin{equation} \label{eq:deplacement}
+    \varepsilon_y = \varepsilon_z = \frac{\partial \xi_x}{\partial x} = \frac{\partial \xi_y}{\partial y} = 0
+\end{equation}
+
+
+
+\[ \therefore
+{\begin{pmatrix}
+\sigma_{xx}    &   \tau_{xy}     &   \tau_{xz}\\
+\tau_{yx}      &   \sigma_{yy}   &   \tau_{yz}\\
+\tau_{zx}      &   \tau_{zy}     &   \sigma_{zz}\\
+            \end{pmatrix}
+            }
+    = f
+{\begin{pmatrix}
+\varepsilon_{xx}    &   \varepsilon_{xy}   &   \varepsilon_{xz}\\
+\varepsilon_{yx}    &   \varepsilon_{yy}   &   \varepsilon_{yz}\\
+\varepsilon_{zx}    &   \varepsilon_{zy}   &   \varepsilon_{zz}\\
+            \end{pmatrix}
+            }
+\]
+
+
+
+
+
+
 
 L'exploitation de signaux de force et d'accélération mesurés au niveau de la tête permet d'estimer les contraintes et les vitesse en pointe, à l'interface sol-pointe \citep{Benz-Navarrete2009}. La vitesse d’ondes ($c_p^{DCLT}$) est déduite à partir de la vitesse particulaire en pointe ($v_p$), de la contrainte en pointe ($\sigma_p$) et de la masse volumique $\rho$ du milieu (Équation \ref{eq:celerite}) pour l'intervalle de temps [0 ; 2L/c].
 
@@ -243,7 +382,6 @@ Les essais DCLT ont été réalisés dans l'axe de l'éprouvette en faisant vari
 
 Parmi des résultats de $c_p$ rapportés dans la littérature, on compare celles correspondantes aux conditions (DR et $\sigma_v$) ou le plus proche possible de celles des essais DCLT (Table \ref{tab:comparatifs_}). La Figure \ref{fig:comparatifs_graphique_} présente les données sous forme graphique.
 
-
 \begin{table}[H]
     \begin{center}
         \includegraphics[width=\linewidth]{media/comparatifs_.PNG}
@@ -262,7 +400,6 @@ On constate que les valeurs de $c_p^{DCLT}$ sont supérieures à celles de la li
         \label{fig:comparatifs_graphique_}
   \end{center}
 \end{figure}
-
   
 
 \section{Bilan et perspectives}

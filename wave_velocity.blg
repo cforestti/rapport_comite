@@ -5,57 +5,46 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
-Repeated entry---line 5911 of file library.bib
- : @article{Dano2002
- :                  ,
-I'm skipping whatever remains of this entry
-Warning--empty publisher in Benz2007
-Warning--empty institution in Briaud2001
-Warning--empty school in Escobar2015
-Warning--empty journal in GomesCorreia2004
-Warning--empty publisher in IskanderMaguedOmidivar2015
 Warning--can't use both volume and number fields in LeKouby2008
-Warning--empty school in Muhammed2016
-Warning--empty journal in Sauzeat2003
-You've used 28 entries,
+You've used 30 entries,
             1935 wiz_defined-function locations,
-            653 strings with 8909 characters,
-and the built_in function-call counts, 9503 in all, are:
-= -- 943
-> -- 311
-< -- 24
+            673 strings with 9429 characters,
+and the built_in function-call counts, 9980 in all, are:
+= -- 1004
+> -- 315
+< -- 27
 + -- 98
 - -- 98
-* -- 770
-:= -- 1713
-add.period$ -- 79
-call.type$ -- 28
-change.case$ -- 180
-chr.to.int$ -- 28
-cite$ -- 36
-duplicate$ -- 388
-empty$ -- 678
-format.name$ -- 132
-if$ -- 1816
+* -- 781
+:= -- 1816
+add.period$ -- 89
+call.type$ -- 30
+change.case$ -- 188
+chr.to.int$ -- 30
+cite$ -- 31
+duplicate$ -- 413
+empty$ -- 712
+format.name$ -- 136
+if$ -- 1915
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 138
-num.names$ -- 84
-pop$ -- 157
+missing$ -- 21
+newline$ -- 152
+num.names$ -- 90
+pop$ -- 155
 preamble$ -- 1
-purify$ -- 189
+purify$ -- 199
 quote$ -- 0
-skip$ -- 305
+skip$ -- 325
 stack$ -- 0
-substring$ -- 640
-swap$ -- 40
+substring$ -- 658
+swap$ -- 44
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 164
-warning$ -- 8
-while$ -- 83
+type$ -- 174
+warning$ -- 1
+while$ -- 87
 width$ -- 0
-write$ -- 348
-(There was 1 error message)
+write$ -- 386
+(There was 1 warning)

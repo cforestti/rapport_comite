@@ -21,6 +21,7 @@ Bachrach, R. and Nur, A. (1998).
 Benz, T. (2007).
 \newblock {\em {Small-Strain Stiffness of Soils and its Numerical
   Consequences}}.
+\newblock PhD thesis, Institut fur Geotechnik der Universit¨at Stuttgart.
 
 \bibitem[Benz-Navarrete, 2009]{Benz-Navarrete2009}
 Benz-Navarrete, M.~A. (2009).
@@ -30,7 +31,7 @@ Benz-Navarrete, M.~A. (2009).
 \bibitem[Briaud, 2001]{Briaud2001}
 Briaud, J.-L. (2001).
 \newblock {INTRODUCTION TO SOIL MODULI}.
-\newblock Technical report.
+\newblock Technical report, Intelligent Construction.
 
 \bibitem[Burland, 1989]{Burland1989}
 Burland, J.~B. (1989).
@@ -42,12 +43,6 @@ Burland, J.~B. (1989).
 Cassan (1988).
 \newblock {Essai in situ des m{\'{e}}caniques des sols. 1 r{\'{e}}alisation et
   int{\'{e}}rpretation}.
-
-\bibitem[Dano et~al., 2002]{Dano2002}
-Dano, C., Hicher, P.-Y., Tailliez, S., and Varjab{\'{e}}dian, M. (2002).
-\newblock {Identification des param{\`{e}}tres de comportement des sols
-  inject{\'{e}}s par analyse inverse d'essais pressiom{\'{e}}triques}.
-\newblock {\em Revue fran{\c{c}}aise de g{\'{e}}nie civil}, 6(4):631--660.
 
 \bibitem[Duttine, 2005]{Duttine2005}
 Duttine, A. (2005).
@@ -71,7 +66,7 @@ Emerson, M. and Foray, P. (2006).
 Escobar, E. (2015).
 \newblock {\em {Mise au point et exploitation d'une nouvelle technique pour la
   reconnaisance des sols : le PANDA 3}}.
-\newblock PhD thesis.
+\newblock PhD thesis, UNIVERSITE BLAISE PASCAL – CLERMONT II.
 
 \bibitem[Felice, 1986]{Felice1986}
 Felice (1986).
@@ -83,6 +78,7 @@ Felice (1986).
 {Gomes Correia}, A. (2004).
 \newblock {Caracteristicas de deformabilidade dos solos que interessam {\`{a}}
   funcionalidade das estruturas}.
+\newblock {\em Geotecnia}.
 
 \bibitem[Hardin, 1972]{Hardin1972}
 Hardin, B.~O. (1972).
@@ -94,6 +90,7 @@ Hardin, B.~O. (1972).
 Iskander, M. and Omidivar, M. (2015).
 \newblock {\em {RAPID PENETRATION INTO GRANULAR MEDIA RAPID PENETRATION INTO
   GRANULAR}}.
+\newblock Elsevier.
 
 \bibitem[Jamiolkowski, 2012]{Jamiolkowski2012}
 Jamiolkowski, M. (2012).
@@ -139,20 +136,32 @@ Meunier, J. (1974).
 Muhammed, R.~D. (2016).
 \newblock {\em {Etude en chambre d ' {\'{e}}talonnage du frottement sol-pieu
   sous grands nombres de cycles . Application au calcul des fondations
-  profondes dans les sols fins satur{\'{e}}s To cite this version}}.
-\newblock PhD thesis.
+  profondes dans les sols fins satur{\'{e}}s}}.
+\newblock PhD thesis, Ecole doctorale G{\'{e}}osciences, Ressources Naturelles
+  et Environnement (GRN).
 
 \bibitem[Omidvar et~al., 2012]{Omidvar2012}
 Omidvar, M., Iskander, M., and Bless, S. (2012).
 \newblock {Stress-strain behavior of sand at high strain rates}.
 \newblock {\em International Journal of Impact Engineering}, 49:192--213.
 
+\bibitem[Saint-Venant, 1898]{Saint-Venant1898}
+Saint-Venant (1898).
+\newblock {M{\'{e}}moire sur le choc longitudinal de deux barres
+  {\'{e}}lastiques de grosseurs et de mati{\`{e}}res semblables ou
+  diff{\'{e}}rentes, et sur la proportion de leur force vive qui est perdue
+  pour la translation ult{\'{e}}rieure; et g{\'{e}}n{\'{e}}ralement sur le
+  mouvement longitudinal d'un sys}.
+\newblock {\em JOURNAL DE MATH{\'{E}}MATIQUES PURES ET APPLIQU{\'{E}}ES},
+  4:27--74.
+
 \bibitem[Sauzeat, 2003]{Sauzeat2003}
 Sauzeat, C. (2003).
-\newblock {Comportement du sable dans le domaine des petites et moyennes
+\newblock {\em {Comportement du sable dans le domaine des petites et moyennes
   d{\'{e}}formations : rotations "d'axes" et effets visqueux [Behavior of sand
   in the small and medium strain domains: rotation of axes and viscous
-  effects]}.
+  effects]}}.
+\newblock PhD thesis, Institut National des Sciences Appliqu{\'{e}}es de Lyon.
 
 \bibitem[Semblat, 2012]{Semblat2012}
 Semblat, J.~F. (2012).
@@ -160,10 +169,20 @@ Semblat, J.~F. (2012).
   linear and nonlinear unbounded media}.
 \newblock {\em International Journal of Geomechanics}, 11(6):440--448.
 
+\bibitem[Timoshenko and Goodier, 1951]{Timoshenko1951}
+Timoshenko, S. and Goodier, J. (1951).
+\newblock {\em {Theory of elasticity}}.
+\newblock Ed. Mc Graw-Hill.
+
 \bibitem[Tsukamoto et~al., 2002]{Tsukamoto2002}
 Tsukamoto, Y., Ishihara, K., Nakazawa, H., Kamada, K., and Huang, Y. (2002).
 \newblock {Resistance of partly saturated sand to liquefaction with reference
   to longitudinal and shear wave velocities}.
 \newblock {\em Soils and foundations}, 42(6):93--104.
+
+\bibitem[Verruijt, 2009]{Verruijt2009}
+Verruijt, A. (2009).
+\newblock {\em {An Introduction to Soil Dynamics}}.
+\newblock Springer Science and Business Media, 24 edition.
 
 \end{thebibliography}
