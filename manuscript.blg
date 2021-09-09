@@ -8,7 +8,6 @@ Database file #1: library.bib
 Warning--empty journal in Aguiar2009
 Warning--empty school in Ali2010
 Warning--empty school in Andria-Ntoanina2011
-Warning--empty institution in Briaud2001
 Warning--empty school in Cami2017
 Warning--empty publisher in Das2011
 Warning--there's a number but no volume in DeBeer1968
@@ -26,29 +25,28 @@ Warning--empty publisher in Plumelle2013
 Warning--there's a number but no volume in Robertson2010
 Warning--empty school in Tran2015
 Warning--empty school in Vernay2017
-Warning--can't use both author and editor fields in Verruijt2009
 Warning--empty journal in Zhang2019
 Warning--there's a number but no volume in Zhang2019
 You've used 101 entries,
             1935 wiz_defined-function locations,
-            1111 strings with 21545 characters,
-and the built_in function-call counts, 36576 in all, are:
-= -- 3687
+            1111 strings with 21512 characters,
+and the built_in function-call counts, 36570 in all, are:
+= -- 3688
 > -- 1217
 < -- 90
 + -- 387
 - -- 386
-* -- 2957
-:= -- 6414
+* -- 2952
+:= -- 6415
 add.period$ -- 299
 call.type$ -- 101
 change.case$ -- 679
 chr.to.int$ -- 100
-cite$ -- 125
+cite$ -- 123
 duplicate$ -- 1492
 empty$ -- 2626
 format.name$ -- 535
-if$ -- 7133
+if$ -- 7134
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 80
@@ -61,13 +59,13 @@ quote$ -- 0
 skip$ -- 1154
 stack$ -- 0
 substring$ -- 2586
-swap$ -- 195
+swap$ -- 194
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 594
-warning$ -- 24
+warning$ -- 22
 while$ -- 324
 width$ -- 0
-write$ -- 1281
-(There were 24 warnings)
+write$ -- 1282
+(There were 22 warnings)

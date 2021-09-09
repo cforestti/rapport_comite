@@ -28,6 +28,7 @@
 \usepackage{textcomp}
 \setcounter{secnumdepth}{3}
 \usepackage{amsmath}
+\usepackage{amssymb}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -200,65 +201,55 @@ Ainsi, à partir des enregistrements de déformation $\varepsilon_A(t)$ et de vi
     \varepsilon_u (t) = \frac{1}{2} \left[ \varepsilon_A (t) + \frac{v_A(t)}{c_t} \right]
 \end{equation}
 
-En connaissant les signaux $\varepsilon_A(t)$ et $v_A(t)$, il est possible de reconstruire les signaux de déformation $\varepsilon(t)$, de force $F(t)$ et de vitesse particulaire $v(t)$ pour une section donnée C situé en dessous du point de mesure. Cela en supposant que les efforts extérieurs (frottement latéral) nuls entre le point de mesure (A) et la section analysée (C). Avec une tige homogène et de section constante $A_t$ (impédance uniforme $Z_t$), la reconstruction des signaux de force $F(t)$ et de vitesse $v(t)$ est donné par les Équations \ref{eq:reconstruction_F} et \ref{eq:reconstruction_v} respectivement. Soit $\Delta x = x_C - x_A$.
+En connaissant les signaux $\varepsilon_A(t)$ et $v_A(t)$, il est possible de reconstruire les signaux de déformation $\varepsilon(t)$, de force $F(t)$ et de vitesse particulaire $v(t)$ pour une section donnée C situé en dessous du point de mesure. Cela en supposant que les efforts extérieurs (frottement latéral) nuls entre le point de mesure (A) et la section analysée (C). Avec une tige homogène et de section constante $A_t$ (impédance uniforme $Z_t$), la reconstruction des signaux de force en pointe $F_p(t)$ et de vitesse en pointe $v_p(t)$ est donné par les Équations \ref{eq:reconstruction_F} et \ref{eq:reconstruction_v} respectivement. Soit $\Delta x = x_C - x_A$. 
 
 \begin{equation} \label{eq:reconstruction_F}
-    F (t) = \frac{E_t A_t}{2} \left[ \varepsilon_A (t + 2 \Delta x / c_t) + \varepsilon_A (t) \right] + \left[ \frac{Z_t}{2}  v_A (t) + v_A (t + 2 \Delta x/c_t)  \right]
+    F_p (t) = \frac{E_t A_t}{2} \left[ \varepsilon_A (t + 2 \Delta x / c_t) + \varepsilon_A (t) \right] + \left[ \frac{Z_t}{2}  v_A (t) + v_A (t + 2 \Delta x/c_t)  \right]
 \end{equation}
-
 
 \begin{equation} \label{eq:reconstruction_v}
-    v (t) = \frac{1}{2} \left[ v_A \left( t + \frac{2 \Delta x}{c_t} \right) + v_A (t)  \right] + \left( \frac{E_t A_t}{2 Z_t} \right) \left[ \varepsilon_A \left( t + \frac{2 \Delta x}{c_t} \right) + \varepsilon_A (t) \right]
+    v_p (t) = \frac{1}{2} \left[ v_A \left( t + \frac{2 \Delta x}{c_t} \right) + v_A (t)  \right] + \left( \frac{E_t A_t}{2 Z_t} \right) \left[ \varepsilon_A \left( t + \frac{2 \Delta x}{c_t} \right) + \varepsilon_A (t) \right]
 \end{equation}
 
-Ainsi, on obtient les suivis de contrainte et de vitesse particulaire en pointe pour chaque impact. On s'intéresse par la suite à méthode et aux hypothèses permettant de déterminer la vitesse d'ondes à partir de mesures de contrainte et de vitesse particulaire. Ces relations et ces hypothèses sont appliqués aux essais de choc évoqués dans l'introduction de cette section (à savoir essais de choc unixial, essais SHPB). Ces relations et ces hypothèses ont été plus tard appliqués aux pénétromètres dynamiques par \cite{Aussedat1970} et \cite{Meunier1974}.
+La contrainte est obtenue par la suite à partir de $F_p$ et de la section transversale de la pointe $A_p$ de 4 $cm^2$ (Équation \ref{eq:reconstruction_sigma})
+
+\begin{equation} \label{eq:reconstruction_sigma}
+    \sigma_p (t) = F_p/A_p
+\end{equation}
+
+Ainsi, on obtient les suivis de contrainte et de vitesse particulaire en pointe pour chaque impact. On s'intéresse par la suite à méthode et aux hypothèses permettant de déterminer la vitesse d'ondes à partir de mesures de contrainte et de vitesse particulaire. Ces relations et ces hypothèses sont appliqués aux essais de choc évoqués dans l'introduction de cette section (à savoir essais de choc unixial, essais SHPB). Ces relations et ces hypothèses ont été plus tard appliqués au pénétromètre dynamique par \cite{Aussedat1970} et \cite{Meunier1974}.
 
 \subsection{Détermination de la vitesse d'ondes à partir de mesures de contrainte et de vitesse particulaire en pointe}
 
 %High wave speeds in the specimen facilitate an evenly distributed stress field in the specimen and is required to acquire stress equilibrium
-
 %Characterization of sand using the Kolsky bar is more complex than conventional materials such as metals. The longitudinal wave speed in a granular system, such as sand, is governed by complex interactions between sand particles, pore air, and pore water.
-
 %The tests covered include uniaxial and triaxial compression, split Hopkinson pressure bar (SHPB), and plate impact tests. Results ofthese tests are summarized, in order to provide a deeper understanding ofthe response ofgranular media to HSR loading
-
-
 %Sand is subjected to high-rate compressive loading in many engineering applications including explosions, air blasts, mine blasting, drilling, vehicle and aircraft wheel loading, dynamic compaction, pile driving, and projectile penetration. Sand
 
-%Dans les années 1970, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l’application des essais de choc à l’essai de pénétration. Ils ont également réalisé des tests SHPB. 
+La détermination de la vitesse d'ondes de compression $c_p$ à partir des mesures de contrainte et de vitesse particulaire s'appuie sur des principes des chocs et sur les équations d’état (aussi connue comme équations de Rankine-Hugoniot), qui régissent leur propagation. A l’aide des équations de la mécanique classique et des lois de comportement (équations rhéologiques), ces équations dites « mixtes » décrivent la relation entre les contraintes et les vitesses (nommé polaire de choc) lors de la propagation d’un ébranlement. Ces relations permettent d’étudier le comportement de matériaux soumis à un impact.
 
-La détermination de la vitesse d'ondes de compression $c_p$ à partir des mesures de contrainte et de vitesse particulaire s'appuie sur des principes des chocs et sur les équations d’état (aussi connue comme équations de Rankine-Hugoniot), qui régissent leur propagation. A l’aide des équations de la mécanique classique et des lois de comportement (équations rhéologiques), ces équations dites « mixtes » décrivent la relation entre les contraintes et les vitesses (nommé polaire de choc) lors de la propagation d’un ébranlement. Ces relations permettent d’étudier le comportement du sol soumis à un impact et de déterminer l’impédance mécanique de celui-ci (Z) et, la masse volumique connue, déduire la vitesse de propagation d’ondes de compression ($c_p$).
-
-%Les variables qui caractérisent le matériau sont la masse volumique, le tenseur des contraintes (6 composantes inconnues) et le tenseur des déformations (6 composantes inconnues). Pour simplement par les éléments de leur diagonale. Or, par symétrie ?:: = ?;;. Les particules sont l’onde longitudinale plane, l’axe 0x est principal et les deux tenseurs sont décrits tout sollicitées verticalement surtout sous le centre de tige et développent une vitesse verticale. Les déformations générées sont essentiellement normales au plan de propagation (εxx). Cette hypothèse s’appuie sur la vitesse de l’impulsion. Ce phénomène étant trop rapide, le bulbe de uniquement trois variables ?<<, ?:: et ?<< principales décrivant le problème.
-
-%On analyse un tube cylindrique dans un milieu infini de masse et de section S constantes lors du passage de la surface d’onde de choc. A un instant t donné, lorsque l’onde vient juste de passer le plan A, l’élément AB présente une masse volumique ρ0. Lors du passage de l’onde, toute la matière initialement comprise entre A et B sera comprise entre A’ et B. En appliquant la conservation de la masse à cet élément et puis en exprimant les longueurs de ces régions en fonction de la vitesse des particules v et de la vitesse d’onde D, on obtient l’Équation 21
-
-
-%%________________________
-
-Le passage de l’onde de choc entraine un changement de volume dans le milieu et par conséquent un changement de sa masse volumique. Pour l’ébranlement longitudinal, on assume que la variation de volume $\Delta V$ est essentiellement axiale et exprimée en fonction des masses volumique initiales $\rho_0$ et de la masse volumique finale  $\rho$ (Équation 19).
-
-Les variables qui caractérisent le matériau sont la masse volumique, le tenseur des contraintes (6 composantes inconnues) et le tenseur des déformations (6 composantes inconnues). Dans le cas des essais de choc, on suppose onde longitudinale plane, l'axe 0x est principal et les deux tenseurs sont décrits tout simplement par les éléments de leur diagonale. Par ailleurs, par symétrie, $\sigma_{yy} = \sigma_{zz}$. Les particules sont sollicités verticalement et développent une vitesse verticale. Les déformations générées sont essentiellement normales au plan de propagation $\varepsilon$. Cette hypothèse s'appuie sur la vitesse de l’impulsion. Ce phénomène étant trop rapide, le bulbe de déformation n'est pas encore formé. Donc, pour un ébranlement longitudinal plan, on aura uniquement trois variables $\sigma_{xx}$, $\sigma_{yy}$ et $\epsilon_{yy}$  principales décrivant le problème
-
+La vitesse v caractérisant la surface d’onde peut être projetée sur les plans normal et tangent. Lorsque la composante transversale est nulle pour tout l’ébranlement, on dit que celui-ci est longitudinal. Dans ce cas, le déplacement de chaque particule sera normal à la surface d’onde. En adoptant un repère (x, y, z) avec la surface d’onde parallèle au plan (y, z), le déplacement sera complètement décrit par la composante normale au plan x. De même, les variables dérivées du déplacement (vitesse, accélération et les autres dérivées en fonction du temps) sont normales à la surface d’onde.
 
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=\linewidth]{media/ana_choc.PNG}
-        \caption{(a) Onde longitudinale plane et surface de choc assumée plane (b) Conservation de la masse au passage d’une onde de choc}
+        \caption{(a) Onde longitudinale plane et surface de choc assumée plane, (b) ondes découplées et (c) polaire de choc de la tige et du sol}
         \label{fig:ana_choc}
   \end{center}
 \end{figure}
 
+Les variables qui caractérisent le matériau sont la masse volumique, le tenseur des contraintes (6 composantes inconnues) et le tenseur des déformations (6 composantes inconnues). Dans le cas des essais de choc, on suppose onde longitudinale plane, l'axe 0x est principal et les deux tenseurs sont décrits tout simplement par les éléments de leur diagonale. Par ailleurs, par symétrie, $\sigma_{yy} = \sigma_{zz}$. 
 
-%Au cours de l’essai DCLT, l’impact du marteau crée une onde incidente. Une partie de l’onde incidente de force $F_I$ et de vitesse $v_I$ est réfléchie. L'onde réfléchie de force $F_R$ se propage dans le sens inverse à une vitesse $v_R$, tandis qu’une autre partie de l'onde incidente est transmise au sol. Dans la tige, l’onde réfléchie s’ajoute à l’onde incidente. Tant que les deux milieux adjacents restent collés, leurs particules situées des deux côtes présentent la même vitesse et des contraintes normales de même intensité (principe d’action et réaction). Ceci constitue le principe général d’obtention des forces transmises ($F_T$) au sol pour chaque impact. La contrainte en pointe $\sigma_p = \frac{F_T}{A}$ (Figure \ref{fig:polaire1}).
 
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[width=\linewidth]{media/polaire1.PNG}
-        \caption{(a) ondes découplées et (b) polaire de choc de la tige et du sol}
-        \label{fig:polaire1}
-  \end{center}
-\end{figure}
+%\begin{figure}[H]
+ %   \begin{center}
+ %       \includegraphics[width=\linewidth]{media/polaire1.PNG}
+ %       \caption{(a) ondes découplées et (b) polaire de choc de la tige et du sol}
+ %       \label{fig:polaire1}
+ % \end{center}
+%\end{figure}
 
+Les particules étant sollicitées verticalement et développent une vitesse verticale. Les déformations générées sont essentiellement normales au plan de propagation $\varepsilon$. Cette hypothèse s'appuie sur la vitesse de l’impulsion. Ce phénomène étant trop rapide, le bulbe de déformation n'est pas encore formé. Donc, pour un ébranlement longitudinal plan, on aura uniquement trois variables $\sigma_{xx}$, $\sigma_{yy}$ et $\epsilon_{yy}$  principales décrivant le problème.
 \[
 {\begin{pmatrix}
 \sigma_{xx}    &   \tau_{xy}     &   \tau_{xz}\\
@@ -275,52 +266,122 @@ Les variables qui caractérisent le matériau sont la masse volumique, le tenseu
             }
 \]
 
-
 \begin{equation} \label{eq:deplacement}
     \varepsilon_y = \varepsilon_z = \frac{\partial \xi_x}{\partial x} = \frac{\partial \xi_y}{\partial y} = 0
 \end{equation}
 
 
-
-\[ \therefore
+\[\therefore
 {\begin{pmatrix}
-\sigma_{xx}    &   \tau_{xy}     &   \tau_{xz}\\
-\tau_{yx}      &   \sigma_{yy}   &   \tau_{yz}\\
-\tau_{zx}      &   \tau_{zy}     &   \sigma_{zz}\\
+\sigma_{xx}    &   0     &   0\\
+0      &   \sigma_{yy}   &   0\\
+0      &   0    &   \sigma_{yy}\\
             \end{pmatrix}
             }
     = f
 {\begin{pmatrix}
-\varepsilon_{xx}    &   \varepsilon_{xy}   &   \varepsilon_{xz}\\
-\varepsilon_{yx}    &   \varepsilon_{yy}   &   \varepsilon_{yz}\\
-\varepsilon_{zx}    &   \varepsilon_{zy}   &   \varepsilon_{zz}\\
+\varepsilon_{xx}    &   0   &   0\\
+0   &   0   &   0\\
+0    &   0   &   0\\
             \end{pmatrix}
             }
 \]
 
 
+\begin{minipage}{0.6\textwidth}
+   \begin{figure}[H]
+    \includegraphics[scale =.8]{media/ana_choc_conservation.PNG}
+    \label{fig:num_interface_kn}
+    \caption{Conservation de la masse au passage d’une onde de choc}
+    \end{figure}
+\end{minipage}%
+%\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{equation} \label{eq:volume}
+    \frac{\Delta V}{V} = \varepsilon_{xx} = 1 - \frac{\rho_0}{\rho} 
+\end{equation}
+\end{minipage}
 
+Le passage de l’onde de choc entraine un changement de volume dans le milieu et par conséquent un changement de sa masse volumique. Pour l’ébranlement longitudinal, on assume que la variation de volume $\Delta V$ est essentiellement axiale et exprimée en fonction des masses volumiques initiales $\rho_0$ et de la masse volumique finale  $\rho$ (Équation \ref{eq:volume}). On analyse un tube cylindrique dans un milieu infini de masse et de section S constante lors du passage de la surface d’onde de choc. A un instant t donné, lorsque l’onde vient juste de passer le plan A, l’élément AB présente une masse volumique $\rho_0$. Lors du passage de l’onde, toute la matière initialement comprise entre A et B sera comprise entre A’ et B. En appliquant la conservation de la masse à cet élément et puis en exprimant les longueurs de ces régions en fonction de la vitesse des particules v et de la vitesse d’ondes D, on obtient l'Équation \ref{eq:rho}.
 
-
-
-
-L'exploitation de signaux de force et d'accélération mesurés au niveau de la tête permet d'estimer les contraintes et les vitesse en pointe, à l'interface sol-pointe \citep{Benz-Navarrete2009}. La vitesse d’ondes ($c_p^{DCLT}$) est déduite à partir de la vitesse particulaire en pointe ($v_p$), de la contrainte en pointe ($\sigma_p$) et de la masse volumique $\rho$ du milieu (Équation \ref{eq:celerite}) pour l'intervalle de temps [0 ; 2L/c].
-
-\begin{equation} \label{eq:celerite}
-    c_p^{DCLT} = \frac {\sigma_p}{\rho.v_p} 
+\begin{equation} \label{eq:rho}
+   \rho_0 S AB = \rho S A'B  \therefore \rho_0 D = \rho(D-v) 
 \end{equation}
 
-L'équation \ref{eq:celerite} est déduite à partir de la conservation de la masse et de la quantité d'énergie avant et après le passage de l'ébranlement. La déduction de cette relation est présentée dans le Rapport de 1er Année (en pièce-jointe) et également dans \cite{Aussedat1970,Meunier1974}. L'application de l'équation \ref{eq:celerite} s'appuie sur un certain nombre d'hypothèses pour cet intervalle de temps analysé [0 ; 2L/c] :
+\begin{equation} \label{eq:rho2}
+   \frac{\rho_0}{\rho} = \frac{D-v}{D} 
+\end{equation}
+
+En appliquant l’Équation \ref{eq:volume} à l’Équation \ref{eq:rho2}, on conclut que la déformation axiale est égale au rapport entre la vitesse des particules et la vitesse d’ondes de compression.
+
+\begin{equation} \label{eq:def_xx}
+   \varepsilon_{xx} = \frac{v}{D} 
+\end{equation}
+
+Par la suite, les principes de la conservation de la quantité de mouvement et de l’énergie lors du passage de l’ébranlement permettent de relier les contraintes aux vitesses de particules (Équation \ref{eq:sigma_xx}).
+
+\begin{equation} \label{eq:sigma_xx}
+   \sigma_{xx} = D \rho_0 v 
+\end{equation}
+
+Les contraintes et les déformations dans le milieu sont reliées par une loi rhéologique propre. Dans le domaine élastique linéaire, les contraintes principales sont exprimées par Équation \ref{eq:sigma_xx2} et Équation \ref{eq:sigma_yy} en fonction de coefficient de Lamé $\lambda$ et $\mu$. Ceux-ci sont, pour le domaine élastique, constants et exprimés par les Équations \ref{eq:lambda} et \ref{eq:mu}. Soit $\nu$ le coefficient de poisson, E le module de compression et G le module de cisaillement.
+
+\begin{equation} \label{eq:sigma_xx2}
+   \sigma_{xx} = (\lambda + 2 \mu) \sigma_{xx}  
+\end{equation}
+
+\begin{equation} \label{eq:sigma_yy}
+   \sigma_{yy} = \lambda \sigma_{xx}  
+\end{equation}
+
+
+\begin{equation} \label{eq:lambda}
+   \lambda = \frac{E \nu}{(1+\nu)(1-2\nu)} = G
+\end{equation}
+
+
+\begin{equation} \label{eq:mu}
+   \mu = \frac{E}{2(1+\nu)}  
+\end{equation}
+
+En combinant l’Équation \ref{eq:rho} (conservation de la masse) et l’Équation \ref{eq:sigma_xx2} (loi élastique), on conclut que la célérité D est indépendante de la vitesse des particules v. Pour ce domaine, celle-ci dépend uniquement du milieu au sein duquel l'onde se propage et est égale à la vitesse d'ondes de compression $c_p$.
+
+\begin{equation} \label{eq:D}
+   D = \sqrt{\frac{\lambda+2\mu}{\rho_0}} = c_p
+\end{equation}
+
+\begin{equation} \label{eq:cp}
+   \sigma_{xx} = c_p \rho_0 v
+\end{equation}
+
+Ainsi, la vitesse d'ondes de compression $c_p$ est donné par l'équation \ref{eq:cp2}.
+
+\begin{equation} \label{eq:cp2}
+   c_p = \frac{\sigma_{xx}}{\rho_0 v} 
+\end{equation}
+
+La relation entre les contraintes et les vitesses de particules d’un point donné lors du passage de l’ébranlement présenté sous forme graphique est connu comme polaire de choc. Dans le domaine élastique, la vitesse de l’ébranlement $c_p$ étant constante, la polaire de choc est une droite. 
+
+Les polaires de choc sont appliquées aux essais de choc afin de caractériser différents matériaux (métaux, céramiques) \cite{Walsh1955, Marsh1980}. Dans les années 1970, \cite{Aussedat1970} et \cite{Meunier1974} ont introduit l’application des polaires à l'essai au pénétromètre dynamique. Pour ce faire, les auteurs ont conçu un pénétromètre dynamique de laboratoire instrumenté.
+
+%Au cours de l’essai de pénétration dynamique, l’impact du marteau produit une onde de contrainte qui se propage le long de la tige. Au niveau de la pointe, l’interface entre la pointe et sol, on assume que le sol et la pointe soient séparés par une surface plane normale à la vitesse de propagation. Une partie de l’onde incidente est réfléchie vers la tige, tandis qu’une autre partie est transmise au sol. Dans la tige, l’onde réfléchie s’ajoute à l’onde incidente. Tant que les deux milieux adjacents restent collés, leurs particules situées des deux côtes de la surface de l’onde de choc, présentent la même vitesse et des contraintes normales de même intensité (principe d’action et réaction).
+
+Dans la section précédente, on a expliqué que l'instrumentation et l'analyse des signaux utilisé dans l'essai DCLT permettent d'estimer les contraintes et les vitesses en pointe, c'est-à-dire, à l'interface sol-pointe \citep{Benz-Navarrete2009, Escobar2015}. Par conséquent, en connaissant la masse volumique du sol, on peut appliquer l'équation \ref{eq:cp} afin de déterminer une vitesse d'ondes de compression. Pour ce faire, on exploite les contraintes et les vitesses particulaires pour les premiers instants suite l'impact [0 ; 2L/c]. L'application de l'équation \ref{eq:cp} s'appuie sur un certain nombre d'hypothèses pour cet intervalle de temps analysé :
+
 \begin{itemize} [label=\textbullet]
 \item le contact entre le sol et la pointe pendant la transmission de l'onde est supposé plan et perpendiculaire ;
 \item l'amortissement au long des tiges est négligeable ;
 \item le contact entre le sol et la pointe pendant la transmission de l'onde est supposé plan et perpendiculaire ;
 \item la déformation radiale dans le sol est négligeable.
-\item la connaissance de la masse volumique du sol.
 \end{itemize}
 
+Par ailleurs, comme déjà évoqué, une autre hypothèse pour l'obtention de $c_p^{DCLT}$ est la connaissance de la masse volumique du sol. La vitesse d’ondes de compression obtenue suivant cette démarche à partir de l'essai DCLT est désormais nommé ($c_p^{DCLT}$). Celle-ci est déduite à partir de la vitesse particulaire en pointe ($v_p$) et de la contrainte en pointe ($\sigma_p$) estimés à partir de mesures en tête et de la masse volumique initiale $\rho_0$ du sol. 
 
-\cite{Benz-Navarrete2009} a appliqué la méthode proposée par \cite{Aussedat1970} à l'essai DCLT. Il a testé différents matériaux (béton, bois et différents sols) en laboratoire. Les polaires de choc obtenues ont été répétables et sensibles aux matériaux. Les valeurs de $c_p^{DCLT}$ obtenues ont des ordres de grandeurs conformes aux valeurs rapportées pour ces matériaux.
+\begin{equation} \label{eq:celerite}
+    c_p^{DCLT} = \frac {\sigma_p}{\rho.v_p} 
+\end{equation}
+
+Comme \cite{Aussedat1970}, \cite{Benz-Navarrete2009} a tracé la polaire de choc obtenue à l'essai DCLT. Il a testé différents matériaux (béton, bois et différents sols) en laboratoire. Les polaires de choc obtenues ont été répétables et sensibles aux matériaux. Les valeurs de $c_p^{DCLT}$ obtenues ont des ordres de grandeurs conformes aux valeurs rapportées pour ces matériaux.
 
 \begin{figure}[H]
     \begin{center}

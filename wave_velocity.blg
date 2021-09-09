@@ -6,45 +6,45 @@ The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
 Warning--can't use both volume and number fields in LeKouby2008
-You've used 30 entries,
+You've used 32 entries,
             1935 wiz_defined-function locations,
-            673 strings with 9429 characters,
-and the built_in function-call counts, 9980 in all, are:
-= -- 1004
-> -- 315
-< -- 27
-+ -- 98
-- -- 98
-* -- 781
-:= -- 1816
-add.period$ -- 89
-call.type$ -- 30
-change.case$ -- 188
-chr.to.int$ -- 30
-cite$ -- 31
-duplicate$ -- 413
-empty$ -- 712
-format.name$ -- 136
-if$ -- 1915
+            688 strings with 9692 characters,
+and the built_in function-call counts, 10757 in all, are:
+= -- 1084
+> -- 335
+< -- 30
++ -- 104
+- -- 104
+* -- 840
+:= -- 1944
+add.period$ -- 95
+call.type$ -- 32
+change.case$ -- 201
+chr.to.int$ -- 32
+cite$ -- 33
+duplicate$ -- 448
+empty$ -- 770
+format.name$ -- 146
+if$ -- 2075
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 21
-newline$ -- 152
-num.names$ -- 90
-pop$ -- 155
+missing$ -- 23
+newline$ -- 162
+num.names$ -- 96
+pop$ -- 165
 preamble$ -- 1
-purify$ -- 199
+purify$ -- 212
 quote$ -- 0
-skip$ -- 325
+skip$ -- 355
 stack$ -- 0
-substring$ -- 658
-swap$ -- 44
-text.length$ -- 3
+substring$ -- 719
+swap$ -- 53
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 174
+type$ -- 186
 warning$ -- 1
-while$ -- 87
+while$ -- 94
 width$ -- 0
-write$ -- 386
+write$ -- 412
 (There was 1 warning)
