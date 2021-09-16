@@ -363,7 +363,7 @@ Certain des paramètres (en l'occurrence la densité et l'IP) sont des paramètr
 
 Le coefficient de Poisson utilisé est celui à faibles déformations. L'obtention de ce paramètre requiert l'utilisation des capteurs de haute précision. \emph{A priori}, ce paramètre n'est pas déterminé. Toutefois, vu que ceci est peu sensible à la densité et au confinement, on peut prendre de valeurs courantes sans avoir de grands impacts sur les résultats. Les valeurs de 0,1 à 0,25 sont courantes pour de sols ayant un degré de saturation $S_r$<70\%, avec des valeurs plus faibles pour les sables. L'intervalle de 0,15 à 0,22 étant une bonne approximation pour les sols sableux ou argileux. Cette valeur augmente considérablement avec le dégrée de saturation supérieur à 70\%. Pour des sols quasiment saturés ($S_r$>95\%) ou saturés, on admet un $\nu$ de 0,5.
 
-Le module à faibles déformations est obtenu en laboratoire par l'essai de colonne résonnante et à partir de capteur piézoélectriques. \emph{In situ}, ceci est déterminé par des essais de cross-hole et down-hole. Ce paramètre est toutefois peu courant dans la plus part des projets géotechniques. C'est pourquoi, ceci est souvent estimé par le biais de corrélations.
+%Le module à faibles déformations est obtenu en laboratoire par l'essai de colonne résonnante et à partir de capteur piézoélectriques. \emph{In situ}, ceci est déterminé par des essais de cross-hole et down-hole. Ce paramètre est toutefois peu courant dans la plus part des projets géotechniques. C'est pourquoi, ceci est souvent estimé par le biais de corrélations.
 
 
 %\section{Modèle appliqué à l'essai CLT}
@@ -920,16 +920,21 @@ Par ailleurs, on a réalisé une série d'essai de chargement CLT et DCLT en cha
   \chapter{Étude numérique}
   \label{sec:num}
   
-A l’heure actuelle, les méthodes numériques dites continues (\emph{e.g.} FEM, FDM) constituent l’approche la plus réaliste afin de simuler l’interaction sol-pointe \citep{Loukidis2008, Le2013}. Celles-ci permettent de reproduire toute la complexité de la pénétration (comportement non-linéaire des sols, prise en compte des différents types d'amortissement, ...). C’est pourquoi, on propose 
-d'appliquer une méthode continue, et plus précisément en différences finies, aux battage dynamique pénétrométrique. On souhaite développer un modèle numérique qualitativement et quantitativement représentatif de l'essai DCLT.
+A l’heure actuelle, les méthodes numériques dites continues (\emph{e.g.} FEM, FDM) constituent l’approche la plus réaliste afin de simuler l’interaction sol-pointe \citep{Loukidis2008, Le2013}. Celles-ci permettent de reproduire toute la complexité de la pénétration (comportement non-linéaire des sols, prise en compte des différents types d'amortissement, ...). Par ailleurs, la simulation numérique a plusieurs intérêts :
+\begin{itemize} [label=\textbullet]
+\item on peut agir facilement sur les paramètres et étudier ainsi leurs influences sur le comportement du système : par exemple, on peut faire varier des paramètres rhéologiques (E, phi, ...), la géométrie des éléments (marteau, pointe, ...) ainsi que les conditions aux limites ;
+\item on connaît à tout moment l'état du système. Cela veut dire qu'on peut faire des mesures qui ne perturbent pas le comportement du système. Par exemple, suivre les grandeurs cinématiques à des emplacements où il serait difficilement praticable expérimentalement notamment à l'interface sol-pointe ; 
+\item on peut faire un grand nombre d'expériences à peu de frais. Cela est spécialement intéressant dans le cas de la méthode continue celle-ci étant moins couteuse en terme de temps que la méthode discrète ;
+\item on peut refaire plusieurs fois une expérience avec strictement les mêmes conditions initiales.
+\end{itemize}
 
-L'objectif de ce modèle est d’étudier l’influence des paramètres rhéologiques du sol ausculté sur le principal résultat de l'essai : la courbe charge-enfoncement dynamique (ou courbe DCLT). Les paramètres rhéologiques étudiés sont les plus courants pour le dimensionnement en géotechnique : en déformation, le module d'élasticité (E) et, en cisaillement, l'angle de frottement interne ($\phi$) et la cohésion (c). En plus, ce modèle numérique permettra d’étudier: 
+C’est pourquoi, on propose d'appliquer une méthode continue aux battage dynamique pénétrométrique. On a développé un modèle numérique qualitativement et quantitativement représentatif de l'essai DCLT. L'objectif de ce modèle est d’étudier l’influence des paramètres rhéologiques du sol ausculté sur le principal résultat de l'essai : la courbe charge-enfoncement dynamique (ou courbe DCLT). Les paramètres rhéologiques étudiés sont les plus courants pour le dimensionnement en géotechnique : en déformation, le module d'élasticité (E) et, en cisaillement, l'angle de frottement interne ($\phi$) et la cohésion (c). En plus, ce modèle numérique permettra d’étudier : 
+\begin{itemize} [label=\textbullet]
+\item l’influence du type de sollicitation : statique et dynamique ;
+\item les déformations entraînées par l’essai dans le sol.
+\end{itemize}
 
--	l’influence du type de sollicitation : statique et dynamique ;
-
--	les déformations entraînées par l’essai dans le sol.
-
-Dans ce chapitre, on rappelle d'abord certains travaux réalisés sur le même sujet et certains aspects numériques importants pour comprendre le logiciel. Par la suite, on présente une partie du travail numérique réalisé au cours de la deuxième année.
+Dans ce chapitre, on rappelle d'abord certains travaux réalisés sur le même sujet et certains aspects numériques importants pour comprendre le logiciel. Par la suite, on présente les différents aspects du modèle numérique.
  
   \section{État de l'art}
   \label{sec:etat de l art}
@@ -941,7 +946,7 @@ On présente par la suite l'état de l'art sur la modélisation numérique. Dans
 
 La pénétration dynamique reste un des problèmes les plus sophistiqué des applications numériques en géotechnique. Il s’agit d’un problème fortement non-linéaire et qui entraîne des déformations très importantes \citep{Nazem2012}.
 
-De nombreux travaux numériques s’intéressent à simuler la pénétration dans les milieux granulaires. Parmi eux, la méthode discrète reste est la plus courante \citep{Zhang2019, Quezada2014a}. Les modèles rapportés simulant la pénétration dynamique à l’aide des méthodes continues (FEM ou FDM) sont moins courants \citep{Murthy2020, Chatterjee2015a, Fakharian2014,  Aguiar2009, Pinto2008, Nath1990}. Parmi eux, les travaux simulant le battage sont encore plus rares. Généralement, la sollicitation dynamique est simulée en appliquant une force sinusoïdale à la tête du pieux.
+De nombreux travaux numériques s’intéressent à simuler la pénétration dans les milieux granulaires. Parmi eux, la méthode discrète, un nombre de travaux se sont intéressés à la simulation des essais de pénétration dynamique (SPT et DCP) \citep{Zhang2021c,Zhang2019, Quezada2014a}. Les modèles rapportés simulant la pénétration dynamique à l’aide des méthodes continues (FEM ou FDM) sont moins courants \citep{Murthy2020, Chatterjee2015a, Fakharian2014,  Aguiar2009, Pinto2008, Nath1990}. Parmi eux, les travaux simulant le battage sont encore plus rares. Généralement, la sollicitation dynamique est simulée en appliquant une force sinusoïdale à la tête du pieux.
 
 \cite{Masouleh2008} ont simulé le chargement dynamique d’un pieu à l’aide de FLAC$^{2D}$. Ils ont présenté les résultats numériques des analyses de propagations d’ondes et la réponse dynamique sol-pieux au cours du battage. Les signaux obtenus numériquement ont été assez conformes aux résultats des chargements dynamiques des pieux. La bonne correspondance entre les résultats numériques et expérimentaux montre la faisabilité d’application de l’approche continue pour modéliser des problèmes dynamiques de ce type. Dans leur modèle, \cite{Masouleh2008} font varier les caractéristiques du sol (paramètres de résistance et de déformation) et de l’interface sol-pieu afin de faire du signal matching (similaire au CAPWAP) d’après les résultats expérimentaux.
 
@@ -1016,7 +1021,7 @@ La plupart des modèles emploient un maillage composé par des éléments homog�
 \subsection{Interface}
 \label{subsec:interface}
 
-Premièrement, le comportement du contact est décrit par une interface " rigide " où seulement le glissement et le décollement peuvent se produire, et la déformation de l’interface n’est pas prise en compte. Dans ce cas, les paramètres définissant le critère de rupture sont importants alors que les valeurs des rigidités le sont moins.  Néanmoins, les contrastes de rigidités importants sont très mal tolérés sous FLAC3D. Les valeurs des rigidités très élevées conduisent à une convergence de solution extrêmement lente et les temps de calculs peuvent alors être trop longs et prohibitifs. Il est donc essentiel de déterminer les rigidités avec justesse. Dans la notice de FLAC3D, il est conseillé de prendre les valeurs des rigidités dix fois plus grandes que celles du matériau le plus rigide dans le voisinage de l’interface.
+Premièrement, le comportement du contact est décrit par une interface " rigide " où seulement le glissement et le décollement peuvent se produire, et la déformation de l’interface n’est pas prise en compte. Dans ce cas, les paramètres définissant le critère de rupture sont importants alors que les valeurs des rigidités le sont moins.  Néanmoins, les contrastes de rigidités importants sont très mal tolérés sous FLAC. Les valeurs des rigidités très élevées conduisent à une convergence de solution extrêmement lente et les temps de calculs peuvent alors être trop longs et prohibitifs. Il est donc essentiel de déterminer les rigidités avec justesse.
 
 Afin de simuler le glissement et le décollement entre le pénétromètre et le sol, il s’avère nécessaire introduire une interface entre ces deux matériaux. Celle-ci permettra de reproduire correctement le choc au niveau de la pointe et le glissement entre les parois de la pointe et le sol. Dans FLAC, l’interface est modélisée par un maillage de triangles définis par trois nœuds placés sur la surface de l’objet, ici la pointe du pénétromètre. Celle-ci est caractérisée par des paramètres de raideur et de rupture (critère de rupture Mohr-Coulomb). Ces paramètres doivent être choisis afin de minimiser son effet dans le modèle.
 
@@ -1310,7 +1315,7 @@ Le déplacement s(t) d'un point de la section C est déduit par la suite par int
     s (t) = \int{v(t)} \,dt      
 \end{equation}
 
-On a appliqué ce principe au modèle numérique afin de vérifier s'il est capable de reproduire la technique intégrée dans l'essai DCLT. Pour ce faire, on a simulé l'essai DCLT au sein d'un massif élasto-plastique parfait représentant un sol sec. Pour cette analyse, les paramètres du massif sont ceux du sable de Fontainebleau à l'état moyennement dense : E de 100 MPa, $\nu$ de 0,33, $\phi$' de 35° et $\psi$ de 5°.
+On a appliqué ce principe au modèle numérique afin de vérifier s'il est capable de reproduire la technique intégrée dans l'essai DCLT. Pour ce faire, on a simulé l'essai DCLT au sein d'un massif élasto-plastique parfait représentant un sol sec. Pour cette analyse, les paramètres du massif sont ceux d'un sable dense (1575 kg/$m^3$) : E de 100 MPa, $\nu$ de 0,33, $\phi$' de 35° et $\psi$ de 5°.
 
 La géométrie et les conditions aux limites sont celles décrites dans la section \ref{subsec:Géométrie et conditions aux limites} de ce document. Le battage est simulé comme décrit dans la section précédente. On a enregistré les historiques de force, de vitesse et de déplacement à la proximité de l'enclume (section A) comme montré sur la Figure \ref{fig:num_imp}, et en pointe (section C). Cela pour les 40 milliseconds suivants l'impact.
 
@@ -1341,7 +1346,7 @@ La réponse mécanique se compose d’une première phase de montée en charge r
 
  \begin{figure}[H]
    \begin{center}
-        \includegraphics[scale = .5]{media/num_DCLT.png}
+        \includegraphics[scale = .5]{media/num_DCLT_in.png}
         \caption{Courbe DCLT estimées et courbes DCLT mesurées pour trois vitesses d'impact (1,75 m/s, 3,5 m/s et 7 m/s)}
           \label{fig:num_DCLT}
       \end{center}
@@ -1516,6 +1521,6 @@ En tenant compte des aspects abordés dans ce rapport, les principales activité
 \bibliography{library}
 
   
- \end{document}
+\end{document}
 
 

@@ -1,0 +1,15 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Objectif}{2}{section.1}%
+\contentsline {section}{\numberline {2}Introduction}{2}{section.2}%
+\contentsline {section}{\numberline {3}Détermination de la vitesse d'ondes à partir de l'essai DCLT : analogie avec les essais de choc}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Introduction : les essais de choc dans le sol}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Obtention des contraintes et des vitesses en pointe : essai DCLT}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Obtention de la vitesse d'ondes à partir de mesures de contrainte et de vitesse particulaire en pointe}{7}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Comparatifs expérimentaux}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Données rapportées dans littérature pour les sables d'Hostun et Fontainebleau}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Données DCLT à Navier}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Comparatif des mesures}{14}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Étude sur la précision de mesure de la masse volumique}{15}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Étude numérique : simulation de l'essai DCLT et analyse de la polaire de choc}{15}{section.5}%
+\contentsline {section}{\numberline {6}Bilan et perspectives}{21}{section.6}%
+\contentsline {section}{\numberline {7}ANNEXE I}{25}{section.7}%

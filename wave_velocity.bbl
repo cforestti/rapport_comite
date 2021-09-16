@@ -33,6 +33,12 @@ Briaud, J.-L. (2001).
 \newblock {INTRODUCTION TO SOIL MODULI}.
 \newblock Technical report, Intelligent Construction.
 
+\bibitem[Brown et~al., 2007]{Brown2007}
+Brown, J.~L., Vogler, T.~J., Chhabildas, L.~C., Reinhart, W.~D., and Thornhill,
+  T.~F. (2007).
+\newblock {Shock Response of Dry Sand.Albuquerque, N.M: Sandia National
+  Laboratories;2007. Report SAND2007e3524}.
+
 \bibitem[Burland, 1989]{Burland1989}
 Burland, J.~B. (1989).
 \newblock {Ninth Laurits Bjerrum Memorial Lecture: "Small is beautiful"—the
@@ -43,6 +49,11 @@ Burland, J.~B. (1989).
 Cassan (1988).
 \newblock {Essai in situ des m{\'{e}}caniques des sols. 1 r{\'{e}}alisation et
   int{\'{e}}rpretation}.
+
+\bibitem[Charlie et~al., 1990]{Charlie1990}
+Charlie, W., Ross, C., and Pierce, S. (1990).
+\newblock {Split-Hopkinson pressure bar testing of unsaturated sand}.
+\newblock {\em Geo- tech. Test. J.}, 13(4):297--300.
 
 \bibitem[Duttine, 2005]{Duttine2005}
 Duttine, A. (2005).
@@ -131,6 +142,11 @@ Marsh, S.~P. (1980).
 \newblock {LASL Shock Hugoniot Data}.
 \newblock {\em Los Alamos Series on Dynamic Material Properties}, page 150.
 
+\bibitem[Martin et~al., 2009]{Martin2009}
+Martin, B.~E., Chen, W., Song, B., and Akers, S.~A. (2009).
+\newblock {Moisture effects on the high strain-rate behavior of sand}.
+\newblock {\em Mechanics of Materials}, 41(6):786--798.
+
 \bibitem[Meunier, 1974]{Meunier1974}
 Meunier, J. (1974).
 \newblock {\em {Contribuition {\`{a}} l'{\'{e}}tude des ondes et des ondes de
@@ -168,16 +184,23 @@ Sauzeat, C. (2003).
   effects]}}.
 \newblock PhD thesis, Institut National des Sciences Appliqu{\'{e}}es de Lyon.
 
+\bibitem[Semblat, 1997]{Semblat1997}
+Semblat, J. (1997).
+\newblock {Dynamic response of soils using Split Hopkinson Pressure Bar
+  method}.
+
 \bibitem[Semblat, 2012]{Semblat2012}
 Semblat, J.~F. (2012).
 \newblock {Modeling seismic wave propagation and amplification in 1D/2D/3D
   linear and nonlinear unbounded media}.
 \newblock {\em International Journal of Geomechanics}, 11(6):440--448.
 
-\bibitem[Timoshenko and Goodier, 1951]{Timoshenko1951}
-Timoshenko, S. and Goodier, J. (1951).
-\newblock {\em {Theory of elasticity}}.
-\newblock Ed. Mc Graw-Hill.
+\bibitem[Tran et~al., 2019]{Tran2019}
+Tran, Q.~A., Chevalier, B., Benz-Navarrete, M.~A., Breul, P., and
+  Gourv{\`{e}}s, R. (2019).
+\newblock {Numerical verification of the continuous calculation method for tip
+  stress during the driving process of the dynamic penetration test}.
+\newblock {\em Soils and Foundations}, 59:2344--2351.
 
 \bibitem[Tsukamoto et~al., 2002]{Tsukamoto2002}
 Tsukamoto, Y., Ishihara, K., Nakazawa, H., Kamada, K., and Huang, Y. (2002).

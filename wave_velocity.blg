@@ -5,46 +5,48 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: library.bib
+Warning--empty journal in Brown2007
 Warning--can't use both volume and number fields in LeKouby2008
-You've used 32 entries,
+Warning--empty journal in Semblat1997
+You've used 36 entries,
             1935 wiz_defined-function locations,
-            688 strings with 9692 characters,
-and the built_in function-call counts, 10757 in all, are:
-= -- 1084
-> -- 335
+            712 strings with 10559 characters,
+and the built_in function-call counts, 12490 in all, are:
+= -- 1249
+> -- 426
 < -- 30
-+ -- 104
-- -- 104
-* -- 840
-:= -- 1944
-add.period$ -- 95
-call.type$ -- 32
-change.case$ -- 201
-chr.to.int$ -- 32
-cite$ -- 33
-duplicate$ -- 448
-empty$ -- 770
-format.name$ -- 146
-if$ -- 2075
++ -- 136
+- -- 136
+* -- 1005
+:= -- 2253
+add.period$ -- 105
+call.type$ -- 36
+change.case$ -- 238
+chr.to.int$ -- 36
+cite$ -- 39
+duplicate$ -- 502
+empty$ -- 878
+format.name$ -- 180
+if$ -- 2396
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 23
-newline$ -- 162
-num.names$ -- 96
-pop$ -- 165
+missing$ -- 26
+newline$ -- 180
+num.names$ -- 108
+pop$ -- 196
 preamble$ -- 1
-purify$ -- 212
+purify$ -- 248
 quote$ -- 0
-skip$ -- 355
+skip$ -- 396
 stack$ -- 0
-substring$ -- 719
-swap$ -- 53
+substring$ -- 848
+swap$ -- 55
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
-warning$ -- 1
-while$ -- 94
+type$ -- 212
+warning$ -- 3
+while$ -- 108
 width$ -- 0
-write$ -- 412
-(There was 1 warning)
+write$ -- 459
+(There were 3 warnings)
