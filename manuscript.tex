@@ -89,7 +89,7 @@ Encadrement:\\
 \end{center}
 %\hskip2mm
 \begin{spacing}{1.}
-La caractérisation de sols est une condition indispensable pour le dimensionnement des fondations en génie civil. A niveau mondial, les travaux de caractérisation, dont l’objectif est de fournir les paramètres du sol permettant d’adapter l’ouvrage au terrain, sont basés sur la réalisation d’essais in situ. Au-delà des limites techniques, la plupart de ces méthodes ne permettent pas d’avoir une caractérisation fine des sols présents en surface à faible coût. Un pénétromètre dynamique léger instrumenté (Panda$3\up{\textregistered}$) a été développé afin de répondre à ces besoins.
+La caractérisation de sols est une condition indispensable pour le dimensionnement des fondations en génie civil. A niveau mondial, les travaux de caractérisation, dont l’objectif est de fournir les paramètres du sol permettant d’adapter l’ouvrage au terrain, sont basés sur la réalisation d’essais in situ. Au-delà des limites techniques, la plupart de ces méthodes ne permettent pas d’avoir une caractérisation fine des sols présents en surface à faible coût. Par ailleurs, à l’heure actuelle, la plupart des essais géotechniques in situ ne permettent pas d’identifier directement les paramètres constitutifs des couches de sol. Un pénétromètre dynamique léger instrumenté (Panda$3\up{\textregistered}$) a été développé afin de répondre à ces besoins.
 
 L’instrumentation et l’exploitation des signaux de force et d’accélération intégrés à cet appareil permettent d’obtenir une courbe de chargement en pointe du sol pour chaque impact. Celle-ci traduit la réponse effort-enfoncement sous chargement dynamique et riche de renseignements quant au comportement en déformation et en cisaillement des sols. Le caractère dynamique et transitoire de l’essai couplé à la précision et grand nombre de mesures obtenues facilite la mise en place de différentes méthodes d’analyse intégrant différentes approches (essais de choc, analyse temporelle, analyse spectrale, fonction des transfert …). 
 
@@ -125,6 +125,9 @@ D’une part, on souhaite vérifier si les hypothèses considérées dans la mé
 \chapter{Introduction}
 
 La pénétration est utilisée par différentes techniques afin de caractériser le sol en surface. L'essai pénétrométrique statique consiste à pénétrer à une vitesse constante tandis que dans les essais dynamiques, cela se fait par le battage d'une masse. L'essai de pénétration dynamique est la technique \emph{in situ} la plus utilisée au monde. Toutefois, l'analyse des résultats dynamiques demeurent plus complexe que celle des essais statiques \citep{Byun2015}. 
+
+La plupart des essais géotechniques in situ ne permettent pas d’identifier directement les paramètres constitutifs des sols. Les essais de laboratoires quant à eux coûtent chers et ne sont pas représentatifs du massif de sol dans son ensemble
+
 
 De manière générale, les pénétromètres, statiques ou dynamiques, fournissent une mesure à la rupture. Dans la pratique du dimensionnement géotechnique, celle-ci est appliquée directement ou interprétée afin d'estimer les paramètres de cisaillement (par exemple, l'angle de frottement effectif $\phi'$, pour les sables, la résistance non-drainé $\tau_u$, des argiles) \citep{Robertson1983a, Schnaid2008, Mayne2009}. Toutefois, les pénétromètres, \emph{a priori}, ne permettent pas d'établir la relation effort-déformation au cours des essais.
 
@@ -256,7 +259,7 @@ Bien que largement appliquée dans le domaine des pieux, la solution de Smith pr
 
 Certains travaux ont tenté de caractériser les sols à partir J et Q ou de trouver des corrélations entre ces paramètres et les paramètres intrinsèques du sol \citep{Charue2004}. Toutefois la grande variabilité de ces paramètres rend cela très compliqué. En effet, il a été montré que ces paramètres ne dépend pas uniquement des paramètres du sol mais aussi à l'énergie de l'essai \citep{Aoki1992}.
 
-Afin de rendre le modèle initialement proposés par \cite{Smith1960} plus réaliste, d'autres modèle ont été proposé par la suite. Ceux-ci cherchent à mettre au point des modèles alimentés par des paramètres ayant une signification physique et pouvant être déterminés en laboratoire.
+Afin de rendre le modèle initialement proposés par \cite{Smith1960} plus réaliste, d'autres modèle ont été proposé par la suite. Ceux-ci cherchent à mettre au point des modèles alimentés par des paramètres ayant une signification physique et pouvant être déterminés en laboratoire \citep{Holeyman1988}.
 
 \subsection{Modèle de \cite{Lysmer1965}}
 
@@ -296,6 +299,15 @@ les fondations profondes D>>B, soit B le diamètre du pieu. Pour les fondations 
 Récemment, \cite{Lee2020} a appliqué l'amortissement matériel proposé par \cite{Lysmer1965} afin de dissocier la partie dynamique de la résistance totale mesurée à l'essai au pénétromètre dynamique. Les auteurs ont montré qu'une fois la partie dynamique soustraite de la résistance totale, la résistance déduite était assez proche de la résistance pseudo-statique $q_c$ (CPT) (avec $q_c = 1,01 q_d$ et $R^2=0,85$). 
 
 Plus tard, d'autres travaux comme celui de \cite{Holeyman1988}, de \cite{Naggar1994} et de \cite{Loukidis2008} ont permis de compléter celui proposé par \cite{Lysmer1965}. Ils ont notamment avancé en prenant en compte les différents types d'amortissement (de radiation et d'hystérésis) qui étaient traduits par Smith par un seul paramètre ($J_s$). En autre limitation de la solution de \cite{Lysmer1965} est le fait de ne pas modéliser des milieux hétérogènes ou non-élastiques. \cite{Loukidis2008} a proposé un modèle afin de corriger certaines de ces limitations.
+
+
+\subsection{Intégration de la non-linéarité}
+
+
+
+
+
+
 
 \subsection{Modèle de \cite{Loukidis2008}}
 
@@ -751,6 +763,8 @@ Parmi eux, les modules les plus courants dans les dimensionnements sont le modul
 
 La détermination du module initial à partir de résultats triaxiaux s'avère parfois compliqué car pour des faibles déformations, on constate des fluctuations importantes pour ce paramètre. Ceci est aussi rapporté par \cite{Lancelot1996} sur ses résultats triaxiaux pour de sable d'Hostun. Par conséquent, on choisit de retenir le module sécant à déformation axiale 0,1\% comme le module initial \citep{Lancelot1996,Dano2001}. En effet, la résolution de l'essai triaxial classique, en général, ne permet pas de déterminer des modules à de déformations inférieures à $10^{-3}$ \citep{Obrzud2018, Benz2007}. Dans la pratique, on admet que les résultats essais triaxiaux permettent de décrire l’évolution du module pour la plage des grandes déformations $10^{-2}$ \citep{Pham2008}.
 
+
+
 %_________table synthèse + courbes dégradations triaxial
 
 \subsection{Paramètres de rupture}
@@ -928,25 +942,25 @@ A l’heure actuelle, les méthodes numériques dites continues (\emph{e.g.} FEM
 \item on peut refaire plusieurs fois une expérience avec strictement les mêmes conditions initiales.
 \end{itemize}
 
-C’est pourquoi, on propose d'appliquer une méthode continue aux battage dynamique pénétrométrique. On a développé un modèle numérique qualitativement et quantitativement représentatif de l'essai DCLT. L'objectif de ce modèle est d’étudier l’influence des paramètres rhéologiques du sol ausculté sur le principal résultat de l'essai : la courbe charge-enfoncement dynamique (ou courbe DCLT). Les paramètres rhéologiques étudiés sont les plus courants pour le dimensionnement en géotechnique : en déformation, le module d'élasticité (E) et, en cisaillement, l'angle de frottement interne ($\phi$) et la cohésion (c). En plus, ce modèle numérique permettra d’étudier : 
+C’est pourquoi, on propose d'appliquer une méthode continue à l'essai DCLT. On a développé un modèle numérique qualitativement et quantitativement représentatif de cette technique. L'objectif de ce modèle est d’étudier l’influence des paramètres rhéologiques du sol ausculté sur le principal résultat de l'essai : la courbe charge-enfoncement dynamique (ou courbe DCLT). Les paramètres rhéologiques étudiés sont les plus courants pour le dimensionnement en géotechnique : en déformation, le module d'élasticité (E) et, en cisaillement, l'angle de frottement interne ($\phi$) et la cohésion (c). En plus, ce modèle numérique permettra d’étudier : 
 \begin{itemize} [label=\textbullet]
 \item l’influence du type de sollicitation : statique et dynamique ;
 \item les déformations entraînées par l’essai dans le sol.
 \end{itemize}
 
-Dans ce chapitre, on rappelle d'abord certains travaux réalisés sur le même sujet et certains aspects numériques importants pour comprendre le logiciel. Par la suite, on présente les différents aspects du modèle numérique.
+Dans ce chapitre, on rappelle d'abord certains travaux réalisés autour de la modélisation numérique de la pénétration dynamique et certains aspects numériques importants pour comprendre la méthode appliquée. Par la suite, on présente les différents étapes et aspects de la mise au pointe du modèle.
  
   \section{État de l'art}
   \label{sec:etat de l art}
   
-On présente par la suite l'état de l'art sur la modélisation numérique. Dans notre étude, initialement, on va se focaliser sur les modèles numériques appliquant des méthodes continus à la pénétration dynamique. Additionnellement, on abordera les modèles numériques développés autour des essais DCLT et CLT.
+On présente par la suite l'état de l'art sur la modélisation numérique. Dans notre étude, initialement, on va se focaliser sur les modèles numériques appliquant des méthodes continus à la pénétration dynamique (battage de pieux ou pénétromètre dynamique). Additionnellement, on abordera les modèles numériques développés autour des essais DCLT et CLT.
 
 \subsection{Modélisation numérique de la pénétration dynamique}
 \label{subsec: modelisation numerique des essais DCLT et CLT}
 
 La pénétration dynamique reste un des problèmes les plus sophistiqué des applications numériques en géotechnique. Il s’agit d’un problème fortement non-linéaire et qui entraîne des déformations très importantes \citep{Nazem2012}.
 
-De nombreux travaux numériques s’intéressent à simuler la pénétration dans les milieux granulaires. Parmi eux, la méthode discrète, un nombre de travaux se sont intéressés à la simulation des essais de pénétration dynamique (SPT et DCP) \citep{Zhang2021c,Zhang2019, Quezada2014a}. Les modèles rapportés simulant la pénétration dynamique à l’aide des méthodes continues (FEM ou FDM) sont moins courants \citep{Murthy2020, Chatterjee2015a, Fakharian2014,  Aguiar2009, Pinto2008, Nath1990}. Parmi eux, les travaux simulant le battage sont encore plus rares. Généralement, la sollicitation dynamique est simulée en appliquant une force sinusoïdale à la tête du pieux.
+De nombreux travaux numériques s’intéressent à simuler la pénétration dans les milieux granulaires. Parmi eux, un nombre de travail ont simulation des essais de pénétration dynamique (SPT et DCP) à l'aide de la méthode discrète \citep{Zhang2021c,Zhang2019, Quezada2014a}. D'autres travaux rapportés simulent la pénétration dynamique à l’aide des méthodes continues (FEM et FDM) \citep{Murthy2020, Chatterjee2015a, Fakharian2014,  Aguiar2009, Pinto2008, Nath1990}. Parmi eux, les travaux simulant le battage sont assez rares. Généralement, la sollicitation dynamique est simulée en appliquant une force sinusoïdale à la tête du pieux/pénétromètre.
 
 \cite{Masouleh2008} ont simulé le chargement dynamique d’un pieu à l’aide de FLAC$^{2D}$. Ils ont présenté les résultats numériques des analyses de propagations d’ondes et la réponse dynamique sol-pieux au cours du battage. Les signaux obtenus numériquement ont été assez conformes aux résultats des chargements dynamiques des pieux. La bonne correspondance entre les résultats numériques et expérimentaux montre la faisabilité d’application de l’approche continue pour modéliser des problèmes dynamiques de ce type. Dans leur modèle, \cite{Masouleh2008} font varier les caractéristiques du sol (paramètres de résistance et de déformation) et de l’interface sol-pieu afin de faire du signal matching (similaire au CAPWAP) d’après les résultats expérimentaux.
 
@@ -962,6 +976,11 @@ Ces travaux ont permis de mettre en évidence la pertinence du couplage numériq
 
 \section{Mise au point du modèle numérique}
 \label{sec:Mise au point du modèle numérique}
+
+
+%La méthode des différences finies consiste à partir d’un milieu continu, à écrire les équations qui régissent ces milieux en imposant les lois de conservation et de comportement, puis à discrétiser les équations obtenues en transformant un système d’équations différentielles en équations algébriques. 
+
+%La méthode des éléments finis discrétise le milieu continu, en lui attribuant un nombre fini de degré de liberté et c’est seulement dans un second temps qu’elle impose, en moyenne, les lois de conservation et de comportement. Les équations algébriques qui régissent le problème émergent ainsi suite à la discrétisation initiale.
 
 On emploie le logiciel $FLAC^{3D}$\footnote{\samepage Désormais nommé FLAC} (\emph{Fast Lagrangian Analysis of Continua in 3 Dimensions}). Il s’agit d’un logiciel aux différences finies explicite qui permet d’étudier le comportement mécanique d’un milieu continu en trois dimensions. Il applique des principes simples (définition des déformations et loi du mouvement) et des lois constitutives qui décrivent un matériau pour résoudre des équations différentielles à partir d’un schéma de discrétisation temporelle explicite. Les calculs sont réalisés en boucle pour chaque élément dans chaque pas de temps de façon indépendante (Figure \ref{fig:num_flac}).
 
@@ -986,7 +1005,7 @@ On souhaite simuler les essais DCLT et CLT en chambre d'étalonnage. Les essais 
 
 Les différents éléments composant le pénétromètre sont modélisés comme des cylindres. Les dimensions sont celles de la géométrie réelle : tige de 14 mm de diamètre et un mètre de longueur ; une pointe cylindro-conique débordante (sommet de 90\degree) de section transversale de 4 $cm^2$ (22,5 mm de diamètre). Les éléments composants le pénétromètre sont modélisées des corps élastiques dont les paramètres sont ceux de l'acier ($\nu$ = 0,3, E=206 GPa). La géométrie de la chambre d'étalonnage ainsi que celle du pénétromètre sont présentées dans la Figure \ref{fig:exp_penetro}. 
 
-Un état initial de contraintes d’origine géostatique est pris en considération. Il correspond à l’effet du poids de couche de sol, avec le poids volumique sec $\gamma_d$. Dans le modèle, la contrainte latérale est engendrée par le coefficient des terres au repos $K_0$, $K_0$ étant le rapport entre les contraintes radiales et verticales ($K_0 =\sigma_{rr}/\sigma_{zz}$). Pour les sables, ceci est estimée à l’aide de la relation proposée par \cite{Jaky1944} : $K_0=1-\sin \phi'$ , avec $\phi'$ l’angle de frottement drainé du massif. Le choix de l'angle de frottement ainsi que d'autres paramètres physiques et rhéologiques sera aborder plus tard. Une cavité est crée au sein du massif afin de donner lieu au pénétromètre. Les parois de cette cavité sont stabilisés, c'est-à-dire les déplacements sont empêchés latéralement
+Un état initial de contraintes d’origine géostatique est pris en considération. Il correspond à l’effet du poids de couche de sol, avec le poids volumique sec $\gamma_d$. Dans le modèle, la contrainte latérale est engendrée par le coefficient des terres au repos $K_0$, $K_0$ étant le rapport entre les contraintes radiales et verticales ($K_0 =\sigma_{rr}/\sigma_{zz}$). Pour les sables normalement consolidé, ceci est estimée à l’aide de la relation proposée par \cite{Jaky1944} : $K_0=1-\sin \phi'$ , avec $\phi'$ l’angle de frottement drainé du massif. Le choix de l'angle de frottement ainsi que d'autres paramètres physiques et rhéologiques sera aborder plus tard dans ce rapport. Une cavité est crée au sein du massif afin de donner lieu au pénétromètre. Les parois de cette cavité sont stabilisés, c'est-à-dire les déplacements sont empêchés latéralement
 
 Étant donné la caractère axisymétrique du problème et dans le but de réduire le temps de calcul, on a choisi de modéliser uniquement un quart de la géométrie. Ainsi, les déplacements sont empêchés dans les plans normaux latéralement (x ou y, selon le plan concerné). Pour ce faire, on a vérifié, dans un premier temps, si cela entraînait de différence dans le résultat. On a simulé l'essai DCLT pour les deux cas : (a) géométrie intégrale et (b) 1/4 de la géométrie. Comme on constate dans la Figure \ref{fig:num_axy.PNG}, le résultat de l'essai, synthétisé par la courbe DCLT, est essentiellement le même. C'est pourquoi on a choisi d'utiliser la géométrie (b) pour les prochaines simulations. 
 
@@ -1455,13 +1474,17 @@ Les améliorations réalisées visent à atteindre un des objectifs de ce travai
 \subsection{Vérification du modèle de comportement du modèle numérique}
 \label{subsec:vérification}
 
-On simule les essais de chargement en pointe dynamique et statique au sein des massifs élasto-plastique parfait et HSM. Les paramètres des modèles de comportement sont ceux obtenus à l'appareil triaxial pour des échantillons des sables étudies (SF et SH).
+On simule les essais de chargement en pointe dynamique et statique au sein des massifs représentation le sol.
 
-En effet, on observe que le module d'élasticité nécessaire afin d'avoir une correspondance avec les résultats expérimentaux doit être considérablement plus important que ceux obtenu à l'état de densité et une contrainte moyenne à l'essai triaxial. En effet, le rapport entre le module nécessaire est celui qu'on attribue au matériau est de 6. 
+A ce massif, on applique deux modèle de comportement : élasto-plastique parfait Mohr-Coulomb et le modèle élastoplastique avec écrouissage (Hardening Soil Model ou HSM). Le modèle HSM permet de mieux tenir compte des déformations irréversibles qu’on observe dans le sol même loin de la rupture. Ce concept est dérivé du comportement des métaux écrouis (hardened) dont le niveau de plasticité augmente avec l’intensité des déformations plastiques subies. 
 
-Cette différence a été observé par d'autres travaux comparant des courbes numériques et expérimentales de chargement de pieu. Ces travaux ont observé des rapports du même ordre \citep{Pinto2008, Masouleh2008, Fakharian2014}.
+Les paramètres alimentant les modèles de comportement sont ceux obtenus à l'appareil triaxial pour des échantillons des sables étudies (SF et SH).
 
-Plus de cas d'étude avec des chargements en pointe sont essentielles afin d'expliquer le sujet des valeurs de module plus important nécessaire. La création de cavité eu sein du sol lors de la pénétration entraine des changements à l'état de contrainte initial, notamment une augmentation de la contrainte radiale (horizontale) vis-à-vis de la contrainte initiale correspondante à l'état $K_0$.
+En effet, on observe que les modules d'élasticité nécessaires afin d'avoir une correspondance avec les résultats expérimentaux doivent être considérablement plus importants que ceux obtenu à l'état de densité et une contrainte moyenne à l'essai triaxial. En effet, le rapport entre les modules nécessaires et ceux qu'on attribue au matériau est de l'ordre 6. 
+
+Cette différence a été observé par d'autres travaux comparant des courbes numériques et expérimentales de chargement de pieu. Ces travaux ont observé des rapports du même ordre \citep{Pinto2008, Masouleh2008, Fakharian2014}. En effet, l'essai de pénétration ainsi comme dans l'installation d'un pieu entraine une densification dans le sol. En pointe, cet effet est similaire à un pré-chargement dans la zone adjacente à la pointe. Toutefois, cet effet est très de difficile de quantifier. \citep{Lee1999}. Comme dans tous les travaux rapportés dans la littérature, des comparatifs directes entre les résultats expérimentaux et numériques n'est pas praticable.   
+
+ Plus de cas d'étude avec des chargements en pointe sont essentielles afin d'expliquer le sujet des valeurs de module plus important nécessaire. La création de cavité eu sein du sol lors de la pénétration entraine des changements à l'état de contrainte initial, notamment une augmentation de la contrainte radiale (horizontale) vis-à-vis de la contrainte initiale correspondante à l'état $K_0$.
 
 
 %%%%%%%__________________________________________________

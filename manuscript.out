@@ -5,28 +5,29 @@
 \BOOKMARK [1][-]{section.2.1}{Mod\350les analytiques de la r\351action en pointe pour les pieux}{chapter.2}% 5
 \BOOKMARK [2][-]{subsection.2.1.1}{Mod\350le de Smith1960}{section.2.1}% 6
 \BOOKMARK [2][-]{subsection.2.1.2}{Mod\350le de Lysmer1965}{section.2.1}% 7
-\BOOKMARK [2][-]{subsection.2.1.3}{Mod\350le de Loukidis2008}{section.2.1}% 8
-\BOOKMARK [1][-]{section.2.2}{Application des mod\350les d'interaction \340 l'essai DCLT}{chapter.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.1}{V\351rification num\351rique : application de la raideur de Lysmer et d'encastrement \340 l'essai DCLT}{section.2.2}% 10
-\BOOKMARK [1][-]{section.2.3}{Proposition pour l'essai DCLT : int\351gration de la non-lin\351arit\351}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.3.1}{R\351sistance ultime}{section.2.3}% 12
-\BOOKMARK [0][-]{chapter.3}{\311tude exp\351rimentale}{}% 13
-\BOOKMARK [1][-]{section.3.1}{Mat\351riaux utilis\351s}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{Essais triaxiaux}{chapter.3}% 15
-\BOOKMARK [2][-]{subsection.3.2.1}{Conception de l'\351prouvette et protocole d'essai}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.2}{R\351sultats}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.3}{Param\350tres de d\351formabilit\351}{section.3.2}% 18
-\BOOKMARK [2][-]{subsection.3.2.4}{Param\350tres de rupture}{section.3.2}% 19
-\BOOKMARK [1][-]{section.3.3}{Essais DCLT-CLT en chambre d'\351talonnage}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.4}{Bilan}{chapter.3}% 21
-\BOOKMARK [0][-]{chapter.4}{\311tude num\351rique}{}% 22
-\BOOKMARK [1][-]{section.4.1}{\311tat de l'art}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.1.1}{Mod\351lisation num\351rique de la p\351n\351tration dynamique}{section.4.1}% 24
-\BOOKMARK [1][-]{section.4.2}{Mise au point du mod\350le num\351rique}{chapter.4}% 25
-\BOOKMARK [2][-]{subsection.4.2.1}{G\351om\351trie et conditions aux limites}{section.4.2}% 26
-\BOOKMARK [2][-]{subsection.4.2.2}{Interface}{section.4.2}% 27
-\BOOKMARK [2][-]{subsection.4.2.3}{Sollicitation}{section.4.2}% 28
-\BOOKMARK [2][-]{subsection.4.2.4}{Mod\350le de comportement du sol}{section.4.2}% 29
-\BOOKMARK [1][-]{section.4.3}{Bilan}{chapter.4}% 30
-\BOOKMARK [2][-]{subsection.4.3.1}{V\351rification du mod\350le de comportement du mod\350le num\351rique}{section.4.3}% 31
-\BOOKMARK [0][-]{chapter.5}{Conclusion et perspectives}{}% 32
+\BOOKMARK [2][-]{subsection.2.1.3}{Int\351gration de la non-lin\351arit\351}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.4}{Mod\350le de Loukidis2008}{section.2.1}% 9
+\BOOKMARK [1][-]{section.2.2}{Application des mod\350les d'interaction \340 l'essai DCLT}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{V\351rification num\351rique : application de la raideur de Lysmer et d'encastrement \340 l'essai DCLT}{section.2.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Proposition pour l'essai DCLT : int\351gration de la non-lin\351arit\351}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.3.1}{R\351sistance ultime}{section.2.3}% 13
+\BOOKMARK [0][-]{chapter.3}{\311tude exp\351rimentale}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Mat\351riaux utilis\351s}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Essais triaxiaux}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.2.1}{Conception de l'\351prouvette et protocole d'essai}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.2}{R\351sultats}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.3}{Param\350tres de d\351formabilit\351}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.4}{Param\350tres de rupture}{section.3.2}% 20
+\BOOKMARK [1][-]{section.3.3}{Essais DCLT-CLT en chambre d'\351talonnage}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Bilan}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{\311tude num\351rique}{}% 23
+\BOOKMARK [1][-]{section.4.1}{\311tat de l'art}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.1.1}{Mod\351lisation num\351rique de la p\351n\351tration dynamique}{section.4.1}% 25
+\BOOKMARK [1][-]{section.4.2}{Mise au point du mod\350le num\351rique}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.2.1}{G\351om\351trie et conditions aux limites}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.2}{Interface}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.3}{Sollicitation}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.4}{Mod\350le de comportement du sol}{section.4.2}% 30
+\BOOKMARK [1][-]{section.4.3}{Bilan}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.3.1}{V\351rification du mod\350le de comportement du mod\350le num\351rique}{section.4.3}% 32
+\BOOKMARK [0][-]{chapter.5}{Conclusion et perspectives}{}% 33
